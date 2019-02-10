@@ -21,10 +21,10 @@ function stepheusebi_scripts() {
 	wp_enqueue_style( 'cfea-theme-style', get_stylesheet_uri() );
 
 	// Foundation
-	wp_enqueue_script( 'what-input', get_template_directory_uri() . '/js/vendor/what-input.min.js', array('jquery'), '', true );
-	wp_enqueue_style( 'foundation-style', get_template_directory_uri() . '/css/vendor/foundation.min.css', array(), 'all' );
-	wp_enqueue_script( 'foundation-app', get_template_directory_uri() . '/js/app.js', array('jquery'), '', true );
-	wp_enqueue_script( 'foundation', get_template_directory_uri() . '/js/vendor/foundation.min.js', array('jquery'), '', true );
+	wp_enqueue_script( 'what-input', get_template_directory_uri() . '/assets/js/vendor/what-input.min.js', array('jquery'), '', true );
+	wp_enqueue_style( 'foundation-style', get_template_directory_uri() . '/assets/css/vendor/foundation.min.css', array(), 'all' );
+	wp_enqueue_script( 'foundation-app', get_template_directory_uri() . '/assets/js/app.js', array('jquery'), '', true );
+	wp_enqueue_script( 'foundation', get_template_directory_uri() . '/assets/js/vendor/foundation.min.js', array('jquery'), '', true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
