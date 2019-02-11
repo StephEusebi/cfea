@@ -1,10 +1,9 @@
 <?php
  /*!
 Template Name: Programs
-Theme URI: http://underscores.me/
+Theme URI: cfea theme
 Author: Amanda Jackson & Cassie Doyle
-Author URI: http://purenorthdigital.com/
-Description: Underscores theme
+Description: CFEA Theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
