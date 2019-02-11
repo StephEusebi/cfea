@@ -1,16 +1,16 @@
 <?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Steph_Eusebi
- */
+ /*!
+Theme Name: Programs
+Theme URI: http://underscores.me/
+Author: Amanda Jackson & Cassie Doyle
+Author URI: http://purenorthdigital.com/
+Description: Underscores theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: programs
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
 
 get_header();
 ?>
