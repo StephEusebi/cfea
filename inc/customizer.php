@@ -2,7 +2,7 @@
 /**
  * cfea theme Theme Customizer
  *
- * @package Steph_Eusebi
+ * @package cfea
  */
 
 /**

@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Steph_Eusebi
+ * @package cfea
  */
 
 if ( ! function_exists( 'cfea_posted_on' ) ) :

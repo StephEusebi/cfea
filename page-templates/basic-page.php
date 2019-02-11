@@ -12,7 +12,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Steph_Eusebi
+ * @package cfea
  */
 
 get_header();
