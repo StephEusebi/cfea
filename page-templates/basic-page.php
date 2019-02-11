@@ -15,6 +15,7 @@
  * @package cfea
  */
 
+// imports the header
 get_header();
 ?>
 
@@ -26,7 +27,13 @@ get_header();
 
 			<!-- examples text -->
 			<div class="cell small-4 large-offset-2  small-offset-2" style="background: orange;">Offset 2 on large</div>
-			<div class="cell small-4" style="background: orange;">4 cells</div>
+			<div class="cell small-4" style="background: pink;"> second cell with image inside
+
+				<!-- basic example on how to import an image -->
+				<!-- the image is localed inside the assets/img folder -->
+				<!-- remeber to optimise your image using tinypng.com-->
+				<img src="/wp-content/themes/cfea/assets/img/dog.jpg" alt="dog image" />
+			</div>
 
 		</div> <!-- offset enf-->
 
@@ -35,4 +42,5 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
+// imports the footer
 get_footer();
