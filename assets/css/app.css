@@ -8,6 +8,10 @@ a {
     color: #0a415e;
 }
 
+h1 {
+    font-family: 'Staatliches', cursive;
+}
+
 /* COLOR CLASSES */
 .blue {
     color: #0a415e;
@@ -22,6 +26,10 @@ a {
     margin-top: 3rem;
 }
 
+.bottom-space {
+    margin-bottom: 3rem;
+}
+
 /* BUTTON STYLE */
 .button {
     background-color:#1a8263;
@@ -33,4 +41,54 @@ a {
 .button:hover {
     background-color: #2f9677;
 }
+
+/* LANDING PAGE */
+
+/* 4 images with backgrounds as images and logos on html */
+/* added overlay gradient */
+.corefx {
+    width: 100%;
+    background-repeat: none;
+    background:linear-gradient(0deg,#0a415eb2,#042a3f8a), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
+}
+
+.corefx:hover {
+    background: linear-gradient(0deg,#072e42b2,#02151fa4), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
+    cursor: pointer;
+}
+
+.trigger {
+    width: 100%;
+    background-repeat: none;
+    background: linear-gradient(0deg,#0a415eb2,#042a3f8a), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
+}
+
+.trigger:hover {
+    background: linear-gradient(0deg,#072e42b2,#02151fa4), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
+    cursor: pointer;
+}
+
+.firstaid {
+    width: 100%;
+    background-repeat: none;
+    background: linear-gradient(0deg,#0a415eb2,#042a3f8a), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
+}
+
+.firstaid:hover {
+    background: linear-gradient(0deg,#072e42b2,#02151fa4), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
+    cursor: pointer;
+}
+
+.vipr {
+    width: 100%;
+    background-repeat: none;
+    background: linear-gradient(0deg,#0a415eb2,#042a3f8a), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
+}
+
+.vipr:hover {
+    background: linear-gradient(0deg,#072e42b2,#02151fa4), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
+    cursor: pointer;
+}
+
+
 
