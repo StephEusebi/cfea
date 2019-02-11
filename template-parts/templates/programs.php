@@ -1,6 +1,6 @@
 <?php
  /*!
-Theme Name: Programs
+Template Name: Programs
 Theme URI: http://underscores.me/
 Author: Amanda Jackson & Cassie Doyle
 Author URI: http://purenorthdigital.com/
