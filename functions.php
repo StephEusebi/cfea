@@ -20,9 +20,6 @@ require get_template_directory() . '/inc/setup.php';
 function cfea_scripts() {
 	wp_enqueue_style( 'cfea-theme-style', get_stylesheet_uri() );
 
-	// APP CSS
-	wp_enqueue_style( 'css-app', get_template_directory_uri() . '/assets/css/app.css', array(), null);
-
 	// RESET CSS
 	wp_enqueue_style( 'reset-css', get_template_directory_uri() . '/assets/css/reset.css', array(), null);
 
@@ -32,7 +29,8 @@ function cfea_scripts() {
 	wp_enqueue_script( 'foundation-app', get_template_directory_uri() . '/assets/js/app.js', array('jquery'), '', true );
 	wp_enqueue_script( 'foundation', get_template_directory_uri() . '/assets/js/vendor/foundation.min.js', array('jquery'), '', true );
 
-
+	// APP CSS
+	wp_enqueue_style( 'css-app', get_template_directory_uri() . '/assets/css/app.css', array(), null);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
