@@ -37,10 +37,10 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
-			$stepheusebi_description = get_bloginfo( 'description', 'display' );
-			if ( $stepheusebi_description || is_customize_preview() ) :
+			$cfea_description = get_bloginfo( 'description', 'display' );
+			if ( $cfea_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $stepheusebi_description; /* WPCS: xss ok. */ ?></p>
+				<p class="site-description"><?php echo $cfea_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 

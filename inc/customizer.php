@@ -10,7 +10,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function stepheusebi_customize_register( $wp_customize ) {
+function cfea_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -18,22 +18,22 @@ function stepheusebi_customize_register( $wp_customize ) {
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
 			'selector'        => '.site-title a',
-			'render_callback' => 'stepheusebi_customize_partial_blogname',
+			'render_callback' => 'cfea_customize_partial_blogname',
 		) );
 		$wp_customize->selective_refresh->add_partial( 'blogdescription', array(
 			'selector'        => '.site-description',
-			'render_callback' => 'stepheusebi_customize_partial_blogdescription',
+			'render_callback' => 'cfea_customize_partial_blogdescription',
 		) );
 	}
 }
-add_action( 'customize_register', 'stepheusebi_customize_register' );
+add_action( 'customize_register', 'cfea_customize_register' );
 
 /**
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function stepheusebi_customize_partial_blogname() {
+function cfea_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
 
@@ -42,7 +42,7 @@ function stepheusebi_customize_partial_blogname() {
  *
  * @return void
  */
-function stepheusebi_customize_partial_blogdescription() {
+function cfea_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 

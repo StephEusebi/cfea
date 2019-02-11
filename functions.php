@@ -17,7 +17,7 @@ require get_template_directory() . '/inc/setup.php';
  */
 
 
-function stepheusebi_scripts() {
+function cfea_scripts() {
 	wp_enqueue_style( 'cfea-theme-style', get_stylesheet_uri() );
 
 	// APP CSS
@@ -38,7 +38,7 @@ function stepheusebi_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'stepheusebi_scripts' );
+add_action( 'wp_enqueue_scripts', 'cfea_scripts' );
 
 /**
  * Custom template tags for this theme.

@@ -1,6 +1,9 @@
 <?php
 /**
  * The template for displaying all pages
+ * 
+ * Template Name: Basic Page
+ * Template Post Type: page
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages

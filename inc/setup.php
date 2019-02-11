@@ -1,6 +1,6 @@
 <?php
 
-if ( ! function_exists( 'stepheusebi_setup' ) ) :
+if ( ! function_exists( 'cfea_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -8,7 +8,7 @@ if ( ! function_exists( 'stepheusebi_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function stepheusebi_setup() {
+	function cfea_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -53,7 +53,7 @@ if ( ! function_exists( 'stepheusebi_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'stepheusebi_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'cfea_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -74,7 +74,7 @@ if ( ! function_exists( 'stepheusebi_setup' ) ) :
 		) );
 	}
 endif;
-add_action( 'after_setup_theme', 'stepheusebi_setup' );
+add_action( 'after_setup_theme', 'cfea_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -83,20 +83,20 @@ add_action( 'after_setup_theme', 'stepheusebi_setup' );
  *
  * @global int $content_width
  */
-function stepheusebi_content_width() {
+function cfea_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'stepheusebi_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'cfea_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'stepheusebi_content_width', 0 );
+add_action( 'after_setup_theme', 'cfea_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function stepheusebi_widgets_init() {
+function cfea_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'cfea-theme' ),
 		'id'            => 'sidebar-1',
@@ -107,4 +107,4 @@ function stepheusebi_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'stepheusebi_widgets_init' );
+add_action( 'widgets_init', 'cfea_widgets_init' );
