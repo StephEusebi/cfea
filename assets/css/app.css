@@ -1,4 +1,4 @@
-/* Basic CSS Rules */
+/* Basic CSS RULES */
 
 body {
     font-family: 'Lato', sans-serif;
@@ -8,4 +8,29 @@ a {
     color: #0a415e;
 }
 
+/* COLOR CLASSES */
+.blue {
+    color: #0a415e;
+}
+
+.green {
+    color: #1a8263;
+}
+
+/* SPACING CLASSES */
+.top-space {
+    margin-top: 3rem;
+}
+
+/* BUTTON STYLE */
+.button {
+    background-color:#1a8263;
+    color: #fff;
+    border-radius: 0.3rem;
+    width: 10rem;
+}
+
+.button:hover {
+    background-color: #2f9677;
+}
 

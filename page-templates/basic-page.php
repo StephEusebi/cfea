@@ -23,7 +23,7 @@ get_header();
 		<main id="main" class="site-main">
 
 		<!-- offest - put everything inside here we don't want max width -->
-		<div class="grid-x grid-margin-x">
+		<div class="grid-x">
 
 			<!-- examples text -->
 			<div class="cell small-4 large-offset-2  small-offset-2" style="background: orange;">Offset 2 on large</div>
@@ -34,6 +34,7 @@ get_header();
 				<!-- remeber to optimise your image using tinypng.com-->
 				<img src="/wp-content/themes/cfea/assets/img/dog.jpg" alt="dog image" />
 			</div>
+			<div class="cell large-8 large-offset-2" style="background: lightblue;">one centered element</div>
 
 		</div> <!-- offset enf-->
 
