@@ -21,6 +21,15 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
+		<!-- offest - put everything inside here we don't want max width -->
+		<div class="grid-x grid-margin-x">
+
+			<!-- examples text -->
+			<div class="cell small-4 large-offset-2  small-offset-2" style="background: orange;">Offset 2 on large</div>
+			<div class="cell small-4" style="background: orange;">4 cells</div>
+
+		</div> <!-- offset enf-->
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
