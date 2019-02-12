@@ -23,11 +23,11 @@ h1 {
 
 /* SPACING CLASSES */
 .top-space {
-    margin-top: 3rem;
+    margin-top: 5vw;
 }
 
 .bottom-space {
-    margin-bottom: 3rem;
+    margin-bottom: 5vw;
 }
 
 /* BUTTON STYLE */
@@ -35,7 +35,11 @@ h1 {
     background-color:#1a8263;
     color: #fff;
     border-radius: 0.3rem;
-    width: 10rem;
+    width: 20rem;
+}
+
+.button h4 {
+    margin-bottom: 0;
 }
 
 .button:hover {
@@ -48,46 +52,50 @@ h1 {
 /* added overlay gradient */
 .corefx {
     width: 100%;
-    background-repeat: none;
     background:linear-gradient(0deg,#0a415eb2,#042a3f8a), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
+    background-repeat: no-repeat;
 }
 
 .corefx:hover {
-    background: linear-gradient(0deg,#072e42b2,#02151fa4), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
+    background: linear-gradient(0deg,#153e539f,#153e539f), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
     cursor: pointer;
+    background-repeat: no-repeat;
 }
 
 .trigger {
     width: 100%;
-    background-repeat: none;
     background: linear-gradient(0deg,#0a415eb2,#042a3f8a), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
+    background-repeat: no-repeat;
 }
 
 .trigger:hover {
-    background: linear-gradient(0deg,#072e42b2,#02151fa4), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
+    background: linear-gradient(0deg,#153e539f,#153e539f), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
     cursor: pointer;
+    background-repeat: no-repeat;
 }
 
 .firstaid {
     width: 100%;
-    background-repeat: none;
     background: linear-gradient(0deg,#0a415eb2,#042a3f8a), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
+    background-repeat: no-repeat;
 }
 
 .firstaid:hover {
-    background: linear-gradient(0deg,#072e42b2,#02151fa4), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
+    background: linear-gradient(0deg,#153e539f,#153e539f), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
     cursor: pointer;
+    background-repeat: no-repeat;
 }
 
 .vipr {
     width: 100%;
-    background-repeat: none;
     background: linear-gradient(0deg,#0a415eb2,#042a3f8a), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
+    background-repeat: no-repeat;
 }
 
 .vipr:hover {
-    background: linear-gradient(0deg,#072e42b2,#02151fa4), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
+    background: linear-gradient(0deg,#153e539f,#153e539f), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
     cursor: pointer;
+    background-repeat: no-repeat;
 }
 
 
