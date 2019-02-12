@@ -90,5 +90,7 @@ h1 {
     cursor: pointer;
 }
 
-
-
+/* PROGRAMS PAGE */
+.progDesc {
+    text-align: center;
+}
