@@ -25,7 +25,7 @@ get_header();
 			<!-- main -->
 			<div class="grid-x">
 
-				<!-- top container holding h1 and buttpn -->
+				<!-- TOP container holding h1 and buttpn -->
 				<div class="row large-6 large-offset-3">
 
 					<!-- title -->
@@ -75,14 +75,14 @@ get_header();
 				</div><!-- grid-container end-->
 
 
-				<!-- container for curtis and mini bio -->	
+				<!-- container for team and mini bio -->	
 				<div class="grid-container grid-container-padded top-space">	
 
 					<div class="grid-x grid-padding-x align-center">
 
 						<div class="cell large-8 small-12">							
-							<!-- image of curtis -->
-							<img src="/wp-content/themes/cfea/assets/img/group.jpg" alt="head shot of curtis" style="width: 880px;" />
+							<!-- image of team -->
+							<img src="/wp-content/themes/cfea/assets/img/group.jpg" alt="head shot of team" style="width: 880px;" />
 
 						</div>
 
@@ -103,9 +103,18 @@ get_header();
 
 				</div><!-- grid-container end-->
 
+				<!-- BOTTOM container holding h1 and button -->
+				<div class="row large-6 large-offset-3">
+
+					<!-- title -->
+					<h1 class="text-center blue top-space">Become certified in some of the most popular programs to date!</h1>
+
+					<!-- button with button class because it links to internal pages -->
+					<a class="button float-center top-space" href="#"><h4>Get Cerfied Today!</h4></a>
+
+				</div>
 
 
-			</div> <!-- grid-x end-->
 
 			
 		</main><!-- #main -->
