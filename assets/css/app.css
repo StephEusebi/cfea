@@ -94,3 +94,11 @@ h1 {
 .progDesc {
     text-align: center;
 }
+
+.progTable {
+    text-align: center;
+}
+
+.progTable th {
+    font-weight: bold;
+}
