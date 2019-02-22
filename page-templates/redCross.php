@@ -22,7 +22,9 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<h2 class="cell large-12 progDesc">Canadian Red Cross</h2>
+			<img src="/wp-content/themes/cfea/assets/img/crcLogo.jpg" alt="red cross logo" class="cell large-12" id="redCrossLogo" />
+
+			<!-- <h2 class="cell large-12 progHead">Canadian Red Cross</h2> -->
 			<p class="cell large-12 progDesc">Duration: Level A: 4 hours, Level C: 5 hours, Level HCP: 6 hours</p>
 			<p class="cell large-12 progDesc">Lecture series on mouth-to-mouth resuscitation (CPR) offers the needed expertise to identify and act 
 			in response to cardiac crisis and suffocation for babies, children and adults subject to the type of CPR 
@@ -30,7 +32,7 @@ get_header();
 			guidance that is appropriate for place of work or broad appeal. In addition, there are cutting-edge CPR 
 			recommendations.</p>
 
-			<table>
+			<table class="programTables">
 				<tr>
 					<th>Certification</th>
 					<th>Details</th>
@@ -57,6 +59,8 @@ get_header();
 					<td>$115.00 plus tax</td>
 				</tr>
 			</table>
+
+			<footer class="footer1"></footer>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

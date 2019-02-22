@@ -22,7 +22,9 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<h2 class="cell large-12 progDesc">TriggerPoint</h2>
+			<img src="/wp-content/themes/cfea/assets/img/trigPoint.jpg" alt="triggerPoint logo" class="cell large-12" id="trigLogo" />
+
+			<!-- <h2 class="cell large-12 progHead">TriggerPoint</h2> -->
 			<p class="cell large-12 progDesc">TriggerPoint Performance is a patented brand that improves life by focusing on 
 			energizing people with the radical organization in Myofascial Compression techniques 
 			as well as branded goods that conserve, control increase the physical movement of human 
@@ -33,7 +35,7 @@ get_header();
 			enhanced performance or typical good health. We would like people to manage their curative 
 			care. Discover more. Have better movement.</p>
 
-			<table>
+			<table class="programTables">
 				<tr>
 					<th>Certification</th>
 					<th>Requirements</th>
@@ -60,6 +62,8 @@ get_header();
 					<td>$459.00 plus tax</td>
 				</tr>
 			</table>
+
+		<footer class="footer1"></footer>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

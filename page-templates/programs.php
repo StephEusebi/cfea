@@ -22,6 +22,8 @@ get_header();
 		<main id="main" class="site-main">
 			
 			<h1>PROGRAMS - landing page</h1>
+
+			<footer class="footer1"></footer>
 			
 		</main><!-- #main -->
 	</div><!-- #primary -->

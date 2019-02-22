@@ -22,7 +22,9 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<h2 class="cell large-12 progDesc">COREFX</h2>
+			<img src="/wp-content/themes/cfea/assets/img/corefx.jpg" alt="corefx logo" class="cell large-12" id="corefxLogo" />
+
+			<!-- <h2 class="cell large-12 progHead">COREFX</h2> -->
 			<p class="cell large-12 progDesc">COREFX asserts itself when it comes to fitness and training equipment. It is a guarantee 
 			to the best. For athletes looking to release their greatest capabilities and get motivated 
 			to prominence, it is the best answer. The trailblazing COREFX peak-performing lines of products 
@@ -35,7 +37,7 @@ get_header();
 			athletes’ unrestrained commitment to exercise, COREFX has created a mutually beneficial connection 
 			between equipment and training. This is the genuine mystery behind attaining your Inner Strength.</p>
 
-		<table>
+		<table class="programTables">
 				<tr>
 					<th>Certification</th>
 					<th>Requirements</th>
@@ -57,6 +59,8 @@ get_header();
 					<td>$59.00 plus tax</td>
 				</tr>
 			</table>
+
+			<footer class="footer1"></footer>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

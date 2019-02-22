@@ -94,3 +94,39 @@ h1 {
 .progDesc {
     text-align: center;
 }
+
+.programTables td {
+    text-align: center;
+}
+
+.progHead {
+    color: #0a415e;
+    text-align: center;
+}
+
+#viprLogo {
+    width: 200px;
+    margin-left: 600px;
+}
+
+#trigLogo {
+    width: 200px;
+    margin-left: 600px;
+}
+
+#corefxLogo {
+    width: 200px;
+    margin-left: 600px;
+}
+
+#redCrossLogo {
+    width: 200px;
+    margin-left: 580px;
+}
+
+/* FOOTER */
+.footer1 {
+    height: 100px;
+    width: 100%;
+    background-color: #0a415e;
+}
