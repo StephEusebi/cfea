@@ -61,7 +61,7 @@ get_header();
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
 					<p>Random info about red cross</p>
-					<a href="redcross.php" class="button">Learn More</a>
+					<a href="redcross" class="button">Learn More</a>
 					</div>
 				</li>
 
@@ -72,7 +72,7 @@ get_header();
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
 					<p>Random info about vipr</p>
-					<a href="vipr.php" class="button">Learn More</a>
+					<a href="vipr" class="button">Learn More</a>
 					</div>
 				</li>
 			</ul>
