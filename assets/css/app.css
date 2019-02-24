@@ -118,6 +118,8 @@ h1 {
     text-align: center;
 }
 
+
+
 #viprLogo {
     width: 200px;
     margin-left: 600px;
@@ -137,6 +139,33 @@ h1 {
     width: 200px;
     margin-left: 580px;
 }
+
+/* PROGRAMS LANDING PAGE */
+
+.programsTitle, .programInfo {
+    text-align: center;
+}
+
+.accordianStyle {
+  
+
+}
+
+.plAccordianTitle {
+    text-align: center;
+    font-size: 22pt;
+    color: white;
+ 
+   
+}
+
+
+.plAccordian {
+    text-align: center;
+    background-color: #0a415e;
+   
+}
+
 
 /* FOOTER */
 .footer1 {
