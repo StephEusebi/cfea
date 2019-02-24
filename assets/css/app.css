@@ -12,6 +12,11 @@ h1 {
     font-family: 'Staatliches', cursive;
 }
 
+/* TEMPORARILY HIDE MENU CONTENT */
+.site-description, .menu-toggle, #primary-menu, .site-title {
+    display: none;
+}
+
 /* COLOR CLASSES */
 .blue {
     color: #0a415e;
@@ -91,6 +96,7 @@ h1 {
 }
 
 /* PROGRAMS PAGE */
+
 .progDesc {
     text-align: center;
 }
