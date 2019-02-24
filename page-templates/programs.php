@@ -23,6 +23,56 @@ get_header();
 			
 			<h1>PROGRAMS - landing page</h1>
 
+
+			<ul class="accordion" data-accordion>
+				<li class="accordion-item " data-accordion-item>
+					<!-- Accordion tab title -->
+					<a href="#" class="accordion-title">COREFX</a>
+
+					<!-- Accordion tab content -->
+					<div class="accordion-content" data-tab-content>
+					<p>Random info about corefx</p>
+					<a href="corefx" class="button">Learn More</a>
+					</div>
+				</li>
+  <!-- ... -->
+				<li class="accordion-item " data-accordion-item>
+					<!-- Accordion tab title -->
+					<a href="#" class="accordion-title">TRIGGERPOINT</a>
+
+					<!-- Accordion tab content -->
+					<div class="accordion-content" data-tab-content>
+					<p>Random info about triggerpoint</p>
+					<a href="/triggerpoint" class="button">Learn More</a>
+					</div>
+				</li>
+
+				<li class="accordion-item " data-accordion-item>
+					<!-- Accordion tab title -->
+					<a href="#" class="accordion-title">RED CROSS</a>
+
+					<!-- Accordion tab content -->
+					<div class="accordion-content" data-tab-content>
+					<p>Random info about red cross</p>
+					<a href="redcross.php" class="button">Learn More</a>
+					</div>
+				</li>
+
+				<li class="accordion-item " data-accordion-item>
+					<!-- Accordion tab title -->
+					<a href="#" class="accordion-title">VIPR</a>
+
+					<!-- Accordion tab content -->
+					<div class="accordion-content" data-tab-content>
+					<p>Random info about vipr</p>
+					<a href="vipr.php" class="button">Learn More</a>
+					</div>
+				</li>
+			</ul>
+
+
+
+
 			<footer class="footer1"></footer>
 			
 		</main><!-- #main -->
