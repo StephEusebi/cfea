@@ -16,18 +16,21 @@
  */
 
 get_header();
+
 ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			
-			<h1>PROGRAMS - landing page</h1>
+			<h1 class="programsTitle">CURRENT PROGRAMS</h1>
+
+			<p class="programInfo">At CFEA we have a number of different programs to help you reach all your fitness goals!</p>
 
 
-			<ul class="accordion" data-accordion>
-				<li class="accordion-item " data-accordion-item>
+			<ul class="accordion plAccordian" data-accordion>
+				<li class="accordion-item accordianStyle" data-accordion-item>
 					<!-- Accordion tab title -->
-					<a href="#" class="accordion-title">COREFX</a>
+					<a href="#" class="accordion-title plAccordianTitle">COREFX</a>
 
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
@@ -36,20 +39,20 @@ get_header();
 					</div>
 				</li>
   <!-- ... -->
-				<li class="accordion-item " data-accordion-item>
+				<li class="accordion-item accordianStyle" data-accordion-item>
 					<!-- Accordion tab title -->
-					<a href="#" class="accordion-title">TRIGGERPOINT</a>
+					<a href="#" class="accordion-title plAccordianTitle">TRIGGERPOINT</a>
 
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
 					<p>Random info about triggerpoint</p>
-					<a href="/triggerpoint" class="button">Learn More</a>
+					<a href="triggerpoint" class="button">Learn More</a>
 					</div>
 				</li>
 
-				<li class="accordion-item " data-accordion-item>
+				<li class="accordion-item accordianStyle" data-accordion-item>
 					<!-- Accordion tab title -->
-					<a href="#" class="accordion-title">RED CROSS</a>
+					<a href="#" class="accordion-title plAccordianTitle">RED CROSS</a>
 
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
@@ -58,9 +61,9 @@ get_header();
 					</div>
 				</li>
 
-				<li class="accordion-item " data-accordion-item>
+				<li class="accordion-item accordianStyle" data-accordion-item>
 					<!-- Accordion tab title -->
-					<a href="#" class="accordion-title">VIPR</a>
+					<a href="#" class="accordion-title plAccordianTitle">VIPR</a>
 
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
