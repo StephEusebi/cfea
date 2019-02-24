@@ -28,8 +28,8 @@ get_header();
 			
 			<h1 class="programsTitle">CURRENT PROGRAMS</h1>
 
-			<p class="programInfo">At CFEA we have a number of different programs to help you reach all your fitness goals!</p>
-
+			<p class="programInfo">At CFEA we have a number of different programs to help you reach all your 
+			fitness goals!</p>
 
 			<ul class="accordion plAccordian" data-accordion>
 				<li class="accordion-item accordianStyle" data-accordion-item>
@@ -38,7 +38,8 @@ get_header();
 
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
-					<p>Random info about corefx</p>
+					<p>COREFX has created new and technologically-advanced training methods so as to connect the disparity 
+			between persistent physical activity and authentic physical improvement.</p>
 					<a href="corefx" class="button">Learn More</a>
 					</div>
 				</li>
@@ -49,18 +50,21 @@ get_header();
 
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
-					<p>Random info about triggerpoint</p>
+					<p>TriggerPoint Performance is a patented brand that improves life by focusing on 
+			energizing people with the radical organization in Myofascial Compression techniques 
+			as well as branded goods that conserve, control increase the physical movement of human 
+			life-forms.</p>
 					<a href="triggerpoint" class="button">Learn More</a>
 					</div>
 				</li>
 
 				<li class="accordion-item accordianStyle" data-accordion-item>
 					<!-- Accordion tab title -->
-					<a href="#" class="accordion-title plAccordianTitle">RED CROSS</a>
+					<a href="#" class="accordion-title plAccordianTitle">CANADIAN RED CROSS</a>
 
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
-					<p>Random info about red cross</p>
+					<p>CPR/AED</p>
 					<a href="redcross.php" class="button">Learn More</a>
 					</div>
 				</li>
@@ -71,7 +75,9 @@ get_header();
 
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
-					<p>Random info about vipr</p>
+					<p>The disparity between movement and power exercises is linked by ViPR. 
+			It merges complete body movement with weight, thereby improving the vivacity, implementation along with 
+			overhauling the aspirations of customers and sportspeople.</p>
 					<a href="vipr.php" class="button">Learn More</a>
 					</div>
 				</li>
