@@ -13,8 +13,16 @@ h1 {
 }
 
 /* TEMPORARILY HIDE MENU CONTENT */
-.site-description, .menu-toggle, #primary-menu, .site-title {
+/* #primary-menu */
+.site-description, .menu-toggle, .site-title {
     display: none;
+}
+
+/* LOGO */
+.logo1 {
+    width: 85px;
+    margin: 7px;
+    overflow: auto;
 }
 
 /* COLOR CLASSES */
@@ -132,6 +140,13 @@ h1 {
 
 /* FOOTER */
 .footer1 {
+    height: 100px;
+    width: 100%;
+    background-color: #0a415e;
+}
+
+/* HEADER */
+.header1 {
     height: 100px;
     width: 100%;
     background-color: #0a415e;
