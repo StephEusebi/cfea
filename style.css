@@ -11,3 +11,13 @@ Text Domain: cfea-theme
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
 
+
+.menu {
+    float: right;
+    margin-right: 10px;
+
+}
+
+#primary-menu {
+    padding-right: 40px; 
+}
