@@ -28,7 +28,7 @@ get_header();
 			
 			<h1 class="programsTitle">CURRENT PROGRAMS</h1>
 
-			<p class="programInfo">At CFEA we have a number of different programs to help you reach all your 
+			<p class="programInfo">At CFEA we have a number of different programs to help you reach all of your 
 			fitness goals!</p>
 
 			<ul class="accordion plAccordian" data-accordion>
