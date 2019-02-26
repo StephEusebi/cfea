@@ -11,24 +11,39 @@
 
 ?>
 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cfea-theme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'cfea-theme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'cfea-theme' ), 'cfea-theme', '<a href="http://purenorthdigital.com/">cfea theme</a>' );
-				?>
-		</div><!-- .site-info -->
+	
+		<div class="grid-x">
+
+			<div class="cell large-4 socialMedia">
+			<i class="fab fa-facebook-square fbIcon"></i>
+			<i class="fab fa-twitter twitterIcon"></i>
+			<i class="fab fa-instagram instagramIcon"></i>
+			</div>
+
+			<div class="cell large-4 logo">
+
+				<img src="/wp-content/themes/cfea/assets/img/cfea_logo.png" alt="CFEA Logo" />
+
+				<p>Canadian Fitness Education Alliance All Rights Reserved</p>
+
+			</div>
+
+			<div class="cell large-4 contactInfo">
+				<h2>Contact</h2>
+				<p>1-800-993-1521</p>
+				<p>liveeducation@cfea.ca</p>
+			</div>
+
+		</div>
+
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+
+	</div><!-- #page -->
 
 <?php wp_footer(); ?>
 
