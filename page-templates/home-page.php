@@ -110,7 +110,7 @@ get_header();
 					<h1 class="text-center blue top-space">Become certified in some of the most popular programs to date!</h1>
 
 					<!-- button with button class because it links to internal pages -->
-					<a class="button float-center top-space" href="#"><h4>Get Cerfied Today!</h4></a>
+					<a class="button float-center top-space" href="#"><h4>Get Certified Today!</h4></a>
 
 				</div>
 
