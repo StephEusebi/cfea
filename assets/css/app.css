@@ -98,5 +98,15 @@ h1 {
     background-repeat: no-repeat;
 }
 
+/* PROGRAMS PAGE */
+.progDesc {
+    text-align: center;
+}
 
+.progTable {
+    text-align: center;
+}
 
+.progTable th {
+    font-weight: bold;
+}
