@@ -21,9 +21,13 @@ h1 {
     color: #1a8263;
 }
 
+.red {
+    color: #901f21;
+}
+
 /* SPACING CLASSES */
 .top-space {
-    margin-top: 5vw;
+    margin-top: 3vw;
 }
 
 .bottom-space {
@@ -32,7 +36,7 @@ h1 {
 
 /* BUTTON STYLE */
 .button {
-    background-color:#1a8263;
+    background-color:#901f21;
     color: #fff;
     border-radius: 0.3rem;
     width: 20rem;
@@ -43,7 +47,7 @@ h1 {
 }
 
 .button:hover {
-    background-color: #2f9677;
+    background-color: #aa2527;
 }
 
 /* LANDING PAGE */
