@@ -31,8 +31,9 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .logoImg {
         width: 200px;
         height: auto;
-        margin-left: 50%;
+        margin-left: 40%;
         margin-top: 30px;
+        text-align: center;
     }
 
     .smallNav {
@@ -46,9 +47,20 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
 
-.logoImg {
-    width: 200px;
-}
+    .logoImg {
+        width: 200px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .logoDiv{
+        text-align: center !important;
+    }
+
+    .center {
+        text-align: center !important;
+        margin: 0 auto;
+    }
 
 
 }

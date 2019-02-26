@@ -31,13 +31,13 @@
 
 
 	<div class="grid-x grid-margin-x">
-          <div class="cell small-12 med- large-6">
+          <div class="cell small-12 medium-12 large-6 logoDiv">
 		<!-- Logo Image -->
-		<div class="logoImg"><img src="/wp-content/themes/cfea/assets/img/logo.png" alt="logo" /></div>
+		<img class="logoImg" src="/wp-content/themes/cfea/assets/img/logo.png" alt="logo" />
 
 		  </div>
 		  <!--Menu (thats opens to accordion)-->
-          <div class="cell small-12 med-6 large-6">
+          <div class="cell small-12 medium-12 large-6 NavText">
 		
 			<div class="title-bar Nav" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
   			<button class="menu-icon" type="button" data-toggle></button>
@@ -46,8 +46,8 @@
 
 			<!--links to primary menu-->
 			<div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top hinge-out-from-top">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
+  <div class="center">
+    <ul class="dropdown" data-dropdown-menu>
 	<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
