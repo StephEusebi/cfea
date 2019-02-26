@@ -29,7 +29,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
     
     .logoImg {
-        width: 200px;
+        width: 120px;
         height: auto;
         margin-left: 40%;
         margin-top: 30px;
@@ -48,9 +48,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
 
     .logoImg {
-        width: 200px;
+        width: 120px;
         height: auto;
         margin-top: 30px;
+
     }
 
     .logoDiv{
@@ -71,9 +72,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
     
     .logoImg {
-        width: 200px;
+        width: 140px;
         height: auto;
         margin-left: 20%;
+        padding: 10px;
+
     }
 
    .menu-item {
@@ -86,7 +89,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
 
     .title-bar {
-        background: rgb(134, 133, 133) !important;
+        background: #868686 !important;
     }
 
 
