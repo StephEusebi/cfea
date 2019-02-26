@@ -18,43 +18,67 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
 
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cfea-theme' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$cfea_description = get_bloginfo( 'description', 'display' );
-			if ( $cfea_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $cfea_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cfea-theme' ); ?></button>
-			<?php
+
+	<div class="grid-x grid-margin-x">
+          <div class="cell small-12 med- large-6">
+		<!-- Logo Image -->
+		<div class="logoImg"><img src="/wp-content/themes/cfea/assets/img/logo.png" alt="logo" /></div>
+
+		  </div>
+		  <!--Menu (thats opens to accordion)-->
+          <div class="cell small-12 med-6 large-6">
+		
+			<div class="title-bar Nav" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
+  			<button class="menu-icon" type="button" data-toggle></button>
+ 			 <div class="title-bar-title"></div>
+			</div>
+
+			<!--links to primary menu-->
+			<div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top hinge-out-from-top">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+	<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
-		</nav><!-- #site-navigation -->
+    </ul>
+  </div>
+</div>
+
+		  </div>
+        </div>
+
+
+
+		<div class="site-branding">
+			<?php
+			the_custom_logo();
+			if ( is_front_page() && is_home() ) :
+				?>
+				<?php
+			else :
+				?>
+				<?php
+			endif;
+			$cfea_description = get_bloginfo( 'description', 'display' );
+			if ( $cfea_description || is_customize_preview() ) :
+				?>
+			<?php endif; ?>
+		</div>
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

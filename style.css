@@ -11,3 +11,74 @@ Text Domain: cfea-theme
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
 
+#example-animated-menu, .menu-main-container, #primary-menu {
+    background-color: #fff !important;
+}
+
+.top-bar ul {
+    background-color: #fff !important;
+}
+
+/*LARGE*/
+@media screen and (min-width: 64em){
+
+
+    
+    #primary-menu {
+        margin-top: 60px;
+    }
+    
+    .logoImg {
+        width: 200px;
+        height: auto;
+        margin-left: 50%;
+        margin-top: 30px;
+    }
+
+    .smallNav {
+        display: none;
+    }
+    
+    
+    
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+.logoImg {
+    width: 200px;
+}
+
+
+}
+
+
+/*SMALL*/
+@media screen and (max-width: 39.9375em) {
+
+    
+    .logoImg {
+        width: 200px;
+        height: auto;
+        margin-left: 20%;
+    }
+
+   .menu-item {
+        font-size: 10pt;
+        word-spacing: 4px;
+    }
+
+    li ~ a{
+        padding: 0;
+    }
+
+    .title-bar {
+        background: rgb(134, 133, 133) !important;
+    }
+
+
+
+ }
+
+
