@@ -39,6 +39,12 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .smallNav {
         display: none;
     }
+
+    .entry-title {
+        margin-top: 70px;
+        text-align: center;
+
+    }
     
     
     
@@ -80,7 +86,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
 
    .menu-item {
-        font-size: 10pt;
+        font-size: 12pt;
         word-spacing: 4px;
     }
 
