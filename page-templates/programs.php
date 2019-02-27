@@ -82,11 +82,6 @@ get_header();
 					</div>
 				</li>
 			</ul>
-
-
-
-
-			<footer class="footer1"></footer>
 			
 		</main><!-- #main -->
 	</div><!-- #primary -->
