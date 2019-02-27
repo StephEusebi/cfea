@@ -22,10 +22,6 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<header class="header1">
-			<img src="/wp-content/themes/cfea/assets/img/logo.png" alt="cfeaLogo" class="cell large-12 logo1" />
-		</header>
-
 			<img src="/wp-content/themes/cfea/assets/img/trigPoint.jpg" alt="triggerPoint logo" class="cell large-12" id="trigLogo" />
 
 			<!-- <h2 class="cell large-12 progHead">TriggerPoint</h2> -->
@@ -66,8 +62,6 @@ get_header();
 					<td>$459.00 plus tax</td>
 				</tr>
 			</table>
-
-		<footer class="footer1"></footer>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
