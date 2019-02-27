@@ -21,18 +21,35 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
 			<!-- main -->
-			<div class="grid-x">
+			<div class="grid-x">				
 
 				<!-- TOP container holding h1 and buttpn -->
 				<div class="row large-6 large-offset-3">
 
-					<!-- title -->
-					<h1 class="text-center blue top-space">A leading provider of fitness certification and education in Canada</h1>
+				<?php 
+    
+					if( have_rows('buttons') ):
+					
+						while( have_rows('buttons') ) : the_row();
+							
+							$button = get_sub_field('button_1');
 
-					<!-- button with button class because it links to internal pages -->
-					<a class="button float-center top-space" href="#"><h4>Get Certified Today!</h4></a>
+							$header = $button['heading'];
+							$buttontext = $button['buttontext'];
+							?>
+								<!-- title -->
+								<h1 class="text-center blue top-space"><?php echo$header; ?>-test</h1>
+								<!-- button with button class because it links to internal pages -->
+								<a class="button float-center top-space"><h4><?php echo$buttontext; ?></h4></a>
+								
+							<?php
+							// var_dump($button);
+						endwhile;
+					
+					endif;
+					
+				?>
 
 				</div>
 			
@@ -44,8 +61,6 @@ get_header();
 					<div class="cell firstaid"><img src="/wp-content/themes/cfea/assets/img/firstaid-logo.png" alt="canadian red cross logo" /></div>
 					<div class="cell vipr"><img src="/wp-content/themes/cfea/assets/img/vipr-logo.png" alt="vipr logo" /></div>
 				</div>
-
-
 
 				<!-- container for curtis and mini bio -->	
 				<div class="grid-container grid-container-padded">	
@@ -106,15 +121,31 @@ get_header();
 				<!-- BOTTOM container holding h1 and button -->
 				<div class="row large-6 large-offset-3">
 
-					<!-- title -->
-					<h1 class="text-center blue top-space">Become certified in some of the most popular programs to date!</h1>
+					<?php 
+						
+						if( have_rows('buttons') ):
+						
+							while( have_rows('buttons') ) : the_row();
+								
+								$button = get_sub_field('button_2');
 
-					<!-- button with button class because it links to internal pages -->
-					<a class="button float-center top-space" href="#"><h4>Get Certified Today!</h4></a>
+								$header = $button['heading'];
+								$buttontext = $button['buttontext'];
+								?>
+									<!-- title -->
+									<h1 class="text-center blue top-space"><?php echo$header; ?></h1>
+									<!-- button with button class because it links to internal pages -->
+									<a class="button float-center top-space"><h4><?php echo$buttontext; ?></h4></a>
+									
+								<?php
+								// var_dump($button);
+							endwhile;
+						
+						endif;
+						
+					?>
 
 				</div>
-
-
 			
 		</main><!-- #main -->
 

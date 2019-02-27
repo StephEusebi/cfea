@@ -14,6 +14,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 #example-animated-menu, .menu-main-container, #primary-menu {
     background-color: #fff !important;
 }
+footer{
+    width:100%;
+    height:14em;
+    border: solid 1px #686868;
+}
 
 .top-bar ul {
     background-color: #fff !important;
@@ -97,3 +102,64 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
  }
 
 
+
+.logo{
+    text-align: center;
+    margin:0 auto;
+    padding-top:1em;
+ 
+}
+
+.logo img{
+    width:50%;
+    height:auto;
+   
+}
+
+.logo p{
+    font-family: 'Lato', sans-serif;
+    margin-top:.5em;
+    font-size:1em;
+}
+
+.contactInfo h2{
+    font-family: 'Lato', sans-serif;
+    font-size:1.5em;
+    text-align: right;
+    margin:0;
+    padding:0;
+}
+
+.contactInfo p{
+    font-family: 'Lato', sans-serif;
+    font-size:1em;
+    text-align: right;
+    margin:0;
+    padding:0;
+}
+
+.contactInfo{
+    padding-top:8.5em;
+    padding-right:5em;
+
+}
+
+.socialMedia{
+    font-size:2.25em; 
+    margin-top:4.75em;
+    text-align: center;
+  
+
+}
+
+
+.fbIcon{
+    color:#3b5998;
+    margin-right:.25em;
+    
+}
+
+.twitterIcon{
+    color:#38A1F3;
+    margin-right:.25em;
+}
