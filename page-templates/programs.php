@@ -19,42 +19,8 @@ get_header();
 
 ?>
 
-<?php 
 
-if (function_exists('get_field')) {
-	$programs = get_field('programs');
-
-	foreach($programs as $program){
-
-		$name = $program['name'];
-		$description = $program['description'];
-		$button = $program['button'];
-?>
-
-<ul class="accordion plAccordian" data-accordion>
-				<li class="accordion-item accordianStyle" data-accordion-item>
-					<!-- Accordion tab title -->
-					<a href="#" class="accordion-title plAccordianTitle"><?php echo$name; ?></a>
-
-					<!-- Accordion tab content -->
-					<div class="accordion-content" data-tab-content>
-					<p><?php echo$description; ?></p>
-					<a  class="button">Learn More<?php echo$button; ?></a>
-					</div>
-				</li>
-		
-
-			</ul>
-
-
-		<?php
-
-	}
-}
-
-?>
-
-	<div id="primary" class="content-area">
+<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			
 			<h1 class="programsTitle">CURRENT PROGRAMS</h1>
@@ -62,21 +28,7 @@ if (function_exists('get_field')) {
 			<p class="programInfo">At CFEA we have a number of different programs to help you reach all of your 
 			fitness goals!</p>
 
-<!-- 
-			<ul class="accordion plAccordian" data-accordion>
-				<li class="accordion-item accordianStyle" data-accordion-item>
-				
-					<a href="#" class="accordion-title plAccordianTitle"><?php echo$name; ?></a>
 
-					
-					<div class="accordion-content" data-tab-content>
-					<p><?php echo$description; ?></p>
-					<a  class="button">Learn More<?php echo$button; ?></a>
-					</div>
-				</li>
-		
-
-			</ul> -->
 
 
 
@@ -134,5 +86,42 @@ if (function_exists('get_field')) {
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+
+<?php 
+
+if (function_exists('get_field')) {
+	$programs = get_field('programs');
+
+	foreach($programs as $program){
+
+		$name = $program['name'];
+		$description = $program['description'];
+		$button = $program['button'];
+?>
+
+			<ul class="accordion plAccordian" data-accordion>
+				<li class="accordion-item accordianStyle" data-accordion-item>
+					<!-- Accordion tab title -->
+					<a href="#" class="accordion-title plAccordianTitle"><?php echo$name; ?></a>
+
+					<!-- Accordion tab content -->
+					<div class="accordion-content" data-tab-content>
+					<p><?php echo$description; ?></p>
+					<a  class="button">Learn More<?php echo$button; ?></a>
+					</div>
+				</li>
+		
+
+			</ul>
+
+
+		<?php
+
+	}
+}
+
+?>
+
+	
 <?php
 get_footer();
