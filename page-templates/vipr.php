@@ -22,10 +22,6 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<!-- <header class="header1">
-			<img src="/wp-content/themes/cfea/assets/img/logo.png" alt="cfeaLogo" class="cell large-12 logo1" />
-		</header> -->
-
 			<img src="/wp-content/themes/cfea/assets/img/vipr.jpg" alt="vipr logo" class="cell large-12" id="viprLogo" />
 
 			<!-- <h2 class="cell large-12 progHead">ViPR</h2> -->
@@ -56,8 +52,6 @@ get_header();
 					<td>$225.00 plus tax</td>
 				</tr>
 			</table>
-
-			<footer class="footer1"></footer>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
