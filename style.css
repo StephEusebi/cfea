@@ -19,11 +19,18 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     background-color: #fff !important;
 }
 
+.pink {
+    background-color:#0E425D;
+}
+
+.teamMemberImg {
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(50%);
+}
+
 /*LARGE*/
 @media screen and (min-width: 64em){
 
-
-    
     #primary-menu {
         margin-top: 60px;
     }
@@ -45,8 +52,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         text-align: center;
 
     }
-    
-    
+    /* about us page */
+
+    .top-row {
+        margin-top: 30px;
+    }
     
 }
 
