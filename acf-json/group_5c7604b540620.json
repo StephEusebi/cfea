@@ -160,7 +160,11 @@
             {
                 "param": "page",
                 "operator": "==",
+<<<<<<< HEAD
                 "value": "40"
+=======
+                "value": "60"
+>>>>>>> develop
             }
         ]
     ],
@@ -172,5 +176,9 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
+<<<<<<< HEAD
     "modified": 1551282327
+=======
+    "modified": 1551282458
+>>>>>>> develop
 }

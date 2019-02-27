@@ -83,7 +83,11 @@
                                 "class": "",
                                 "id": ""
                             },
+<<<<<<< HEAD
                             "return_format": ""
+=======
+                            "return_format": "url"
+>>>>>>> develop
                         }
                     ]
                 },
@@ -153,7 +157,11 @@
                                 "class": "",
                                 "id": ""
                             },
+<<<<<<< HEAD
                             "return_format": ""
+=======
+                            "return_format": "url"
+>>>>>>> develop
                         }
                     ]
                 },
@@ -223,7 +231,11 @@
                                 "class": "",
                                 "id": ""
                             },
+<<<<<<< HEAD
                             "return_format": ""
+=======
+                            "return_format": "url"
+>>>>>>> develop
                         }
                     ]
                 },
@@ -293,7 +305,11 @@
                                 "class": "",
                                 "id": ""
                             },
+<<<<<<< HEAD
                             "return_format": "array"
+=======
+                            "return_format": "url"
+>>>>>>> develop
                         }
                     ]
                 }
@@ -317,5 +333,9 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
+<<<<<<< HEAD
     "modified": 1551283020
+=======
+    "modified": 1551281642
+>>>>>>> develop
 }
