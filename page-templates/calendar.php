@@ -2,7 +2,7 @@
 /**
  * The template for displaying all pages
  * 
- * Template Name: Basic Page
+ * Template Name: Calendar Page
  * Template Post Type: page
  *
  * This is the template that displays all pages by default.
