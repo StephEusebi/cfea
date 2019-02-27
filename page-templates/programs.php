@@ -61,7 +61,7 @@ get_header();
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
 					<p>CPR/AED</p>
-					<a href="redcross.php" class="button">Learn More</a>
+					<a href="redcross" class="button">Learn More</a>
 					</div>
 				</li>
 
@@ -74,7 +74,7 @@ get_header();
 					<p>The disparity between movement and power exercises is linked by ViPR. 
 			It merges complete body movement with weight, thereby improving the vivacity, implementation along with 
 			overhauling the aspirations of customers and sportspeople.</p>
-					<a href="vipr.php" class="button">Learn More</a>
+					<a href="vipr" class="button">Learn More</a>
 					</div>
 				</li>
 			</ul>
