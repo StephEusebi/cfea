@@ -21,10 +21,6 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
-		<!-- <header class="header1">
-			<img src="/wp-content/themes/cfea/assets/img/logo.png" alt="cfeaLogo" class="cell large-12 logo1" />
-		</header> -->
 			
 			<h1 class="programsTitle">CURRENT PROGRAMS</h1>
 
@@ -82,11 +78,6 @@ get_header();
 					</div>
 				</li>
 			</ul>
-
-
-
-
-			<footer class="footer1"></footer>
 			
 		</main><!-- #main -->
 	</div><!-- #primary -->
