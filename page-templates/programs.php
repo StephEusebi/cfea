@@ -19,6 +19,7 @@ get_header();
 
 ?>
 
+
 <?php 
 
 if (function_exists('get_field')) {
@@ -37,6 +38,7 @@ if (function_exists('get_field')) {
 
 ?>
 
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			
@@ -44,6 +46,7 @@ if (function_exists('get_field')) {
 
 			<p class="programInfo">At CFEA we have a number of different programs to help you reach all of your 
 			fitness goals!</p>
+
 
 
 			<ul class="accordion plAccordian" data-accordion>
@@ -63,56 +66,7 @@ if (function_exists('get_field')) {
 
 
 
-			<!-- <ul class="accordion plAccordian" data-accordion>
-				<li class="accordion-item accordianStyle" data-accordion-item>
-				
-					<a href="#" class="accordion-title plAccordianTitle">COREFX</a>
-
-					<div class="accordion-content" data-tab-content>
-					<p>COREFX has created new and technologically-advanced training methods so as to connect the disparity 
-			between persistent physical activity and authentic physical improvement.</p>
-					<a href="corefx" class="button">Learn More</a>
-					</div>
-				</li>
-
-				<li class="accordion-item accordianStyle" data-accordion-item>
-				
-					<a href="#" class="accordion-title plAccordianTitle">TRIGGERPOINT</a>
-
-				
-					<div class="accordion-content" data-tab-content>
-					<p>TriggerPoint Performance is a patented brand that improves life by focusing on 
-			energizing people with the radical organization in Myofascial Compression techniques 
-			as well as branded goods that conserve, control increase the physical movement of human 
-			life-forms.</p>
-					<a href="triggerpoint" class="button">Learn More</a>
-					</div>
-				</li>
-
-				<li class="accordion-item accordianStyle" data-accordion-item>
-				
-					<a href="#" class="accordion-title plAccordianTitle">CANADIAN RED CROSS</a>
-
-				
-					<div class="accordion-content" data-tab-content>
-					<p>CPR/AED</p>
-					<a href="redcross" class="button">Learn More</a>
-					</div>
-				</li>
-
-				<li class="accordion-item accordianStyle" data-accordion-item>
-				
-					<a href="#" class="accordion-title plAccordianTitle">VIPR</a>
-
-				
-					<div class="accordion-content" data-tab-content>
-					<p>The disparity between movement and power exercises is linked by ViPR. 
-			It merges complete body movement with weight, thereby improving the vivacity, implementation along with 
-			overhauling the aspirations of customers and sportspeople.</p>
-					<a href="vipr" class="button">Learn More</a>
-					</div>
-				</li>
-			</ul> -->
+			
 			
 		</main><!-- #main -->
 	</div><!-- #primary -->
