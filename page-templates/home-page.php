@@ -27,28 +27,29 @@ get_header();
 				<!-- TOP container holding h1 and buttpn -->
 				<div class="row large-6 large-offset-3">
 
-					<?php 
-
-						if(function_exists('get_field')) {
-							$buttons = get_field('buttons');
+				<?php 
+    
+					if( have_rows('buttons') ):
+					
+						while( have_rows('buttons') ) : the_row();
 							
-							foreach($buttons as $button){
-								$header = $button['heading'];
-								$buttontext = $button['buttontext'];
+							$button = get_sub_field('button_1');
+
+							$header = $button['heading'];
+							$buttontext = $button['buttontext'];
+							?>
+								<!-- title -->
+								<h1 class="text-center blue top-space"><?php echo$header; ?></h1>
+								<!-- button with button class because it links to internal pages -->
+								<a class="button float-center top-space"><h4><?php echo$buttontext; ?></h4></a>
 								
-								?>
-									<!-- title -->
-									<h1 class="text-center blue top-space"><?php echo$header; ?></h1>
-									<!-- button with button class because it links to internal pages -->
-									<a class="button float-center top-space"><h4><?php echo$buttontext; ?></h4></a>
-									
-								<?php
-							}
-
-						}
-					?>
-
-
+							<?php
+							// var_dump($button);
+						endwhile;
+					
+					endif;
+					
+				?>
 
 				</div>
 			
@@ -120,29 +121,28 @@ get_header();
 				<!-- BOTTOM container holding h1 and button -->
 				<div class="row large-6 large-offset-3">
 
-					<!-- title -->
-					<!-- <h1 class="text-center blue top-space">Become certified in some of the most popular programs to date!</h1> -->
-
-					<!-- button with button class because it links to internal pages -->
-					<!-- <a class="button float-center top-space" href="#"><h4>Get Certified Today!</h4></a> -->
-
-
 					<?php 
-
-					if(function_exists('get_field')) {
-						$buttons = get_field('button_2');
 						
-							$header = $button['heading'];
-							$buttontext = $button['buttontext'];
-							?>
-								<!-- title -->
-								<h1 class="text-center blue top-space"><?php echo$header; ?></h1>
-								<!-- button with button class because it links to internal pages -->
-								<a class="button float-center top-space"><h4><?php echo$buttontext; ?></h4></a>
+						if( have_rows('buttons') ):
+						
+							while( have_rows('buttons') ) : the_row();
 								
-							<?php
+								$button = get_sub_field('button_2');
 
-					}
+								$header = $button['heading'];
+								$buttontext = $button['buttontext'];
+								?>
+									<!-- title -->
+									<h1 class="text-center blue top-space"><?php echo$header; ?></h1>
+									<!-- button with button class because it links to internal pages -->
+									<a class="button float-center top-space"><h4><?php echo$buttontext; ?></h4></a>
+									
+								<?php
+								// var_dump($button);
+							endwhile;
+						
+						endif;
+						
 					?>
 
 				</div>
