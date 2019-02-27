@@ -22,9 +22,9 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<header class="header1">
+		<!-- <header class="header1">
 			<img src="/wp-content/themes/cfea/assets/img/logo.png" alt="cfeaLogo" class="cell large-12 logo1" />
-		</header>
+		</header> -->
 
 			<img src="/wp-content/themes/cfea/assets/img/vipr.jpg" alt="vipr logo" class="cell large-12" id="viprLogo" />
 
