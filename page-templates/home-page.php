@@ -21,10 +21,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
 			<!-- main -->
-			<div class="grid-x">
-
 				<!-- TOP container holding h1 and buttpn -->
 				<div class="row large-6 large-offset-3">
 
@@ -33,6 +30,12 @@ get_header();
 
 					<!-- button with button class because it links to internal pages -->
 					<a class="button float-center top-space" href="#"><h4>Get Certified Today!</h4></a>
+
+					<div class="grid-x">
+
+
+						<p><?php get_field('heading'); ?></p>
+				
 
 				</div>
 			
