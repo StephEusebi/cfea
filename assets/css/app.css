@@ -12,6 +12,19 @@ h1 {
     font-family: 'Staatliches', cursive;
 }
 
+/* TEMPORARILY HIDE MENU CONTENT */
+/* #primary-menu */
+.site-description, .menu-toggle, .site-title {
+    display: none;
+}
+
+/* LOGO */
+.logo1 {
+    width: 85px;
+    margin: 7px;
+    overflow: auto;
+}
+
 /* COLOR CLASSES */
 .blue {
     color: #0a415e;
@@ -91,14 +104,79 @@ h1 {
 }
 
 /* PROGRAMS PAGE */
+
 .progDesc {
     text-align: center;
 }
 
-.progTable {
+.programTables td {
     text-align: center;
 }
 
-.progTable th {
-    font-weight: bold;
+.progHead {
+    color: #0a415e;
+    text-align: center;
+}
+
+
+
+#viprLogo {
+    width: 200px;
+    margin-left: 600px;
+}
+
+#trigLogo {
+    width: 200px;
+    margin-left: 600px;
+}
+
+#corefxLogo {
+    width: 200px;
+    margin-left: 600px;
+}
+
+#redCrossLogo {
+    width: 200px;
+    margin-left: 580px;
+}
+
+/* PROGRAMS LANDING PAGE */
+
+.programsTitle, .programInfo {
+    text-align: center;
+}
+
+.accordianStyle {
+  
+
+}
+
+.plAccordianTitle {
+    text-align: center;
+    font-size: 22pt;
+    color: white;
+ 
+   
+}
+
+
+.plAccordian {
+    text-align: center;
+    background-color: #0a415e;
+   
+}
+
+
+/* FOOTER */
+.footer1 {
+    height: 100px;
+    width: 100%;
+    background-color: #0a415e;
+}
+
+/* HEADER */
+.header1 {
+    height: 100px;
+    width: 100%;
+    background-color: #0a415e;
 }
