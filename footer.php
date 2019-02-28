@@ -19,13 +19,13 @@
 	
 		<div class="grid-x">
 
-			<div class="cell large-4 socialMedia">
+			<div class="cell large-4 medium-4 small-4 socialMedia">
 			<i class="fab fa-facebook-square fbIcon"></i>
 			<i class="fab fa-twitter twitterIcon"></i>
 			<i class="fab fa-instagram instagramIcon"></i>
 			</div>
 
-			<div class="cell large-4 logo">
+			<div class="cell large-4 medium-4 small-4 logo">
 
 				<img src="/wp-content/themes/cfea/assets/img/cfea_logo.png" alt="CFEA Logo" />
 
@@ -33,7 +33,7 @@
 
 			</div>
 
-			<div class="cell large-4 contactInfo">
+			<div class="cell large-4 medium-4 small-4 contactInfo">
 				<h2>Contact</h2>
 				<p>1-800-993-1521</p>
 				<p>liveeducation@cfea.ca</p>

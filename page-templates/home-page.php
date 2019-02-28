@@ -39,7 +39,7 @@ get_header();
 							$buttontext = $button['buttontext'];
 							?>
 								<!-- title -->
-								<h1 class="text-center blue top-space"><?php echo$header; ?>-test</h1>
+								<h1 class="text-center blue top-space"><?php echo$header; ?></h1>
 								<!-- button with button class because it links to internal pages -->
 								<a class="button float-center top-space"><h4><?php echo$buttontext; ?></h4></a>
 								
