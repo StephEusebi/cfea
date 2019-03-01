@@ -225,8 +225,15 @@ h1 {
         height:auto;    
     }
     
-    .footerNav{
-        background-color: blue;
+    .menu{
+        padding:0;
+        margin:0;
+        
+    }
+
+    .menu ul{
+        list-style: none;
+        padding:0;
     }
 
     .contactInfo{ 
@@ -318,5 +325,5 @@ h1 {
         margin-left:9.5em;
         margin-top:1em;
     }
-
+    
 }

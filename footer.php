@@ -29,8 +29,8 @@
 			<div class="cell large-3 medium-4 small-4 footerNav">
 			<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
+				'theme_location' => 'menu-2',
+				'menu_id'        => 'seconday-menu',
 			) );
 			?>
 			</div>
