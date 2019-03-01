@@ -32,7 +32,51 @@ get_header();
 			guidance that is appropriate for place of work or broad appeal. In addition, there are cutting-edge CPR 
 			recommendations.</p>
 
-			<table class="programTables">
+			<div class="grid-x grid-margin-x">
+
+  				<div class="cell large-6 programBox">
+					<table>
+						<tr>
+							<td>CPR A with AED</td>
+							<td>$49.00 plus tax</td>
+						</tr>
+					</table>
+					<button class="programButton">SIGN UP NOW</button>
+				</div>
+
+  				<div class="cell large-6 programBox">
+				  <table>
+						<tr>
+							<td>CPR C with AED</td>
+							<td>$55.00 plus tax</td>
+						</tr>
+					</table>
+					<button class="programButton">SIGN UP NOW</button>
+				</div>
+
+  				<div class="cell large-6 programBox">
+				  <table>
+						<tr>
+							<td>Emergency First Aid and CPR with AED</td>
+							<td>$75.00 plus tax</td>
+						</tr>
+					</table>
+					<button class="programButton">SIGN UP NOW</button>
+				</div>
+
+				<div class="cell large-6 programBox">
+				  <table>
+						<tr>
+							<td>Standard First Aid and CPR with AED</td>
+							<td>$115.00 plus tax</td>
+						</tr>
+					</table>
+					<button class="programButton">SIGN UP NOW</button>
+				</div>
+
+			</div>
+
+			<!-- <table class="programTables">
 				<tr>
 					<th>Certification</th>
 					<th>Details</th>
@@ -58,7 +102,7 @@ get_header();
 					<td>Standard First Aid and CPR with AED</td>
 					<td>$115.00 plus tax</td>
 				</tr>
-			</table>
+			</table> -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -131,8 +131,6 @@ h1 {
     text-align: center;
 }
 
-
-
 #viprLogo {
     width: 200px;
     margin-left: 600px;
@@ -152,6 +150,27 @@ h1 {
     width: 200px;
     margin-left: 580px;
 }
+
+.programButton {
+    margin-left: 310px;
+    background-color: #aa2527;
+    color: #FFF;
+    padding: 10px;
+  }
+  
+  .programButton:hover {
+    background-color: #901f21;
+  }
+
+.programBox {
+  background-color: #0a415e;
+  padding: 15px;
+  margin: 10px;
+}
+
+.programBox td {
+    text-align: center;
+  }
 
 /* PROGRAMS LANDING PAGE */
 

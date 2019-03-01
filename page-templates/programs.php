@@ -93,7 +93,6 @@ if (function_exists('get_field')) {
 	$programs = get_field('programs');
 
 	foreach($programs as $program){
-
 		$name = $program['name'];
 		$description = $program['description'];
 		$button = $program['button'];
