@@ -214,6 +214,11 @@ h1 {
 /* Large and up */
 @media screen and (min-width: 64em) {
     
+    footer{
+        background-color: #D1D1D1;
+        margin:0;
+        padding:0;
+    }
     .logo{
         text-align: center;
         margin:0 auto;
@@ -228,14 +233,19 @@ h1 {
     .menu{
         padding:0;
         margin:0;
+        flex-flow: row !important;
         
     }
 
     .menu ul{
         list-style: none;
         padding:0;
+        flex-flow: row !important;
     }
 
+    .menu ul li{
+        flex-flow: row !important;
+    }
     .contactInfo{ 
         padding:0;
         margin-top:6.25em;
@@ -264,6 +274,16 @@ h1 {
         padding:0;
     }
 
+    .newsLetterForm h2{
+        margin:0;
+        padding:0;
+        font-size:1.5em;
+        text-decoration: underline #ab2527;
+        margin-left:1.25em;
+        font-family: 'Lato', sans-serif;
+        margin:.5em 0 .5em 1.25em;
+    }
+
     .emailInput{
         float:left;
        
@@ -283,6 +303,7 @@ h1 {
         font-size:1.25em;
         cursor: pointer;
         font-family: 'Lato', sans-serif;
+        margin-top:.75em;
     }
 
     .submitButton:hover{
@@ -296,23 +317,37 @@ h1 {
         font-family: 'Lato', sans-serif;
     }
 
+    .checkBox {
+        width: 1em !important;
+        height: 1em !important;
+        margin:0;
+        padding:0;
+        margin-left:2em;
+        display:inline-block;
+    }
+
+    .checkBoxLabel{
+        display: inline;
+        font-size:.75em !important;
+    }
+ 
+
     .socialMedia{
         font-size:1em; 
         margin-top:0;
         padding-left:0;
-        margin-top:2em;
-
+        margin-bottom:2em;
     }
     
     .fbIcon{
         font-size:2em; 
-        color:#3b5998;
+        color:black;
         margin-right:.25em; 
     }
     
     .twitterIcon{
         font-size:2em; 
-        color:#38A1F3;
+        color:black;
         margin-right:.25em;
     }
 

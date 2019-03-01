@@ -45,8 +45,13 @@
 
 			<!-- socialmedia and news letter form grid -->
 			<div class="cell large-4 medium-4 small-4 socialMedia">
+	
 				<!-- news letter form -->
 				<form class="newsLetterForm">
+					<!-- title of form -->
+					<div>
+					<h2>Sign up for News Letter</h2>
+					</div>
 					<!-- first and last name input for form -->
 					<div class="nameInput">
 						<p>First & Last Name:</p>
@@ -57,8 +62,12 @@
 						<p>Email:</p>
 						<input type="text" size="4" name="email" placeholder="Email">
 					</div>
+
+					<input class="checkBox" type="checkbox">
+					<p class="checkBoxLabel">By click sign up you agree to recive emails from the CFEA.</p>
+					
 					<!-- submit button -->
-					<input class="submitButton" type="submit">
+					<input class="submitButton" type="submit" value="Sign Up">
 				</form>
 
 				<!-- social media icons and links -->
