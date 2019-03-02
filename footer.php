@@ -20,14 +20,14 @@
 		<div class="grid-x">
 
 			<!-- logo grid -->
-			<div class="cell large-2 medium-4 small-4 logo">
+			<div class="cell large-2 medium-2 small-12 logo">
 				<!-- logo img -->
 				<img src="/wp-content/themes/cfea/assets/img/cfea_logo.png" alt="CFEA Logo" />
 
 			</div>
 
 			<!-- footer navagation grid -->
-			<div class="cell large-6 medium-4 small-4 footerNav">
+			<div class="cell large-6 medium-6 small-12 footerNav">
 				
 				<!-- php call for the footer nav -->
 				<?php
@@ -60,7 +60,7 @@
 			</div>
 
 			<!-- socialmedia and news letter form grid -->
-			<div class="cell large-4 medium-4 small-4 socialMedia">
+			<div class="cell large-4 medium-4 small-12 socialMedia">
 	
 				<!-- news letter form -->
 				<form class="newsLetterForm">
@@ -101,7 +101,7 @@
 					<!-- instagram icon -->
 					<a href="https://www.instagram.com/cfealiveeducation/" target="_blank"><i class="fab fa-instagram instagramIcon"></i></a>
 				</div>
-				
+
 			</div>
 
 		</div>
