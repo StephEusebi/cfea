@@ -219,6 +219,26 @@ h1 {
         margin:0;
         padding:0;
     }
+
+    .footerNav h2{
+        font-size:1.25em;
+        margin:0;
+        padding:0;
+        margin-left:0.7em;
+        font-family: 'Lato', sans-serif;
+        margin-top:.75em;
+
+    }
+
+    #program-menu{
+        margin:0;
+        padding:0;
+    }
+
+    #program-menu a{
+        margin:0;
+        padding-top:.2em;
+    }
     .logo{
         text-align: center;
         margin:0 auto;
@@ -233,7 +253,7 @@ h1 {
     .menu{
         padding:0;
         margin:0;
-        margin-top:3.2em;
+        margin-top:2em;
     }
 
     .menu ul{
@@ -248,7 +268,7 @@ h1 {
 
     .contactInfo{ 
         padding:0;
-        margin-top:2.2em;
+        margin-top:1.2em;
 
     }
     

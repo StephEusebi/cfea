@@ -29,9 +29,21 @@
 			<div class="cell large-5 medium-4 small-4 footerNav">
 			<?php
 			wp_nav_menu( array(
-				'my-custom-menu' => 'footer_nav',
-				'menu_id'        => 'seconday-menu',
+				'theme_location' => 'footer_nav',
+				'menu_id'        => 'footer-menu',
 			) );
+			?>
+
+			<h2>Programs:</h2>
+
+			<?php
+
+			wp_nav_menu( array(
+				'theme_location' => 'program_nav',
+				'menu_id'        => 'program-menu',
+			) );
+
+
 			?>
 			<div class="contactInfo">
 			<p><i class="fas fa-phone"></i> 1-800-993-1521</p>
