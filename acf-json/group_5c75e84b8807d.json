@@ -1,6 +1,6 @@
 {
     "key": "group_5c75e84b8807d",
-    "title": "Programs landing",
+    "title": "Program landing",
     "fields": [
         {
             "key": "field_5c75e8647b02d",
@@ -83,11 +83,7 @@
                                 "class": "",
                                 "id": ""
                             },
-<<<<<<< HEAD
-                            "return_format": ""
-=======
                             "return_format": "url"
->>>>>>> develop
                         }
                     ]
                 },
@@ -157,11 +153,7 @@
                                 "class": "",
                                 "id": ""
                             },
-<<<<<<< HEAD
-                            "return_format": ""
-=======
                             "return_format": "url"
->>>>>>> develop
                         }
                     ]
                 },
@@ -231,11 +223,7 @@
                                 "class": "",
                                 "id": ""
                             },
-<<<<<<< HEAD
-                            "return_format": ""
-=======
                             "return_format": "url"
->>>>>>> develop
                         }
                     ]
                 },
@@ -305,11 +293,7 @@
                                 "class": "",
                                 "id": ""
                             },
-<<<<<<< HEAD
-                            "return_format": "array"
-=======
                             "return_format": "url"
->>>>>>> develop
                         }
                     ]
                 }
@@ -333,9 +317,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-<<<<<<< HEAD
-    "modified": 1551283020
-=======
-    "modified": 1551281642
->>>>>>> develop
+    "modified": 1551545970
 }
