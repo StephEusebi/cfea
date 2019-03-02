@@ -222,7 +222,7 @@ h1 {
     .logo{
         text-align: center;
         margin:0 auto;
-        margin-bottom:1em;
+        margin-top:2.5em;
     }
     
     .logo img{
@@ -248,7 +248,7 @@ h1 {
     }
     .contactInfo{ 
         padding:0;
-        margin-top:6.25em;
+        margin-top:10.25em;
 
     }
     
@@ -299,7 +299,7 @@ h1 {
         height:2em;
         margin-left:1.6em ;
         color:white;
-        background-color: #686868;
+        background-color: #aa2527;
         font-size:1.25em;
         cursor: pointer;
         font-family: 'Lato', sans-serif;
@@ -311,7 +311,7 @@ h1 {
         height:2em;
         margin-left:1.6em ;
         color:white;
-        background-color: #ab2527;
+        background-color: #901f21;
         font-size:1.25em;
         cursor: pointer;
         font-family: 'Lato', sans-serif;
@@ -344,7 +344,19 @@ h1 {
         color:black;
         margin-right:.25em; 
     }
-    
+
+    .fbIcon:hover{
+        color:#901f21;
+    }
+
+    .twitterIcon:hover{
+        color:#901f21;
+    }
+
+    .instagramIcon:hover{
+        color:#901f21;
+    }
+
     .twitterIcon{
         font-size:2em; 
         color:black;
