@@ -29,7 +29,7 @@
 			<div class="cell large-5 medium-4 small-4 footerNav">
 			<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-2',
+				'my-custom-menu' => 'footer_nav',
 				'menu_id'        => 'seconday-menu',
 			) );
 			?>
