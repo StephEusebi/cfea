@@ -97,6 +97,9 @@ if (function_exists('get_field')) {
 		$description = $program['description'];
 		$button = $program['button'];
 ?>
+		<div class="grid-x grid-margin-x large-offset-2">
+
+		<div class="cell large-10">
 
 			<ul class="accordion plAccordian" data-accordion>
 				<li class="accordion-item accordianStyle" data-accordion-item>
@@ -112,6 +115,8 @@ if (function_exists('get_field')) {
 		
 
 			</ul>
+			</div>
+		</div>
 
 
 		<?php
