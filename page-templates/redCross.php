@@ -19,7 +19,7 @@
 get_header();
 ?>
 
-		<div class="grid-x grid-margin-x">
+<div class="grid-x grid-margin-x">
 			<div class="large-offset-2">
 			
 				<div class="cell large-8">
@@ -38,17 +38,43 @@ get_header();
 				</div>
 
 				<div class="grid-x grid-margin-x">
+					<div class="cell large-5 ">
 
-					<div class="cell large-5 programBox">
-					<table>
-						<tr>
-							<td>CPR A with AED</td>
-							<td>$49.00 plus tax</td>
-						</tr>
-					</table>
-					<button class="programButton">SIGN UP NOW</button>
-					</div>
+<?php 
 
+if (function_exists('get_field')) {
+	$programs = get_field('programs');
+
+	foreach($programs as $program){
+		$name = $program['name'];
+		$description = $program['description'];
+		$button = $program['button'];
+		$cost = $program['cost'];
+		$program_image = $program['program_image'];
+?>
+
+
+
+						<img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" />
+						
+							
+						<ul class="accordion plAccordian" data-accordion>
+							<li class="accordion-item accordianStyle" data-accordion-item>
+								<!-- Accordion tab title -->
+								<a href="#" class="accordion-title pRCAccordianTitle"><?php echo$name; ?></a>
+
+								<!-- Accordion tab content -->
+								<div class="accordion-content" data-tab-content>
+								<p><?php echo$description; ?></p>
+								<p><?php echo$cost; ?></p>
+								<button  class=" button">REGISTER NOW<?php echo$button; ?></button>
+
+								</div>
+							</li>
+						</ul>
+						
+					
+<!-- 
 					<div class="cell large-5 programBox">
 					<table>
 						<tr>
@@ -56,7 +82,7 @@ get_header();
 							<td>$55.00 plus tax</td>
 						</tr>
 					</table>
-					<button class="programButton">SIGN UP NOW</button>
+					<button class="programButton button">SIGN UP NOW</button>
 					</div>
 
 					<div class="cell large-5 programBox">
@@ -66,7 +92,7 @@ get_header();
 							<td>$75.00 plus tax</td>
 						</tr>
 					</table>
-					<button class="programButton">SIGN UP NOW</button>
+					<button class="programButton button">SIGN UP NOW</button>
 					</div>
 
 					<div class="cell large-5 programBox">
@@ -76,17 +102,27 @@ get_header();
 							<td>$115.00 plus tax</td>
 						</tr>
 					</table>
-					<button class="programButton">SIGN UP NOW</button>
+					<button class="programButton button">SIGN UP NOW</button>
 					</div>
 
-					</div>
+					</div> -->
 			
+			
+	
+
+
+
+		<?php
+
+	}
+}
+
+?>
+
+</div>
 			
 			</div>
-			
-		</div>
-
-
+</div>
 
 <?php
 // imports the footer
