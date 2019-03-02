@@ -112,8 +112,6 @@ if (function_exists('get_field')) {
 					<a  class="button">Learn More<?php echo$button; ?></a>
 					</div>
 				</li>
-		
-
 			</ul>
 			</div>
 		</div>

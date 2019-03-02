@@ -152,9 +152,9 @@ h1 {
 }
 
 .programButton {
-    margin-left: 310px;
-    background-color: #aa2527;
-    color: #FFF;
+    margin-left: 160px;
+    /* background-color: #aa2527;
+    color: #FFF; */
     padding: 10px;
   }
   
@@ -191,12 +191,24 @@ h1 {
    
 }
 
+.pRCAccordianTitle {
+    text-align: center;
+    font-size: 22pt;
+    color: white;
+    background-color: #0a415e;
+    border: 2pt solid #0a415e;
+}
+
 
 .plAccordian {
     text-align: center;
     background-color: #0a415e;
    
 }
+
+/* Rec Cross */
+
+
 
 
 /* FOOTER */
