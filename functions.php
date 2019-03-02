@@ -59,3 +59,13 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+add_action( 'init', 'my_custom_menus' );
+function my_custom_menus() {
+    register_nav_menus(
+        array(
+			'footer_nav' => __( 'Footer Nav' ),
+			'program_nav' => __( 'Program Nav' ),
+        )
+    );
+}
