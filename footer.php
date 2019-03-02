@@ -26,22 +26,21 @@
 			</div>
 
 			<!-- footer navagation grid -->
-			<div class="cell large-3 medium-4 small-4 footerNav">
+			<div class="cell large-5 medium-4 small-4 footerNav">
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-2',
 				'menu_id'        => 'seconday-menu',
 			) );
 			?>
-			</div>
-
-			<!-- contact information grid -->
-			<div class="cell large-2 medium-4 small-4 contactInfo">
-				<!-- phone number -->
-				<p><i class="fas fa-phone"></i> 1-800-993-1521</p>
+			<div class="contactInfo">
+			<p><i class="fas fa-phone"></i> 1-800-993-1521</p>
 				<!-- email -->
 				<p> <i class="fas fa-envelope"></i> liveeducation@cfea.ca</p>
 			</div>
+			</div>
+
+
 
 			<!-- socialmedia and news letter form grid -->
 			<div class="cell large-4 medium-4 small-4 socialMedia">
@@ -50,7 +49,7 @@
 				<form class="newsLetterForm">
 					<!-- title of form -->
 					<div>
-					<h2>Sign up for News Letter</h2>
+					<h2>Subscribe for a weekly Newsletter</h2>
 					</div>
 					<!-- first and last name input for form -->
 					<div class="nameInput">
@@ -64,10 +63,10 @@
 					</div>
 
 					<input class="checkBox" type="checkbox">
-					<p class="checkBoxLabel">By click sign up you agree to recive emails from the CFEA.</p>
+					<p class="checkBoxLabel">By clicking subscribe you agree to CFEA's terms and conditions.</p>
 					
 					<!-- submit button -->
-					<input class="submitButton" type="submit" value="Sign Up">
+					<input class="submitButton" type="submit" value="Subscribe">
 				</form>
 
 				<!-- social media icons and links -->
