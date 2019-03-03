@@ -19,6 +19,8 @@
 get_header();
 ?>
 
+
+
 <div class="grid-x grid-margin-x">
 			<div class="large-offset-2">
 			
@@ -27,7 +29,7 @@ get_header();
 				</div>
 
 				<div class="grid-x grid-margin-x">
-					<p class="cell large-10 progDesc">Duration: Level A: 4 hours, Level C: 5 hours, Level HCP: 6 hours</p>
+			
 					<p class="cell large-10 progDesc">Lecture series on mouth-to-mouth resuscitation (CPR) offers the needed expertise to identify and act 
 						in response to cardiac crisis and suffocation for babies, children and adults subject to the type of CPR 
 						chosen. The training also comprises the utilization of automated external defibrillator (AED) as well as 
@@ -38,7 +40,8 @@ get_header();
 				</div>
 
 				<div class="grid-x grid-margin-x">
-					<div class="cell large-5 ">
+				
+			
 
 <?php 
 
@@ -51,14 +54,15 @@ if (function_exists('get_field')) {
 		$button = $program['button'];
 		$cost = $program['cost'];
 		$program_image = $program['program_image'];
+		
 ?>
 
-
-
-						<img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" />
+<div class="cell large-5 ">
+		
+						<img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg"/>
 						
 							
-						<ul class="accordion plAccordian" data-accordion>
+						<ul class="accordion plAccordian" data-accordion data-allow-all-closed="true">
 							<li class="accordion-item accordianStyle" data-accordion-item>
 								<!-- Accordion tab title -->
 								<a href="#" class="accordion-title pRCAccordianTitle"><?php echo$name; ?></a>
@@ -67,12 +71,12 @@ if (function_exists('get_field')) {
 								<div class="accordion-content" data-tab-content>
 								<p><?php echo$description; ?></p>
 								<p><?php echo$cost; ?></p>
-								<button  class=" button">REGISTER NOW<?php echo$button; ?></button>
+								<button  class=" button" href="<?php echo$button; ?>">REGISTER NOW</button>
 
 								</div>
 							</li>
 						</ul>
-						
+						</div>		
 					
 <!-- 
 					<div class="cell large-5 programBox">
@@ -119,8 +123,8 @@ if (function_exists('get_field')) {
 
 ?>
 
+
 </div>
-			
 			</div>
 </div>
 
