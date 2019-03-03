@@ -120,6 +120,8 @@ h1 {
 
 .progDesc {
     text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .programTables td {
@@ -206,9 +208,24 @@ h1 {
    
 }
 
+/* canfitpro */
+
+#canfitproLogo {
+    width: 250px;
+}
+
 /* Rec Cross */
 
+.rcImg {
+    width: 100%;
+    height: 445px;
+}
 
+.rcVideo {
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
 
 
 /* FOOTER */

@@ -56,6 +56,12 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	<div class="large-offset-3 "> 
+			<div class="cell large-8 rcVideo">
+			<iframe width="798" height="449" src="https://www.youtube.com/embed/AWVC2cQqRqo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+
 <?php
 // imports the footer
 get_footer();
