@@ -78,7 +78,7 @@ h1 {
 
     /* changed the padding on the footerNav section */
     .footerNav{
-       font-size:1.4em;
+       font-size:1em;
        padding-left:1em;
     }
 
@@ -86,7 +86,7 @@ h1 {
         font-size:1.25em;
         margin:0;
         padding:0;
-        margin-left:0.6em;
+        margin-left:4%;
         font-family: 'Lato', sans-serif;
         margin-bottom:0.25em;
     }
@@ -95,12 +95,12 @@ h1 {
     .logo{
         text-align: center;
         margin:0 auto;
-        margin-top:2em;
+        margin-top:1em;
     }
     
     /* sizes the logo */
     .logo img{
-        width:60%;
+        width:40%;
         height:auto;    
     }
     
@@ -140,9 +140,9 @@ h1 {
     
     .contactInfo p{
         font-family: 'Lato', sans-serif;
-        font-size:1em;
+        font-size:.75em;
         text-align: left;
-        margin-left:1em;
+        margin-left:5%;
     }
 
     /* controls the form section */ 
@@ -150,11 +150,6 @@ h1 {
         font-family: 'Lato', sans-serif;
         font-size:1em;
         text-align: left;
-    }
-    
-    .newsLetterForm input{
-        width:10em;
-        height:2em;
     }
 
     .newsLetterForm p{
@@ -165,62 +160,26 @@ h1 {
     .newsLetterForm h2{
         margin:0;
         padding:0;
-        font-size:1.5em;
+        font-size:1.2em;
         font-family: 'Lato', sans-serif;
-        margin:.5em 0 .5em 1.25em;
+        margin:.5em 0 .5em 8.5%;
     }
+
     
-    .nameInput{
-        float: left;
-        margin-right:2em;
-        margin-left:2em;
-    }
-
-    .emailInput{
-        float:left;
-    }
-
-    .checkBox {
-        width: 1em !important;
-        height: 1em !important;
-        margin:0;
-        padding:0;
-        margin-left:2em;
-        display:inline-block;
-    }
-
-    .checkBoxLabel{
-        display: inline;
-        font-size:.75em !important;
-    }
- 
-    .submitButton{
-        width: 17.6em !important;
-        height:2em;
-        margin-left:1.6em ;
-        color:white;
-        background-color: #aa2527;
-        font-size:1.25em;
-        cursor: pointer;
-        font-family: 'Lato', sans-serif;
-        margin-top:.75em;
-    }
-
-    .submitButton:hover{
-        width: 17.6em !important;
-        height:2em;
-        margin-left:1.6em ;
-        color:white;
+    button.wsf-button.wsf-button-primary:hover{
         background-color: #901f21;
-        font-size:1.25em;
-        cursor: pointer;
-        font-family: 'Lato', sans-serif;
     }
+
+    input[type=checkbox].wsf-field + .wsf-label  {
+        font-size: .8em;
+        margin-bottom:0 !important;
+    }
+
 
     /* controls the social media icons */
     .socialMediaIcons{
-        margin-left:10.4em;
-        margin-top:1em;
+        margin-left:40%;
+        margin-top:0;
     }
 
     .socialMedia{
@@ -332,119 +291,44 @@ h1 {
     }
     
     /* controls the contact section */
+
     .contactInfo{ 
         padding:0;
-        margin-top:1.2em;
-
+        margin-top:1.6em;
+        margin-left:3%;
     }
     
     .contactInfo p{
         font-family: 'Lato', sans-serif;
         font-size:1em;
-        text-align: right;
+        text-align: left;
         margin:0;
         padding:0;
     }
     
-    .contactInfo{
-        padding-top:7em;
-        padding-right:4em;
-    }
-    
-    .socialMedia{
-        font-size:2.25em; 
-        margin-top:4em;
-        text-align: left;
-        padding-left:1em;
-    }
-    
-    .fbIcon{
-        color:#3b5998;
-        margin-right:.25em; 
-    }
-    
-    .twitterIcon{
-        color:#38A1F3;
-        margin-right:.25em;
-    }
-        
-
-    /* controls the form section */ 
-    .newsLetterForm p{
-        font-family: 'Lato', sans-serif;
-        font-size:.75em;
-        text-align: left;
-    }
-    
-    .newsLetterForm input{
-        width:8em;
-        height:2em;
-    }
-
-    .newsLetterForm p{
-        margin:0;
-        padding:0;
-    }
-
     .newsLetterForm h2{
         margin:0;
         padding:0;
-        font-size:1.25em;
+        font-size:1.2em;
         font-family: 'Lato', sans-serif;
-        margin:.5em 0 .5em 1em;
+        margin:.5em 0 .5em 1.5em;
     }
+
     
-    .nameInput{
-        float: left;
-        margin-right:2em;
-        margin-left:1.3em;
-    }
-
-    .emailInput{
-        float:left;
-    }
-
-    .checkBox {
-        width: 1em !important;
-        height: 1em !important;
-        margin:0;
-        padding:0;
-        margin-left:1.25em;
-        display:inline-block;
-    }
-
-    .checkBoxLabel{
-        display: inline;
-        font-size:.65em !important;
-    }
- 
-    .submitButton{
-        width: 14.5em !important;
-        height:2em;
-        margin-left:1em ;
-        color:white;
-        background-color: #aa2527;
-        font-size:1.25em;
-        cursor: pointer;
-        font-family: 'Lato', sans-serif;
-        margin-top:.75em;
-    }
-
-    .submitButton:hover{
-        width: 14.5em !important;
-        height:2em;
-        margin-left:1em ;
-        color:white;
+    button.wsf-button.wsf-button-primary:hover{
         background-color: #901f21;
-        font-size:1.25em;
-        cursor: pointer;
-        font-family: 'Lato', sans-serif;
     }
+
+    input[type=checkbox].wsf-field + .wsf-label  {
+        font-size: .8em;
+        margin-bottom:0 !important;
+    }
+
 
     /* controls the social media icons */
     .socialMediaIcons{
-        margin-left:7.75em;
-        margin-top:1em;
+        margin-left:40%;
+        margin-top:0;
     }
 
     .socialMedia{
@@ -552,94 +436,37 @@ h1 {
     /* controls the contact section */
     .contactInfo{ 
         padding:0;
-        margin-top:1.2em;
-
+        margin-top:1.8em;
     }
     
     .contactInfo p{
         font-family: 'Lato', sans-serif;
         font-size:1em;
         text-align: left;
-        margin-left:1em;
-    }
-
-    /* controls the form section */ 
-    .newsLetterForm p{
-        font-family: 'Lato', sans-serif;
-        font-size:1em;
-        text-align: left;
     }
     
-    .newsLetterForm input{
-        width:10em;
-        height:2em;
-    }
-
-    .newsLetterForm p{
-        margin:0;
-        padding:0;
-    }
-
     .newsLetterForm h2{
         margin:0;
         padding:0;
-        font-size:1.5em;
-        margin-left:1.25em;
+        font-size:1.25em;
         font-family: 'Lato', sans-serif;
-        margin:.5em 0 .5em 1.25em;
+        margin:.5em 0 .5em 1.8em;
     }
+
     
-    .nameInput{
-        float: left;
-        margin-right:2em;
-        margin-left:2em;
-    }
-
-    .emailInput{
-        float:left;
-    }
-
-    .checkBox {
-        width: 1em !important;
-        height: 1em !important;
-        margin:0;
-        padding:0;
-        margin-left:2em;
-        display:inline-block;
-    }
-
-    .checkBoxLabel{
-        display: inline;
-        font-size:.75em !important;
-    }
- 
-    .submitButton{
-        width: 17.6em !important;
-        height:2em;
-        margin-left:1.6em ;
-        color:white;
-        background-color: #aa2527;
-        font-size:1.25em;
-        cursor: pointer;
-        font-family: 'Lato', sans-serif;
-        margin-top:.75em;
-    }
-
-    .submitButton:hover{
-        width: 17.6em !important;
-        height:2em;
-        margin-left:1.6em ;
-        color:white;
+    button.wsf-button.wsf-button-primary:hover{
         background-color: #901f21;
-        font-size:1.25em;
-        cursor: pointer;
-        font-family: 'Lato', sans-serif;
+    }
+
+    input[type=checkbox].wsf-field + .wsf-label  {
+        font-size: .8em;
+        margin-bottom:0 !important;
     }
 
     /* controls the social media icons */
     .socialMediaIcons{
-        margin-left:10.4em;
-        margin-top:1em;
+        margin-left:40%;
+        margin-top:0;
     }
 
     .socialMedia{
