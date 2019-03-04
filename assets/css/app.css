@@ -119,9 +119,12 @@ h1 {
 /* PROGRAMS PAGE */
 
 .progDesc {
-    text-align: center;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
+<<<<<<< HEAD
 .programTables td {
     text-align: center;
 }
@@ -130,8 +133,6 @@ h1 {
     color: #0a415e;
     text-align: center;
 }
-
-
 
 #viprLogo {
     width: 200px;
@@ -145,13 +146,35 @@ h1 {
 
 #corefxLogo {
     width: 200px;
-    margin-left: 600px;
+    margin-left: 870px;
+    margin-bottom: 50px;
 }
 
 #redCrossLogo {
     width: 200px;
     margin-left: 580px;
 }
+
+.programButton {
+    margin-left: 160px;
+    /* background-color: #aa2527;
+    color: #FFF; */
+    padding: 10px;
+  }
+  
+  .programButton:hover {
+    background-color: #901f21;
+  }
+
+.programBox {
+  background-color: #0a415e;
+  padding: 15px;
+  margin: 10px;
+}
+
+.programBox td {
+    text-align: center;
+  }
 
 /* PROGRAMS LANDING PAGE */
 
@@ -168,15 +191,60 @@ h1 {
     text-align: center;
     font-size: 22pt;
     color: white;
- 
-   
 }
 
+.pRCAccordianTitle {
+    text-align: center;
+    font-size: 22pt;
+    color: white;
+    background-color: #0a415e;
+    border: 2pt solid #0a415e;
+}
 
 .plAccordian {
     text-align: center;
     background-color: #0a415e;
-   
+}
+
+.accordion-title::before {
+    content: &Darr;
+}
+
+
+
+/* corefx */
+.descList {
+    text-align: left;
+}
+
+.coreBox {
+    margin-left: 100px;
+}
+
+#corefxBanner {
+    /*    margin-left: 16%; */
+      width: 1080px;
+      padding-bottom: 25px;
+      padding-top: 25px;
+    }
+
+/* canfitpro */
+
+#canfitproLogo {
+    width: 250px;
+}
+
+/* Rec Cross */
+
+.rcImg {
+    width: 100%;
+    height: 445px;
+}
+
+.rcVideo {
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-top: 50px;
 }
 
 
@@ -357,11 +425,209 @@ footer{
         color:#38A1F3;
         margin-right:.25em;
     }
+=======
+/* footer */
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    /* footer */
+
+    /* styles the footer background */
+    footer{
+        background-color: #E3E3E3;
+        margin:0;
+        padding:0;
+    } 
+
+    /* changed the padding on the footerNav section */
+    .footerNav{
+       font-size:1.4em;
+       padding-left:1em;
+    }
+
+    .footerNav h2{
+        font-size:1.25em;
+        margin:0;
+        padding:0;
+        margin-left:0.6em;
+        font-family: 'Lato', sans-serif;
+        margin-bottom:0.25em;
+    }
+    
+    /* controls the logo section and where the logo ends up being placed */
+    .logo{
+        text-align: center;
+        margin:0 auto;
+        margin-top:2em;
+    }
+    
+    /* sizes the logo */
+    .logo img{
+        width:60%;
+        height:auto;    
+    }
+    
+    /* controls the main footer menu */
+    #footer-menu{
+        padding:0;
+        margin:0;
+        margin-top:1em;
+    }
+
+    #footer-menu ul{
+        list-style: none;
+        padding:0;
+        display: inline;
+    }
+
+    #footer-menu ul li{
+        float:right;
+    }
+
+    /* controls the program menu */
+    #program-menu{
+        margin:0;
+        padding:0;
+    }
+
+    #program-menu a{
+        margin:0;
+        padding-top:.2em;
+    }
+    
+    /* controls the contact section */
+    .contactInfo{ 
+        padding:0;
+        margin-top:.5em;
+    }
+    
+    .contactInfo p{
+        font-family: 'Lato', sans-serif;
+        font-size:1em;
+        text-align: left;
+        margin-left:1em;
+    }
+
+    /* controls the form section */ 
+    .newsLetterForm p{
+        font-family: 'Lato', sans-serif;
+        font-size:1em;
+        text-align: left;
+    }
+    
+    .newsLetterForm input{
+        width:10em;
+        height:2em;
+    }
+
+    .newsLetterForm p{
+        margin:0;
+        padding:0;
+    }
+
+    .newsLetterForm h2{
+        margin:0;
+        padding:0;
+        font-size:1.5em;
+        font-family: 'Lato', sans-serif;
+        margin:.5em 0 .5em 1.25em;
+    }
+    
+    .nameInput{
+        float: left;
+        margin-right:2em;
+        margin-left:2em;
+    }
+
+    .emailInput{
+        float:left;
+    }
+
+    .checkBox {
+        width: 1em !important;
+        height: 1em !important;
+        margin:0;
+        padding:0;
+        margin-left:2em;
+        display:inline-block;
+    }
+
+    .checkBoxLabel{
+        display: inline;
+        font-size:.75em !important;
+    }
+ 
+    .submitButton{
+        width: 17.6em !important;
+        height:2em;
+        margin-left:1.6em ;
+        color:white;
+        background-color: #aa2527;
+        font-size:1.25em;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        margin-top:.75em;
+    }
+
+    .submitButton:hover{
+        width: 17.6em !important;
+        height:2em;
+        margin-left:1.6em ;
+        color:white;
+        background-color: #901f21;
+        font-size:1.25em;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+    }
+
+    /* controls the social media icons */
+    .socialMediaIcons{
+        margin-left:10.4em;
+        margin-top:1em;
+    }
+
+    .socialMedia{
+        font-size:1em; 
+        margin-top:0;
+        padding-left:0;
+        margin-bottom:1em;
+    }
+    
+    .fbIcon{
+        font-size:1.5em; 
+        color:black;
+        margin-right:.25em; 
+    }
+
+    .fbIcon:hover{
+        color:#901f21;
+    }
+
+    .twitterIcon{
+        font-size:1.5em; 
+        color:black;
+        margin-right:.25em;
+    }
+
+    .twitterIcon:hover{
+        color:#901f21;
+    }
+    
+    .instagramIcon{
+        font-size:1.5em; 
+        color:black;
+    }
+
+    .instagramIcon:hover{
+        color:#901f21;
+    }
+>>>>>>> footer
 }
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
 
+<<<<<<< HEAD
     .logo{
         text-align: center;
         margin:0 auto;
@@ -387,11 +653,89 @@ footer{
         text-align: right;
         margin:0;
         padding:0;
+=======
+    /* footer */
+
+    /* styles the footer background */
+    footer{
+        background-color: #E3E3E3;
+        margin:0;
+        padding:0;
+    } 
+
+    /* changed the padding on the footerNav section */
+    .footerNav{
+        padding-left:2em;
+    }
+
+    .footerNav h2{
+        font-size:1.25em;
+        margin:0;
+        padding:0;
+        margin-left:0.7em;
+        font-family: 'Lato', sans-serif;
+        margin-top:.75em;
+    }
+    
+    /* controls the logo section and where the logo ends up being placed */
+    .logo{
+        text-align: right;
+        margin:0 auto;
+        margin-top:4.5em;
+    }
+    
+    /* sizes the logo */
+    .logo img{
+        width:80%;
+        height:auto;    
+    }
+    
+    /* controls the main footer menu */
+    #footer-menu{
+        padding:0;
+        margin:0;
+        margin-top:2em;
+    }
+
+    #footer-menu ul{
+        list-style: none;
+        padding:0;
+        display: inline;
+    }
+
+    #footer-menu ul li{
+        float:right;
+    }
+
+    #footer-menu a{
+        padding-right:0;
+    }
+
+
+    /* controls the program menu */
+    #program-menu{
+        margin:0;
+        padding:0;
+    }
+
+    #program-menu a{
+        margin:0;
+        padding-top:.2em;
+        padding-right:0;
+    }
+    
+    /* controls the contact section */
+    .contactInfo{ 
+        padding:0;
+        margin-top:1.2em;
+
+>>>>>>> footer
     }
     
     .contactInfo p{
         font-family: 'Lato', sans-serif;
         font-size:1em;
+<<<<<<< HEAD
         text-align: right;
         margin:0;
         padding:0;
@@ -418,10 +762,131 @@ footer{
         color:#38A1F3;
         margin-right:.25em;
     }
+=======
+        text-align: left;
+        margin-left:1em;
+        margin-bottom:0;
+    }
+
+    /* controls the form section */ 
+    .newsLetterForm p{
+        font-family: 'Lato', sans-serif;
+        font-size:.75em;
+        text-align: left;
+    }
+    
+    .newsLetterForm input{
+        width:8em;
+        height:2em;
+    }
+
+    .newsLetterForm p{
+        margin:0;
+        padding:0;
+    }
+
+    .newsLetterForm h2{
+        margin:0;
+        padding:0;
+        font-size:1.25em;
+        font-family: 'Lato', sans-serif;
+        margin:.5em 0 .5em 1em;
+    }
+    
+    .nameInput{
+        float: left;
+        margin-right:2em;
+        margin-left:1.3em;
+    }
+
+    .emailInput{
+        float:left;
+    }
+
+    .checkBox {
+        width: 1em !important;
+        height: 1em !important;
+        margin:0;
+        padding:0;
+        margin-left:1.25em;
+        display:inline-block;
+    }
+
+    .checkBoxLabel{
+        display: inline;
+        font-size:.65em !important;
+    }
+ 
+    .submitButton{
+        width: 14.5em !important;
+        height:2em;
+        margin-left:1em ;
+        color:white;
+        background-color: #aa2527;
+        font-size:1.25em;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        margin-top:.75em;
+    }
+
+    .submitButton:hover{
+        width: 14.5em !important;
+        height:2em;
+        margin-left:1em ;
+        color:white;
+        background-color: #901f21;
+        font-size:1.25em;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+    }
+
+    /* controls the social media icons */
+    .socialMediaIcons{
+        margin-left:7.75em;
+        margin-top:1em;
+    }
+
+    .socialMedia{
+        font-size:1em; 
+        margin-top:0;
+        padding-left:0;
+        margin-bottom:1em;
+    }
+    
+    .fbIcon{
+        font-size:1.5em; 
+        color:black;
+        margin-right:.25em; 
+    }
+
+    .fbIcon:hover{
+        color:#901f21;
+    }
+
+    .twitterIcon{
+        font-size:1.5em; 
+        color:black;
+        margin-right:.25em;
+    }
+
+    .twitterIcon:hover{
+        color:#901f21;
+    }
+    
+    .instagramIcon{
+        font-size:1.5em; 
+        color:black;
+    }
+
+    .instagramIcon:hover{
+        color:#901f21;
+    }
+>>>>>>> footer
 }
 
 /* Large and up */
 @media screen and (min-width: 64em) {
+<<<<<<< HEAD
     
     .logo{
         text-align: center;
@@ -480,6 +945,7 @@ footer{
     
 }
 
+=======
 
 #example-animated-menu, .menu-main-container, #primary-menu {
     background-color: #fff !important;
@@ -621,3 +1087,199 @@ footer{
  }
 
 
+
+    /* footer */
+
+    /* styles the footer background */
+    footer{
+        background-color: #E3E3E3;
+        margin:0;
+        padding:0;
+    } 
+
+    /* changed the padding on the footerNav section */
+    .footerNav{
+        padding-left:4em;
+    }
+
+    .footerNav h2{
+        font-size:1.25em;
+        margin:0;
+        padding:0;
+        margin-left:0.7em;
+        font-family: 'Lato', sans-serif;
+        margin-top:.75em;
+    }
+    
+    /* controls the logo section and where the logo ends up being placed */
+    .logo{
+        text-align: right;
+        margin:0 auto;
+        margin-top:4.5em;
+    }
+    
+    /* sizes the logo */
+    .logo img{
+        width:75%;
+        height:auto;    
+    }
+    
+    /* controls the main footer menu */
+    #footer-menu{
+        padding:0;
+        margin:0;
+        margin-top:2em;
+    }
+
+    #footer-menu ul{
+        list-style: none;
+        padding:0;
+        display: inline;
+    }
+
+    #footer-menu ul li{
+        float:right;
+    }
+
+    /* controls the program menu */
+    #program-menu{
+        margin:0;
+        padding:0;
+    }
+
+    #program-menu a{
+        margin:0;
+        padding-top:.2em;
+    }
+    
+    /* controls the contact section */
+    .contactInfo{ 
+        padding:0;
+        margin-top:1.2em;
+
+    }
+    
+    .contactInfo p{
+        font-family: 'Lato', sans-serif;
+        font-size:1em;
+        text-align: left;
+        margin-left:1em;
+    }
+
+    /* controls the form section */ 
+    .newsLetterForm p{
+        font-family: 'Lato', sans-serif;
+        font-size:1em;
+        text-align: left;
+    }
+    
+    .newsLetterForm input{
+        width:10em;
+        height:2em;
+    }
+
+    .newsLetterForm p{
+        margin:0;
+        padding:0;
+    }
+
+    .newsLetterForm h2{
+        margin:0;
+        padding:0;
+        font-size:1.5em;
+        margin-left:1.25em;
+        font-family: 'Lato', sans-serif;
+        margin:.5em 0 .5em 1.25em;
+    }
+    
+    .nameInput{
+        float: left;
+        margin-right:2em;
+        margin-left:2em;
+    }
+
+    .emailInput{
+        float:left;
+    }
+
+    .checkBox {
+        width: 1em !important;
+        height: 1em !important;
+        margin:0;
+        padding:0;
+        margin-left:2em;
+        display:inline-block;
+    }
+
+    .checkBoxLabel{
+        display: inline;
+        font-size:.75em !important;
+    }
+ 
+    .submitButton{
+        width: 17.6em !important;
+        height:2em;
+        margin-left:1.6em ;
+        color:white;
+        background-color: #aa2527;
+        font-size:1.25em;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        margin-top:.75em;
+    }
+
+    .submitButton:hover{
+        width: 17.6em !important;
+        height:2em;
+        margin-left:1.6em ;
+        color:white;
+        background-color: #901f21;
+        font-size:1.25em;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+    }
+
+    /* controls the social media icons */
+    .socialMediaIcons{
+        margin-left:10.4em;
+        margin-top:1em;
+    }
+
+    .socialMedia{
+        font-size:1em; 
+        margin-top:0;
+        padding-left:0;
+        margin-bottom:1em;
+    }
+    
+    .fbIcon{
+        font-size:1.5em; 
+        color:black;
+        margin-right:.25em; 
+    }
+
+    .fbIcon:hover{
+        color:#901f21;
+    }
+
+    .twitterIcon{
+        font-size:1.5em; 
+        color:black;
+        margin-right:.25em;
+    }
+
+    .twitterIcon:hover{
+        color:#901f21;
+    }
+    
+    .instagramIcon{
+        font-size:1.5em; 
+        color:black;
+    }
+
+    .instagramIcon:hover{
+        color:#901f21;
+    }
+    
+}
+>>>>>>> footer

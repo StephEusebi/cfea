@@ -1,9 +1,9 @@
 {
-    "key": "group_5c75e84b8807d",
-    "title": "Program landing",
+    "key": "group_5c7c9eb3cd5d0",
+    "title": "COREFX",
     "fields": [
         {
-            "key": "field_5c75e8647b02d",
+            "key": "field_5c7c9eb3d0b51",
             "label": "Programs",
             "name": "programs",
             "type": "group",
@@ -18,7 +18,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5c75efd1cda23",
+                    "key": "field_5c7c9eb3d1e7a",
                     "label": "Program 1",
                     "name": "program_1",
                     "type": "group",
@@ -33,7 +33,7 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c75effccda24",
+                            "key": "field_5c7c9eb3d2fb8",
                             "label": "Name",
                             "name": "name",
                             "type": "text",
@@ -52,7 +52,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c75f030cda25",
+                            "key": "field_5c7c9eb3d2feb",
                             "label": "Description",
                             "name": "description",
                             "type": "textarea",
@@ -71,7 +71,26 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c75f041cda26",
+                            "key": "field_5c7c9eb3d3017",
+                            "label": "cost",
+                            "name": "cost",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5c7c9eb3d3042",
                             "label": "Button",
                             "name": "button",
                             "type": "link",
@@ -84,11 +103,35 @@
                                 "id": ""
                             },
                             "return_format": "url"
+                        },
+                        {
+                            "key": "field_5c7c9eb3d30c2",
+                            "label": "program image",
+                            "name": "program_image",
+                            "type": "image",
+                            "instructions": "program image",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "programImg",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         }
                     ]
                 },
                 {
-                    "key": "field_5c75f064cda27",
+                    "key": "field_5c7c9eb3d96a2",
                     "label": "Program 2",
                     "name": "program_2",
                     "type": "group",
@@ -103,7 +146,7 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c75f064cda28",
+                            "key": "field_5c7c9eb3da74f",
                             "label": "Name",
                             "name": "name",
                             "type": "text",
@@ -122,7 +165,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c75f064cda29",
+                            "key": "field_5c7c9eb3da783",
                             "label": "Description",
                             "name": "description",
                             "type": "textarea",
@@ -141,7 +184,26 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c75f064cda2a",
+                            "key": "field_5c7c9eb3da7b2",
+                            "label": "cost",
+                            "name": "cost",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5c7c9eb3da7df",
                             "label": "Button",
                             "name": "button",
                             "type": "link",
@@ -153,14 +215,55 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url"
+                            "return_format": ""
+                        },
+                        {
+                            "key": "field_5c7c9eb3da80c",
+                            "label": "program image",
+                            "name": "program_image",
+                            "type": "image",
+                            "instructions": "program image",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "programImg",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "key": "field_5c7cc437bed8b",
+            "label": "Certifications",
+            "name": "certifications",
+            "type": "group",
+            "instructions": "Add a new certification",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
                 {
-                    "key": "field_5c75f067cda2b",
-                    "label": "Program 3",
-                    "name": "program_3",
+                    "key": "field_5c7cc437bed8c",
+                    "label": "Program 1",
+                    "name": "program_1",
                     "type": "group",
                     "instructions": "",
                     "required": 0,
@@ -173,7 +276,7 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c75f067cda2c",
+                            "key": "field_5c7cc437bed8d",
                             "label": "Name",
                             "name": "name",
                             "type": "text",
@@ -192,7 +295,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c75f067cda2d",
+                            "key": "field_5c7cc437bed8e",
                             "label": "Description",
                             "name": "description",
                             "type": "textarea",
@@ -211,60 +314,9 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c75f067cda2e",
-                            "label": "Button",
-                            "name": "button",
-                            "type": "link",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "url"
-                        }
-                    ]
-                },
-                {
-                    "key": "field_5c75f06acda2f",
-                    "label": "Program 4",
-                    "name": "program_4",
-                    "type": "group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "layout": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5c75f06acda30",
-                            "label": "Name",
-                            "name": "name",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5c75f06acda31",
-                            "label": "Description",
-                            "name": "description",
+                            "key": "field_5c7cc437bed8f",
+                            "label": "cost",
+                            "name": "cost",
                             "type": "textarea",
                             "instructions": "",
                             "required": 0,
@@ -281,7 +333,7 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c75f06acda32",
+                            "key": "field_5c7cc437bed90",
                             "label": "Button",
                             "name": "button",
                             "type": "link",
@@ -294,76 +346,30 @@
                                 "id": ""
                             },
                             "return_format": "url"
-                        }
-                    ]
-                },
-                {
-                    "key": "field_5c7b4d4f042b3",
-                    "label": "Program 5",
-                    "name": "program_5",
-                    "type": "group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "layout": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5c7b4d4f042b4",
-                            "label": "Name",
-                            "name": "name",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
                         },
                         {
-                            "key": "field_5c7b4d4f042b5",
-                            "label": "Description",
-                            "name": "description",
-                            "type": "textarea",
-                            "instructions": "",
+                            "key": "field_5c7cc437bed91",
+                            "label": "program image",
+                            "name": "program_image",
+                            "type": "image",
+                            "instructions": "program image",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
-                                "class": "",
+                                "class": "programImg",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": ""
-                        },
-                        {
-                            "key": "field_5c7b4d4f042b6",
-                            "label": "Button",
-                            "name": "button",
-                            "type": "link",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "url"
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         }
                     ]
                 }
@@ -375,7 +381,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-templates\/programs.php"
+                "value": "page-templates\/corefx.php"
             }
         ]
     ],
@@ -387,5 +393,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1551584599
+    "modified": 1551682986
 }
