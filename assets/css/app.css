@@ -75,7 +75,11 @@ h1 {
     background-repeat: no-repeat;
 }
 
-.corefx:hover {
+.corefx img {
+    background:linear-gradient(0deg,#0a415eb2,#042a3f8a), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
+}
+
+.corefx img:hover {
     background: linear-gradient(0deg,#153e539f,#153e539f), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
     cursor: pointer;
     background-repeat: no-repeat;
@@ -247,11 +251,7 @@ h1 {
 /* FOOTER */
 
 /* HEADER */
-.header1 {
-    height: 100px;
-    width: 100%;
-    background-color: #0a415e;
-}
+
 
 /* NAV ANF FOOTER STYLES--------------------------------------- */
 /* PEASE COMMENT AND ORGANIZE */
@@ -1249,57 +1249,7 @@ footer{
 
 /* ADDED IN - TESTING (ERIN'S CSS) */
 
-/* TEMPORARILY HIDE MENU CONTENT */
-/* #primary-menu */
-.site-description, .menu-toggle, .site-title {
-    display: none;
-}
 
-/* LOGO */
-.logo1 {
-    width: 85px;
-    margin: 7px;
-    overflow: auto;
-}
-
-/* COLOR CLASSES */
-.blue {
-    color: #0a415e;
-}
-
-.green {
-    color: #1a8263;
-}
-
-.red {
-    color: #901f21;
-}
-
-/* SPACING CLASSES */
-.top-space {
-    margin-top: 3vw;
-}
-
-.bottom-space {
-    margin-bottom: 5vw;
-}
-
-/* BUTTON STYLE */
-.button {
-    background-color:#aa2527;
-    color: #fff;
-    border-radius: 0.3rem;
-    width: 20rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.button h4 {
-    margin-bottom: 0;
-}
-
-.button:hover {
-    background-color: #901f21;
-}
 
 /* footer */
 
