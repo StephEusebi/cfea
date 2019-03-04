@@ -211,8 +211,7 @@ h1 {
 }
 
 
-
-/* corefx */
+/* COREFX */
 .descList {
     text-align: left;
 }
@@ -228,13 +227,13 @@ h1 {
       padding-top: 25px;
     }
 
-/* canfitpro */
+/* CANFITPRO */
 
 #canfitproLogo {
     width: 250px;
 }
 
-/* Rec Cross */
+/* RED CROSS */
 
 .rcImg {
     width: 100%;
@@ -248,10 +247,6 @@ h1 {
 }
 
 
-/* FOOTER */
-
-/* HEADER */
-
 
 /* NAV ANF FOOTER STYLES--------------------------------------- */
 /* PEASE COMMENT AND ORGANIZE */
@@ -259,6 +254,7 @@ h1 {
 #example-animated-menu, .menu-main-container, #primary-menu {
     background-color: #fff !important;
 }
+
 footer{
     width:100%;
     height:14em;
@@ -278,15 +274,15 @@ footer{
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 
-.top-bar ul {
-    background-color: #fff !important;
+    .top-bar ul {
+        background-color: #fff !important;
+    }
+
 }
 
 /*LARGE*/
 @media screen and (min-width: 64em){
 
-
-    
     #primary-menu {
         margin-top: 60px;
     }
@@ -302,9 +298,6 @@ footer{
     .smallNav {
         display: none;
     }
-    
-    
-    
 }
 
 /* Medium only */
@@ -314,7 +307,6 @@ footer{
         width: 120px;
         height: auto;
         margin-top: 30px;
-
     }
 
     .logoDiv{
@@ -325,21 +317,16 @@ footer{
         text-align: center !important;
         margin: 0 auto;
     }
-
-
 }
-
 
 /*SMALL*/
 @media screen and (max-width: 39.9375em) {
 
-    
     .logoImg {
         width: 140px;
         height: auto;
         margin-left: 20%;
         padding: 10px;
-
     }
 
    .menu-item {
@@ -355,11 +342,7 @@ footer{
         background: #868686 !important;
     }
 
-
-
  }
-
-
 
 .logo{
     text-align: center;
@@ -367,11 +350,6 @@ footer{
     padding-top:1em;
  
 }
-    .logo{
-        text-align: center;
-        margin:0 auto;
-
-    }
     
     .logo img{
         width:13em;
@@ -421,9 +399,7 @@ footer{
         color:#38A1F3;
         margin-right:.25em;
     }
-=======
-=======
->>>>>>> footer
+
 /* footer */
 
 /* Small only */
@@ -846,8 +822,6 @@ footer{
 
 /* Large and up */
 @media screen and (min-width: 64em) {
-<<<<<<< HEAD
-<<<<<<< HEAD
     
     .logo{
         text-align: center;
@@ -906,8 +880,6 @@ footer{
     
 }
 
-=======
-
 #example-animated-menu, .menu-main-container, #primary-menu {
     background-color: #fff !important;
 }
@@ -926,7 +898,7 @@ footer{
 }
 
 /*Header changes on all sizes*/
-    .menu .is-active > a{
+    .menu .is-active > a {
         background-color: #fff !important;
         color: #1468a0;
     
@@ -963,7 +935,7 @@ footer{
     }
 
 /*LARGE*/
-@media screen and (min-width: 64em){
+@media screen and (min-width: 64em) {
 
     /*Header*/
     #primary-menu {
@@ -1047,11 +1019,7 @@ footer{
 
  }
 
-
-
     /* footer */
-=======
->>>>>>> footer
 
     /* styles the footer background */
     footer{
