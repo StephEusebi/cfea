@@ -942,6 +942,147 @@ footer{
 
 =======
 
+#example-animated-menu, .menu-main-container, #primary-menu {
+    background-color: #fff !important;
+}
+
+.top-bar ul {
+    background-color: #fff !important;
+}
+
+.pink {
+    background-color:#0E425D;
+}
+
+.teamMemberImg {
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(50%);
+}
+
+/*Header changes on all sizes*/
+    .menu .is-active > a{
+        background-color: #fff !important;
+        color: #1468a0;
+    
+        }
+
+    li {
+    list-style: none;
+    }
+
+    .is-dropdown-submenu-parent.opens-right > .is-dropdown-submenu {
+            margin-top: 40px;
+            right: auto;
+            left: -10px;
+            border-top: 1px solid#aa2527;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            font-size: 10pt;
+            width: 50px;
+    }
+
+    .dropdown .is-dropdown-submenu a {
+            padding: .4rem .2rem;
+    }
+
+    .is-dropdown-submenu {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        z-index: 1;
+        display: none;
+        min-width: 90px;
+        border: 1px solid #cacaca;
+    }
+
+/*LARGE*/
+@media screen and (min-width: 64em){
+
+    /*Header*/
+    #primary-menu {
+        margin-top: 60px;
+    }
+    
+    .logoImg {
+        width: 120px;
+        height: auto;
+        margin-left: 40%;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .smallNav {
+        display: none;
+    }
+
+    .entry-title {
+        margin-top: 70px;
+        text-align: center;
+
+    }
+    /* about us page */
+
+    .top-row {
+        margin-top: 30px;
+    }
+    
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+    /*Header*/
+    .logoImg {
+        width: 120px;
+        height: auto;
+        margin-top: 30px;
+
+    }
+
+    .logoDiv{
+        text-align: center !important;
+    }
+
+    .center {
+        text-align: center !important;
+        margin: 0 auto;
+    }
+
+
+}
+
+
+/*SMALL*/
+@media screen and (max-width: 39.9375em) {
+
+    /*Header*/
+    .logoImg {
+        width: 140px;
+        height: auto;
+        margin-left: 20%;
+        padding: 10px;
+
+    }
+   .menu-item {
+        font-size: 12pt;
+        word-spacing: 4px;
+    }
+
+    li ~ a{
+        padding: 0;
+    }
+
+    .title-bar {
+        background: #868686 !important;
+    }
+
+
+
+ }
+
+
+
     /* footer */
 
     /* styles the footer background */
