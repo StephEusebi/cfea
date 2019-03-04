@@ -190,8 +190,6 @@ h1 {
     text-align: center;
     font-size: 22pt;
     color: white;
- 
-   
 }
 
 .pRCAccordianTitle {
@@ -202,13 +200,21 @@ h1 {
     border: 2pt solid #0a415e;
 }
 
-
 .plAccordian {
     text-align: center;
     background-color: #0a415e;
-   
 }
+
+.accordion-title::before {
+    content: &Darr;
+}
+
+
+
 /* corefx */
+.descList {
+    text-align: left;
+}
 
 .coreBox {
     margin-left: 100px;
