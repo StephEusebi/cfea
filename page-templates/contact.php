@@ -27,14 +27,14 @@ get_header();
 			<div class="cell small-12 medium-12 large-6 NavText">
 		<h1>Contact Us</h1>
 		<?php
-if(function_exists('get_field')) {
-	$contact_form = get_field('contact_form');
+			if(function_exists('get_field')) {
+				$contact_form = get_field('contact_form');
 
-	foreach($contact_form as $contact){
-		$firstname = $contact['firstname'];
-		$emailaddress = $contact['email'];
-		$messages = $contact['message'];
-		$confirmBox = $contact['confirm'];
+				foreach($contact_form as $contact){
+					$firstname = $contact['firstname'];
+					$emailaddress = $contact['email'];
+					$messages = $contact['message'];
+					$confirmBox = $contact['confirm'];
 		?>
 
 		<label>First Name</label>
