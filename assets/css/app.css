@@ -145,7 +145,8 @@ h1 {
 
 #corefxLogo {
     width: 200px;
-    margin-left: 600px;
+    margin-left: 870px;
+    margin-bottom: 50px;
 }
 
 #redCrossLogo {
@@ -211,6 +212,10 @@ h1 {
 
 .coreBox {
     margin-left: 100px;
+}
+
+#corefxBanner {
+   margin-left: 16%;
 }
 
 /* canfitpro */

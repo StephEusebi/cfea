@@ -19,11 +19,13 @@
 get_header();
 ?>
 <div class="grid-x grid-margin-x">
-			<div class="large-offset-2">
-			
-				<div class="cell large-8">
-				<img src="/wp-content/themes/cfea/assets/img/corefx.jpg" alt="corefx logo" class="cell large-12" id="corefxLogo" />
+			<div class="large-offset-2 ">
+
+			<div class="cell large-8">
+				<img src="/wp-content/themes/cfea/assets/img/corefxbanner.png" alt="corefx banner"  id="corefxBanner" />
 				</div>
+			
+				
 
 				<div class="grid-x grid-margin-x">
 			
@@ -103,9 +105,14 @@ if (function_exists('get_field')) {
 			</div>
 		</div>
 
-		
+		<div class="cell large-8">
+				<img src="/wp-content/themes/cfea/assets/img/corefx.jpg" alt="corefx logo"  id="corefxLogo" />
+		</div>
+	
 
 </div>
+
+
 
 <?php
 // imports the footer
