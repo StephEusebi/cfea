@@ -122,7 +122,6 @@ h1 {
     text-align: center;
 }
 
-<<<<<<< HEAD
 .programTables td {
     text-align: center;
 }
@@ -157,11 +156,11 @@ h1 {
     background-color: #aa2527;
     color: #FFF;
     padding: 10px;
-  }
+}
   
-  .programButton:hover {
+.programButton:hover {
     background-color: #901f21;
-  }
+}
 
 .programBox {
   background-color: #0a415e;
@@ -171,7 +170,7 @@ h1 {
 
 .programBox td {
     text-align: center;
-  }
+}
 
 /* PROGRAMS LANDING PAGE */
 
@@ -179,28 +178,16 @@ h1 {
     text-align: center;
 }
 
-.accordianStyle {
-  
-
-}
-
 .plAccordianTitle {
     text-align: center;
     font-size: 22pt;
     color: white;
- 
-   
 }
-
 
 .plAccordian {
     text-align: center;
     background-color: #0a415e;
-   
 }
-
-
-/* FOOTER */
 
 /* HEADER */
 .header1 {
@@ -215,12 +202,6 @@ h1 {
 #example-animated-menu, .menu-main-container, #primary-menu {
     background-color: #fff !important;
 }
-footer{
-    width:100%;
-    height:14em;
-    border: solid 1px #686868;
-}
-
 /* NAV STYLES */
 
 .logoImg {
@@ -314,75 +295,10 @@ footer{
 
 
  }
-
-
-
-.logo{
-    text-align: center;
-    margin:0 auto;
-    padding-top:1em;
- 
-}
-    .logo{
-        text-align: center;
-        margin:0 auto;
-
-    }
-    
-    .logo img{
-        width:13em;
-        height:auto;
-    }
-    
-    .logo p{
-        font-family: 'Lato', sans-serif;
-        margin-top:.2em;
-        font-size:.4em;
-    }
-    
-    .contactInfo h2{
-        font-family: 'Lato', sans-serif;
-        font-size:.75em;
-        text-align: right;
-        margin:0;
-        padding:0;
-    }
-    
-    .contactInfo p{
-        font-family: 'Lato', sans-serif;
-        font-size:.50em;
-        text-align: right;
-        margin:0;
-        padding:0;
-    }
-    
-    .contactInfo{
-        padding-top:6em;
-        padding-right:1em;
-    }
-    
-    .socialMedia{
-        font-size:1.25em; 
-        margin-top:5.5em;
-        text-align: left;
-        padding-left:.5em;
-    }
-    
-    .fbIcon{
-        color:#3b5998;
-        margin-right:.25em; 
-    }
-    
-    .twitterIcon{
-        color:#38A1F3;
-        margin-right:.25em;
-    }
-=======
 /* footer */
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-    /* footer */
 
     /* styles the footer background */
     footer{
@@ -573,42 +489,12 @@ footer{
     .instagramIcon:hover{
         color:#901f21;
     }
->>>>>>> footer
 }
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
 
-<<<<<<< HEAD
-    .logo{
-        text-align: center;
-        margin:0 auto;
-    }
-    
-    .logo img{
-        width:13em;
-        height:auto;
-    }
-    
-    .logo p{
-        font-family: 'Lato', sans-serif;
-        margin-top:.2em;
-        font-size:.7em;
-        padding:0;
-        margin:0;
-        margin-bottom:.5em;
-    }
-    
-    .contactInfo h2{
-        font-family: 'Lato', sans-serif;
-        font-size:1.25em;
-        text-align: right;
-        margin:0;
-        padding:0;
-=======
-    /* footer */
 
-    /* styles the footer background */
     footer{
         background-color: #E3E3E3;
         margin:0;
@@ -681,13 +567,11 @@ footer{
         padding:0;
         margin-top:1.2em;
 
->>>>>>> footer
     }
     
     .contactInfo p{
         font-family: 'Lato', sans-serif;
         font-size:1em;
-<<<<<<< HEAD
         text-align: right;
         margin:0;
         padding:0;
@@ -714,11 +598,7 @@ footer{
         color:#38A1F3;
         margin-right:.25em;
     }
-=======
-        text-align: left;
-        margin-left:1em;
-        margin-bottom:0;
-    }
+        
 
     /* controls the form section */ 
     .newsLetterForm p{
@@ -833,88 +713,25 @@ footer{
     .instagramIcon:hover{
         color:#901f21;
     }
->>>>>>> footer
 }
 
 /* Large and up */
 @media screen and (min-width: 64em) {
-<<<<<<< HEAD
-    
-    .logo{
-        text-align: center;
-        margin:0 auto;
-        margin-bottom:1em;
-    }
-    
-    .logo img{
-        width:13em;
-        height:auto;
-    }
-    
-    .logo p{
-        font-family: 'Lato', sans-serif;
-        margin-top:.2em;
-        font-size:1em;
-    }
-    
-    .contactInfo{ 
-        padding:0;
-        margin:0 auto;
-        margin-bottom:1em;
-        margin-top:7em;
-        padding-right:3em;
-    }
-    
-    .contactInfo h2{
-        font-family: 'Lato', sans-serif;
-        font-size:1.25em;
-        text-align: right; 
-    }
-    
-    .contactInfo p{
-        font-family: 'Lato', sans-serif;
-        font-size:1em;
-        text-align: right;
-    }
-    
-    .socialMedia{
-        font-size:2em; 
-        margin-top:4.75em;
-        padding-left:1.5em;
-        text-align: left;
-        margin-bottom: 1em;
-    }
-    
-    .fbIcon{
-        color:#3b5998;
-        margin-right:.25em; 
-    }
-    
-    .twitterIcon{
-        color:#38A1F3;
-        margin-right:.25em;
-    }
-    
-}
-
-=======
-
-    /* footer */
 
     /* styles the footer background */
     footer{
-        background-color: #E3E3E3;
+        background-color: #E3E3E3 !important;
         margin:0;
         padding:0;
     } 
 
     /* changed the padding on the footerNav section */
     .footerNav{
-        padding-left:4em;
+        padding-left:6em;
     }
 
     .footerNav h2{
-        font-size:1.25em;
+        font-size:1em;
         margin:0;
         padding:0;
         margin-left:0.7em;
@@ -1093,4 +910,4 @@ footer{
     }
     
 }
->>>>>>> footer
+}
