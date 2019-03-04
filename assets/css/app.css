@@ -221,6 +221,20 @@ h1 {
       padding-top: 25px;
     }
 
+    #corefxLogo2 {
+        width: 200px;
+        margin-left: 870px;
+        margin-bottom: 50px;
+    }
+
+/* triggerpoint page */
+
+#trigLogo2 {
+    width: 200px;
+    margin-left: 870px;
+    margin-bottom: 50px;
+}
+
 /* canfitpro */
 
 #canfitproLogo {
