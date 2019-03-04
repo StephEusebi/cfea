@@ -242,11 +242,28 @@
                             "mime_types": ""
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "key": "field_5c7cc437bed8b",
+            "label": "Certifications",
+            "name": "certifications",
+            "type": "group",
+            "instructions": "Add a new certification",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
                 {
-                    "key": "field_5c7c9eb3e2ee9",
-                    "label": "Program 3",
-                    "name": "program_3",
+                    "key": "field_5c7cc437bed8c",
+                    "label": "Program 1",
+                    "name": "program_1",
                     "type": "group",
                     "instructions": "",
                     "required": 0,
@@ -259,7 +276,7 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c7c9eb3e46c8",
+                            "key": "field_5c7cc437bed8d",
                             "label": "Name",
                             "name": "name",
                             "type": "text",
@@ -278,7 +295,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c7c9eb3e46f8",
+                            "key": "field_5c7cc437bed8e",
                             "label": "Description",
                             "name": "description",
                             "type": "textarea",
@@ -297,7 +314,7 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c7c9eb3e4739",
+                            "key": "field_5c7cc437bed8f",
                             "label": "cost",
                             "name": "cost",
                             "type": "textarea",
@@ -316,7 +333,7 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c7c9eb3e4772",
+                            "key": "field_5c7cc437bed90",
                             "label": "Button",
                             "name": "button",
                             "type": "link",
@@ -328,10 +345,10 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": ""
+                            "return_format": "url"
                         },
                         {
-                            "key": "field_5c7c9eb3e47ce",
+                            "key": "field_5c7cc437bed91",
                             "label": "program image",
                             "name": "program_image",
                             "type": "image",
@@ -376,5 +393,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1551671541
+    "modified": 1551682986
 }

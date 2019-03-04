@@ -48,25 +48,25 @@ get_header();
 	
 				</div>
 
-				<div class="grid-x grid-margin-x coreBox">
+				<div class="grid-x grid-margin-x ">
 				
 			
 
 <?php 
 
 if (function_exists('get_field')) {
-	$programs = get_field('programs');
+	$certifications = get_field('certifications');
 
-	foreach($programs as $program){
-		$name = $program['name'];
-		$description = $program['description'];
-		$button = $program['button'];
-		$cost = $program['cost'];
-		$program_image = $program['program_image'];
+	foreach($certifications as $certification){
+		$name = $certification['name'];
+		$description = $certification['description'];
+		$button = $certification['button'];
+		$cost = $certification['cost'];
+		$program_image = $certification['program_image'];
 		
 ?>
 
-<div class="cell large-3 ">
+<div class="cell large-10 ">
 		
 						<img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg"/>
 						
@@ -99,16 +99,76 @@ if (function_exists('get_field')) {
 		</div>
 	</div>
 
+	
+
+
+	
+
+
+			<div class="large-offset-2 ">
+		<?php 
+
+if (function_exists('get_field')) {
+	$programs = get_field('programs');
+
+	foreach($programs as $program){
+		$name = $program['name'];
+		$description = $program['description'];
+		$button = $program['button'];
+		$cost = $program['cost'];
+		$program_image = $program['program_image'];
+		
+?>
+
+
+<div class="cell large-5 ">
+		
+						<img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg"/>
+						
+							
+						<ul class="accordion plAccordian" data-accordion data-allow-all-closed="true">
+							<li class="accordion-item accordianStyle" data-accordion-item>
+								<!-- Accordion tab title -->
+								<a href="#" class="accordion-title pRCAccordianTitle"><?php echo$name; ?></a>
+
+								<!-- Accordion tab content -->
+								<div class="accordion-content" data-tab-content>
+								<p><?php echo$description; ?></p>
+								<p><?php echo$cost; ?></p>
+								<button  class=" button" href="<?php echo$button; ?>">REGISTER NOW</button>
+
+								</div>
+							</li>
+						</ul>
+						</div>		
+					
+						</div>
+		<?php
+
+	}
+}
+
+?>
+
+
+		
+
+
+
+	</div>
+
+</div>
+	
+
 		<div class="large-offset-3 "> 
 			<div class="cell large-8 rcVideo">
-			<iframe width="798" height="449" src="https://www.youtube.com/embed/WoD34_HXxCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="798" height="449" src="https://www.youtube.com/embed/WoD34_HXxCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 
 		<div class="cell large-8">
 				<img src="/wp-content/themes/cfea/assets/img/corefx.jpg" alt="corefx logo"  id="corefxLogo" />
 		</div>
-	
 
 </div>
 
