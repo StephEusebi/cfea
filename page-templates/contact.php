@@ -18,44 +18,25 @@
 // imports the header
 get_header();
 ?>
-
-	<div id="primary" class="content-area">
+<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<!-- main -->
-			<div class="grid-x">
-			<div class="cell small-12 medium-12 large-6 NavText">
-		<h1>Contact Us</h1>
-		<?php
-			if(function_exists('get_field')) {
-				$contact_form = get_field('contact_form');
+		<!-- offest - put everything inside here we don't want max width -->
+		<div class="grid-x">
+        <div class="cell large-12 medium-12 small-12 contactTitle">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="cell large-12 medium-12 small-12 contactForm">
+            <?php
+                echo do_shortcode('[ws_form id="1"]');
+            ?>
+        </div>
+		</div> <!-- offset enf-->
 
-				foreach($contact_form as $contact){
-					$firstname = $contact['firstname'];
-					$emailaddress = $contact['email'];
-					$messages = $contact['message'];
-					$confirmBox = $contact['confirm'];
-		?>
 
-		<label>First Name</label>
-		<input class="text-center" <?php echo$firstname; ?> >
-
-		<label>Email</label>
-		<input class="text-center" <?php echo$emailaddress; ?> >
-
-		<label>Message</label>
-		<textarea rows="8"> <?php echo$messages; ?> </textarea>
-
-		<label>Confirm Box</label>
-		<input type="checkbox" class="text-center" <?php echo$confirmBox; ?> >
-
-		<?php
-	}
-}
-?>
 		</main><!-- #main -->
-
 	</div><!-- #primary -->
+
 
 <?php
 // imports the footer
