@@ -69,6 +69,22 @@ h1 {
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 
+     /* contact us */
+     .contactTitle h2{
+        font-size:2em;
+        margin:0;
+        padding:0;
+        margin-left:8.25%;
+        margin-bottom:.5em;
+        margin-top:.5em;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .contactForm{
+        margin-bottom:1em;
+    }
+
+
     /* styles the footer background */
     footer{
         background-color: #E3E3E3;
@@ -262,6 +278,21 @@ h1 {
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
+
+    /* contact us */
+    .contactTitle h2{
+        font-size:2em;
+        margin:0;
+        padding:0;
+        margin-left:8.25%;
+        margin-bottom:.5em;
+        margin-top:.5em;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .contactForm{
+        margin-bottom:1em;
+    }
 
 
     footer{
@@ -487,6 +518,22 @@ h1 {
 /* Large and up */
 @media screen and (min-width: 64em) {
 
+    /* contact us */
+    .contactTitle h2{
+        font-size:2em;
+        margin:0;
+        padding:0;
+        margin-left:8.25%;
+        margin-bottom:.5em;
+        margin-top:.5em;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .contactForm{
+        margin-bottom:1em;
+    }
+
+    /* footer */
     /* styles the footer background */
     footer{
         background-color: #E3E3E3 !important;

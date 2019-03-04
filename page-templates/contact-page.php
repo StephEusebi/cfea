@@ -2,7 +2,7 @@
 /**
  * The template for displaying all pages
  * 
- * Template Name: Basic Page
+ * Template Name: Contact Page
  * Template Post Type: page
  *
  * This is the template that displays all pages by default.
@@ -24,18 +24,14 @@ get_header();
 
 		<!-- offest - put everything inside here we don't want max width -->
 		<div class="grid-x">
-
-			<!-- examples text -->
-			<div class="cell small-4 large-offset-2  small-offset-2" style="background: orange;">Offset 2 on large</div>
-			<div class="cell small-4" style="background: pink;"> second cell with image inside
-
-				<!-- basic example on how to import an image -->
-				<!-- the image is localed inside the assets/img folder -->
-				<!-- remeber to optimise your image using tinypng.com-->
-				<img src="/wp-content/themes/cfea/assets/img/dog.jpg" alt="dog image" />
-			</div>
-			<div class="cell large-8 large-offset-2" style="background: lightblue;">one centered element</div>
-
+        <div class="cell large-12 medium-12 small-12 contactTitle">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="cell large-12 medium-12 small-12 contactForm">
+            <?php
+                echo do_shortcode('[ws_form id="1"]');
+            ?>
+        </div>
 		</div> <!-- offset enf-->
 
 
