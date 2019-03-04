@@ -1,9 +1,9 @@
 {
-    "key": "group_5c75e84b8807d",
-    "title": "Program landing",
+    "key": "group_5c7af781d8119",
+    "title": "Red Cross",
     "fields": [
         {
-            "key": "field_5c75e8647b02d",
+            "key": "field_5c7af781dae31",
             "label": "Programs",
             "name": "programs",
             "type": "group",
@@ -18,7 +18,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5c75efd1cda23",
+                    "key": "field_5c7af781dc667",
                     "label": "Program 1",
                     "name": "program_1",
                     "type": "group",
@@ -33,7 +33,7 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c75effccda24",
+                            "key": "field_5c7af781dd9ae",
                             "label": "Name",
                             "name": "name",
                             "type": "text",
@@ -52,7 +52,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c75f030cda25",
+                            "key": "field_5c7af781dd9e5",
                             "label": "Description",
                             "name": "description",
                             "type": "textarea",
@@ -71,7 +71,26 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c75f041cda26",
+                            "key": "field_5c7afa261f0c3",
+                            "label": "cost",
+                            "name": "cost",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5c7af781dda1d",
                             "label": "Button",
                             "name": "button",
                             "type": "link",
@@ -84,11 +103,35 @@
                                 "id": ""
                             },
                             "return_format": "url"
+                        },
+                        {
+                            "key": "field_5c7af8b1d64c5",
+                            "label": "program image",
+                            "name": "program_image",
+                            "type": "image",
+                            "instructions": "program image",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "programImg",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         }
                     ]
                 },
                 {
-                    "key": "field_5c75f064cda27",
+                    "key": "field_5c7afa4d4b16d",
                     "label": "Program 2",
                     "name": "program_2",
                     "type": "group",
@@ -103,7 +146,7 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c75f064cda28",
+                            "key": "field_5c7afa4d4b16e",
                             "label": "Name",
                             "name": "name",
                             "type": "text",
@@ -122,7 +165,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c75f064cda29",
+                            "key": "field_5c7afa4d4b16f",
                             "label": "Description",
                             "name": "description",
                             "type": "textarea",
@@ -141,7 +184,26 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c75f064cda2a",
+                            "key": "field_5c7afa4d4b170",
+                            "label": "cost",
+                            "name": "cost",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5c7afa4d4b171",
                             "label": "Button",
                             "name": "button",
                             "type": "link",
@@ -153,12 +215,36 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url"
+                            "return_format": ""
+                        },
+                        {
+                            "key": "field_5c7afa4d4b172",
+                            "label": "program image",
+                            "name": "program_image",
+                            "type": "image",
+                            "instructions": "program image",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "programImg",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         }
                     ]
                 },
                 {
-                    "key": "field_5c75f067cda2b",
+                    "key": "field_5c7afa4c4b167",
                     "label": "Program 3",
                     "name": "program_3",
                     "type": "group",
@@ -173,7 +259,7 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c75f067cda2c",
+                            "key": "field_5c7afa4c4b168",
                             "label": "Name",
                             "name": "name",
                             "type": "text",
@@ -192,7 +278,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c75f067cda2d",
+                            "key": "field_5c7afa4c4b169",
                             "label": "Description",
                             "name": "description",
                             "type": "textarea",
@@ -211,7 +297,26 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c75f067cda2e",
+                            "key": "field_5c7afa4c4b16a",
+                            "label": "cost",
+                            "name": "cost",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5c7afa4c4b16b",
                             "label": "Button",
                             "name": "button",
                             "type": "link",
@@ -223,12 +328,36 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url"
+                            "return_format": ""
+                        },
+                        {
+                            "key": "field_5c7afa4c4b16c",
+                            "label": "program image",
+                            "name": "program_image",
+                            "type": "image",
+                            "instructions": "program image",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "programImg",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         }
                     ]
                 },
                 {
-                    "key": "field_5c75f06acda2f",
+                    "key": "field_5c7afa484b161",
                     "label": "Program 4",
                     "name": "program_4",
                     "type": "group",
@@ -243,7 +372,7 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c75f06acda30",
+                            "key": "field_5c7afa484b162",
                             "label": "Name",
                             "name": "name",
                             "type": "text",
@@ -262,7 +391,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c75f06acda31",
+                            "key": "field_5c7afa484b163",
                             "label": "Description",
                             "name": "description",
                             "type": "textarea",
@@ -281,60 +410,9 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c75f06acda32",
-                            "label": "Button",
-                            "name": "button",
-                            "type": "link",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "url"
-                        }
-                    ]
-                },
-                {
-                    "key": "field_5c7b4d4f042b3",
-                    "label": "Program 5",
-                    "name": "program_5",
-                    "type": "group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "layout": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5c7b4d4f042b4",
-                            "label": "Name",
-                            "name": "name",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5c7b4d4f042b5",
-                            "label": "Description",
-                            "name": "description",
+                            "key": "field_5c7afa484b164",
+                            "label": "cost",
+                            "name": "cost",
                             "type": "textarea",
                             "instructions": "",
                             "required": 0,
@@ -351,7 +429,7 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c7b4d4f042b6",
+                            "key": "field_5c7afa484b165",
                             "label": "Button",
                             "name": "button",
                             "type": "link",
@@ -364,6 +442,30 @@
                                 "id": ""
                             },
                             "return_format": "url"
+                        },
+                        {
+                            "key": "field_5c7afa484b166",
+                            "label": "program image",
+                            "name": "program_image",
+                            "type": "image",
+                            "instructions": "program image",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "programImg",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         }
                     ]
                 }
@@ -375,7 +477,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-templates\/programs.php"
+                "value": "page-templates\/redCross.php"
             }
         ]
     ],
@@ -387,5 +489,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1551584599
+    "modified": 1551670932
 }

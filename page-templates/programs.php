@@ -97,8 +97,11 @@ if (function_exists('get_field')) {
 		$description = $program['description'];
 		$button = $program['button'];
 ?>
+		<div class="grid-x grid-margin-x large-offset-2">
 
-			<ul class="accordion plAccordian" data-accordion>
+		<div class="cell large-10">
+
+			<ul class="accordion plAccordian" data-accordion data-allow-all-closed="true">
 				<li class="accordion-item accordianStyle" data-accordion-item>
 					<!-- Accordion tab title -->
 					<a href="#" class="accordion-title plAccordianTitle"><?php echo$name; ?></a>
@@ -106,12 +109,12 @@ if (function_exists('get_field')) {
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
 					<p><?php echo$description; ?></p>
-					<a  class="button">Learn More<?php echo$button; ?></a>
+					<a  class="button" href="<?php echo$button; ?>">Learn More</a>
 					</div>
 				</li>
-		
-
 			</ul>
+			</div>
+		</div>
 
 
 		<?php

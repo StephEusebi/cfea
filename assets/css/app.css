@@ -119,7 +119,9 @@ h1 {
 /* PROGRAMS PAGE */
 
 .progDesc {
-    text-align: center;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .programTables td {
@@ -143,7 +145,8 @@ h1 {
 
 #corefxLogo {
     width: 200px;
-    margin-left: 600px;
+    margin-left: 870px;
+    margin-bottom: 50px;
 }
 
 #redCrossLogo {
@@ -152,9 +155,9 @@ h1 {
 }
 
 .programButton {
-    margin-left: 310px;
-    background-color: #aa2527;
-    color: #FFF;
+    margin-left: 160px;
+    /* background-color: #aa2527;
+    color: #FFF; */
     padding: 10px;
   }
   
@@ -187,15 +190,60 @@ h1 {
     text-align: center;
     font-size: 22pt;
     color: white;
- 
-   
 }
 
+.pRCAccordianTitle {
+    text-align: center;
+    font-size: 22pt;
+    color: white;
+    background-color: #0a415e;
+    border: 2pt solid #0a415e;
+}
 
 .plAccordian {
     text-align: center;
     background-color: #0a415e;
-   
+}
+
+.accordion-title::before {
+    content: &Darr;
+}
+
+
+
+/* corefx */
+.descList {
+    text-align: left;
+}
+
+.coreBox {
+    margin-left: 100px;
+}
+
+#corefxBanner {
+    /*    margin-left: 16%; */
+      width: 1080px;
+      padding-bottom: 25px;
+      padding-top: 25px;
+    }
+
+/* canfitpro */
+
+#canfitproLogo {
+    width: 250px;
+}
+
+/* Rec Cross */
+
+.rcImg {
+    width: 100%;
+    height: 445px;
+}
+
+.rcVideo {
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-top: 50px;
 }
 
 
