@@ -209,6 +209,9 @@ h1 {
    
 }
 /* corefx */
+.descList {
+    text-align: left;
+}
 
 .coreBox {
     margin-left: 100px;

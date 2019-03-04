@@ -22,7 +22,7 @@ get_header();
 	<div class="large-offset-2 ">
 
 			<!-- banner at top of page -->
-		<div class="cell large-10">
+		<div class="cell large-12">
 				<img src="/wp-content/themes/cfea/assets/img/corefxbanner.png" alt="corefx banner"  id="corefxBanner" />
 		</div>
 				
@@ -69,7 +69,7 @@ get_header();
 							<img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg"/>
 							
 								<!-- create accordions to hold content -->
-							<ul class="accordion plAccordian" data-accordion data-allow-all-closed="true">
+							<ul class="menu vertical nested accordion-menu" data-accordion data-allow-all-closed="true">
 								<li class="accordion-item accordianStyle" data-accordion-item>
 									<!-- Accordion tab title -->
 									<a href="#" class="accordion-title pRCAccordianTitle"><?php echo$name; ?></a>
