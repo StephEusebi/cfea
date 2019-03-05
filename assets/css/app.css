@@ -223,12 +223,28 @@ h1 {
 
 #corefxBanner {
     /*    margin-left: 16%; */
-      width: 1080px;
+      width: 82%;
       padding-bottom: 25px;
       padding-top: 25px;
     }
 
 /* CANFITPRO */
+
+/* triggerpoint page */
+
+#trigLogo2 {
+    width: 200px;
+    margin-left: 800px;
+    margin-bottom: 50px;
+}
+
+#trigBanner {
+    width: 82%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+/* canfitpro */
 
 #canfitproLogo {
     width: 250px;
@@ -242,7 +258,7 @@ h1 {
 }
 
 .rcVideo {
-    margin-left: 100px;
+    margin-left: 60px;
     margin-bottom: 100px;
     margin-top: 50px;
 }

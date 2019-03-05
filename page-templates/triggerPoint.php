@@ -22,10 +22,23 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
+<<<<<<< HEAD
 			<img src="/wp-content/themes/cfea/assets/img/trigPoint.jpg" alt="triggerPoint logo" class="cell large-12" id="trigLogo" />
 
 			<!-- <h2 class="cell large-12 progHead">TriggerPoint</h2> -->
 			<p class="cell large-12 progDesc">TriggerPoint Performance is a patented brand that improves life by focusing on 
+=======
+			<!-- banner at top of page -->
+		<div class="cell large-12">
+				<img src="/wp-content/themes/cfea/assets/img/triggerpointbanner.png" alt="triggerPoint banner" id="trigBanner" />
+		</div>
+				
+					
+		<!-- program description -->
+		<div class="grid-x grid-margin-x">
+				
+				<p class="cell large-10 progDesc">TriggerPoint Performance is a patented brand that improves life by focusing on 
+>>>>>>> programs3
 			energizing people with the radical organization in Myofascial Compression techniques 
 			as well as branded goods that conserve, control increase the physical movement of human 
 			life-forms. The goal of TriggerPoint Performance is to discover inventive ways to which 
