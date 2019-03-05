@@ -116,6 +116,12 @@ h1 {
     background-repeat: no-repeat;
 }
 
+#viprBanner {
+    width: 82%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 /* PROGRAMS PAGE */
 
 .progDesc {
@@ -206,12 +212,10 @@ h1 {
 }
 
 .accordion-title::before {
-    content: "\25bc";
+    content: "\25bc";   
   margin-top: -18px;
   font-size: 25px;
 }
-
-
 
 /* corefx */
 .descList {

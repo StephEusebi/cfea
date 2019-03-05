@@ -24,7 +24,7 @@ get_header();
 
 			<!-- banner at top of page -->
 		<div class="cell large-8">
-			<img src="/wp-content/themes/cfea/assets/img/vipr_banner.png" alt="vipr banner" id="trigBannerss" />
+			<img src="/wp-content/themes/cfea/assets/img/viprBan2.png" alt="vipr banner" id="viprBanner" />
 		</div>
 
 			<!-- <img src="/wp-content/themes/cfea/assets/img/vipr.jpg" alt="vipr logo" class="cell large-12" id="viprLogo" /> -->
@@ -35,16 +35,12 @@ get_header();
 			It merges complete body movement with weight, thereby improving the vivacity, implementation along with 
 			overhauling the aspirations of customers and sportspeople. ViPR ushers in a new perception in fitness and 
 			athletic training – Loaded Movement Training.</p>
-			<p class="cell large-10 progDesc">Loaded Movement Training blends movements that are adapted for resilient 
-			exercises. Quickness and power originate from the body as it moves in a variety of focused undertakings with 
-			weight, just like back at the homestead.</p>
+
 			<p class="cell large-10 progDesc">ViPR was stimulated by farm youngsters who moved with weights on a daily 
 			basis and who were more powerful than any other contender in athletics. Using ViPR, we can turn out 
 			farm-toughened physique everywhere, sans setting foot on a farm, without having to carry out any hard work in 
 			an entertaining, harmless and efficient style.</p>
-			<p class="cell large-10 progDesc">As Michol Dalcourt, the creator of ViPR clarifies; the art of movement 
-			reinforces incorporating Loaded Movement Training by using ViPR into existing exercise procedures for all 
-			fitness objectives.</p>
+
 		</div>
 
 	<div class="grid-x grid-margin-x ">
@@ -65,7 +61,7 @@ get_header();
 					?>
 				
 							<!-- group of smaller boxes for workshop -->
-							<div class="cell large-5">
+							<div class="cell large-10">
 							
 											<img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg"/>
 											
