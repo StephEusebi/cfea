@@ -38,7 +38,7 @@ if (function_exists('get_field')) {
 
 		<div class="grid-container aboutAcordian">
           <div class="grid-x">
-            <div class="cell small-2">
+            <div class="cell small-3">
 				<!--MEMBER IMAGE---------->
        <img src=" <?php echo$member_image; ?>">
 
