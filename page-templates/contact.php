@@ -24,35 +24,41 @@ get_header();
 
 			<!-- main -->
 			<div class="grid-x">
-			<div class="cell small-12 medium-12 large-6 NavText">
-		<h1>Contact Us</h1>
-		<?php
-if(function_exists('get_field')) {
-	$contact_form = get_field('contact_form');
+				<div class="cell small-12 medium-6 large-6 large-offet-2 NavText" style="background: red;">
+					<h2 class="text-center">Have questions?</h2>
+				</div> <!-- text in about -->
 
-	foreach($contact_form as $contact){
-		$firstname = $contact['firstname'];
-		$emailaddress = $contact['email'];
-		$messages = $contact['message'];
-		$confirmBox = $contact['confirm'];
-		?>
+			<div class="cell small-12 medium-4 large-4 NavText">
+		<!-- <h2>Contact Us</h2> -->
+			<?php
+				if(function_exists('get_field')) {
+					$contact_form = get_field('contact_form');
 
-		<label>First Name</label>
-		<input class="text-center" <?php echo$firstname; ?> >
+				foreach($contact_form as $contact){
+					$firstname = $contact['firstname'];
+					$emailaddress = $contact['email'];
+					$messages = $contact['message'];
+					$confirmBox = $contact['confirm'];
+					?>
 
-		<label>Email</label>
-		<input class="text-center" <?php echo$emailaddress; ?> >
+					<label>First Name</label>
+					<input class="text-center" <?php echo$firstname; ?> >
 
-		<label>Message</label>
-		<textarea rows="8"> <?php echo$messages; ?> </textarea>
+					<label>Email</label>
+					<input class="text-center" <?php echo$emailaddress; ?> >
 
-		<label>Confirm Box</label>
-		<input type="checkbox" class="text-center" <?php echo$confirmBox; ?> >
+					<label>Message</label>
+					<textarea rows="8"> <?php echo$messages; ?> </textarea>
 
-		<?php
-	}
-}
-?>
+					<label>Confirm Box</label>
+					<input type="checkbox" class="text-center" <?php echo$confirmBox; ?> >
+
+				<?php
+					}
+				}
+				?>
+				</div><!-- contact form -->
+			</div><!-- grid-x -->
 		</main><!-- #main -->
 
 	</div><!-- #primary -->
