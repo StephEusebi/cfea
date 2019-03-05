@@ -45,9 +45,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "",
+                            "return_format": "url",
                             "preview_size": "thumbnail",
-                            "library": "",
+                            "library": "all",
                             "min_width": "",
                             "min_height": "",
                             "min_size": "",
@@ -143,9 +143,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "",
+                            "return_format": "url",
                             "preview_size": "thumbnail",
-                            "library": "",
+                            "library": "all",
                             "min_width": "",
                             "min_height": "",
                             "min_size": "",
@@ -241,9 +241,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "",
+                            "return_format": "url",
                             "preview_size": "thumbnail",
-                            "library": "",
+                            "library": "all",
                             "min_width": "",
                             "min_height": "",
                             "min_size": "",
@@ -339,9 +339,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "",
+                            "return_format": "url",
                             "preview_size": "thumbnail",
-                            "library": "",
+                            "library": "all",
                             "min_width": "",
                             "min_height": "",
                             "min_size": "",
@@ -437,9 +437,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "",
+                            "return_format": "url",
                             "preview_size": "thumbnail",
-                            "library": "",
+                            "library": "all",
                             "min_width": "",
                             "min_height": "",
                             "min_size": "",
@@ -535,9 +535,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "",
+                            "return_format": "url",
                             "preview_size": "thumbnail",
-                            "library": "",
+                            "library": "all",
                             "min_width": "",
                             "min_height": "",
                             "min_size": "",
@@ -633,9 +633,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "",
+                            "return_format": "url",
                             "preview_size": "thumbnail",
-                            "library": "",
+                            "library": "all",
                             "min_width": "",
                             "min_height": "",
                             "min_size": "",
@@ -731,7 +731,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
+                            "return_format": "url",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -821,5 +821,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1551283086
+    "modified": 1551812609
 }

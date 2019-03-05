@@ -17,6 +17,7 @@
 get_header();
 ?>
 
+<h1 class="entry-title">Our Team</h1>
 
 <?php 
 
@@ -35,33 +36,31 @@ if (function_exists('get_field')) {
 <div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-	<h1 class="entry-title">Our Team</h1>
-
-		<div class="grid-container fluid ">
-          <div class="grid-x grid-margin-x top-row">
-            <div class="cell small-4">
-				<!--MEMBER IMAGE-------- -->
-        <?php echo$member_image; ?>
+		<div class="grid-container aboutAcordian">
+          <div class="grid-x">
+            <div class="cell small-2">
+				<!--MEMBER IMAGE---------->
+       <img src=" <?php echo$member_image; ?>">
 
 			<ul class="accordion" data-accordion >
   <li class="accordion-item is-active" data-accordion-item>
     <a href="#" class="accordion-title">About</a>
     <div class="accordion-content" data-tab-content>
-    <!--MEMBER ABOUT-------- -->
+    <!--MEMBER ABOUT---------->
     <?php echo$member_about; ?>
     </div>
   </li>
   <li class="accordion-item" data-accordion-item>
     <a href="#" class="accordion-title">Programs</a>
     <div class="accordion-content" data-tab-content>
-    <!--MEMBER  PROGRAMS-------- -->
+    <!--MEMBER  PROGRAMS---------->
     <?php echo$member_programs; ?>
 	</div>
   </li>
   <li class="accordion-item" data-accordion-item>
     <a href="#" class="accordion-title">Contact</a>
     <div class="accordion-content" data-tab-content>
-    <!--MEMBER CONTACT-------- -->
+    <!--MEMBER CONTACT---------->
     <?php echo$member_contact; ?>
 	</div>
   </li>
