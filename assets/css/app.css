@@ -224,7 +224,7 @@ h1 {
 
 #corefxBanner {
     /*    margin-left: 16%; */
-/*       width: 1080px; */
+    width: 82%;
       padding-bottom: 25px;
       padding-top: 25px;
     }
@@ -239,9 +239,16 @@ h1 {
 
 #trigLogo2 {
     width: 200px;
-    margin-left: 870px;
+    margin-left: 800px;
     margin-bottom: 50px;
 }
+
+#trigBanner {
+    width: 82%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
 
 /* canfitpro */
 
@@ -257,7 +264,7 @@ h1 {
 }
 
 .rcVideo {
-    margin-left: 100px;
+    margin-left: 50px;
     margin-bottom: 100px;
     margin-top: 50px;
 }

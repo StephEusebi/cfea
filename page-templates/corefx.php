@@ -22,7 +22,7 @@ get_header();
 	<div class="large-offset-2">
 
 			<!-- banner at top of page -->
-		<div class="cell large-12 large-offset-1">
+		<div class="cell large-12 large-10">
 				<img src="/wp-content/themes/cfea/assets/img/corefxbanner.png" alt="corefx banner"  id="corefxBanner" />
 		</div>
 				
