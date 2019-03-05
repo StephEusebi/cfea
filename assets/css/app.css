@@ -223,9 +223,12 @@ h1 {
     .logoImg {
         width: 140px;
         height: auto;
-        margin-left: 20%;
         padding: 10px;
 
+    }
+
+    .logoDiv {
+        text-align: center;
     }
    .menu-item {
         font-size: 12pt;
