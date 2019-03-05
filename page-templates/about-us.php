@@ -18,7 +18,9 @@ get_header();
 ?>
 
 <h1 class="entry-title">Our Team</h1>
+<div class="cell large-offset-2 memberAbout">
 
+<div class="cell large-3 memberAbout">
 <?php 
 
 if (function_exists('get_field')) {
@@ -33,16 +35,13 @@ if (function_exists('get_field')) {
 ?>
 
 
-<div id="primary" class="content-area">
-		<main id="main" class="site-main">
 
-		<div class="grid-container aboutAcordian">
-          <div class="grid-x">
-            <div class="cell small-3">
-				<!--MEMBER IMAGE---------->
-       <img src=" <?php echo$member_image; ?>">
-
-			<ul class="accordion" data-accordion >
+				<!-- create boxes to hold page content -->
+        
+					<!-- box cover image -->
+					<img src="<?php echo$member_image; ?>" alt="<?php echo $image['alt']; ?>" class="memberImage"/>
+									
+				<ul class="accordion" data-accordion >
   <li class="accordion-item is-active" data-accordion-item>
     <a href="#" class="accordion-title">About</a>
     <div class="accordion-content" data-tab-content>
@@ -65,23 +64,19 @@ if (function_exists('get_field')) {
 	</div>
   </li>
 </ul>	
-			
-	</div>
+			</div>	
 
-
-
+  
+      </div>
 
 		<?php
 
-	}
+  }
+  
 }
 
 ?>
 
-        
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 <?php
 get_footer();
