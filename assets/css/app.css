@@ -206,7 +206,9 @@ h1 {
 }
 
 .accordion-title::before {
-    content: &Darr;
+    content: "\25bc";
+  margin-top: -18px;
+  font-size: 25px;
 }
 
 
@@ -222,7 +224,7 @@ h1 {
 
 #corefxBanner {
     /*    margin-left: 16%; */
-      width: 1080px;
+/*       width: 1080px; */
       padding-bottom: 25px;
       padding-top: 25px;
     }
