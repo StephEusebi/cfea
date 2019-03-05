@@ -162,10 +162,14 @@ h1 {
         padding:0;
         font-size:1.2em;
         font-family: 'Lato', sans-serif;
-        margin:.5em 0 .5em 8.5%;
+        margin:.5em 0 .5em 12.5%;
+    }
+    
+    .wsf-grid {
+        margin-left: 0px;
+        margin-right: 0px !important;
     }
 
-    
     button.wsf-button.wsf-button-primary:hover{
         background-color: #901f21;
     }
@@ -311,7 +315,12 @@ h1 {
         padding:0;
         font-size:1.2em;
         font-family: 'Lato', sans-serif;
-        margin:.5em 0 .5em 1.5em;
+        margin:.5em 0 .5em 13.5%;
+    }
+
+    .wsf-grid {
+        margin-left: 0px;
+        margin-right: 0px !important;
     }
 
     
@@ -450,7 +459,12 @@ h1 {
         padding:0;
         font-size:1.25em;
         font-family: 'Lato', sans-serif;
-        margin:.5em 0 .5em 1.8em;
+        margin:.5em 0 .5em 12.5%;
+    }
+
+    .wsf-grid {
+        margin-left: 0px;
+        margin-right: 0px !important;
     }
 
     
