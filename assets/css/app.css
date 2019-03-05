@@ -207,9 +207,10 @@ h1 {
 }
 
 .accordion-title::before {
-    content: &Darr;
+    content: "\25bc";
+  margin-top: -18px;
+  font-size: 25px;
 }
-
 
 /* COREFX */
 .descList {
@@ -788,7 +789,7 @@ footer{
     
         }
 
-    li {
+    .menu li {
     list-style: none;
     }
 
