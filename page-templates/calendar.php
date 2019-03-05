@@ -22,7 +22,13 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<p>Will implement a calendar plug in for this page.</p>
+		<div class="grid-x">
+			<div class="cell large-12">
+				<?php
+					echo do_shortcode('[eo_fullcalendar headerLeft="prev,next today" headerCenter="title" headerRight="month,agendaWeek"]');
+				?>
+			</div>
+		</div>
 
 
 		</main><!-- #main -->

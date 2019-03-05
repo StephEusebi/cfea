@@ -94,3 +94,12 @@ h1 {
 .progDesc {
     text-align: center;
 }
+
+
+.site-content{
+    padding:5%;
+}
+
+.eo-fullcalendar-reset.fc-unthemed .fc-today{
+    background-color:#0a415e !important;
+}
