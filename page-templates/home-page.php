@@ -70,14 +70,30 @@ get_header();
 						<div class="cell large-4 small-12 text-right" >
 							<!-- line  -->
 							<div style="width: 100%; height: 0.3rem; background-color: #0a415e; margin-bottom: 1rem;"></div>
-							<p><strong>Curtis Medina</strong> | Certified Fitness ... | CEO, CFEA</p>
 							
-							<p>Mini Bio - Awards, Achievements<br>
-							Over 15 years experience, nomiated.... how many fitness professionsal he taught
-							<br>Why work with him?</p>
+							<?php if (function_exists('get_field')) {
+								$about = get_field('about');
 
-							<p><a href="#" target="_blank"><em>Get Certified with Curtis</em></a></p>
+								foreach($about as $abouts){
+									$name = $abouts['name'];
+									$bio = $abouts['bio'];
+									$title = $abouts['title'];
+									$link_url = $abouts['link_url'];
+									$link_text = $abouts['link_text'];
+								
+							?>
+							<p><strong><?php echo$name; ?></strong> | <?php echo$title; ?></p>
+							
+							<p><?php echo$bio; ?></p>
 
+							<p><a  href="<?php echo $link_url; ?>"><em><?php echo$link_text; ?></em></a></p>
+							
+							<?php
+
+								}
+							}
+
+							?>
 						</div>
 
 						<div class="cell large-8 small-12">							
@@ -104,14 +120,27 @@ get_header();
 						<div class="cell large-4 small-12" >
 							<!-- line  -->
 							<div style="width: 100%; height: 0.3rem; background-color: #0a415e; margin-bottom: 1rem;"></div>
-							<p><strong>Team info</strong></p>
+							<?php if (function_exists('get_field')) {
+								$info_landing = get_field('info_landing');
+
+								foreach($info_landing as $info_landing){
+									$title = $info_landing['title'];
+									$team_information = $info_landing['team_information'];
+									$link_name = $info_landing['link_name'];
+									$link_url = $info_landing['link_url'];
+								
+							?>
+							<p><strong><?php echo$title; ?></strong></p>
 							
-							<p>team and program info</p>
-							<p>more team and program info. have about 4-5 lines of text and a all to action</p>
+							<p><?php echo$team_information; ?></p>
 
-							<p>more team and program info. have about 4-5 lines of text and a all to action more team and program info. have about 4-5 lines of text and a all to action</p>
-							<p><a href="#" target="_blank"><em>Get Certified!</em></a></p>
+							<p><a  href="<?php echo $link_url; ?>"><em><?php echo$link_text; ?></em></a></p>
+							<?php
 
+									}
+								}
+
+							?>
 						</div>
 
 					</div>
