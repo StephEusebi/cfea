@@ -189,6 +189,13 @@ h1 {
     .top-row {
         margin-top: 30px;
     }
+
+    .aboutAcordian {
+        width: 350px;
+        padding-right: 20px;; 
+        float: left;
+    }
+
     
 }
 
