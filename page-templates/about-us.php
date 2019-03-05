@@ -16,300 +16,76 @@
 
 get_header();
 ?>
+<h1 class="entry-title">About Us</h1>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="grid-x aboutUs">
+<div class="cell large-auto"></div>
+  <div class="cell large-10">
+    <h3 class="alignCenter">Welcome to the Canadian Fitness Education Alliance</h3>
+    <p> 
+Welcome to the Canadian Fitness Education Alliance (known as the CFEA).  We are a leading provider of fitness certification and education in Canada.  Through our professional partnerships, we have certified thousands of Canadian fitness professionals.
+Whether you are new to the fitness industry looking for your first job and want to become certified or you are a seasoned veteran looking for advanced certification and continuing education we are here to help you.
+<br>
+The CFEA’s mandate is simple.  To bring together the most recognized education brands in fitness today while giving you an amazing live education experience.  Our award-winning team of highly trained experienced Master Trainers, Instructors and PRO TRAINERS are among the best fitness educators in the industry today!
+</p>
+<h5 class="alignCenter">Let us help you take your fitness career to the next level!</h3>
+</div>
+<div class="cell large-auto"></div>
+</div>
 
-	<h1 class="entry-title">Our Team</h1>
+<h1 class="entry-title">Our Team</h1>
+<div class="grid-x large-offset-1">
+<?php 
 
-		<div class="grid-container fluid ">
-          <div class="grid-x grid-margin-x top-row">
-            <div class="cell small-4">
-				
-			<img class="teamMemberImg" src="/wp-content/themes/cfea/assets/img/Theresa-Holdsworth.jpg" alt="Theresa Holdsworth" />
+if (function_exists('get_field')) {
+	$people = get_field('people');
 
-			<ul class="accordion" data-accordion >
+	foreach($people as $people){
+
+		$member_image = $people['member_image'];
+		$member_about = $people['member_about'];
+		$member_programs = $people['member_programs'];
+		$member_contact = $people['member_contact'];
+?>
+
+    <!-- create boxes to hold page content -->
+        <div class="cell large-3 memberAbout">
+					<!-- box cover image -->
+          <img src="<?php echo$member_image; ?>" alt="<?php echo $image['alt']; ?>" class="memberImage"/>
+          					
+				<ul class="accordion" data-accordion >
   <li class="accordion-item is-active" data-accordion-item>
     <a href="#" class="accordion-title">About</a>
     <div class="accordion-content" data-tab-content>
-	Theresa has been a fitness personal trainer for 30 years. He has 3 awards in personal training. He is personal trainer teacher   
-
+    <!--MEMBER ABOUT---------->
+    <?php echo$member_about; ?>
     </div>
   </li>
   <li class="accordion-item" data-accordion-item>
     <a href="#" class="accordion-title">Programs</a>
     <div class="accordion-content" data-tab-content>
-      Fitness trainer
+    <!--MEMBER  PROGRAMS---------->
+    <?php echo$member_programs; ?>
 	</div>
-	<div class="accordion-content" data-tab-content>
-      Fitness teacher trainer
-    </div>
   </li>
   <li class="accordion-item" data-accordion-item>
     <a href="#" class="accordion-title">Contact</a>
     <div class="accordion-content" data-tab-content>
-	Whitby, ON
+    <!--MEMBER CONTACT---------->
+    <?php echo$member_contact; ?>
 	</div>
-	<div class="accordion-content" data-tab-content>
-	1-800-993-1521 ext. 240
-	</div>
-	<div class="accordion-content" data-tab-content>
-	theresa@cfea.ca
-    </div>
   </li>
 </ul>	
-			
-	</div>
-			<div class="cell small-4"><img class="teamMemberImg" src="/wp-content/themes/cfea/assets/img/Kennedy-Lodato.jpg" alt="Kennedy Lodato" />
-		
-			<ul class="accordion" data-accordion >
-  <li class="accordion-item is-active" data-accordion-item>
-    <a href="#" class="accordion-title">About</a>
-    <div class="accordion-content" data-tab-content>
-	Theresa has been a fitness personal trainer for 30 years. He has 3 awards in personal training. He is personal trainer teacher   
+			</div>	
 
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Programs</a>
-    <div class="accordion-content" data-tab-content>
-      Fitness trainer
-	</div>
-	<div class="accordion-content" data-tab-content>
-      Fitness teacher trainer
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Contact</a>
-    <div class="accordion-content" data-tab-content>
-	Whitby, ON
-	</div>
-	<div class="accordion-content" data-tab-content>
-	1-800-993-1521 ext. 240
-	</div>
-	<div class="accordion-content" data-tab-content>
-	theresa@cfea.ca
-    </div>
-  </li>
-</ul>	
-		
-		</div>
-			<div class="cell small-4"><img class="teamMemberImg" src="/wp-content/themes/cfea/assets/img/Glen-Burgess.jpg" alt="Glen Burgess" />
-			<ul class="accordion" data-accordion >
-  <li class="accordion-item is-active" data-accordion-item>
-    <a href="#" class="accordion-title">About</a>
-    <div class="accordion-content" data-tab-content>
-	Theresa has been a fitness personal trainer for 30 years. He has 3 awards in personal training. He is personal trainer teacher   
+		<?php
 
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Programs</a>
-    <div class="accordion-content" data-tab-content>
-      Fitness trainer
-	</div>
-	<div class="accordion-content" data-tab-content>
-      Fitness teacher trainer
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Contact</a>
-    <div class="accordion-content" data-tab-content>
-	Whitby, ON
-	</div>
-	<div class="accordion-content" data-tab-content>
-	1-800-993-1521 ext. 240
-	</div>
-	<div class="accordion-content" data-tab-content>
-	theresa@cfea.ca
-    </div>
-  </li>
-</ul>	
-		
-		</div>
-          </div>
-		</div>
-		<br>
-		<div class="grid-container fluid">
-          <div class="grid-x grid-margin-x">
-			<div class="cell small-4"><img class="teamMemberImg" src="/wp-content/themes/cfea/assets/img/Nick-Petrella.jpg" alt="Nick Petrella" />
-		
-			<ul class="accordion" data-accordion >
-  <li class="accordion-item is-active" data-accordion-item>
-    <a href="#" class="accordion-title">About</a>
-    <div class="accordion-content" data-tab-content>
-	Theresa has been a fitness personal trainer for 30 years. He has 3 awards in personal training. He is personal trainer teacher   
+  }
+  
+}
 
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Programs</a>
-    <div class="accordion-content" data-tab-content>
-      Fitness trainer
+?>
 	</div>
-	<div class="accordion-content" data-tab-content>
-      Fitness teacher trainer
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Contact</a>
-    <div class="accordion-content" data-tab-content>
-	Whitby, ON
-	</div>
-	<div class="accordion-content" data-tab-content>
-	1-800-993-1521 ext. 240
-	</div>
-	<div class="accordion-content" data-tab-content>
-	theresa@cfea.ca
-    </div>
-  </li>
-</ul>	
-		</div>
-			<div class="cell small-4"><img class="teamMemberImg" src="/wp-content/themes/cfea/assets/img/Dan-Jackson.jpg" alt="Dan Jackson" />
-		
-			<ul class="accordion" data-accordion >
-  <li class="accordion-item is-active" data-accordion-item>
-    <a href="#" class="accordion-title">About</a>
-    <div class="accordion-content" data-tab-content>
-	Theresa has been a fitness personal trainer for 30 years. He has 3 awards in personal training. He is personal trainer teacher   
-
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Programs</a>
-    <div class="accordion-content" data-tab-content>
-      Fitness trainer
-	</div>
-	<div class="accordion-content" data-tab-content>
-      Fitness teacher trainer
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Contact</a>
-    <div class="accordion-content" data-tab-content>
-	Whitby, ON
-	</div>
-	<div class="accordion-content" data-tab-content>
-	1-800-993-1521 ext. 240
-	</div>
-	<div class="accordion-content" data-tab-content>
-	theresa@cfea.ca
-    </div>
-  </li>
-</ul>	
-
-		</div>
-			<div class="cell small-4"><img class="teamMemberImg" src="/wp-content/themes/cfea/assets/img/Rick-Bulley.jpg" alt="Rick Bulley" />
-			<ul class="accordion" data-accordion >
-  <li class="accordion-item is-active" data-accordion-item>
-    <a href="#" class="accordion-title">About</a>
-    <div class="accordion-content" data-tab-content>
-	Theresa has been a fitness personal trainer for 30 years. He has 3 awards in personal training. He is personal trainer teacher   
-
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Programs</a>
-    <div class="accordion-content" data-tab-content>
-      Fitness trainer
-	</div>
-	<div class="accordion-content" data-tab-content>
-      Fitness teacher trainer
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Contact</a>
-    <div class="accordion-content" data-tab-content>
-	Whitby, ON
-	</div>
-	<div class="accordion-content" data-tab-content>
-	1-800-993-1521 ext. 240
-	</div>
-	<div class="accordion-content" data-tab-content>
-	theresa@cfea.ca
-    </div>
-  </li>
-</ul>	
-		
-		</div>
-          </div>
-		</div>
-
-		<br>
-		<div class="grid-container fluid">
-          <div class="grid-x grid-margin-x">
-			<div class="cell small-4"><img class="teamMemberImg" src="/wp-content/themes/cfea/assets/img/Alex-Lemay.jpg" alt="Alex-Lemay" />
-			<ul class="accordion" data-accordion >
-  <li class="accordion-item is-active" data-accordion-item>
-    <a href="#" class="accordion-title">About</a>
-    <div class="accordion-content" data-tab-content>
-	Theresa has been a fitness personal trainer for 30 years. He has 3 awards in personal training. He is personal trainer teacher   
-
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Programs</a>
-    <div class="accordion-content" data-tab-content>
-      Fitness trainer
-	</div>
-	<div class="accordion-content" data-tab-content>
-      Fitness teacher trainer
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Contact</a>
-    <div class="accordion-content" data-tab-content>
-	Whitby, ON
-	</div>
-	<div class="accordion-content" data-tab-content>
-	1-800-993-1521 ext. 240
-	</div>
-	<div class="accordion-content" data-tab-content>
-	theresa@cfea.ca
-    </div>
-  </li>
-</ul>	
-		
-		</div>
-			<div class="cell small-4"><img class="teamMemberImg" src="/wp-content/themes/cfea/assets/img/Lee-Randell.jpg" alt="Lee-Randell" />
-		
-			<ul class="accordion" data-accordion >
-  <li class="accordion-item is-active" data-accordion-item>
-    <a href="#" class="accordion-title">About</a>
-    <div class="accordion-content" data-tab-content>
-	Theresa has been a fitness personal trainer for 30 years. He has 3 awards in personal training. He is personal trainer teacher   
-
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Programs</a>
-    <div class="accordion-content" data-tab-content>
-      Fitness trainer
-	</div>
-	<div class="accordion-content" data-tab-content>
-      Fitness teacher trainer
-    </div>
-  </li>
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Contact</a>
-    <div class="accordion-content" data-tab-content>
-	Whitby, ON
-	</div>
-	<div class="accordion-content" data-tab-content>
-	1-800-993-1521 ext. 240
-	</div>
-	<div class="accordion-content" data-tab-content>
-	theresa@cfea.ca
-    </div>
-  </li>
-</ul>	
-		</div>
-            <div class="cell white small-4"><img class="teamMemberImg" src="" alt="" /></div>
-          </div>
-        </div>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 <?php
 get_footer();
