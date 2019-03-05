@@ -16,11 +16,25 @@
 
 get_header();
 ?>
+<h1 class="entry-title">About Us</h1>
+
+<div class="grid-x aboutUs">
+<div class="cell large-auto"></div>
+  <div class="cell large-10">
+    <h3 class="alignCenter">Welcome to the Canadian Fitness Education Alliance</h3>
+    <p> 
+Welcome to the Canadian Fitness Education Alliance (known as the CFEA).  We are a leading provider of fitness certification and education in Canada.  Through our professional partnerships, we have certified thousands of Canadian fitness professionals.
+Whether you are new to the fitness industry looking for your first job and want to become certified or you are a seasoned veteran looking for advanced certification and continuing education we are here to help you.
+<br>
+The CFEA’s mandate is simple.  To bring together the most recognized education brands in fitness today while giving you an amazing live education experience.  Our award-winning team of highly trained experienced Master Trainers, Instructors and PRO TRAINERS are among the best fitness educators in the industry today!
+</p>
+<h5 class="alignCenter">Let us help you take your fitness career to the next level!</h3>
+</div>
+<div class="cell large-auto"></div>
+</div>
 
 <h1 class="entry-title">Our Team</h1>
-<div class="cell large-offset-2 memberAbout">
-
-<div class="cell large-3 memberAbout">
+<div class="grid-x large-offset-1">
 <?php 
 
 if (function_exists('get_field')) {
@@ -34,13 +48,11 @@ if (function_exists('get_field')) {
 		$member_contact = $people['member_contact'];
 ?>
 
-
-
-				<!-- create boxes to hold page content -->
-        
+    <!-- create boxes to hold page content -->
+        <div class="cell large-3 memberAbout">
 					<!-- box cover image -->
-					<img src="<?php echo$member_image; ?>" alt="<?php echo $image['alt']; ?>" class="memberImage"/>
-									
+          <img src="<?php echo$member_image; ?>" alt="<?php echo $image['alt']; ?>" class="memberImage"/>
+          					
 				<ul class="accordion" data-accordion >
   <li class="accordion-item is-active" data-accordion-item>
     <a href="#" class="accordion-title">About</a>
@@ -66,9 +78,6 @@ if (function_exists('get_field')) {
 </ul>	
 			</div>	
 
-  
-      </div>
-
 		<?php
 
   }
@@ -76,7 +85,7 @@ if (function_exists('get_field')) {
 }
 
 ?>
-
+	</div>
 
 <?php
 get_footer();

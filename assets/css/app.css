@@ -105,8 +105,33 @@ h1 {
 /*About us*/
 
 .memberAbout {
-    width: 300px;
+    margin-right: 100px;
+    font-family: 'Lato', sans-serif;
 
 }
 
+.memberContact {
+    list-style: none;
+}
 
+.alignCenter {
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+}
+
+.aboutUs {
+    font-family: 'Lato', sans-serif;
+}
+
+.accordion-title {
+    text-align: center;
+    background-color: #0a415e;
+    color: white;
+    font-size: 25px;
+}
+
+.accordion-title::before {
+    content: "\25bc";
+    margin-top: -18px;
+    font-size: 25px;
+}
