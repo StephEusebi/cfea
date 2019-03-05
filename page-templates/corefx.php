@@ -150,7 +150,7 @@ get_header();
 
 		<!-- bottom page logo -->
 		<div class="cell large-8">
-				<img src="/wp-content/themes/cfea/assets/img/corefx.jpg" alt="corefx logo"  id="corefxLogo" />
+				<img src="/wp-content/themes/cfea/assets/img/corefx.jpg" alt="corefx logo"  id="corefxLogo2" />
 		</div>
 	</div>
 
