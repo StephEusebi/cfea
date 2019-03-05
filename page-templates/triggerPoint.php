@@ -24,7 +24,7 @@ get_header();
 
 			<!-- banner at top of page -->
 		<div class="cell large-12">
-				<img src="/wp-content/themes/cfea/assets/img/triggerpointbanner.png" alt="triggerPoint banner" id="trigBannerss" />
+				<img src="/wp-content/themes/cfea/assets/img/triggerpointbanner.png" alt="triggerPoint banner" id="trigBanner" />
 		</div>
 				
 					
