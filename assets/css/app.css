@@ -1,5 +1,3 @@
-/* DEVELOP CSS */
-
 /* Basic CSS RULES */
 
 body {
@@ -66,7 +64,6 @@ h1 {
     background-color: #901f21;
 }
 
-<<<<<<< HEAD
 /* LANDING PAGE */
 
 /* 4 images with backgrounds as images and logos on html */
@@ -77,11 +74,7 @@ h1 {
     background-repeat: no-repeat;
 }
 
-.corefx img {
-    background:linear-gradient(0deg,#0a415eb2,#042a3f8a), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
-}
-
-.corefx img:hover {
+.corefx:hover {
     background: linear-gradient(0deg,#153e539f,#153e539f), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
     cursor: pointer;
     background-repeat: no-repeat;
@@ -123,12 +116,10 @@ h1 {
     background-repeat: no-repeat;
 }
 
-/* PROGRAMS PAGE */
-
-.progDesc {
-    text-align: left;
-    margin-top: 25px;
-    margin-bottom: 25px;
+#viprBanner {
+    width: 82%;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 <<<<<<< HEAD

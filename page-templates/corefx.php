@@ -19,10 +19,10 @@
 get_header();
 ?>
 <div class="grid-x grid-margin-x">
-	<div class="large-offset-2 ">
+	<div class="large-offset-2">
 
 			<!-- banner at top of page -->
-		<div class="cell large-12">
+		<div class="cell large-12 large-10">
 				<img src="/wp-content/themes/cfea/assets/img/corefxbanner.png" alt="corefx banner"  id="corefxBanner" />
 		</div>
 				
@@ -150,7 +150,7 @@ get_header();
 
 		<!-- bottom page logo -->
 		<div class="cell large-8">
-				<img src="/wp-content/themes/cfea/assets/img/corefx.jpg" alt="corefx logo"  id="corefxLogo" />
+				<img src="/wp-content/themes/cfea/assets/img/corefx.jpg" alt="corefx logo"  id="corefxLogo2" />
 		</div>
 	</div>
 
