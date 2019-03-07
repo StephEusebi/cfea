@@ -19,15 +19,16 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main">
 
-		<p>Will implement a calendar plug in for this page.</p>
+            <p>Will implement a calendar plug in for this page.</p>
 
+        </main>
+        <!-- #main -->
+    </div>
+    <!-- #primary -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
+    <?php
 // imports the footer
 get_footer();
