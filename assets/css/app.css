@@ -123,6 +123,17 @@ h1 {
 }
 
 <<<<<<< HEAD
+
+	/* PROGRAMS PAGE */
+	
+	.progDesc {
+	    text-align: left;
+	    margin-top: 25px;
+	    margin-bottom: 25px;
+	}
+
+
+
 .programTables td {
     text-align: center;
 }
@@ -216,10 +227,31 @@ h1 {
 
 #corefxBanner {
     /*    margin-left: 16%; */
-      width: 1080px;
+      width: 82%;
       padding-bottom: 25px;
       padding-top: 25px;
     }
+
+
+#corefxLogo2 {
+    width: 200px;
+    margin-left: 870px;
+    margin-bottom: 50px;
+}
+        	
+/* triggerpoint page */
+        	
+#trigLogo2 {
+    width: 200px;
+    margin-left: 800px;
+    margin-bottom: 50px;
+}
+        	
+#trigBanner {
+ width: 82%;
+ padding-bottom: 25px;
+ padding-top: 25px;
+}
 
 /* CANFITPRO */
 
@@ -235,7 +267,7 @@ h1 {
 }
 
 .rcVideo {
-    margin-left: 100px;
+    margin-left: 50px;
     margin-bottom: 100px;
     margin-top: 50px;
 }
@@ -776,6 +808,14 @@ footer{
 }
 
 /*Header changes on all sizes*/
+
+.header1 {
+  height: 100px;
+  width: 100%;
+  background-color: #0a415e;
+}
+
+
     .menu .is-active > a {
         background-color: #fff !important;
         color: #1468a0;
@@ -921,7 +961,7 @@ footer{
     }
     
     /* controls the logo section and where the logo ends up being placed */
-    .logo{
+    .logo {
         text-align: right;
         margin:0 auto;
         margin-top:4.5em;
