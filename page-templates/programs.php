@@ -19,22 +19,16 @@ get_header();
 
 ?>
 
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main">
 
-<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-			
-			<h1 class="programsTitle">CURRENT PROGRAMS</h1>
+            <h1 class="programsTitle">CURRENT PROGRAMS</h1>
 
-			<p class="programInfo">At CFEA we have a number of different programs to help you reach all of your 
-			fitness goals!</p>
+            <p class="programInfo">At CFEA we have a number of different programs to help you reach all of your fitness goals!</p>
 
-
-
-
-
-			<!-- <ul class="accordion plAccordian" data-accordion>
+            <!-- <ul class="accordion plAccordian" data-accordion>
 				<li class="accordion-item accordianStyle" data-accordion-item>
-				
+
 					<a href="#" class="accordion-title plAccordianTitle">COREFX</a>
 
 					<div class="accordion-content" data-tab-content>
@@ -45,10 +39,9 @@ get_header();
 				</li>
 
 				<li class="accordion-item accordianStyle" data-accordion-item>
-				
+
 					<a href="#" class="accordion-title plAccordianTitle">TRIGGERPOINT</a>
 
-				
 					<div class="accordion-content" data-tab-content>
 					<p>TriggerPoint Performance is a patented brand that improves life by focusing on 
 			energizing people with the radical organization in Myofascial Compression techniques 
@@ -59,10 +52,9 @@ get_header();
 				</li>
 
 				<li class="accordion-item accordianStyle" data-accordion-item>
-				
+
 					<a href="#" class="accordion-title plAccordianTitle">CANADIAN RED CROSS</a>
 
-				
 					<div class="accordion-content" data-tab-content>
 					<p>CPR/AED</p>
 					<a href="redcross" class="button">Learn More</a>
@@ -70,10 +62,9 @@ get_header();
 				</li>
 
 				<li class="accordion-item accordianStyle" data-accordion-item>
-				
+
 					<a href="#" class="accordion-title plAccordianTitle">VIPR</a>
 
-				
 					<div class="accordion-content" data-tab-content>
 					<p>The disparity between movement and power exercises is linked by ViPR. 
 			It merges complete body movement with weight, thereby improving the vivacity, implementation along with 
@@ -82,12 +73,13 @@ get_header();
 					</div>
 				</li>
 			</ul> -->
-			
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
+        </main>
+        <!-- #main -->
+    </div>
+    <!-- #primary -->
 
-<?php 
+    <?php 
 
 if (function_exists('get_field')) {
 	$programs = get_field('programs');
@@ -97,33 +89,35 @@ if (function_exists('get_field')) {
 		$description = $program['description'];
 		$button = $program['button'];
 ?>
-		<div class="grid-x grid-margin-x large-offset-2">
+        <div class="grid-x grid-margin-x large-offset-2">
 
-		<div class="cell large-10">
+            <div class="cell large-10">
 
-			<ul class="accordion plAccordian" data-accordion data-allow-all-closed="true">
-				<li class="accordion-item accordianStyle" data-accordion-item>
-					<!-- Accordion tab title -->
-					<a href="#" class="accordion-title plAccordianTitle"><?php echo$name; ?></a>
+                <ul class="accordion plAccordian" data-accordion data-allow-all-closed="true">
+                    <li class="accordion-item accordianStyle" data-accordion-item>
+                        <!-- Accordion tab title -->
+                        <a href="#" class="accordion-title plAccordianTitle">
+                            <?php echo$name; ?>
+                        </a>
 
-					<!-- Accordion tab content -->
-					<div class="accordion-content" data-tab-content>
-					<p><?php echo$description; ?></p>
-					<a  class="button" href="<?php echo$button; ?>">Learn More</a>
-					</div>
-				</li>
-			</ul>
-			</div>
-		</div>
+                        <!-- Accordion tab content -->
+                        <div class="accordion-content" data-tab-content>
+                            <p>
+                                <?php echo$description; ?>
+                            </p>
+                            <a class="button" href="<?php echo$button; ?>">Learn More</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-
-		<?php
+        <?php
 
 	}
 }
 
 ?>
 
-	
-<?php
+            <?php
 get_footer();

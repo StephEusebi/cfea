@@ -19,36 +19,32 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+    <div class="grid-x grid-margin-x">
+        <div class="large-offset-2 ">
 
-			<img src="/wp-content/themes/cfea/assets/img/canfitprologo.png" alt="canfitpro logo" class="cell large-12" id="canfitproLogo" />
+            <!-- banner at top of page -->
+            <div class="cell large-8">
+                <img src="/wp-content/themes/cfea/assets/img/canfitprologo.png" alt="canfitpro logo" class="cell large-12" id="canfitproLogo" />
+            </div>
 
-			<!-- <h2 class="cell large-12 progHead">COREFX</h2> -->
-			<div class="cell large-offset-2 ">
+            <!-- <h2 class="cell large-12 progHead">COREFX</h2> -->
+            <div class="grid-x grid-margin-x">
 
-		<p>Canfitpro is the most recognized provider of fitness certification in Canada today. Through our partnership with Allied Education we are able to offer a wide variety canfitpro certification courses including:</p>
-<ul>
-    <li>Personal Trainer Specialist (PTS)</li>
-    <li>Fitness Instructor Specialist (FIS)</li>
-    <li>Healthy Eating & Weight Loss Coach (HWL)</li>
-    <li>Pre & Post Natal Specialist (PFS)</li>
-    <li>First Aid & Cardio Pulmonary Resuscitation (First Aid &CPR)</li>
-</ul>
+                <p class="cell large-10 progDesc">Canfitpro is the most recognized provider of fitness certification in Canada today. Through our partnership with Allied Education we are able to offer a wide variety canfitpro certification courses including:</p>
+                <ul class="cell large-10 progDesc">
+                    <li>Personal Trainer Specialist (PTS)</li>
+                    <li>Fitness Instructor Specialist (FIS)</li>
+                    <li>Healthy Eating & Weight Loss Coach (HWL)</li>
+                    <li>Pre & Post Natal Specialist (PFS)</li>
+                    <li>First Aid & Cardio Pulmonary Resuscitation (First Aid &CPR)</li>
+                </ul>
 
-<p class="cell large-12 progDesc">Whether you are new to the fitness industry looking to become certified or a seasoned veteran looking for advanced certification and continuing education we can help. </p>
+                <p class="cell large-12 progDesc">Whether you are new to the fitness industry looking to become certified or a seasoned veteran looking for advanced certification and continuing education we can help. </p>
 
-			</div>
+            </div>
+        </div>
+    </div>
 
-			
-
-		
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-
-
-
-<?php
+    <?php
 // imports the footer
 get_footer();

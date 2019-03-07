@@ -19,14 +19,14 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main">
 
-			<!-- main -->
-			<div class="grid-x">
-			<div class="cell small-12 medium-12 large-6 NavText">
-		<h1>Contact Us</h1>
-		<?php
+            <!-- main -->
+            <div class="grid-x">
+                <div class="cell small-12 medium-12 large-6 NavText">
+                    <h1>Contact Us</h1>
+                    <?php
 			if(function_exists('get_field')) {
 				$contact_form = get_field('contact_form');
 
@@ -37,26 +37,30 @@ get_header();
 					$confirmBox = $contact['confirm'];
 		?>
 
-		<label>First Name</label>
-		<input class="text-center" <?php echo$firstname; ?> >
+                        <label>First Name</label>
+                        <input class="text-center" <?php echo$firstname; ?> >
 
-		<label>Email</label>
-		<input class="text-center" <?php echo$emailaddress; ?> >
+                        <label>Email</label>
+                        <input class="text-center" <?php echo$emailaddress; ?> >
 
-		<label>Message</label>
-		<textarea rows="8"> <?php echo$messages; ?> </textarea>
+                        <label>Message</label>
+                        <textarea rows="8">
+                            <?php echo$messages; ?>
+                        </textarea>
 
-		<label>Confirm Box</label>
-		<input type="checkbox" class="text-center" <?php echo$confirmBox; ?> >
+                        <label>Confirm Box</label>
+                        <input type="checkbox" class="text-center" <?php echo$confirmBox; ?> >
 
-		<?php
+                        <?php
 	}
 }
 ?>
-		</main><!-- #main -->
+        </main>
+        <!-- #main -->
 
-	</div><!-- #primary -->
+        </div>
+        <!-- #primary -->
 
-<?php
+        <?php
 // imports the footer
 get_footer();
