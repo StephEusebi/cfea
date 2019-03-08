@@ -215,11 +215,7 @@ h1 {
 #example-animated-menu, .menu-main-container, #primary-menu {
     background-color: #fff !important;
 }
-footer{
-    width:100%;
-    height:14em;
-    border: solid 1px #686868;
-}
+
 
 /* NAV STYLES */
 
@@ -231,63 +227,12 @@ footer{
     text-align: center;
 }
 
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-
-.top-bar ul {
-    background-color: #fff !important;
-}
-
-/*LARGE*/
-@media screen and (min-width: 64em){
-
-
-    
-    #primary-menu {
-        margin-top: 60px;
-    }
-    
-    .logoImg {
-        width: 120px;
-        height: auto;
-        margin-left: 40%;
-        margin-top: 30px;
-        text-align: center;
-    }
-
-    .smallNav {
-        display: none;
-    }
-    
-    
-    
-}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-
-    .logoImg {
-        width: 120px;
-        height: auto;
-        margin-top: 30px;
-
-    }
-
-    .logoDiv{
-        text-align: center !important;
-    }
-
-    .center {
-        text-align: center !important;
-        margin: 0 auto;
-    }
-
-
-}
-
-
 /*SMALL*/
 @media screen and (max-width: 39.9375em) {
+
+    .top-bar ul {
+        background-color: #fff !important;
+    }
 
     
     .logoImg {
@@ -311,191 +256,490 @@ footer{
         background: #868686 !important;
     }
 
+     /* styles the footer background */
+     footer{
+        background-color: #E3E3E3;
+        margin:0;
+        padding:0;
+    } 
+
+    /* changed the padding on the footerNav section */
+    .footerNav{
+       font-size:1em;
+       padding-left:1em;
+    }
+
+    .footerNav h2{
+        font-size:1.25em;
+        margin:0;
+        padding:0;
+        margin-left:4%;
+        font-family: 'Lato', sans-serif;
+        margin-bottom:0.25em;
+    }
+    
+    /* controls the logo section and where the logo ends up being placed */
+    .logo{
+        text-align: center;
+        margin:0 auto;
+        margin-top:1em;
+    }
+    
+    /* sizes the logo */
+    .logo img{
+        width:40%;
+        height:auto;    
+    }
+    
+    /* controls the main footer menu */
+    #footer-menu{
+        padding:0;
+        margin:0;
+        margin-top:1em;
+    }
+
+    #footer-menu ul{
+        list-style: none;
+        padding:0;
+        display: inline;
+    }
+
+    #footer-menu ul li{
+        float:right;
+    }
+
+    /* controls the program menu */
+    #program-menu{
+        margin:0;
+        padding:0;
+    }
+
+    #program-menu a{
+        margin:0;
+        padding-top:.2em;
+    }
+    
+    /* controls the contact section */
+    .contactInfo{ 
+        padding:0;
+        margin-top:.5em;
+    }
+    
+    .contactInfo p{
+        font-family: 'Lato', sans-serif;
+        font-size:.75em;
+        text-align: left;
+        margin-left:5%;
+    }
+
+    /* controls the form section */ 
+    .newsLetterForm p{
+        font-family: 'Lato', sans-serif;
+        font-size:1em;
+        text-align: left;
+    }
+
+    .newsLetterForm p{
+        margin:0;
+        padding:0;
+    }
+
+    .newsLetterForm h2{
+        margin:0;
+        padding:0;
+        font-size:1.2em;
+        font-family: 'Lato', sans-serif;
+        margin:.5em 0 .5em 12.5%;
+    }
+    
+    .wsf-grid {
+        margin-left: 0px;
+        margin-right: 0px !important;
+    }
+
+    button.wsf-button.wsf-button-primary:hover{
+        background-color: #901f21;
+    }
+
+    input[type=checkbox].wsf-field + .wsf-label  {
+        font-size: .8em;
+        margin-bottom:0 !important;
+    }
+
+
+    /* controls the social media icons */
+    .socialMediaIcons{
+        margin-left:40%;
+        margin-top:0;
+    }
+
+    .socialMedia{
+        font-size:1em; 
+        margin-top:0;
+        padding-left:0;
+        margin-bottom:1em;
+    }
+    
+    .fbIcon{
+        font-size:1.5em; 
+        color:black;
+        margin-right:.25em; 
+    }
+
+    .fbIcon:hover{
+        color:#901f21;
+    }
+
+    .twitterIcon{
+        font-size:1.5em; 
+        color:black;
+        margin-right:.25em;
+    }
+
+    .twitterIcon:hover{
+        color:#901f21;
+    }
+    
+    .instagramIcon{
+        font-size:1.5em; 
+        color:black;
+    }
+
+    .instagramIcon:hover{
+        color:#901f21;
+    }
 
 
  }
 
 
-
-.logo{
-    text-align: center;
-    margin:0 auto;
-    padding-top:1em;
- 
-}
-    .logo{
-        text-align: center;
-        margin:0 auto;
-
-    }
-    
-    .logo img{
-        width:13em;
-        height:auto;
-    }
-    
-    .logo p{
-        font-family: 'Lato', sans-serif;
-        margin-top:.2em;
-        font-size:.4em;
-    }
-    
-    .contactInfo h2{
-        font-family: 'Lato', sans-serif;
-        font-size:.75em;
-        text-align: right;
-        margin:0;
-        padding:0;
-    }
-    
-    .contactInfo p{
-        font-family: 'Lato', sans-serif;
-        font-size:.50em;
-        text-align: right;
-        margin:0;
-        padding:0;
-    }
-    
-    .contactInfo{
-        padding-top:6em;
-        padding-right:1em;
-    }
-    
-    .socialMedia{
-        font-size:1.25em; 
-        margin-top:5.5em;
-        text-align: left;
-        padding-left:.5em;
-    }
-    
-    .fbIcon{
-        color:#3b5998;
-        margin-right:.25em; 
-    }
-    
-    .twitterIcon{
-        color:#38A1F3;
-        margin-right:.25em;
-    }
-}
-
 /* Medium and up */
 @media screen and (min-width: 40em) {
 
-    .logo{
-        text-align: center;
-        margin:0 auto;
+    .logoImg {
+        width: 120px;
+        height: auto;
+        margin-top: 30px;
+
     }
-    
-    .logo img{
-        width:13em;
-        height:auto;
+
+    .logoDiv{
+        text-align: center !important;
     }
-    
-    .logo p{
-        font-family: 'Lato', sans-serif;
-        margin-top:.2em;
-        font-size:.7em;
-        padding:0;
+
+    .center {
+        text-align: center !important;
+        margin: 0 auto;
+    }
+
+    footer{
+        background-color: #E3E3E3;
         margin:0;
-        margin-bottom:.5em;
+        padding:0;
+    } 
+
+    /* changed the padding on the footerNav section */
+    .footerNav{
+        padding-left:2em;
     }
-    
-    .contactInfo h2{
-        font-family: 'Lato', sans-serif;
+
+    .footerNav h2{
         font-size:1.25em;
-        text-align: right;
         margin:0;
         padding:0;
+        margin-left:0.7em;
+        font-family: 'Lato', sans-serif;
+        margin-top:.75em;
+    }
+    
+    /* controls the logo section and where the logo ends up being placed */
+    .logo{
+        text-align: right;
+        margin:0 auto;
+        margin-top:4.5em;
+    }
+    
+    /* sizes the logo */
+    .logo img{
+        width:80%;
+        height:auto;    
+    }
+    
+    /* controls the main footer menu */
+    #footer-menu{
+        padding:0;
+        margin:0;
+        margin-top:2em;
+    }
+
+    #footer-menu ul{
+        list-style: none;
+        padding:0;
+        display: inline;
+    }
+
+    #footer-menu ul li{
+        float:right;
+    }
+
+    #footer-menu a{
+        padding-right:0;
+    }
+
+
+    /* controls the program menu */
+    #program-menu{
+        margin:0;
+        padding:0;
+    }
+
+    #program-menu a{
+        margin:0;
+        padding-top:.2em;
+        padding-right:0;
+    }
+    
+    /* controls the contact section */
+
+    .contactInfo{ 
+        padding:0;
+        margin-top:1.6em;
+        margin-left:3%;
     }
     
     .contactInfo p{
         font-family: 'Lato', sans-serif;
         font-size:1em;
-        text-align: right;
+        text-align: left;
         margin:0;
         padding:0;
     }
     
-    .contactInfo{
-        padding-top:7em;
-        padding-right:4em;
+    .newsLetterForm h2{
+        margin:0;
+        padding:0;
+        font-size:1.2em;
+        font-family: 'Lato', sans-serif;
+        margin:.5em 0 .5em 13.5%;
     }
+
+    .wsf-grid {
+        margin-left: 0px;
+        margin-right: 0px !important;
+    }
+
     
+    button.wsf-button.wsf-button-primary:hover{
+        background-color: #901f21;
+    }
+
+    input[type=checkbox].wsf-field + .wsf-label  {
+        font-size: .8em;
+        margin-bottom:0 !important;
+    }
+
+
+    /* controls the social media icons */
+    .socialMediaIcons{
+        margin-left:40%;
+        margin-top:0;
+    }
+
     .socialMedia{
-        font-size:2.25em; 
-        margin-top:4em;
-        text-align: left;
-        padding-left:1em;
+        font-size:1em; 
+        margin-top:0;
+        padding-left:0;
+        margin-bottom:1em;
     }
     
     .fbIcon{
-        color:#3b5998;
+        font-size:1.5em; 
+        color:black;
         margin-right:.25em; 
     }
-    
+
+    .fbIcon:hover{
+        color:#901f21;
+    }
+
     .twitterIcon{
-        color:#38A1F3;
+        font-size:1.5em; 
+        color:black;
         margin-right:.25em;
+    }
+
+    .twitterIcon:hover{
+        color:#901f21;
+    }
+    
+    .instagramIcon{
+        font-size:1.5em; 
+        color:black;
+    }
+
+    .instagramIcon:hover{
+        color:#901f21;
     }
 }
 
 /* Large and up */
 @media screen and (min-width: 64em) {
+
+        
+    #primary-menu {
+        margin-top: 60px;
+    }
     
-    .logo{
+    .logoImg {
+        width: 120px;
+        height: auto;
+        margin-left: 40%;
+        margin-top: 30px;
         text-align: center;
-        margin:0 auto;
-        margin-bottom:1em;
+    }
+
+    .smallNav {
+        display: none;
     }
     
-    .logo img{
-        width:13em;
-        height:auto;
+    /* styles the footer background */
+    footer{
+        background-color: #E3E3E3 !important;
+        margin:0;
+        padding:0;
+    } 
+
+    /* changed the padding on the footerNav section */
+    .footerNav{
+        padding-left:6em;
     }
-    
-    .logo p{
+
+    .footerNav h2{
+        font-size:1.25em;
+        margin:0;
+        padding:0;
+        margin-left:0.7em;
         font-family: 'Lato', sans-serif;
-        margin-top:.2em;
-        font-size:1em;
+        margin-top:.75em;
     }
     
+    /* controls the logo section and where the logo ends up being placed */
+    .logo{
+        text-align: right;
+        margin:0 auto;
+        margin-top:4.5em;
+    }
+    
+    /* sizes the logo */
+    .logo img{
+        width:75%;
+        height:auto;    
+    }
+    
+    /* controls the main footer menu */
+    #footer-menu{
+        padding:0;
+        margin:0;
+        margin-top:2em;
+    }
+
+    #footer-menu ul{
+        list-style: none;
+        padding:0;
+        display: inline;
+    }
+
+    #footer-menu ul li{
+        float:right;
+    }
+
+    /* controls the program menu */
+    #program-menu{
+        margin:0;
+        padding:0;
+    }
+
+    #program-menu a{
+        margin:0;
+        padding-top:.2em;
+    }
+    
+    /* controls the contact section */
     .contactInfo{ 
         padding:0;
-        margin:0 auto;
-        margin-bottom:1em;
-        margin-top:7em;
-        padding-right:3em;
-    }
-    
-    .contactInfo h2{
-        font-family: 'Lato', sans-serif;
-        font-size:1.25em;
-        text-align: right; 
+        margin-top:1.8em;
     }
     
     .contactInfo p{
         font-family: 'Lato', sans-serif;
         font-size:1em;
-        text-align: right;
+        text-align: left;
     }
     
+    .newsLetterForm h2{
+        margin:0;
+        padding:0;
+        font-size:1.25em;
+        font-family: 'Lato', sans-serif;
+        margin:.5em 0 .5em 12.5%;
+    }
+
+    .wsf-grid {
+        margin-left: 0px;
+        margin-right: 0px !important;
+    }
+
+    
+    button.wsf-button.wsf-button-primary:hover{
+        background-color: #901f21;
+    }
+
+    input[type=checkbox].wsf-field + .wsf-label  {
+        font-size: .8em;
+        margin-bottom:0 !important;
+    }
+
+    /* controls the social media icons */
+    .socialMediaIcons{
+        margin-left:40%;
+        margin-top:0;
+    }
+
     .socialMedia{
-        font-size:2em; 
-        margin-top:4.75em;
-        padding-left:1.5em;
-        text-align: left;
-        margin-bottom: 1em;
+        font-size:1em; 
+        margin-top:0;
+        padding-left:0;
+        margin-bottom:1em;
     }
     
     .fbIcon{
-        color:#3b5998;
+        font-size:1.5em; 
+        color:black;
         margin-right:.25em; 
     }
-    
+
+    .fbIcon:hover{
+        color:#901f21;
+    }
+
     .twitterIcon{
-        color:#38A1F3;
+        font-size:1.5em; 
+        color:black;
         margin-right:.25em;
     }
+
+    .twitterIcon:hover{
+        color:#901f21;
+    }
+    
+    .instagramIcon{
+        font-size:1.5em; 
+        color:black;
+    }
+
+    .instagramIcon:hover{
+        color:#901f21;
+    }
+    
     
 }
