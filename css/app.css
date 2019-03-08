@@ -31,13 +31,9 @@ background-color: cornflowerblue;
     font-family: 'Staatliches', cursive;
 }
 
-.wsf-button, .wsf-button-primary, .wsf-button-full {
-    width: 100%;
-    background-color: #0a415e !important;
-    border-color: #0a415e !important;
+button.wsf-button {
+    background-color: #0a415e;
+    border-color: #0a415e;
+    color: #FFFFFF;
 }
 
-.wsf-label  {
-    font-family: 'Lato', sans-serif;
-
-}
