@@ -63,31 +63,14 @@
 			<div class="cell large-4 medium-4 small-12 socialMedia">
 	
 				<!-- news letter form -->
-				<form class="newsLetterForm">
+				<div class="newsLetterForm">
 
 					<!-- title of form -->
 					<h2>Subscribe for a weekly Newsletter</h2>
 					
-					<!-- first and last name input for form -->
-					<div class="nameInput">
-						<p>First & Last Name:</p>
-						<input type="text" size="4" name="firstAndLastName" placeholder="First & Last Name">
-					</div>
+					<?php echo do_shortcode('[ws_form id="3"]'); ?>
 
-					<!-- email input for form -->
-					<div class="emailInput">
-						<p>Email:</p>
-						<input type="text" size="4" name="email" placeholder="Email">
-					</div>
-
-					<!-- check box to make sure they know they are subscribing to emails -->
-					<input class="checkBox" type="checkbox">
-					<p class="checkBoxLabel">By clicking subscribe you agree to CFEA's terms and conditions.</p>
-					
-					<!-- submit button -->
-					<input class="submitButton" type="submit" value="Subscribe">
-
-				</form>
+				</div>
 
 				<!-- social media icons and links -->
 				<div class="socialMediaIcons">
