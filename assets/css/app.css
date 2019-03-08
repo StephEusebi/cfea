@@ -364,61 +364,7 @@ h1 {
 
  }
 
-.logo{
-    text-align: center;
-    margin:0 auto;
-    padding-top:1em;
- 
-}
-    
-    .logo img{
-        width:13em;
-        height:auto;
-    }
-    
-    .logo p{
-        font-family: 'Lato', sans-serif;
-        margin-top:.2em;
-        font-size:.4em;
-    }
-    
-    .contactInfo h2{
-        font-family: 'Lato', sans-serif;
-        font-size:.75em;
-        text-align: right;
-        margin:0;
-        padding:0;
-    }
-    
-    .contactInfo p{
-        font-family: 'Lato', sans-serif;
-        font-size:.50em;
-        text-align: right;
-        margin:0;
-        padding:0;
-    }
-    
-    .contactInfo{
-        padding-top:6em;
-        padding-right:1em;
-    }
-    
-    .socialMedia{
-        font-size:1.25em; 
-        margin-top:5.5em;
-        text-align: left;
-        padding-left:.5em;
-    }
-    
-    .fbIcon{
-        color:#3b5998;
-        margin-right:.25em; 
-    }
-    
-    .twitterIcon{
-        color:#38A1F3;
-        margin-right:.25em;
-    }
+
 
 /* footer */
 
@@ -1180,7 +1126,7 @@ h1 {
     
     .contactInfo p{
         font-family: 'Lato', sans-serif;
-        font-size:1em;
+        font-size:.75em;
         text-align: left;
         margin-left:1em;
     }
@@ -1205,9 +1151,9 @@ h1 {
     .newsLetterForm h2{
         margin:0;
         padding:0;
-        font-size:1.5em;
+        font-size:1.2em;
         font-family: 'Lato', sans-serif;
-        margin:.5em 0 .5em 1.25em;
+        margin:.5em 0 .5em 13%;
     }
     
     .nameInput{
@@ -1396,13 +1342,13 @@ h1 {
     .contactInfo p{
         font-family: 'Lato', sans-serif;
         font-size:1em;
-        text-align: right;
+        text-align: left;
         margin:0;
         padding:0;
     }
     
     .contactInfo{
-        padding-top:7em;
+       
         padding-right:4em;
     }
     
@@ -1444,9 +1390,9 @@ h1 {
     .newsLetterForm h2{
         margin:0;
         padding:0;
-        font-size:1.25em;
+        font-size:1.2em;
         font-family: 'Lato', sans-serif;
-        margin:.5em 0 .5em 1em;
+        margin:.5em 0 .5em 13.5%;
     }
     
     .nameInput{
@@ -1571,10 +1517,10 @@ h1 {
     }
 
     .footerNav h2{
-        font-size:1em;
+        font-size:1.2em;
         margin:0;
         padding:0;
-        margin-left:0.7em;
+        margin-left:0.8em;
         font-family: 'Lato', sans-serif;
         margin-top:.75em;
     }
@@ -1654,10 +1600,9 @@ h1 {
     .newsLetterForm h2{
         margin:0;
         padding:0;
-        font-size:1.5em;
-        margin-left:1.25em;
+        font-size:1.2em;
         font-family: 'Lato', sans-serif;
-        margin:.5em 0 .5em 1.25em;
+        margin:.5em 0 .5em 12.5%;
     }
     
     .nameInput{
