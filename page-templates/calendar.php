@@ -23,9 +23,10 @@ get_header();
 		<main id="main" class="site-main">
 
 		<div class="grid-x">
-			<div class="cell large-12">
+			<div class="cell large-12 medium-12 small-12">
+				<h2>Events Calendar</h2>
 				<?php
-					echo do_shortcode('[eo_fullcalendar headerLeft="prev,next today" headerCenter="title" headerRight="month,agendaWeek"]');
+					echo do_shortcode('[events_calendar  full=1 country="CA" year="2019" month="3"]');
 				?>
 			</div>
 		</div>
