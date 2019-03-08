@@ -24,3 +24,16 @@ background-color: cornflowerblue;
 
 }
 
+.contactUsTitle > h1 {
+    text-align: center ;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Staatliches', cursive;
+}
+
+button.wsf-button {
+    background-color: #0a415e;
+    border-color: #0a415e;
+    color: #FFFFFF;
+}
+

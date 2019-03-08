@@ -22,41 +22,48 @@ get_header();
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
 
-            <!-- main -->
-            <div class="grid-x">
-                <div class="cell small-12 medium-12 large-6 NavText">
-                    <h1>Contact Us</h1>
-                    <?php
-			if(function_exists('get_field')) {
-				$contact_form = get_field('contact_form');
 
-				foreach($contact_form as $contact){
-					$firstname = $contact['firstname'];
-					$emailaddress = $contact['email'];
-					$messages = $contact['message'];
-					$confirmBox = $contact['confirm'];
-		?>
+		<div class="grid-container">
+				<div class="grid-x grid-margin-x grid-margin-y">
+				<div class="cell small-12 medium-3 large-3"></div>
+				<div class="cell pink small-12 medium-6 large-6"><h1 class="contactUsTitle">Contact Us</h1></div>
+				<div class="cell small-12 medium-3 large-3"></div>
+	
+				</div>
+				</div>
 
-                        <label>First Name</label>
-                        <input class="text-center" <?php echo$firstname; ?> >
 
-                        <label>Email</label>
-                        <input class="text-center" <?php echo$emailaddress; ?> >
+			<?php 
+		
+			if (function_exists('get_field')) {
+				$form_id = get_field('form_id');
+				$form_shortcode = get_field('form_shortcode');
+				if ($form_id || $form_shortcode) {
+					?>    
+				<section class="contact-form">
+				<div class="grid-container">
+				<div class="grid-x grid-margin-x grid-margin-y">
+				<div class="cell small-12 medium-3 large-3"></div>
+				<div class="cell small-12 medium-6 large-6">
+				<?php  echo do_shortcode('[ws_form id="' . $form_id . '" ]') ?>
+				</div>
+	
+				<div class="cell small-12 medium-3 large-3"></div>
+	
+				</div>
+				</div>
+				
+				</section>	
+				<?php
+				}
+			}
+			
+			?>
+	
 
-                        <label>Message</label>
-                        <textarea rows="8">
-                            <?php echo$messages; ?>
-                        </textarea>
 
-                        <label>Confirm Box</label>
-                        <input type="checkbox" class="text-center" <?php echo$confirmBox; ?> >
 
-                        <?php
-	}
-}
-?>
-        </main>
-        <!-- #main -->
+		</main><!-- #main -->
 
         </div>
         <!-- #primary -->
