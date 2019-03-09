@@ -75,14 +75,42 @@
 				<!-- social media icons and links -->
 				<div class="socialMediaIcons">
 
-					<!-- facebook icon -->
-					<a href="https://www.facebook.com/cfealive/?fref=ts" target="_blank"><i class="fab fa-facebook-square fbIcon"></i></a>
 
-					<!-- twitter icon -->
-					<a href="https://twitter.com/TheCFEA" target="_blank"><i class="fab fa-twitter twitterIcon"></i></a>
+				<!-- customizer for social media -->
 
-					<!-- instagram icon -->
-					<a href="https://www.instagram.com/cfealiveeducation/" target="_blank"><i class="fab fa-instagram instagramIcon"></i></a>
+				<!-- facebook -->
+				<?php 
+					if(get_theme_mod( 'cfea_facebook_url' )) { ?>
+
+						<a target="_blank" href="<?php echo get_theme_mod ('cfea_facebook_url') ?> " ><i class="fab fa-facebook-square fbIcon"></i></a>
+
+						<?php
+					
+					}
+				?>
+				<!-- instagram -->
+				<?php 
+					if(get_theme_mod( 'cfea_instagram_url' )) { ?>
+
+						<a target="_blank" href="<?php echo get_theme_mod ('cfea_instagram_url') ?> " ><i class="fab fa-instagram instagramIcon"></i></a>
+
+						<?php
+					
+					}
+				?>
+
+				<!-- twitter -->
+
+				<?php 
+					if(get_theme_mod( 'cfea_twitter_url' )) { ?>
+
+						<a target="_blank" href="<?php echo get_theme_mod ('cfea_twitter_url') ?> " ><i class="fab fa-twitter twitterIcon"></i></a>
+
+						<?php
+					
+					}
+				?>
+				 
 				</div>
 
 			</div>
