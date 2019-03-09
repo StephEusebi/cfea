@@ -88,6 +88,7 @@ if (function_exists('get_field')) {
 		$name = $program['name'];
 		$description = $program['description'];
 		$button = $program['button'];
+		$program_image = $program['program_image'];
 ?>
         <div class="grid-x grid-margin-x large-offset-2">
 
@@ -102,6 +103,9 @@ if (function_exists('get_field')) {
 
                         <!-- Accordion tab content -->
                         <div class="accordion-content" data-tab-content>
+						<div class="cell large-10">
+						<img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="pLandingBanner" />
+            </div>
                             <p>
                                 <?php echo$description; ?>
                             </p>
