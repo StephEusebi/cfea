@@ -463,12 +463,13 @@ footer {
 /* rfgdsfdsfdsfds */
 
 .logo {
-    text-align: center;
+    text-align: right;
     margin: 0 auto;
-    margin-bottom: 1em;
+    margin-top: 4.5em;
 }
+/* sizes the logo */
 .logo img {
-    width: 13em;
+    width: 75%;
     height: auto;
 }
 .logo p {
