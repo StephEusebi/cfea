@@ -26,7 +26,7 @@ get_header();
 			<div class="cell large-12 medium-12 small-12">
 				
 				<?php
-					echo do_shortcode('[MEC id="104"][MEC id="111"]');
+					echo do_shortcode('[MEC id="270"][MEC id="277"]');
 				?>
 			</div>
 		</div>
