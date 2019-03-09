@@ -453,13 +453,14 @@ footer {
 .footerNav {
     padding-left: 4em;
 }
-.footerNav h2 {
-    font-size: 1.25em;
-    margin: 0;
-    padding: 0;
-    margin-left: 0.8em;
+.footerNav h2{
+    font-size:1em;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    margin-left:0.9em;
     font-family: 'Lato', sans-serif;
-    margin-top: .75em;
+    margin-top:.75em;
 }
 /* controls the logo section and where the logo ends up being placed */
 
@@ -470,7 +471,7 @@ footer {
 .logo {
     text-align: right;
     margin: 0 auto;
-    margin-top: 4.5em;
+    margin-top: 3em;
 }
 /* sizes the logo */
 .logo img {
@@ -530,16 +531,21 @@ footer {
     text-align: right;
 }
 
-.newsLetterForm h2 {
-    margin: 0;
-    padding: 0;
-    font-size: .6em;
+.newsLetterForm h2{
+    margin:0;
+    padding:0;
+    font-size:1.75em !important;
     font-family: 'Lato', sans-serif;
-    margin: .5em 0 .5em 12.5%;
+    margin:.5em 0 .5em 12.5%;
+    font-weight:bold;
 }
+
 .wsf-grid {
     margin-left: 0px;
     margin-right: 0px !important;
+}
+button.wsf-button.wsf-button-primary {
+    background-color: #aa2527;
 }
 button.wsf-button.wsf-button-primary:hover {
     background-color: #901f21;
@@ -549,17 +555,20 @@ input[type=checkbox].wsf-field+.wsf-label {
     margin-bottom: 0 !important;
 }
 /* controls the social media icons */
-.socialMediaIcons {
-    margin-left: 40%;
-    margin-top: 0;
+.socialMediaIcons{
+    text-align:right !important;
+    margin-top:0;
+    margin-left:0;
+    margin-right:12.5%;
 }
-.socialMedia {
-    font-size: 2em;
-    margin-top: .4em;
-    padding-left: 1.5em;
-    text-align: left;
-    margin-bottom: 1em;
+
+.socialMedia{
+    font-size:0.7em; 
+    margin-top:0;
+    padding-left:0;
+    margin-bottom:1em;
 }
+
 .fbIcon {
     font-size: 1.5em;
     color: black;
@@ -626,14 +635,15 @@ input[type=checkbox].wsf-field+.wsf-label {
 		font-size: 1.5em;
 		padding-left: .2em;
 	}
-	.footerNav h2 {
-		font-size: 1em;
-		margin: 0;
-		padding: 0;
-		margin-left: 4%;
-		font-family: 'Lato', sans-serif;
-		margin-bottom: 0.25em;
-	}
+	.footerNav h2{
+        font-size:1em;
+        margin:0;
+        padding:0;
+        margin-left:4%;
+        font-family: 'Lato', sans-serif;
+		margin-bottom:0.25em;
+		font-weight:bold;
+    }
 	/* controls the logo section and where the logo ends up being placed */
 	.logo {
 		text-align: center;
@@ -689,12 +699,13 @@ input[type=checkbox].wsf-field+.wsf-label {
 		margin: 0;
 		padding: 0;
 	}
-	.newsLetterForm h2 {
-		margin: 0;
-		padding: 0;
-		font-size: 1.2em;
-		font-family: 'Lato', sans-serif;
-		margin: .5em 0 .5em 12.5%;
+	.newsLetterForm h2{
+        margin:0;
+        padding:0;
+        font-size:1.5em !important;
+        font-family: 'Lato', sans-serif;
+		margin:.5em 0 .5em 13%;
+		font-weight:bold;
 	}
 	.wsf-grid {
 		margin-left: 0px;
@@ -708,15 +719,18 @@ input[type=checkbox].wsf-field+.wsf-label {
 		margin-bottom: 0 !important;
 	}
 	/* controls the social media icons */
-	.socialMediaIcons {
-		margin-left: 40%;
-		margin-top: 0;
-	}
-	.socialMedia {
-		font-size: 1em;
-		margin-top: 0;
-		padding-left: 0;
-		margin-bottom: 1em;
+	.socialMediaIcons{
+        text-align:right !important;
+        margin-left:0;
+		margin-top:0;
+		margin-right:13%;
+    }
+
+    .socialMedia{
+		font-size:0.7em; 
+        margin-top:0;
+        padding-left:0;
+        margin-bottom:1em;
 	}
 	.fbIcon {
 		font-size: 1.5em;
