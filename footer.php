@@ -94,7 +94,16 @@
 				<div class="newsLetterForm">
 
 					<!-- title of form -->
-					<h2>Subscribe for a weekly Newsletter</h2>
+					<?php
+					if ( get_theme_mod( 'cfea_footer_form_name' ) ) : ?>
+						<h2><?php echo get_theme_mod( 'cfea_footer_form_name' ); ?></h2>
+					
+					<?php
+					else : ?>
+ 
+					<p>CFEA Form Name</p>
+ 
+					<?php endif; ?>
 					
 					<?php echo do_shortcode('[ws_form id="3"]'); ?>
 

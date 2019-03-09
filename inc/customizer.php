@@ -99,6 +99,30 @@ function cfea_customize_register( $wp_customize ) {
 			)
 		)
 	);
+
+	// Add Footer Form Name Section
+	$wp_customize->add_section('cfea_footerFormName',
+	array(
+		'title' => __('Footer Form Name','cfea'),
+		'capability' => 'edit_theme_options',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'cfea_footer_form_name'
+	);
+	
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'cfea_footer_form_name',
+			array(
+				'label'   => __( 'Form Name', 'cfea' ),
+				'section' => 'cfea_footerFormName',
+				'type'	  => 'text'
+			)
+		)
+	);
 }
 add_action( 'customize_register', 'cfea_customize_register' );
 
