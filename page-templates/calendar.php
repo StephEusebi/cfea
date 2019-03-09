@@ -22,7 +22,14 @@ get_header();
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
 
-            <p>Will implement a calendar plug in for this page.</p>
+		<div class="grid-x">
+			<div class="cell large-12 medium-12 small-12">
+				
+				<?php
+					echo do_shortcode('[MEC id="104"][MEC id="111"]');
+				?>
+			</div>
+		</div>
 
         </main>
         <!-- #main -->
