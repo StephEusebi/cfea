@@ -21,8 +21,18 @@
 
 			<!-- logo grid -->
 			<div class="cell large-2 medium-2 small-12 logo">
-				<!-- logo img -->
-				<img src="/wp-content/themes/cfea/assets/img/cfea_logo.png" alt="CFEA Logo" />
+
+				<?php
+					if ( get_theme_mod( 'cfea_footer_logo' ) ) : ?>
+ 
+						<img src="<?php echo get_theme_mod( 'cfea_footer_logo' ); ?>">
+ 
+				<?php
+				else : ?>
+ 
+				<p>CFEA Logo</p>
+ 
+				<?php endif; ?>
 
 			</div>
 
@@ -51,10 +61,28 @@
 				<!-- div for group the contact info together -->
 				<div class="contactInfo">
 					<!-- phone number -->
-					<p><i class="fas fa-phone"></i> 1-800-993-1521</p>
+					<?php
+					if ( get_theme_mod( 'cfea_footer_contact_number' ) ) : ?>
+						<p><i class="fas fa-phone"></i><?php echo get_theme_mod( 'cfea_footer_contact_number' ); ?></p>
+					
+					<?php
+					else : ?>
+ 
+					<p>CFEA Contact Number</p>
+ 
+					<?php endif; ?>
 
 					<!-- email -->
-					<p> <i class="fas fa-envelope"></i> liveeducation@cfea.ca</p>
+					<?php
+					if ( get_theme_mod( 'cfea_footer_contact_email' ) ) : ?>
+						<p> <i class="fas fa-envelope"></i><?php echo get_theme_mod( 'cfea_footer_contact_email' ); ?></p>
+					
+					<?php
+					else : ?>
+ 
+					<p>CFEA Contact Email</p>
+ 
+					<?php endif; ?>
 				</div>
 			
 			</div>
@@ -66,7 +94,9 @@
 				<div class="newsLetterForm">
 
 					<!-- title of form -->
-					<h2>Subscribe for a CFEA Newsletter</h2>
+					<?php
+					if ( get_theme_mod( 'cfea_footer_form_name' ) ) : ?>
+						<h2><?php echo get_theme_mod( 'cfea_footer_form_name' ); ?></h2>
 					
 					<?php echo do_shortcode('[ws_form id="3"]'); ?>
 
@@ -85,14 +115,22 @@
 						<a target="_blank" href="<?php echo get_theme_mod ('cfea_facebook_url') ?> " ><i class="fab fa-facebook-square fbIcon"></i></a>
 
 						<?php
+					<?php
+					else : ?>
+ 
+					<p>CFEA Form Name</p>
+ 
+					<?php endif; ?>
 					
 					}
 				?>
 				<!-- instagram -->
 				<?php 
 					if(get_theme_mod( 'cfea_instagram_url' )) { ?>
+					<?php echo do_shortcode('[ws_form id="3"]'); ?>
 
 						<a target="_blank" href="<?php echo get_theme_mod ('cfea_instagram_url') ?> " ><i class="fab fa-instagram instagramIcon"></i></a>
+				</div>
 
 						<?php
 					
