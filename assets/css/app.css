@@ -196,6 +196,10 @@ h1 {
         float: left;
     }
 
+    .title-bar {
+        display: none;
+    }
+
     
 }
 
