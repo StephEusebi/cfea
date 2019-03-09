@@ -22,17 +22,17 @@ get_header();
         <div class="large-offset-2">
 
             <!-- banner at top of page -->
-            <div class="cell large-12 large-10">
+            <div class="cell large-12 small-10 small-offset-1">
                 <img src="/wp-content/themes/cfea/assets/img/corefxbanner.png" alt="corefx banner" id="corefxBanner" />
             </div>
 
             <!-- program description -->
             <div class="grid-x grid-margin-x">
 
-                <p class="cell large-10 progDesc">COREFX asserts itself when it comes to fitness and training equipment. It is a guarantee to the best. For athletes looking to release their greatest capabilities and get motivated to prominence, it is the best answer. The trailblazing COREFX peak-performing lines of products that have undergone real life controlled tests are purposefully created to take peak performance to another level by delivering the most all-embracing area of strength and training tools.
+                <p class="cell large-10 progDesc small-10 small-offset-1">COREFX asserts itself when it comes to fitness and training equipment. It is a guarantee to the best. For athletes looking to release their greatest capabilities and get motivated to prominence, it is the best answer. The trailblazing COREFX peak-performing lines of products that have undergone real life controlled tests are purposefully created to take peak performance to another level by delivering the most all-embracing area of strength and training tools.
                 </p>
 
-                <p class="cell large-10 progDesc">COREFX has created new and technologically-advanced training methods so as to connect the disparity between persistent physical activity and authentic physical improvement. This permits athletes to exploit the full extensive possibilities of the company’s whole range of products. To complement athletes’ unrestrained commitment to exercise, COREFX has created a mutually beneficial connection between equipment and training. This is the genuine mystery behind attaining your Inner Strength.
+                <p class="cell large-10 progDesc small-10 small-offset-1">COREFX has created new and technologically-advanced training methods so as to connect the disparity between persistent physical activity and authentic physical improvement. This permits athletes to exploit the full extensive possibilities of the company’s whole range of products. To complement athletes’ unrestrained commitment to exercise, COREFX has created a mutually beneficial connection between equipment and training. This is the genuine mystery behind attaining your Inner Strength.
                 </p>
 
             </div>
