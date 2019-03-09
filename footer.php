@@ -97,6 +97,12 @@
 					<?php
 					if ( get_theme_mod( 'cfea_footer_form_name' ) ) : ?>
 						<h2><?php echo get_theme_mod( 'cfea_footer_form_name' ); ?></h2>
+						<?php
+					else : ?>
+ 
+					<p>CFEA Form Name</p>
+ 
+					<?php endif; ?>
 					
 					<?php echo do_shortcode('[ws_form id="3"]'); ?>
 
@@ -115,22 +121,16 @@
 						<a target="_blank" href="<?php echo get_theme_mod ('cfea_facebook_url') ?> " ><i class="fab fa-facebook-square fbIcon"></i></a>
 
 						<?php
-					<?php
-					else : ?>
- 
-					<p>CFEA Form Name</p>
- 
-					<?php endif; ?>
 					
 					}
 				?>
 				<!-- instagram -->
 				<?php 
 					if(get_theme_mod( 'cfea_instagram_url' )) { ?>
-					<?php echo do_shortcode('[ws_form id="3"]'); ?>
+			
 
 						<a target="_blank" href="<?php echo get_theme_mod ('cfea_instagram_url') ?> " ><i class="fab fa-instagram instagramIcon"></i></a>
-				</div>
+				
 
 						<?php
 					
