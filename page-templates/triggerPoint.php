@@ -20,7 +20,7 @@ get_header();
 ?>
 
     <div class="grid-x grid-margin-x">
-        <div class="large-offset-2 ">
+        <div class="large-offset-2 small-offset-1">
 
             <!-- banner at top of page -->
             <div class="cell large-12">
@@ -30,7 +30,7 @@ get_header();
             <!-- program description -->
             <div class="grid-x grid-margin-x">
 
-                <p class="cell large-10 progDesc">TriggerPoint Performance is a patented brand that improves life by focusing on energizing people with the radical organization in Myofascial Compression techniques as well as branded goods that conserve, control increase the physical movement of human life-forms. The goal of TriggerPoint Performance is to discover inventive ways to which people can be inspired to attain the best degree of change using providing medicinal self-care products and teachings. Our aim is to deliver the greatest user-friendly mode of goods, training, and treatment available for anyone who needs a change in lifestyle, enhanced performance or typical good health. We would like people to manage their curative care. Discover more. Have better movement.
+                <p class="cell large-10 progDesc small-10">TriggerPoint Performance is a patented brand that improves life by focusing on energizing people with the radical organization in Myofascial Compression techniques as well as branded goods that conserve, control increase the physical movement of human life-forms. The goal of TriggerPoint Performance is to discover inventive ways to which people can be inspired to attain the best degree of change using providing medicinal self-care products and teachings. Our aim is to deliver the greatest user-friendly mode of goods, training, and treatment available for anyone who needs a change in lifestyle, enhanced performance or typical good health. We would like people to manage their curative care. Discover more. Have better movement.
                 </p>
 
             </div>

@@ -20,7 +20,7 @@ get_header();
 ?>
 
     <div class="grid-x grid-margin-x">
-        <div class="large-offset-2 ">
+        <div class="large-offset-2 small-offset-1">
 
             <!-- banner at top of page -->
             <div class="cell large-8">
@@ -30,8 +30,8 @@ get_header();
             <!-- <h2 class="cell large-12 progHead">COREFX</h2> -->
             <div class="grid-x grid-margin-x">
 
-                <p class="cell large-10 progDesc">Canfitpro is the most recognized provider of fitness certification in Canada today. Through our partnership with Allied Education we are able to offer a wide variety canfitpro certification courses including:</p>
-                <ul class="cell large-10 progDesc">
+                <p class="cell large-10 small-10 progDesc">Canfitpro is the most recognized provider of fitness certification in Canada today. Through our partnership with Allied Education we are able to offer a wide variety canfitpro certification courses including:</p>
+                <ul class="cell large-10 small-10 progDesc">
                     <li>Personal Trainer Specialist (PTS)</li>
                     <li>Fitness Instructor Specialist (FIS)</li>
                     <li>Healthy Eating & Weight Loss Coach (HWL)</li>
@@ -39,7 +39,7 @@ get_header();
                     <li>First Aid & Cardio Pulmonary Resuscitation (First Aid &CPR)</li>
                 </ul>
 
-                <p class="cell large-12 progDesc">Whether you are new to the fitness industry looking to become certified or a seasoned veteran looking for advanced certification and continuing education we can help. </p>
+                <p class="cell large-12 small-10 progDesc">Whether you are new to the fitness industry looking to become certified or a seasoned veteran looking for advanced certification and continuing education we can help. </p>
 
             </div>
         </div>

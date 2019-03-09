@@ -20,7 +20,7 @@ get_header();
 ?>
 
     <div class="grid-x grid-margin-x">
-        <div class="large-offset-2 ">
+        <div class="large-offset-2 small-offset-1">
 
             <!-- banner at top of page -->
             <div class="cell large-8">
@@ -31,9 +31,9 @@ get_header();
 
             <div class="grid-x grid-margin-x">
                 <!-- <h2 class="cell large-12 progHead">ViPR</h2> -->
-                <p class="cell large-10 progDesc">The disparity between movement and power exercises is linked by ViPR. It merges complete body movement with weight, thereby improving the vivacity, implementation along with overhauling the aspirations of customers and sportspeople. ViPR ushers in a new perception in fitness and athletic training – Loaded Movement Training.</p>
+                <p class="cell large-10 small-10 progDesc">The disparity between movement and power exercises is linked by ViPR. It merges complete body movement with weight, thereby improving the vivacity, implementation along with overhauling the aspirations of customers and sportspeople. ViPR ushers in a new perception in fitness and athletic training – Loaded Movement Training.</p>
 
-                <p class="cell large-10 progDesc">ViPR was stimulated by farm youngsters who moved with weights on a daily basis and who were more powerful than any other contender in athletics. Using ViPR, we can turn out farm-toughened physique everywhere, sans setting foot on a farm, without having to carry out any hard work in an entertaining, harmless and efficient style.</p>
+                <p class="cell large-10 small-10 progDesc">ViPR was stimulated by farm youngsters who moved with weights on a daily basis and who were more powerful than any other contender in athletics. Using ViPR, we can turn out farm-toughened physique everywhere, sans setting foot on a farm, without having to carry out any hard work in an entertaining, harmless and efficient style.</p>
 
             </div>
 

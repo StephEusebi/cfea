@@ -20,17 +20,17 @@ get_header();
 ?>
 
     <div class="grid-x grid-margin-x">
-        <div class="large-offset-2">
+        <div class="large-offset-2 small-offset-1">
 
             <!-- main logo -->
-            <div class="cell large-8 small-10 small-offset-1">
+            <div class="cell large-8">
                 <img src="/wp-content/themes/cfea/assets/img/crcLogo.jpg" alt="red cross logo" class="cell large-12" id="redCrossLogo" />
             </div>
 
             <div class="grid-x grid-margin-x">
 
                 <!-- program description -->
-                <p class="cell large-10 progDesc small-10 small-offset-1">Lecture series on mouth-to-mouth resuscitation (CPR) offers the needed expertise to identify and act in response to cardiac crisis and suffocation for babies, children and adults subject to the type of CPR chosen. The training also comprises the utilization of automated external defibrillator (AED) as well as guidance that is appropriate for place of work or broad appeal. In addition, there are cutting-edge CPR recommendations.
+                <p class="cell large-10 small-10 progDesc">Lecture series on mouth-to-mouth resuscitation (CPR) offers the needed expertise to identify and act in response to cardiac crisis and suffocation for babies, children and adults subject to the type of CPR chosen. The training also comprises the utilization of automated external defibrillator (AED) as well as guidance that is appropriate for place of work or broad appeal. In addition, there are cutting-edge CPR recommendations.
                 </p>
 
             </div>
@@ -51,7 +51,7 @@ if (function_exists('get_field')) {
 
 ?>
                     <!-- create boxes to hold page content -->
-                    <div class="cell large-5 ">
+                    <div class="cell large-5">
                         <!-- box cover image -->
                         <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg" />
 
