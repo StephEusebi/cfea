@@ -615,10 +615,11 @@ h1 {
     }
 
     .footerNav h2{
-        font-size:1.25em;
+		font-size:1em;
+		font-weight:bold;
         margin:0;
         padding:0;
-        margin-left:0.75em;
+        margin-left:0.9em;
         font-family: 'Lato', sans-serif;
         margin-top:.75em;
     }
@@ -679,9 +680,10 @@ h1 {
     .newsLetterForm h2{
         margin:0;
         padding:0;
-        font-size:1.25em;
+        font-size:1.75em !important;
         font-family: 'Lato', sans-serif;
-        margin:.5em 0 .5em 12.5%;
+		margin:.5em 0 .5em 12.5%;
+		font-weight:bold;
     }
 
     .wsf-grid {
@@ -701,12 +703,14 @@ h1 {
 
     /* controls the social media icons */
     .socialMediaIcons{
-        margin-left:40%;
-        margin-top:0;
+        text-align:right !important;
+		margin-top:0;
+		margin-left:0;
+		margin-right:12.5%;
     }
 
     .socialMedia{
-        font-size:1em; 
+        font-size:0.7em; 
         margin-top:0;
         padding-left:0;
         margin-bottom:1em;
