@@ -44,6 +44,10 @@ get_header();
                         <p>Nutrition information is constantly evolving and being able to decipher this information and apply it to fat loss strategies is essential for success. This program will allow you to understand healthy eating, the value of regular activity and ways to reduce body fat. This course will provide excellent strategies and tools for fitness professionals to help them educate others about how to build a healthier body.</p>
                     <li style="font-weight:bold;">Pre & Post Natal Specialist (PFS)</li>
                     <li style="font-weight:bold;">First Aid & Cardio Pulmonary Resuscitation (First Aid &CPR)</li>
+                        <p>The chances are good that in your lifetime you will be involved in a situation which will require familiarity with First Aid, CPR ad AEDs. Our training is designed to be user friendly so that all people, regardless of ability, will gain the confidence necessary to act effectively in an emergency.</p>
+                        <p>In an emergency situation, seconds count so congratulate yourself on your decision to become part of a growing number of people who are going to use these precious seconds to make a difference!</p>
+                        <p>Our First Aid with CPR & AED courses are accessible, affordable and attainable, designed to provide members of the public with the knowledge and technique that is needed to properly perform First Aid in any unforeseen emergency.</p>
+                        <p>First Aid with CPR & AED courses were developed in accordance with recommendations from International Liaison Committee on Resuscitation (ILCOR) Consensus on Science.</p>
                 </ul>
 
             </div>
