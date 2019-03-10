@@ -20,11 +20,11 @@ get_header();
 ?>
 
     <div class="grid-x grid-margin-x">
-        <div class="large-offset-2 small-offset-1">
+        <div class="large-10 large-offset-2 small-12 small-offset-1">
 
             <!-- main logo -->
-            <div class="cell large-8">
-                <img src="/wp-content/themes/cfea/assets/img/crcLogo.jpg" alt="red cross logo" class="cell large-12" id="redCrossLogo" />
+            <div class="cell large-8 small-12">
+                <img src="/wp-content/themes/cfea/assets/img/crcLogo.jpg" alt="red cross logo" class="cell large-12 small-12" id="redCrossLogo" />
             </div>
 
             <div class="grid-x grid-margin-x">
@@ -51,7 +51,7 @@ if (function_exists('get_field')) {
 
 ?>
                     <!-- create boxes to hold page content -->
-                    <div class="cell large-5">
+                    <div class="cell large-5 small-10">
                         <!-- box cover image -->
                         <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg" />
 

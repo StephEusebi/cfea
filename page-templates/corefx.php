@@ -53,7 +53,7 @@ get_header();
 
 	?>
                     <!-- larger box to hold main certification -->
-                    <div class="cell large-10 ">
+                    <div class="cell large-10 small-10">
                         <!-- program box img -->
                         <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg" />
 
@@ -102,7 +102,7 @@ get_header();
 	?>
 
                             <!-- group of smaller boxes for workshop -->
-                            <div class="cell large-5 ">
+                            <div class="cell large-5 small-10">
 
                                 <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg" />
 
