@@ -216,6 +216,10 @@ h1 {
   font-size: 25px;
 }
 
+.programTag {
+    text-align: center;
+}
+
 /* COREFX */
 .descList {
     text-align: left;
