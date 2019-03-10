@@ -24,7 +24,10 @@ get_header();
 
             <h1 class="programsTitle">CURRENT PROGRAMS</h1>
 
-            <p class="programInfo">At CFEA we have a number of different programs to help you reach all of your fitness goals!</p>
+			<p class="programInfo">Whether you are new to the fitness industry and are looking to become certified to find you first job or are a seasoned veteran looking for advanced certification and continuing education we are here to help you. The CFEA’s mandate is simple.  To bring together the most recognized education brands in fitness today while giving you an amazing live education experience.  Our award-winning team of highly trained and experienced Master Trainers, Instructors and PRO TRAINERS are among the best fitness educators in the industry today!</p>
+			
+			<p>Let us help you take your fitness career to the next level!</p>
+
 
             <!-- <ul class="accordion plAccordian" data-accordion>
 				<li class="accordion-item accordianStyle" data-accordion-item>
