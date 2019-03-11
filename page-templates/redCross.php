@@ -19,21 +19,50 @@
 get_header();
 ?>
 
+
+
 <div class="grid-x grid-margin-x">
+
+<?php 
+
+if (function_exists('get_field')) {
+$descriptions = get_field('descriptions');
+
+    foreach($descriptions as $description){
+        $top_desc = $description['top_desc'];
+        $program_logo = $description['program_logo'];
+   
+
+?>
+
+
     <div class="large-10 large-offset-2 small-12 small-offset-1">
 
         <!-- main logo -->
         <div class="cell large-8 small-12">
-            <img src="/wp-content/themes/cfea/assets/img/crcLogo.jpg" alt="red cross logo" class="cell large-12 small-12" id="redCrossLogo" />
+        <img src="<?php echo$program_logo; ?>" alt="program logo" class="rcImg" id="redCrossLogo"/>    
         </div>
 
         <div class="grid-x grid-margin-x">
 
             <!-- program description -->
-            <p class="cell large-10 small-10 progDesc">Lecture series on mouth-to-mouth resuscitation (CPR) offers the needed expertise to identify and act in response to cardiac crisis and suffocation for babies, children and adults subject to the type of CPR chosen. The training also comprises the utilization of automated external defibrillator (AED) as well as guidance that is appropriate for place of work or broad appeal. In addition, there are cutting-edge CPR recommendations.
-            </p>
+            <div class="cell large-10 small-10 progDesc"><?php echo$top_desc; ?>
+            </div>
 
         </div>
+
+        <?php
+            
+
+        }
+    }
+    
+?>
+
+         <!-- <img src="/wp-content/themes/cfea/assets/img/crcLogo.jpg" alt="red cross logo" class="cell large-12 small-12" id="redCrossLogo" /> -->
+
+       <!-- Lecture series on mouth-to-mouth resuscitation (CPR) offers the needed expertise to identify and act in response to cardiac crisis and suffocation for babies, children and adults subject to the type of CPR chosen. The training also comprises the utilization of automated external defibrillator (AED) as well as guidance that is appropriate for place of work or broad appeal. In addition, there are cutting-edge CPR recommendations. -->
+
 
 
         <div class="grid-x grid-margin-x">
