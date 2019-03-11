@@ -464,6 +464,33 @@ h1 {
 
 /* CALENDER */
 
+/* controls the color of the background of selected day */
+.mec-calendar.mec-event-calendar-classic .mec-selected-day { 
+    background-color:#CFCFCF;
+}
+
+.mec-calendar.mec-event-calendar-classic .mec-calendar-events-sec{
+    background-color:#CFCFCF;
+}
+
+/* controls the left padding of the events for that day */
+.mec-calendar .mec-event-article{
+    padding-left:3em !important;
+}
+
+/* controls the font size of the title */
+.calendar h3{
+    font-size:2.5em;
+    text-align: center;
+    margin-bottom:1em;
+    color:black;
+    background-color: #CFCFCF;
+}
+/* controls the color of the text when hovered */
+.mec-calendar.mec-event-calendar-classic .mec-calendar-row dt.mec-has-event a:hover{
+    color:white;
+}
+
 
 /* FOOTER ----------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -633,6 +660,7 @@ input[type=checkbox].wsf-field+.wsf-label {
         height: auto;
         padding: 10px;
 
+    }
     /* styles the footer background */
 	footer {
 		background-color: #E3E3E3;
