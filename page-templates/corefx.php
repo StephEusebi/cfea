@@ -133,9 +133,9 @@ get_header();
                                 </ul>
 
         <div class="cell large-12 large-offset-4">
-            <embed>
+          
             <?php echo$ytvideo; ?>
-            </embed>
+         
         </div>
                             </div>
 

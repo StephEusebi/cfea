@@ -36,24 +36,24 @@ get_header();
         </div>
 
 
-
-        <?php 
-
-if (function_exists('get_field')) {
-	$programs = get_field('programs');
-
-	foreach($programs as $program){
-		$name = $program['name'];
-		$description = $program['description'];
-		$button = $program['button'];
-		$cost = $program['cost'];
-        $program_image = $program['program_image'];
-        $ytvideo = $program['ytvideo'];
-
-?>
-
-
         <div class="grid-x grid-margin-x">
+    <?php 
+
+        if (function_exists('get_field')) {
+        $programs = get_field('programs');
+
+            foreach($programs as $program){
+                $name = $program['name'];
+                $description = $program['description'];
+                $button = $program['button'];
+                $cost = $program['cost'];
+                $program_image = $program['program_image'];
+                $ytvideo = $program['ytvideo'];
+
+    ?>
+
+
+       
             <!-- create boxes to hold page content -->
             <div class="cell large-5 small-10">
                 <!-- box cover image -->
@@ -79,13 +79,9 @@ if (function_exists('get_field')) {
                         </div>
                     </li>
                 </ul>
-                <div class="cell large-12 large-offset-4">
-            <embed>
-            <?php echo$ytvideo; ?>
-            </embed>
-        </div>
+        
             </div>
-        </div>
+      
 
         <?php
                     
@@ -95,7 +91,37 @@ if (function_exists('get_field')) {
 
 ?>
 
+</div>
+  
     </div>
+<?php 
+
+    if (function_exists('get_field')) {
+	$programs = get_field('programs');
+
+        foreach($programs as $program){
+         
+            $ytvideo = $program['ytvideo'];
+
+?>
+ 
+ <div class="cell large-12 large-offset-4">
+          
+            <?php echo$ytvideo; ?>
+          
+        </div>
+
+        <?php
+                    
+
+                }
+            }
+            
+            ?>
+
+
+
+ 
 
     <!--        </div>-->
     <!-- insert video -->
