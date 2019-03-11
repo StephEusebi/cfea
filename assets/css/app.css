@@ -268,16 +268,6 @@ h1 {
        font-size:1em;
        padding-left:1em;
     }
-
-    .footerNav h2{
-        font-size:1em;
-        margin:0;
-        padding:0;
-        margin-left:4%;
-        font-family: 'Lato', sans-serif;
-		margin-bottom:0.25em;
-		font-weight:bold;
-    }
     
     /* controls the logo section and where the logo ends up being placed */
     .logo{
@@ -319,6 +309,10 @@ h1 {
         margin:0;
         padding-top:.2em;
     }
+
+    .menu a{
+        padding-left:.1em;
+    }
     
     /* controls the contact section */
     .contactInfo{ 
@@ -330,7 +324,8 @@ h1 {
         font-family: 'Lato', sans-serif;
         font-size:.75em;
         text-align: left;
-        margin-left:5%;
+        margin-left:3.25em;
+        margin-bottom:0;
     }
 
     /* controls the form section */ 
@@ -351,12 +346,18 @@ h1 {
         font-size:1.5em !important;
         font-family: 'Lato', sans-serif;
 		margin:.5em 0 .5em 13%;
-		font-weight:bold;
+		font-weight:normal;
 	}
 
     .wsf-grid {
         margin-left: 0px;
         margin-right: 0px !important;
+    }
+
+    .wsf-button.wsf-button-primary{
+        width:10em !important;
+        margin-left:24%;
+        margin-bottom:1.75em;
     }
 
     button.wsf-button.wsf-button-primary:hover{
@@ -367,14 +368,18 @@ h1 {
         font-size: .8em;
         margin-bottom:0 !important;
     }
-
+    
+    .wsf-field-wrapper{
+        margin-bottom:.5em;
+    }
 
     /* controls the social media icons */
     .socialMediaIcons{
-        text-align:right !important;
+        text-align:left !important;
         margin-left:0;
-		margin-top:0;
-		margin-right:13%;
+		margin-top:1em;
+        margin-left:2.45em;
+        margin-bottom:.5em;
     }
 
     .socialMedia{
@@ -445,25 +450,14 @@ h1 {
 
     /* changed the padding on the footerNav section */
     .footerNav{
-        padding-left:2em;
+        padding-left:1.75em;
     }
 
-    .footerNav h2{
-		font-size:1em;
-		font-weight:bold;
-        margin:0;
-        padding:0;
-        margin-left:0.7em;
-        font-family: 'Lato', sans-serif;
-        margin-top:.75em;
-	}
-
-    
     /* controls the logo section and where the logo ends up being placed */
     .logo{
         text-align: right;
         margin:0 auto;
-        margin-top:4.5em;
+        margin-top:3.4em;
     }
     
     /* sizes the logo */
@@ -476,7 +470,7 @@ h1 {
     #footer-menu{
         padding:0;
         margin:0;
-        margin-top:2em;
+        margin-top:2.75em;
     }
 
     #footer-menu ul{
@@ -510,13 +504,13 @@ h1 {
 
     .contactInfo{ 
         padding:0;
-        margin-top:1.6em;
+        margin-top:.2em;
         margin-left:3%;
     }
     
     .contactInfo p{
         font-family: 'Lato', sans-serif;
-        font-size:1em;
+        font-size:.8em;
         text-align: left;
         margin:0;
         padding:0;
@@ -527,8 +521,8 @@ h1 {
         padding:0;
         font-size:1.5em !important;
         font-family: 'Lato', sans-serif;
-		margin:.5em 0 .5em 13.5%;
-		font-weight:bold;
+		margin:2.9em 0 .5em 8%;
+		font-weight:normal;
 	}
 
 
@@ -537,6 +531,15 @@ h1 {
         margin-right: 0px !important;
     }
 
+    .wsf-button.wsf-button-primary{
+        width:10em !important;
+        margin-left:24%;
+        margin-bottom:1.75em;
+    }
+
+    .wsf-tile{
+        padding-left:0;
+    }
     
     button.wsf-button.wsf-button-primary:hover{
         background-color: #901f21;
@@ -547,13 +550,17 @@ h1 {
         margin-bottom:0 !important;
     }
 
+    .wsf-field-wrapper{
+        margin-bottom:.5em;
+    }
+
 
     /* controls the social media icons */
     .socialMediaIcons{
-		text-align:right !important;
-        margin-left:0;
-		margin-top:0;
-		margin-right:14%;
+		text-align:left !important;
+        margin-left:.95em;
+		margin-top:.7em;
+		margin-right:0;
     }
 
     .socialMedia{
@@ -564,7 +571,7 @@ h1 {
 	}
     
     .fbIcon{
-        font-size:1.5em; 
+        font-size:1.25em; 
         color:black;
         margin-right:.25em; 
     }
@@ -574,7 +581,7 @@ h1 {
     }
 
     .twitterIcon{
-        font-size:1.5em; 
+        font-size:1.25em; 
         color:black;
         margin-right:.25em;
     }
@@ -584,7 +591,7 @@ h1 {
     }
     
     .instagramIcon{
-        font-size:1.5em; 
+        font-size:1.25em; 
         color:black;
     }
 
@@ -683,8 +690,8 @@ h1 {
         padding:0;
         font-size:1.75em !important;
         font-family: 'Lato', sans-serif;
-		margin:2.75em 0 .2em 2.75em;
-		font-weight:bold;
+		margin:2.75em 0 .2em 8%;
+		font-weight:normal;
     }
 
     .wsf-grid {
@@ -694,9 +701,12 @@ h1 {
 
     .wsf-button.wsf-button-primary{
         width:10em !important;
-        margin-left:6em;
+        margin-left:28%;
+        margin-bottom:1.75em;
     }
-    
+    .wsf-tile{
+        padding-left:0;
+    }
     button.wsf-button.wsf-button-primary:hover{
         background-color: #901f21;
     }
