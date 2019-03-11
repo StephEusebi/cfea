@@ -159,6 +159,16 @@ h1 {
         border: 1px solid #cacaca;
     }
 
+    .logoDiv img {
+        width: 18%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .logoDiv {
+        text-align: center !important;
+    }
+
 /*LARGE*/
 @media screen and (min-width: 64em){
 
@@ -257,5 +267,4 @@ h1 {
 
 
  }
-
 

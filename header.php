@@ -31,7 +31,12 @@
 	<div class="grid-x">
           <div class="cell small-12 medium-12 large-6 logoDiv">
 		<!-- Logo Image -->
-		<a href="#"><img class="logoImg" src="/wp-content/themes/cfea/assets/img/logo.png" alt="logo" /></a>
+
+		<?php if( get_field('image') ): ?>
+
+<img src="<?php the_field('image'); ?>" />
+
+<?php endif; ?>
 
 		  </div>
 		  <!--Menu (thats opens to accordion)-->
