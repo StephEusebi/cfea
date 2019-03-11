@@ -47,9 +47,6 @@
 					) );
 				?>
 
-				<!-- h2 tag for the program title -->
-				<h2>Programs</h2>
-
 				<!-- php call for the program nav -->
 				<?php
 					wp_nav_menu( array(
@@ -84,6 +81,20 @@
  
 					<?php endif; ?>
 				</div>
+
+				<!-- social media icons and links -->
+				<div class="socialMediaIcons">
+
+					<!-- facebook icon -->
+					<a href="https://www.facebook.com/cfealive/?fref=ts" target="_blank"><i class="fab fa-facebook-square fbIcon"></i></a>
+
+					<!-- twitter icon -->
+					<a href="https://twitter.com/TheCFEA" target="_blank"><i class="fab fa-twitter twitterIcon"></i></a>
+
+					<!-- instagram icon -->
+					<a href="https://www.instagram.com/cfealiveeducation/" target="_blank"><i class="fab fa-instagram instagramIcon"></i></a>
+				</div>
+
 			
 			</div>
 
@@ -109,18 +120,6 @@
 
 				</div>
 
-				<!-- social media icons and links -->
-				<div class="socialMediaIcons">
-
-					<!-- facebook icon -->
-					<a href="https://www.facebook.com/cfealive/?fref=ts" target="_blank"><i class="fab fa-facebook-square fbIcon"></i></a>
-
-					<!-- twitter icon -->
-					<a href="https://twitter.com/TheCFEA" target="_blank"><i class="fab fa-twitter twitterIcon"></i></a>
-
-					<!-- instagram icon -->
-					<a href="https://www.instagram.com/cfealiveeducation/" target="_blank"><i class="fab fa-instagram instagramIcon"></i></a>
-				</div>
 
 			</div>
 
