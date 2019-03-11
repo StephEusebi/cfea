@@ -35,27 +35,27 @@ if (function_exists('get_field')) {
 		$member_contact = $people['member_contact'];
 ?>
 
-			<ul class="accordion plAccordian aboutAcordian" data-accordion>
+			<ul class="accordion  aboutAcordian" data-accordion>
         <li>
         <img class="teamImg" src="<?php echo$member_image;?>">
         </li>
 				<li class="accordion-item accordianStyle" data-accordion-item>
           <!-- Accordion tab title -->
-					<a href="#" class="accordion-title plAccordianTitle">About</a>
+					<a href="#" class="accordion-title ">About</a>
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
           <p><?php echo$member_about;?></p>
         </li>
         <li class="accordion-item accordianStyle" data-accordion-item>
 					<!-- Accordion tab title -->
-					<a href="#" class="accordion-title plAccordianTitle">Programs</a>
+					<a href="#" class="accordion-title ">Programs</a>
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
           <p><?php echo$member_programs;?></p>
         </li>
         <li class="accordion-item accordianStyle" data-accordion-item>
 					<!-- Accordion tab title -->
-					<a href="#" class="accordion-title plAccordianTitle">Contact</a>
+					<a href="#" class="accordion-title ">Contact</a>
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
           <p><?php echo$member_contact;?></p>
