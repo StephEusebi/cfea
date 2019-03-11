@@ -133,7 +133,7 @@ $descriptions = get_field('descriptions');
 
 ?>
  
- <div class="cell large-12 large-offset-4 small-10">
+ <div class="cell large-8 large-offset-4 small-10 small-offset-1 progVideo">
           
             <?php echo$ytvideo; ?>
           

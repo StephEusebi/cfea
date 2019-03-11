@@ -963,6 +963,15 @@ footer{
         
     }
 
+    .progVideo iframe  {
+   
+		width: 95%;
+        height: 95%;
+        margin-top: 25px;
+        padding-top: 25px;
+        padding-bottom: 75px;
+    }
+
  }
 
     /* footer */

@@ -19,6 +19,8 @@
 get_header();
 ?>
     <div class="grid-x grid-margin-x">
+
+    
         <div class="large-offset-2 small-offset-1">
 
             <!-- banner at top of page -->
@@ -155,13 +157,13 @@ $programs = get_field('programs');
 
 ?>
 
-<div class="grid-x grid-margin-x">
-<div class="cell large-12 large-offset-4 small-4">
+
+<div class="cell large-8 large-offset-4 small-10 small-offset-1 progVideo">
       
         <?php echo$ytvideo; ?>
       
     </div>
-</div>
+
     <?php
                 
 
