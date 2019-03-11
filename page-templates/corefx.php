@@ -37,7 +37,7 @@ get_header();
 
             </div>
 
-            <div class="grid-x grid-margin-x ">
+            <div class="grid-x grid-margin-x">
 
                 <?php 
 
@@ -131,12 +131,6 @@ get_header();
                                         </div>
                                     </li>
                                 </ul>
-
-        <div class="cell large-12 large-offset-4">
-          
-            <?php echo$ytvideo; ?>
-         
-        </div>
                             </div>
 
             <?php
@@ -149,6 +143,35 @@ get_header();
             </div>
 
         </div>
+
+        <?php 
+
+if (function_exists('get_field')) {
+$programs = get_field('programs');
+
+    foreach($programs as $program){
+     
+        $ytvideo = $program['ytvideo'];
+
+?>
+
+<div class="grid-x grid-margin-x">
+<div class="cell large-12 large-offset-4 small-4">
+      
+        <?php echo$ytvideo; ?>
+      
+    </div>
+</div>
+    <?php
+                
+
+            }
+        }
+        
+        ?>
+
+
+
 
         <!-- insert video -->
         <!-- <div class="large-offset-3 ">
@@ -163,7 +186,7 @@ get_header();
         </div> -->
 
 
-    </div>
+    <!-- </div> -->
 
     <?php
 // imports the footer

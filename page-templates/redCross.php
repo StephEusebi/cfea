@@ -108,7 +108,6 @@ $descriptions = get_field('descriptions');
                         </div>
                     </li>
                 </ul>
-        
             </div>
       
 
@@ -134,7 +133,7 @@ $descriptions = get_field('descriptions');
 
 ?>
  
- <div class="cell large-12 large-offset-4">
+ <div class="cell large-12 large-offset-4 small-10">
           
             <?php echo$ytvideo; ?>
           

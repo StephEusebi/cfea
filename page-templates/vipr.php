@@ -78,11 +78,6 @@ get_header();
                                 </div>
                             </li>
                         </ul>
-                        <div class="cell large-12 large-offset-2">
-            <embed>
-            <?php echo$ytvideo; ?>
-            </embed>
-        </div>
                     </div>
 
                     <?php
@@ -95,13 +90,41 @@ get_header();
             </div>
         </div>
 
+        <?php 
+
+if (function_exists('get_field')) {
+$programs = get_field('programs');
+
+    foreach($programs as $program){
+     
+        $ytvideo = $program['ytvideo'];
+
+?>
+
+<div class="cell large-12 large-offset-4 small-10">
+      
+        <?php echo$ytvideo; ?>
+      
+    </div>
+
+    <?php
+                
+
+            }
+        }
+        
+        ?>
+
+
+
+
         <!-- <div class="large-offset-3 ">
             <div class="cell large-8 rcVideo">
                 <iframe width="798" height="449" src="https://www.youtube.com/embed/AWVC2cQqRqo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div> -->
 
-    </div>
+    <!-- </div> -->
     <?php
 // imports the footer
 get_footer();
