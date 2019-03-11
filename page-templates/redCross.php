@@ -79,7 +79,6 @@ get_header();
                         </div>
                     </li>
                 </ul>
-        
             </div>
       
 
@@ -105,7 +104,7 @@ get_header();
 
 ?>
  
- <div class="cell large-12 large-offset-4">
+ <div class="cell large-12 large-offset-4 small-10">
           
             <?php echo$ytvideo; ?>
           

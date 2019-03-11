@@ -93,6 +93,33 @@ get_header();
             </div>
         </div>
 
+        <?php 
+
+if (function_exists('get_field')) {
+$programs = get_field('programs');
+
+    foreach($programs as $program){
+     
+        $ytvideo = $program['ytvideo'];
+
+?>
+
+<div class="cell large-12 large-offset-4 small-10">
+      
+        <?php echo$ytvideo; ?>
+      
+    </div>
+
+    <?php
+                
+
+            }
+        }
+        
+        ?>
+
+
+
         <!-- insert video -->
         <!-- <div class="large-offset-3 ">
             <div class="cell large-8 rcVideo">
