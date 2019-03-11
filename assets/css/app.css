@@ -5,7 +5,11 @@ body {
 }
 
 a {
-	color: #0a415e;
+	color: #494747;
+}
+
+a:hover, a:focus {
+	color: #bb0a1e;
 }
 
 h1 {
@@ -23,12 +27,12 @@ h1 {
 .header1 {
 	height: 100px;
 	width: 100%;
-	background-color: #0a415e;
+	background-color: #494747;
 }
 
 .menu .is-active>a {
 	background-color: #fff !important;
-	color: #1468a0;
+	color: #bb0a1e;
 }
 
 .menu li {
@@ -74,7 +78,7 @@ h1 {
 /* COLOR CLASSES ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .blue {
-	color: #0a415e;
+	color: #494747;
 }
 
 .green {
@@ -104,7 +108,7 @@ h1 {
 /* BUTTON STYLE -------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .button {
-	background-color: #aa2527;
+	background-color: #bb0a1e;
 	color: #fff;
 	border-radius: 0.3rem;
 	width: 20rem;
@@ -116,7 +120,7 @@ h1 {
 }
 
 .button:hover {
-	background-color: #901f21;
+	background-color: #aa2527;
 }
 
 
@@ -166,7 +170,7 @@ h1 {
  
 .corefx {
 	width: 100%;
-	background: linear-gradient(0deg, #0a415eb2, #042a3f8a), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
+	background: linear-gradient(0deg, #494747b2, #042a3f8a), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
 	background-repeat: no-repeat;
 }
 
@@ -178,7 +182,7 @@ h1 {
 
 .trigger {
 	width: 100%;
-	background: linear-gradient(0deg, #0a415eb2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
+	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
 	background-repeat: no-repeat;
 }
 
@@ -190,7 +194,7 @@ h1 {
 
 .firstaid {
 	width: 100%;
-	background: linear-gradient(0deg, #0a415eb2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
+	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
 	background-repeat: no-repeat;
 }
 
@@ -202,7 +206,7 @@ h1 {
 
 .vipr {
 	width: 100%;
-	background: linear-gradient(0deg, #0a415eb2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
+	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
 	background-repeat: no-repeat;
 }
 
@@ -251,7 +255,7 @@ h1 {
 
 .accordion-title {
 	text-align: center;
-	background-color: #0a415e;
+	background-color: #494747;
 	color: white;
 	font-size: 25px;
 }
@@ -270,8 +274,8 @@ h1 {
 }
 
 button.wsf-button {
-	background-color: #0a415e;
-	border-color: #0a415e;
+	background-color: #494747;
+	/* border-color: #494747; */
 	color: #FFFFFF;
 }
 
@@ -290,7 +294,7 @@ button.wsf-button {
 }
 
 .progHead {
-	color: #0a415e;
+	color: #494747;
 	text-align: center;
 }
 
@@ -306,7 +310,7 @@ button.wsf-button {
 }
 
 .programBox {
-	background-color: #0a415e;
+	background-color: #494747;
 	padding: 15px;
 	margin: 10px;
 }
@@ -330,13 +334,13 @@ button.wsf-button {
 	text-align: center;
 	font-size: 22pt;
 	color: white;
-	background-color: #0a415e;
-	border: 2pt solid #0a415e;
+	background-color: #494747;
+	border: 2pt solid #494747;
 }
 
 .plAccordian {
 	text-align: center;
-	background-color: #0a415e;
+	background-color: #494747;
 }
 
 .accordion-title::before {
