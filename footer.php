@@ -47,9 +47,6 @@
 					) );
 				?>
 
-				<!-- h2 tag for the program title -->
-				<h2>Programs</h2>
-
 				<!-- php call for the program nav -->
 				<?php
 					wp_nav_menu( array(
@@ -84,30 +81,6 @@
  
 					<?php endif; ?>
 				</div>
-			
-			</div>
-
-			<!-- socialmedia and news letter form grid -->
-			<div class="cell large-4 medium-4 small-12 socialMedia">
-	
-				<!-- news letter form -->
-				<div class="newsLetterForm">
-
-					<!-- title of form -->
-					<?php
-					if ( get_theme_mod( 'cfea_footer_form_name' ) ) : ?>
-						<h2><?php echo get_theme_mod( 'cfea_footer_form_name' ); ?></h2>
-						<?php
-					else : ?>
- 
-					<p>CFEA Form Name</p>
- 
-					<?php endif; ?>
-					
-					<?php echo do_shortcode('[ws_form id="3"]'); ?>
-
-				</div>
-
 				<!-- social media icons and links -->
 				<div class="socialMediaIcons">
 
@@ -151,6 +124,31 @@
 				 
 				</div>
 
+			
+			</div>
+
+			<!-- socialmedia and news letter form grid -->
+			<div class="cell large-4 medium-4 small-12 socialMedia">
+	
+				<!-- news letter form -->
+				<div class="newsLetterForm">
+
+					<!-- title of form -->
+					<?php
+					if ( get_theme_mod( 'cfea_footer_form_name' ) ) : ?>
+						<h2><?php echo get_theme_mod( 'cfea_footer_form_name' ); ?></h2>
+						<?php
+					else : ?>
+ 
+					<p>CFEA Form Name</p>
+ 
+					<?php endif; ?>
+					
+					<?php echo do_shortcode('[ws_form id="3"]'); ?>
+
+				</div>
+
+				
 			</div>
 
 		</div>
