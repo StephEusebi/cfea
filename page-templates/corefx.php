@@ -49,9 +49,11 @@ get_header();
 			$description = $certification['description'];
 			$button = $certification['button'];
 			$cost = $certification['cost'];
-			$program_image = $certification['program_image'];
+            $program_image = $certification['program_image'];
+            
 
 	?>
+
                     <!-- larger box to hold main certification -->
                     <div class="cell large-10 small-10">
                         <!-- program box img -->
@@ -80,6 +82,8 @@ get_header();
                         </ul>
                     </div>
 
+
+
                     <?php
 
 		}
@@ -87,7 +91,7 @@ get_header();
 
 	?>
 
-                        <?php 
+    <?php 
 
 		if (function_exists('get_field')) {
 			$programs = get_field('programs');
@@ -97,7 +101,8 @@ get_header();
 				$description = $program['description'];
 				$button = $program['button'];
 				$cost = $program['cost'];
-				$program_image = $program['program_image'];
+                $program_image = $program['program_image'];
+                $ytvideo = $program['ytvideo'];
 
 	?>
 
@@ -126,9 +131,15 @@ get_header();
                                         </div>
                                     </li>
                                 </ul>
+
+        <div class="cell large-12 large-offset-4">
+            <embed>
+            <?php echo$ytvideo; ?>
+            </embed>
+        </div>
                             </div>
 
-                            <?php
+            <?php
 
 		}
 	}
@@ -136,19 +147,22 @@ get_header();
 	?>
 
             </div>
+
         </div>
 
         <!-- insert video -->
-        <div class="large-offset-3 ">
+        <!-- <div class="large-offset-3 ">
             <div class="cell large-8 rcVideo">
                 <iframe width="798" height="449" src="https://www.youtube.com/embed/WoD34_HXxCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </div>
+        </div> -->
 
         <!-- bottom page logo -->
-        <div class="cell large-8">
+        <!-- <div class="cell large-8">
             <img src="/wp-content/themes/cfea/assets/img/corefx.jpg" alt="corefx logo" id="corefxLogo2" />
-        </div>
+        </div> -->
+
+
     </div>
 
     <?php
