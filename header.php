@@ -31,12 +31,17 @@
 	<div class="grid-x">
           <div class="cell small-12 medium-12 large-6 logoDiv">
 		<!-- Logo Image -->
+		<?php
+// Display the Custom Logo
+the_custom_logo();
 
-		<?php if( get_field('image') ): ?>
-
-<img src="<?php the_field('image'); ?>" />
-
-<?php endif; ?>
+// No Custom Logo, just display the site's name
+if (!has_custom_logo()) {
+    ?>
+    <h1><?php bloginfo('name'); ?></h1>
+    <?php
+}
+?>
 
 		  </div>
 		  <!--Menu (thats opens to accordion)-->
@@ -63,24 +68,6 @@
 
 		  </div>
         </div>
-
-
-
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<?php
-			else :
-				?>
-				<?php
-			endif;
-			$cfea_description = get_bloginfo( 'description', 'display' );
-			if ( $cfea_description || is_customize_preview() ) :
-				?>
-			<?php endif; ?>
-		</div>
 
 	</header><!-- #masthead -->
 
