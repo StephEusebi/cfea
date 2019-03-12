@@ -17,17 +17,12 @@
 get_header();
 ?>
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
 
-<<<<<<< HEAD
-            <h1 class="entry-title">Our Team</h1>
-
-=======
 	<h1 class="entry-title">Our Team</h1>
 	<div class="grid-x ">
 	<div class="cell large-auto"></div>
->>>>>>> landing
   <?php 
 
 if (function_exists('get_field')) {
@@ -41,33 +36,29 @@ if (function_exists('get_field')) {
 		$member_contact = $people['member_contact'];
 ?>
 
-<<<<<<< HEAD
-			<ul class="accordion  aboutAcordian" data-accordion>
-=======
 
 <div class="cell large-10">
 			<ul class="accordion aboutAcordian" data-accordion>
->>>>>>> landing
         <li>
         <img class="teamImg" src="<?php echo$member_image;?>">
         </li>
 				<li class="accordion-item accordianStyle" data-accordion-item>
           <!-- Accordion tab title -->
-					<a href="#" class="accordion-title ">About</a>
+					<a href="#" class="accordion-title plAccordianTitle">About</a>
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
           <p><?php echo$member_about;?></p>
         </li>
         <li class="accordion-item accordianStyle" data-accordion-item>
 					<!-- Accordion tab title -->
-					<a href="#" class="accordion-title ">Programs</a>
+					<a href="#" class="accordion-title plAccordianTitle">Programs</a>
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
           <p><?php echo$member_programs;?></p>
         </li>
         <li class="accordion-item accordianStyle" data-accordion-item>
 					<!-- Accordion tab title -->
-					<a href="#" class="accordion-title ">Contact</a>
+					<a href="#" class="accordion-title plAccordianTitle">Contact</a>
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
           <p><?php echo$member_contact;?></p>
