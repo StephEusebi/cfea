@@ -38,7 +38,7 @@ if (function_exists('get_field')) {
 
 
 <div class="cell large-10">
-			<ul class="accordion aboutAcordian" data-accordion>
+			<ul class="accordion aboutAcordian" data-accordion data-allow-all-closed="true">
         <li>
         <img class="teamImg" src="<?php echo$member_image;?>">
         </li>
