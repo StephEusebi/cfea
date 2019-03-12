@@ -21,7 +21,8 @@ get_header();
 		<main id="main" class="site-main">
 
 	<h1 class="entry-title">Our Team</h1>
-
+	<div class="grid-x ">
+	<div class="cell large-auto"></div>
   <?php 
 
 if (function_exists('get_field')) {
@@ -35,7 +36,9 @@ if (function_exists('get_field')) {
 		$member_contact = $people['member_contact'];
 ?>
 
-			<ul class="accordion plAccordian aboutAcordian" data-accordion>
+
+<div class="cell large-10">
+			<ul class="accordion aboutAcordian" data-accordion>
         <li>
         <img class="teamImg" src="<?php echo$member_image;?>">
         </li>
@@ -69,7 +72,10 @@ if (function_exists('get_field')) {
 }
 
 ?>
+</div>
+<div class="cell large-auto"></div>
 
+</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
