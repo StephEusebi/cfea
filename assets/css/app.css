@@ -96,8 +96,8 @@ h1 {
 }
 
 /* adds a padding around the content so its not flush to the screen */
-.site-content{
-    padding:5%;
+.calendar{
+    padding:3em;
 }
 
 /* calendar style */
