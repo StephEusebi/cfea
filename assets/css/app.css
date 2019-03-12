@@ -877,6 +877,10 @@ input[type=checkbox].wsf-field + .wsf-label  {
         padding-bottom: 75px;
     }
 
+    .site-content {
+        padding: 0em;
+    }
+
 
 } 
 
