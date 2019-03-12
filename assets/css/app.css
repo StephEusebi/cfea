@@ -539,6 +539,7 @@ footer{
     text-align: right;
     margin:0 auto;
     margin-top:3em;
+    margin-bottom:3em;
 }
 
 /* sizes the logo */
@@ -623,6 +624,13 @@ footer{
 .wsf-tile{
     padding-left:0;
 }
+
+button.wsf-button.wsf-button-primary{
+    background-color: #aa2527;
+    border-color: #aa2527;
+    color:white;
+}
+
 button.wsf-button.wsf-button-primary:hover{
     background-color: #901f21;
 }
