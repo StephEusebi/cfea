@@ -286,11 +286,23 @@ h1 {
 
 /* PROGRAMS LANDING ------------------------------------------------------------------------------------------------------------------------------------- */
 
-.progDesc {
-	text-align: left;
-	margin-top: 25px;
-	margin-bottom: 25px;
-}
+    .progDesc {
+        text-align: left;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .programsTitle, .programInfo {
+        text-align: center;
+    }
+
+    .programTables td {
+        text-align: center;
+    }
+
+    .programTag {
+        text-align: center;
+    }
 
     .top-row {
         margin-top: 30px;
@@ -365,6 +377,11 @@ h1 {
 	font-size: 25px;
 }
 
+#corefxLogo2 {
+	width: 200px;
+	margin-left: 870px;
+	margin-bottom: 50px;
+}
 
 
 
@@ -380,6 +397,7 @@ h1 {
 	margin-left: 800px;
 	margin-bottom: 50px;
 }
+
 
 #trigBanner {
 	width: 82%;
@@ -419,8 +437,9 @@ h1 {
 /* RED CROSS */
 
 #redCrossLogo {
-	width: 200px;
-	margin-left: 580px;
+    width: 200px;
+    height: 100px;
+    margin-left: 580px;
 }
 
 .rcImg {
@@ -428,11 +447,19 @@ h1 {
 	height: 445px;
 }
 
+
 .rcVideo {
 	margin-left: 50px;
 	margin-bottom: 100px;
 	margin-top: 50px;
 }
+
+.contactInfo p{
+    font-family: 'Lato', sans-serif;
+    font-size:.9em;
+    text-align: left;
+}
+
 
 /* CANFITPRO ----------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -648,6 +675,10 @@ input[type=checkbox].wsf-field + .wsf-label  {
 
     }
 
+    .title-bar {
+        background: #868686 !important;
+    }
+
     /* styles the footer background */
     footer{
         background-color: #E3E3E3;
@@ -833,7 +864,33 @@ input[type=checkbox].wsf-field + .wsf-label  {
 	}
 	.contactForm {
 		margin-bottom: 1em;
+    }
+    
+    /* red cross page */
+    #redCrossLogo {
+        width: 200px;
+        height: 100px;
+		margin-left: 50px;
 	}
+
+    .rcImg {
+        height: 60%;
+        
+    }
+
+    .progVideo iframe  {
+   
+		width: 95%;
+        height: 95%;
+        margin-top: 25px;
+        padding-top: 25px;
+        padding-bottom: 75px;
+    }
+
+    .site-content {
+        padding: 0em;
+    }
+
 
 } 
 
@@ -1012,3 +1069,25 @@ input[type=checkbox].wsf-field + .wsf-label  {
         color:#901f21;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+

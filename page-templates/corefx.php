@@ -19,25 +19,27 @@
 get_header();
 ?>
     <div class="grid-x grid-margin-x">
-        <div class="large-offset-2">
+
+    
+        <div class="large-offset-2 small-offset-1">
 
             <!-- banner at top of page -->
-            <div class="cell large-12 large-10">
+            <div class="cell large-10">
                 <img src="/wp-content/themes/cfea/assets/img/corefxbanner.png" alt="corefx banner" id="corefxBanner" />
             </div>
 
             <!-- program description -->
             <div class="grid-x grid-margin-x">
 
-                <p class="cell large-10 progDesc">COREFX asserts itself when it comes to fitness and training equipment. It is a guarantee to the best. For athletes looking to release their greatest capabilities and get motivated to prominence, it is the best answer. The trailblazing COREFX peak-performing lines of products that have undergone real life controlled tests are purposefully created to take peak performance to another level by delivering the most all-embracing area of strength and training tools.
+                <p class="cell large-10 progDesc small-10">COREFX asserts itself when it comes to fitness and training equipment. It is a guarantee to the best. For athletes looking to release their greatest capabilities and get motivated to prominence, it is the best answer. The trailblazing COREFX peak-performing lines of products that have undergone real life controlled tests are purposefully created to take peak performance to another level by delivering the most all-embracing area of strength and training tools.
                 </p>
 
-                <p class="cell large-10 progDesc">COREFX has created new and technologically-advanced training methods so as to connect the disparity between persistent physical activity and authentic physical improvement. This permits athletes to exploit the full extensive possibilities of the company’s whole range of products. To complement athletes’ unrestrained commitment to exercise, COREFX has created a mutually beneficial connection between equipment and training. This is the genuine mystery behind attaining your Inner Strength.
+                <p class="cell large-10 progDesc small-10">COREFX has created new and technologically-advanced training methods so as to connect the disparity between persistent physical activity and authentic physical improvement. This permits athletes to exploit the full extensive possibilities of the company’s whole range of products. To complement athletes’ unrestrained commitment to exercise, COREFX has created a mutually beneficial connection between equipment and training. This is the genuine mystery behind attaining your Inner Strength.
                 </p>
 
             </div>
 
-            <div class="grid-x grid-margin-x ">
+            <div class="grid-x grid-margin-x">
 
                 <?php 
 
@@ -49,11 +51,13 @@ get_header();
 			$description = $certification['description'];
 			$button = $certification['button'];
 			$cost = $certification['cost'];
-			$program_image = $certification['program_image'];
+            $program_image = $certification['program_image'];
+            
 
 	?>
+
                     <!-- larger box to hold main certification -->
-                    <div class="cell large-10 ">
+                    <div class="cell large-10 small-10">
                         <!-- program box img -->
                         <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg" />
 
@@ -80,6 +84,8 @@ get_header();
                         </ul>
                     </div>
 
+
+
                     <?php
 
 		}
@@ -87,7 +93,7 @@ get_header();
 
 	?>
 
-                        <?php 
+    <?php 
 
 		if (function_exists('get_field')) {
 			$programs = get_field('programs');
@@ -97,12 +103,13 @@ get_header();
 				$description = $program['description'];
 				$button = $program['button'];
 				$cost = $program['cost'];
-				$program_image = $program['program_image'];
+                $program_image = $program['program_image'];
+                $ytvideo = $program['ytvideo'];
 
 	?>
 
                             <!-- group of smaller boxes for workshop -->
-                            <div class="cell large-5 ">
+                            <div class="cell large-5 small-10">
 
                                 <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg" />
 
@@ -128,7 +135,7 @@ get_header();
                                 </ul>
                             </div>
 
-                            <?php
+            <?php
 
 		}
 	}
@@ -136,20 +143,52 @@ get_header();
 	?>
 
             </div>
+
         </div>
 
+        <?php 
+
+if (function_exists('get_field')) {
+$programs = get_field('programs');
+
+    foreach($programs as $program){
+     
+        $ytvideo = $program['ytvideo'];
+
+?>
+
+
+<div class="cell large-8 large-offset-4 small-10 small-offset-1 progVideo">
+      
+        <?php echo$ytvideo; ?>
+      
+    </div>
+
+    <?php
+                
+
+            }
+        }
+        
+        ?>
+
+
+
+
         <!-- insert video -->
-        <div class="large-offset-3 ">
+        <!-- <div class="large-offset-3 ">
             <div class="cell large-8 rcVideo">
                 <iframe width="798" height="449" src="https://www.youtube.com/embed/WoD34_HXxCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </div>
+        </div> -->
 
         <!-- bottom page logo -->
-        <div class="cell large-8">
+        <!-- <div class="cell large-8">
             <img src="/wp-content/themes/cfea/assets/img/corefx.jpg" alt="corefx logo" id="corefxLogo2" />
-        </div>
-    </div>
+        </div> -->
+
+
+    <!-- </div> -->
 
     <?php
 // imports the footer
