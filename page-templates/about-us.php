@@ -22,7 +22,7 @@ get_header();
 
 	<h1 class="entry-title">Our Team</h1>
 	<div class="grid-x ">
-	<div class="cell large-auto"></div>
+	<div class="cell large-1"></div>
   <?php 
 
 if (function_exists('get_field')) {
