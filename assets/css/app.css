@@ -5,7 +5,11 @@ body {
 }
 
 a {
-	color: #0a415e;
+	color: #494747;
+}
+
+a:hover, a:focus {
+	color: #bb0a1e;
 }
 
 h1 {
@@ -23,12 +27,12 @@ h1 {
 .header1 {
 	height: 100px;
 	width: 100%;
-	background-color: #0a415e;
+	background-color: #494747;
 }
 
 .menu .is-active>a {
 	background-color: #fff !important;
-	color: #1468a0;
+	color: #bb0a1e;
 }
 
 .menu li {
@@ -74,7 +78,7 @@ h1 {
 /* COLOR CLASSES ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .blue {
-	color: #0a415e;
+	color: #494747;
 }
 
 .green {
@@ -104,7 +108,7 @@ h1 {
 /* BUTTON STYLE -------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .button {
-	background-color: #aa2527;
+	background-color: #bb0a1e;
 	color: #fff;
 	border-radius: 0.3rem;
 	width: 20rem;
@@ -116,7 +120,7 @@ h1 {
 }
 
 .button:hover {
-	background-color: #901f21;
+	background-color: #aa2527;
 }
 
 
@@ -166,7 +170,7 @@ h1 {
  
 .corefx {
 	width: 100%;
-	background: linear-gradient(0deg, #0a415eb2, #042a3f8a), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
+	background: linear-gradient(0deg, #494747b2, #042a3f8a), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
 	background-repeat: no-repeat;
 }
 
@@ -178,7 +182,7 @@ h1 {
 
 .trigger {
 	width: 100%;
-	background: linear-gradient(0deg, #0a415eb2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
+	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
 	background-repeat: no-repeat;
 }
 
@@ -190,7 +194,7 @@ h1 {
 
 .firstaid {
 	width: 100%;
-	background: linear-gradient(0deg, #0a415eb2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
+	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
 	background-repeat: no-repeat;
 }
 
@@ -202,7 +206,7 @@ h1 {
 
 .vipr {
 	width: 100%;
-	background: linear-gradient(0deg, #0a415eb2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
+	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
 	background-repeat: no-repeat;
 }
 
@@ -251,7 +255,7 @@ h1 {
 
 .accordion-title {
 	text-align: center;
-	background-color: #0a415e;
+	background-color: #494747;
 	color: white;
 	font-size: 25px;
 }
@@ -274,6 +278,11 @@ h1 {
         margin-top: 30px;
         margin-bottom: 30px;
     }
+button.wsf-button {
+	background-color: #494747;
+	/* border-color: #494747; */
+	color: #FFFFFF;
+}
 
     .logoDiv {
         text-align: center !important;
@@ -286,11 +295,23 @@ h1 {
 
 /* PROGRAMS LANDING ------------------------------------------------------------------------------------------------------------------------------------- */
 
-.progDesc {
-	text-align: left;
-	margin-top: 25px;
-	margin-bottom: 25px;
-}
+    .progDesc {
+        text-align: left;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .programsTitle, .programInfo {
+        text-align: center;
+    }
+
+    .programTables td {
+        text-align: center;
+    }
+
+    .programTag {
+        text-align: center;
+    }
 
     .top-row {
         margin-top: 30px;
@@ -310,7 +331,7 @@ h1 {
 }
 
 .progHead {
-	color: #0a415e;
+	color: #494747;
 	text-align: center;
 }
 
@@ -326,7 +347,7 @@ h1 {
 }
 
 .programBox {
-	background-color: #0a415e;
+	background-color: #494747;
 	padding: 15px;
 	margin: 10px;
 }
@@ -350,13 +371,13 @@ h1 {
 	text-align: center;
 	font-size: 22pt;
 	color: white;
-	background-color: #0a415e;
-	border: 2pt solid #0a415e;
+	background-color: #494747;
+	border: 2pt solid #494747;
 }
 
 .plAccordian {
 	text-align: center;
-	background-color: #0a415e;
+	background-color: #494747;
 }
 
 .accordion-title::before {
@@ -365,6 +386,11 @@ h1 {
 	font-size: 25px;
 }
 
+#corefxLogo2 {
+	width: 200px;
+	margin-left: 870px;
+	margin-bottom: 50px;
+}
 
 
 
@@ -380,6 +406,7 @@ h1 {
 	margin-left: 800px;
 	margin-bottom: 50px;
 }
+
 
 #trigBanner {
 	width: 82%;
@@ -419,8 +446,9 @@ h1 {
 /* RED CROSS */
 
 #redCrossLogo {
-	width: 200px;
-	margin-left: 580px;
+    width: 200px;
+    height: 100px;
+    margin-left: 580px;
 }
 
 .rcImg {
@@ -428,11 +456,19 @@ h1 {
 	height: 445px;
 }
 
+
 .rcVideo {
 	margin-left: 50px;
 	margin-bottom: 100px;
 	margin-top: 50px;
 }
+
+.contactInfo p{
+    font-family: 'Lato', sans-serif;
+    font-size:.9em;
+    text-align: left;
+}
+
 
 /* CANFITPRO ----------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -494,91 +530,69 @@ h1 {
 
 /* FOOTER ----------------------------------------------------------------------------------------------------------------------------------------- */
 
-footer {
-    background-color: #E3E3E3;
-    margin: 0;
-    padding: 0;
-}
-/* changed the padding on the footerNav section */
-.footerNav {
-    padding-left: 4em;
-}
-.footerNav h2{
-    font-size:1em;
-    font-weight:bold;
+ /* styles the footer background */
+ footer{
+    background-color: #E3E3E3 !important;
     margin:0;
     padding:0;
-    margin-left:0.9em;
-    font-family: 'Lato', sans-serif;
-    margin-top:.75em;
+} 
+
+/* changed the padding on the footerNav section */
+.footerNav{
+    padding-left:6em;
 }
+
 /* controls the logo section and where the logo ends up being placed */
-
-
-
-/* rfgdsfdsfdsfds */
-
-.logo {
+.logo{
     text-align: right;
-    margin: 0 auto;
-    margin-top: 3em;
+    margin:0 auto;
+    margin-top:3.65em;
 }
+
 /* sizes the logo */
-.logo img {
-    width: 75%;
-    height: auto;
-}
-.logo p {
-    font-family: 'Lato', sans-serif;
-    margin-top: .2em;
-    font-size: 1em;
+.logo img{
+    width:70%;
+    height:auto;    
 }
 
 /* controls the main footer menu */
-#footer-menu {
-    padding: 0;
-    margin: 0;
-    margin-top: 2em;
-}
-#footer-menu ul {
-    list-style: none;
-    padding: 0;
-    display: inline;
-}
-#footer-menu ul li {
-    float: right;
-}
-#footer-menu a {
-    padding-right: 0;
-}
-/* controls the program menu */
-#program-menu {
-    margin: 0;
-    padding: 0;
-}
-#program-menu a {
-    margin: 0;
-    padding-top: .2em;
-    padding-right: 0;
-}
-/* controls the contact section */
-.contactInfo {
-    padding: 0;
-    margin-top: 2.4em;
-    margin-left: 3%;
-}
-.contactInfo p {
-    font-family: 'Lato', sans-serif;
-    font-size: 1em;
-    text-align: left;
-    margin: 0;
-    padding: 0;
+#footer-menu{
+    padding:0;
+    margin:0;
+    margin-top:3em;
 }
 
-.contactInfo h2 {
+#footer-menu ul{
+    list-style: none;
+    padding:0;
+    display: inline;
+}
+
+#footer-menu ul li{
+    float:right;
+}
+
+/* controls the program menu */
+#program-menu{
+    margin:0;
+    padding:0;
+}
+
+#program-menu a{
+    margin:0;
+    padding-top:.2em;
+}
+
+/* controls the contact section */
+.contactInfo{ 
+    padding:0;
+    margin-top:.4em;
+}
+
+.contactInfo p{
     font-family: 'Lato', sans-serif;
-    font-size: 1.25em;
-    text-align: right;
+    font-size:.9em;
+    text-align: left;
 }
 
 .newsLetterForm h2{
@@ -586,61 +600,69 @@ footer {
     padding:0;
     font-size:1.75em !important;
     font-family: 'Lato', sans-serif;
-    margin:.5em 0 .5em 12.5%;
-    font-weight:bold;
+    margin:2.75em 0 .2em 8%;
+    font-weight:normal;
 }
 
 .wsf-grid {
     margin-left: 0px;
     margin-right: 0px !important;
 }
-button.wsf-button.wsf-button-primary {
-    background-color: #aa2527;
+
+.wsf-button.wsf-button-primary{
+    width:10em !important;
+    margin-left:28%;
+    margin-bottom:1.75em;
 }
-button.wsf-button.wsf-button-primary:hover {
+.wsf-tile{
+    padding-left:0;
+}
+button.wsf-button.wsf-button-primary:hover{
     background-color: #901f21;
 }
-input[type=checkbox].wsf-field+.wsf-label {
+
+input[type=checkbox].wsf-field + .wsf-label  {
     font-size: .8em;
-    margin-bottom: 0 !important;
+    margin-bottom:0 !important;
+}
+
+.wsf-field-wrapper{
+    margin-bottom:.5em;
 }
 /* controls the social media icons */
 .socialMediaIcons{
-    text-align:right !important;
-    margin-top:0;
-    margin-left:0;
-    margin-right:12.5%;
+    text-align:left !important;
+    margin-top:1em;
+    margin-left:1em;
 }
 
-.socialMedia{
-    font-size:0.7em; 
-    margin-top:0;
-    padding-left:0;
-    margin-bottom:1em;
+.fbIcon{
+    font-size:1.25em; 
+    color:black;
+    margin-right:.25em; 
 }
 
-.fbIcon {
-    font-size: 1.5em;
-    color: black;
-    margin-right: .25em;
+.fbIcon:hover{
+    color:#901f21;
 }
-.fbIcon:hover {
-    color: #901f21;
+
+.twitterIcon{
+    font-size:1.25em; 
+    color:black;
+    margin-right:.25em;
 }
-.twitterIcon {
-    font-size: 1.5em;
-    color: black;
-    margin-right: .25em;
+
+.twitterIcon:hover{
+    color:#901f21;
 }
-.twitterIcon:hover {
-    color: #901f21;
+
+.instagramIcon{
+    font-size:1.25em; 
+    color:black;
 }
-.instagramIcon {
-    font-size: 1.5em;
-    color: black;
-}
-.instagramIcon:hover {
-    color: #901f21;
+
+.instagramIcon:hover{
+    color:#901f21;
 }
 
 
@@ -661,33 +683,135 @@ input[type=checkbox].wsf-field+.wsf-label {
         padding: 10px;
 
     }
-    /* styles the footer background */
-	footer {
-		background-color: #E3E3E3;
-		margin: 0;
-		padding: 0;
-	}
-	/* changed the padding on the footerNav section */
-	.footerNav {
-		font-size: 1.5em;
-		padding-left: .2em;
-	}
-	.footerNav h2{
-        font-size:1em;
-        margin:0;
-        padding:0;
-        margin-left:4%;
-        font-family: 'Lato', sans-serif;
-		margin-bottom:0.25em;
-		font-weight:bold;
+
+    .title-bar {
+        background: #868686 !important;
     }
 
-    .logoDiv {
-        text-align: center;
+    /* styles the footer background */
+    footer{
+        background-color: #E3E3E3;
+        margin:0;
+        padding:0;
+    } 
+
+    /* changed the padding on the footerNav section */
+    .footerNav{
+       font-size:1em;
+       padding-left:1em;
     }
-   .menu-item {
-        font-size: 12pt;
-        word-spacing: 4px;
+    
+    /* controls the logo section and where the logo ends up being placed */
+    .logo{
+        text-align: center;
+        margin:0 auto;
+        margin-top:1em;
+    }
+    
+    /* sizes the logo */
+    .logo img{
+        width:40%;
+        height:auto;    
+    }
+    
+    /* controls the main footer menu */
+    #footer-menu{
+        padding:0;
+        margin:0;
+        margin-top:1em;
+    }
+
+    #footer-menu ul{
+        list-style: none;
+        padding:0;
+        display: inline;
+    }
+
+    #footer-menu ul li{
+        float:right;
+    }
+
+    /* controls the program menu */
+    #program-menu{
+        margin:0;
+        padding:0;
+    }
+
+    #program-menu a{
+        margin:0;
+        padding-top:.2em;
+    }
+
+    .menu a{
+        padding-left:.1em;
+    }
+    
+    /* controls the contact section */
+    .contactInfo{ 
+        padding:0;
+        margin-top:.5em;
+    }
+    
+    .contactInfo p{
+        font-family: 'Lato', sans-serif;
+        font-size:.75em;
+        text-align: left;
+        margin-left:3.25em;
+        margin-bottom:0;
+    }
+
+    /* controls the form section */ 
+    .newsLetterForm p{
+        font-family: 'Lato', sans-serif;
+        font-size:1em;
+        text-align: left;
+    }
+
+    .newsLetterForm p{
+        margin:0;
+        padding:0;
+    }
+
+    .newsLetterForm h2{
+        margin:0;
+        padding:0;
+        font-size:1.5em !important;
+        font-family: 'Lato', sans-serif;
+		margin:.5em 0 .5em 13%;
+		font-weight:normal;
+	}
+
+    .wsf-grid {
+        margin-left: 0px;
+        margin-right: 0px !important;
+    }
+
+    .wsf-button.wsf-button-primary{
+        width:10em !important;
+        margin-left:24%;
+        margin-bottom:1.75em;
+    }
+
+    button.wsf-button.wsf-button-primary:hover{
+        background-color: #901f21;
+    }
+
+    input[type=checkbox].wsf-field + .wsf-label  {
+        font-size: .8em;
+        margin-bottom:0 !important;
+    }
+    
+    .wsf-field-wrapper{
+        margin-bottom:.5em;
+    }
+
+    /* controls the social media icons */
+    .socialMediaIcons{
+        text-align:left !important;
+        margin-left:0;
+		margin-top:1em;
+        margin-left:2.45em;
+        margin-bottom:.5em;
     }
 
     .socialMedia{
@@ -696,29 +820,45 @@ input[type=checkbox].wsf-field+.wsf-label {
         padding-left:0;
         margin-bottom:1em;
 	}
-	.fbIcon {
-		font-size: 1.5em;
-		color: black;
-		margin-right: .25em;
-	}
-	.fbIcon:hover {
-		color: #901f21;
-	}
-	.twitterIcon {
-		font-size: 1.5em;
-		color: black;
-		margin-right: .25em;
-	}
-	.twitterIcon:hover {
-		color: #901f21;
-	}
-	.instagramIcon {
-		font-size: 1.5em;
-		color: black;
-	}
-	.instagramIcon:hover {
-		color: #901f21;
-	}
+    
+    
+    .fbIcon{
+        font-size:1.5em; 
+        color:black;
+        margin-right:.25em; 
+    }
+
+    .fbIcon:hover{
+        color:#901f21;
+    }
+
+    .twitterIcon{
+        font-size:1.5em; 
+        color:black;
+        margin-right:.25em;
+    }
+
+    .twitterIcon:hover{
+        color:#901f21;
+    }
+    
+    .instagramIcon{
+        font-size:1.5em; 
+        color:black;
+    }
+
+    .instagramIcon:hover{
+        color:#901f21;
+    }
+   
+    .logoDiv {
+        text-align: center;
+    }
+   .menu-item {
+        font-size: 12pt;
+        word-spacing: 4px;
+    }
+
     
 
     /* contact us */
@@ -733,7 +873,33 @@ input[type=checkbox].wsf-field+.wsf-label {
 	}
 	.contactForm {
 		margin-bottom: 1em;
+    }
+    
+    /* red cross page */
+    #redCrossLogo {
+        width: 200px;
+        height: 100px;
+		margin-left: 50px;
 	}
+
+    .rcImg {
+        height: 60%;
+        
+    }
+
+    .progVideo iframe  {
+   
+		width: 95%;
+        height: 95%;
+        margin-top: 25px;
+        padding-top: 25px;
+        padding-bottom: 75px;
+    }
+
+    .site-content {
+        padding: 0em;
+    }
+
 
 } 
 
@@ -752,5 +918,185 @@ input[type=checkbox].wsf-field+.wsf-label {
 	.center {
 		text-align: center !important;
 		margin: 0 auto;
+    }
+    
+    /* footer */
+    footer{
+        background-color: #E3E3E3;
+        margin:0;
+        padding:0;
+    } 
+
+    /* changed the padding on the footerNav section */
+    .footerNav{
+        padding-left:1.75em;
+    }
+
+    /* controls the logo section and where the logo ends up being placed */
+    .logo{
+        text-align: right;
+        margin:0 auto;
+        margin-top:3.4em;
+    }
+    
+    /* sizes the logo */
+    .logo img{
+        width:80%;
+        height:auto;    
+    }
+    
+    /* controls the main footer menu */
+    #footer-menu{
+        padding:0;
+        margin:0;
+        margin-top:2.75em;
+    }
+
+    #footer-menu ul{
+        list-style: none;
+        padding:0;
+        display: inline;
+    }
+
+    #footer-menu ul li{
+        float:right;
+    }
+
+    #footer-menu a{
+        padding-right:0;
+    }
+
+
+    /* controls the program menu */
+    #program-menu{
+        margin:0;
+        padding:0;
+    }
+
+    #program-menu a{
+        margin:0;
+        padding-top:.2em;
+        padding-right:0;
+    }
+    
+    /* controls the contact section */
+
+    .contactInfo{ 
+        padding:0;
+        margin-top:.2em;
+        margin-left:3%;
+    }
+    
+    .contactInfo p{
+        font-family: 'Lato', sans-serif;
+        font-size:.8em;
+        text-align: left;
+        margin:0;
+        padding:0;
+    }
+    
+    .newsLetterForm h2{
+        margin:0;
+        padding:0;
+        font-size:1.5em !important;
+        font-family: 'Lato', sans-serif;
+		margin:2.9em 0 .5em 8%;
+		font-weight:normal;
 	}
+
+
+    .wsf-grid {
+        margin-left: 0px;
+        margin-right: 0px !important;
+    }
+
+    .wsf-button.wsf-button-primary{
+        width:10em !important;
+        margin-left:24%;
+        margin-bottom:1.75em;
+    }
+
+    .wsf-tile{
+        padding-left:0;
+    }
+    
+    button.wsf-button.wsf-button-primary:hover{
+        background-color: #901f21;
+    }
+
+    input[type=checkbox].wsf-field + .wsf-label  {
+        font-size: .8em;
+        margin-bottom:0 !important;
+    }
+
+    .wsf-field-wrapper{
+        margin-bottom:.5em;
+    }
+
+
+    /* controls the social media icons */
+    .socialMediaIcons{
+		text-align:left !important;
+        margin-left:.95em;
+		margin-top:.7em;
+		margin-right:0;
+    }
+
+    .socialMedia{
+        font-size:0.7em; 
+        margin-top:0;
+        padding-left:0;
+        margin-bottom:1em;
+	}
+    
+    .fbIcon{
+        font-size:1.25em; 
+        color:black;
+        margin-right:.25em; 
+    }
+
+    .fbIcon:hover{
+        color:#901f21;
+    }
+
+    .twitterIcon{
+        font-size:1.25em; 
+        color:black;
+        margin-right:.25em;
+    }
+
+    .twitterIcon:hover{
+        color:#901f21;
+    }
+    
+    .instagramIcon{
+        font-size:1.25em; 
+        color:black;
+    }
+
+    .instagramIcon:hover{
+        color:#901f21;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+

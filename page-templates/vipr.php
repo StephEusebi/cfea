@@ -20,7 +20,7 @@ get_header();
 ?>
 
     <div class="grid-x grid-margin-x">
-        <div class="large-offset-2 ">
+        <div class="large-offset-2 small-offset-1">
 
             <!-- banner at top of page -->
             <div class="cell large-8">
@@ -31,9 +31,9 @@ get_header();
 
             <div class="grid-x grid-margin-x">
                 <!-- <h2 class="cell large-12 progHead">ViPR</h2> -->
-                <p class="cell large-10 progDesc">The disparity between movement and power exercises is linked by ViPR. It merges complete body movement with weight, thereby improving the vivacity, implementation along with overhauling the aspirations of customers and sportspeople. ViPR ushers in a new perception in fitness and athletic training – Loaded Movement Training.</p>
+                <p class="cell large-10 small-10 progDesc">The disparity between movement and power exercises is linked by ViPR. It merges complete body movement with weight, thereby improving the vivacity, implementation along with overhauling the aspirations of customers and sportspeople. ViPR ushers in a new perception in fitness and athletic training – Loaded Movement Training.</p>
 
-                <p class="cell large-10 progDesc">ViPR was stimulated by farm youngsters who moved with weights on a daily basis and who were more powerful than any other contender in athletics. Using ViPR, we can turn out farm-toughened physique everywhere, sans setting foot on a farm, without having to carry out any hard work in an entertaining, harmless and efficient style.</p>
+                <p class="cell large-10 small-10 progDesc">ViPR was stimulated by farm youngsters who moved with weights on a daily basis and who were more powerful than any other contender in athletics. Using ViPR, we can turn out farm-toughened physique everywhere, sans setting foot on a farm, without having to carry out any hard work in an entertaining, harmless and efficient style.</p>
 
             </div>
 
@@ -49,12 +49,13 @@ get_header();
 								$description = $program['description'];
 								$button = $program['button'];
 								$cost = $program['cost'];
-								$program_image = $program['program_image'];
+                                $program_image = $program['program_image'];
+                                $ytvideo = $program['ytvideo'];
 
 					?>
 
                     <!-- group of smaller boxes for workshop -->
-                    <div class="cell large-10">
+                    <div class="cell large-10 small-10">
 
                         <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg" />
 
@@ -89,13 +90,41 @@ get_header();
             </div>
         </div>
 
-        <div class="large-offset-3 ">
+        <?php 
+
+if (function_exists('get_field')) {
+$programs = get_field('programs');
+
+    foreach($programs as $program){
+     
+        $ytvideo = $program['ytvideo'];
+
+?>
+
+<div class="cell large-8 large-offset-4 small-10 small-offset-1 progVideo">
+      
+        <?php echo$ytvideo; ?>
+      
+    </div>
+
+    <?php
+                
+
+            }
+        }
+        
+        ?>
+
+
+
+
+        <!-- <div class="large-offset-3 ">
             <div class="cell large-8 rcVideo">
                 <iframe width="798" height="449" src="https://www.youtube.com/embed/AWVC2cQqRqo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </div>
+        </div> -->
 
-    </div>
+    <!-- </div> -->
     <?php
 // imports the footer
 get_footer();

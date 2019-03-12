@@ -68,7 +68,7 @@ get_header();
 
                         <div class="cell large-4 small-12 text-right">
                             <!-- line  -->
-                            <div style="width: 100%; height: 0.3rem; background-color: #0a415e; margin-bottom: 1rem;"></div>
+                            <div style="width: 100%; height: 0.3rem; background-color: #bb0a1e; margin-bottom: 1rem;"></div>
                             <p><strong>Curtis Medina</strong> | Certified Fitness ... | CEO, CFEA</p>
 
                             <p>Mini Bio - Awards, Achievements
@@ -102,7 +102,7 @@ get_header();
 
                         <div class="cell large-4 small-12">
                             <!-- line  -->
-                            <div style="width: 100%; height: 0.3rem; background-color: #0a415e; margin-bottom: 1rem;"></div>
+                            <div style="width: 100%; height: 0.3rem; background-color: #bb0a1e; margin-bottom: 1rem;"></div>
                             <p><strong>Team info</strong></p>
 
                             <p>team and program info</p>
