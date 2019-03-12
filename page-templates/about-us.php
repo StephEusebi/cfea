@@ -20,8 +20,14 @@ get_header();
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
 
+<<<<<<< HEAD
             <h1 class="entry-title">Our Team</h1>
 
+=======
+	<h1 class="entry-title">Our Team</h1>
+	<div class="grid-x ">
+	<div class="cell large-auto"></div>
+>>>>>>> landing
   <?php 
 
 if (function_exists('get_field')) {
@@ -35,7 +41,13 @@ if (function_exists('get_field')) {
 		$member_contact = $people['member_contact'];
 ?>
 
+<<<<<<< HEAD
 			<ul class="accordion  aboutAcordian" data-accordion>
+=======
+
+<div class="cell large-10">
+			<ul class="accordion aboutAcordian" data-accordion>
+>>>>>>> landing
         <li>
         <img class="teamImg" src="<?php echo$member_image;?>">
         </li>
@@ -69,7 +81,10 @@ if (function_exists('get_field')) {
 }
 
 ?>
+</div>
+<div class="cell large-auto"></div>
 
+</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
