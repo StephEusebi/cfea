@@ -44,7 +44,7 @@ if (function_exists('get_field')) {
         </li>
 				<li class="accordion-item accordianStyle" data-accordion-item>
           <!-- Accordion tab title -->
-					<a href="#" class="accordion-title plAccordianTitle">About</a>
+					<a href="#" class="accordion-title plAccordianTitle"><p><?php echo$member_about;?></p></a>
 					<!-- Accordion tab content -->
 					<div class="accordion-content" data-tab-content>
           <p><?php echo$member_about;?></p>
