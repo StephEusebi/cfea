@@ -73,7 +73,7 @@ if (function_exists('get_field')) {
 
 ?>
 </div>
-<div class="cell large-auto"></div>
+<div class="cell large-2"></div>
 
 </div>
 		</main><!-- #main -->
