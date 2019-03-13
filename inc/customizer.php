@@ -109,13 +109,14 @@ function cfea_customize_register( $wp_customize ) {
 	}
 
 	// Add Footer Logo Section
-	$wp_customize->add_section('cfea_footerLogo',
+	$wp_customize->add_section('cfea_footer',
 	array(
-		'title' => __('Footer Logo','cfea'),
+		'title' => __('Footer','cfea'),
 		'capability' => 'edit_theme_options',
 		)
 	);
 
+	// setting to add the footer logo
 	$wp_customize->add_setting(
 		'cfea_footer_logo'
 	);
@@ -126,20 +127,13 @@ function cfea_customize_register( $wp_customize ) {
 			'cfea_footer_logo',
 			array(
 				'label'   => __( 'Upload Logo', 'cfea' ),
-				'section' => 'cfea_footerLogo',
+				'section' => 'cfea_footer',
 				
 			)
 		)
 	);
 
-	// Add Footer Contact Number Section
-	$wp_customize->add_section('cfea_footerContactNumber',
-	array(
-		'title' => __('Footer Contact Number','cfea'),
-		'capability' => 'edit_theme_options',
-		)
-	);
-
+	// adds the setting for the footer contact number
 	$wp_customize->add_setting(
 		'cfea_footer_contact_number'
 	);
@@ -150,21 +144,14 @@ function cfea_customize_register( $wp_customize ) {
 			'cfea_footer_contact_number',
 			array(
 				'label'   => __( 'Contact Number', 'cfea' ),
-				'section' => 'cfea_footerContactNumber',
+				'section' => 'cfea_footer',
 				'type'	  => 'text'
 				
 			)
 		)
 	);
 
-	// Add Footer Contact Email Section
-	$wp_customize->add_section('cfea_footerContactEmail',
-	array(
-		'title' => __('Footer Contact Email','cfea'),
-		'capability' => 'edit_theme_options',
-		)
-	);
-
+	// Add setting for Footer Contact Email 
 	$wp_customize->add_setting(
 		'cfea_footer_contact_email'
 	);
@@ -175,21 +162,14 @@ function cfea_customize_register( $wp_customize ) {
 			'cfea_footer_contact_email',
 			array(
 				'label'   => __( 'Contact Email', 'cfea' ),
-				'section' => 'cfea_footerContactEmail',
+				'section' => 'cfea_footer',
 				'type'	  => 'text'
 				
 			)
 		)
 	);
 
-	// Add Footer Form Name Section
-	$wp_customize->add_section('cfea_footerFormName',
-	array(
-		'title' => __('Footer Form Name','cfea'),
-		'capability' => 'edit_theme_options',
-		)
-	);
-
+	// Adds setting for Footer Form Name
 	$wp_customize->add_setting(
 		'cfea_footer_form_name'
 	);
@@ -200,7 +180,7 @@ function cfea_customize_register( $wp_customize ) {
 			'cfea_footer_form_name',
 			array(
 				'label'   => __( 'Form Name', 'cfea' ),
-				'section' => 'cfea_footerFormName',
+				'section' => 'cfea_footer',
 				'type'	  => 'text'
 			)
 		)
