@@ -20,9 +20,23 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-	<h1 class="entry-title">Our Team</h1>
-	<div class="grid-x ">
-	<div class="cell large-1"></div>
+	<h1 class="OurTeamtitle">Our Team</h1>
+
+	<div id="aboutUsP">
+	<h2 id="welcometitle">Welcome to the Canadian Fitness Education Alliance</h2>
+
+<p>Welcome to the Canadian Fitness Education Alliance (known as the CFEA).  We are a leading provider of fitness certification and education in Canada.  Through our professional partnerships, we have certified thousands of Canadian fitness professionals.
+Whether you are new to the fitness industry looking for your first job and want to become certified or you are a seasoned veteran looking for advanced certification and continuing education we are here to help you.
+The CFEA’s mandate is simple.  To bring together the most recognized education brands in fitness today while giving you an amazing live education experience.  Our award-winning team of highly trained experienced Master Trainers, Instructors and PRO TRAINERS are among the best fitness educators in the industry today!</p>
+
+<h3 id="letUsHelp">Let us help you take your fitness career to the next level!</h3>
+
+
+	</div>
+
+	<div class="grid-container centerAccordians">
+	<div class="grid-x grid-padding-x ">
+
   <?php 
 
 if (function_exists('get_field')) {
@@ -37,7 +51,7 @@ if (function_exists('get_field')) {
 ?>
 
 
-<div class="cell large-10">
+<div class="cell large-12">
 			<ul class="accordion aboutAcordian" data-accordion data-allow-all-closed="true">
         <li>
         <img class="teamImg" src="<?php echo$member_image;?>">
@@ -73,7 +87,7 @@ if (function_exists('get_field')) {
 
 ?>
 </div>
-<div class="cell large-2"></div>
+</div>
 
 </div>
 		</main><!-- #main -->
