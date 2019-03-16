@@ -2,7 +2,7 @@
 /**
  * The template for displaying all pages
  * 
- * Template Name: Home Page
+ * Template Name: Front Page
  * Template Post Type: page
  *
  * This is the template that displays all pages by default.
