@@ -1001,10 +1001,28 @@ input[type=checkbox].wsf-field + .wsf-label  {
 
 }
 
+/* CUSTOM POST FOR COACH ----------------------------------------------------------------------------------------------------------------------------------------- */
 
+/* container that holds the coach info */
+.coach-container {
+    display: flex; 
+    justify-content: space-evenly; 
+}
 
+/* image of coach */
+.coach-image {
+    margin-bottom: 2rem; 
+    max-width: 35rem;
+}
 
+/* coach button */
+.coach-button {
+    width: auto;
+}
 
+.coach-button h5 {
+    margin-bottom: 0;
+}
 
 
 
