@@ -59,7 +59,7 @@ get_header();
 					<div class="cell corefx"><img src="/wp-content/themes/cfea/assets/img/corefx-logo.png" alt="corefx logo" /></div>
 					<div class="cell trigger"><img src="/wp-content/themes/cfea/assets/img/tp-logo.png" alt="trigger point logo" /></div>
 					<div class="cell firstaid"><img src="/wp-content/themes/cfea/assets/img/firstaid-logo.png" alt="canadian red cross logo" /></div>
-					<div class="cell vipr"><img src="/wp-content/themes/cfea/assets/img/vipr-logo.png" alt="vipr logo" /></div>
+					<div class="cell canfit"><img src="/wp-content/themes/cfea/assets/img/canfit-logo.png" alt="canfitpro logo" /></div>
 				</div>
 
 				<!-- container for curtis and mini bio -->	
