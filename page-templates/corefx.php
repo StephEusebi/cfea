@@ -41,58 +41,6 @@ get_header();
 
             <div class="grid-x grid-margin-x">
 
-                <?php 
-
-	if (function_exists('get_field')) {
-		$certifications = get_field('certifications');
-
-		foreach($certifications as $certification){
-			$name = $certification['name'];
-			$description = $certification['description'];
-			$button = $certification['button'];
-			$cost = $certification['cost'];
-            $program_image = $certification['program_image'];
-            
-
-	?>
-
-                    <!-- larger box to hold main certification -->
-                    <div class="cell large-10 small-10">
-                        <!-- program box img -->
-                        <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg" />
-
-                        <!-- create accordions to hold content -->
-                        <ul class="accordion plAccordian" data-accordion data-allow-all-closed="true">
-                            <li class="accordion-item accordianStyle" data-accordion-item>
-                                <!-- Accordion tab title -->
-                                <a href="#" class="accordion-title pRCAccordianTitle">
-                                    <?php echo$name; ?>
-                                </a>
-
-                                <!-- Accordion tab content -->
-                                <div class="accordion-content" data-tab-content>
-                                    <p>
-                                        <?php echo$description; ?>
-                                    </p>
-                                    <p>
-                                        <?php echo$cost; ?>
-                                    </p>
-                                    <button class=" button" href="<?php echo$button; ?>">REGISTER NOW</button>
-
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-
-
-                    <?php
-
-		}
-	}
-
-	?>
-
     <?php 
 
 		if (function_exists('get_field')) {
@@ -109,7 +57,7 @@ get_header();
 	?>
 
                             <!-- group of smaller boxes for workshop -->
-                            <div class="cell large-5 small-10">
+                            <div class="cell large-3 small-10 corefxContainer">
 
                                 <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg" />
 
