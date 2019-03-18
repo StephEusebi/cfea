@@ -393,6 +393,26 @@ button.wsf-button {
 	margin-bottom: 50px;
 }
 
+/* PROGRAM VIDEOS --------------------------------------------------------------------------------------------------------------------------------------- */
+.videoContainer1 {
+    margin: 0 auto;
+    display: flex;
+   
+}
+
+.progVideo iframe {
+    margin-bottom: 50px;
+}
+
+
+/* .progVideo iframe  {
+   margin: 0 auto;
+   display: flex;
+   width: 950px; 
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 75px;
+} */
 
 
 /* TRIGGERPOINT ----------------------------------------------------------------------------------------------------------------------------------------- */
@@ -866,14 +886,14 @@ input[type=checkbox].wsf-field + .wsf-label  {
         
     }
 
-    /* .progVideo iframe  {
+    .progVideo iframe  {
    
-		width: 95%;
-        height: 95%;
-        margin-top: 25px;
+		width: 300px;
+        height: 300px;
+        /* margin-top: 25px; */
         padding-top: 25px;
         padding-bottom: 75px;
-    } */
+    }
 
     .site-content {
         padding: 0em;
