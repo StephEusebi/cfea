@@ -106,7 +106,7 @@ $programs = get_field('programs');
 ?>
 
 
-<div class="cell large-8 large-offset-4 small-10 small-offset-1 progVideo">
+<div class="cell large-10 small-10 small-offset-1 progVideo">
       
         <?php echo$ytvideo; ?>
       

@@ -866,14 +866,14 @@ input[type=checkbox].wsf-field + .wsf-label  {
         
     }
 
-    .progVideo iframe  {
+    /* .progVideo iframe  {
    
 		width: 95%;
         height: 95%;
         margin-top: 25px;
         padding-top: 25px;
         padding-bottom: 75px;
-    }
+    } */
 
     .site-content {
         padding: 0em;
