@@ -158,9 +158,7 @@ h1 {
     display: none;
 }
 
-.site-content{
-    padding:5em;
-}
+
 
 
 /* HOME PAGE --------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -872,10 +870,6 @@ input[type=checkbox].wsf-field + .wsf-label  {
         margin-top: 25px;
         padding-top: 25px;
         padding-bottom: 75px;
-    }
-
-    .site-content {
-        padding: 0em;
     }
 
 
