@@ -258,11 +258,12 @@ h1 {
 	background-color: #494747;
 	color: white;
 	font-size: 25px;
+    padding: 30px;
 }
 
 .accordion-title::before {
 	content: "\25bc";
-	margin-top: -18px;
+/* 	margin-top: -18px; */
 	font-size: 25px;
 }
 

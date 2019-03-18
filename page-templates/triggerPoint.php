@@ -78,7 +78,7 @@ get_header();
                     <!-- group of smaller boxes for workshop -->
                     <div class="cell large-5 small-10">
 
-                        <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg" />
+                        <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" />
 
                         <ul class="accordion plAccordian" data-accordion data-allow-all-closed="true">
                             <li class="accordion-item accordianStyle" data-accordion-item>
