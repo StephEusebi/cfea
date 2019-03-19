@@ -19,8 +19,6 @@
 get_header();
 ?>
     <div class="grid-x grid-margin-x">
-
-    
         <div class="large-offset-2 small-offset-1">
 
             <!-- banner at top of page -->
@@ -34,14 +32,14 @@ foreach($descriptions as $description){
     $program_banner = $description['program_banner'];
 
 
-?>
+            ?>
 
 
     <div class="large-offset-2 small-offset-1">
 
         <!-- banner at top of page -->
         <div class="cell large-12">
-            <img src="<?php echo$program_banner; ?>" alt="triggerPoint banner" id="trigBanner" />
+            <img src="<?php echo$program_banner; ?>" alt="corefx banner" id="corefxBanner" />
         </div>
 
         <!-- program description -->
