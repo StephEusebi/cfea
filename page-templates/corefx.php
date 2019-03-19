@@ -18,39 +18,41 @@
 // imports the header
 get_header();
 ?>
+
+<div class="grid-container">
     <div class="grid-x grid-margin-x">
-        <div class="large-offset-2 small-offset-1">
+        <div class="cell large-offset-2 small-offset-1">
 
             <!-- banner at top of page -->
             <?php 
 
-if (function_exists('get_field')) {
-$descriptions = get_field('descriptions');
+    if (function_exists('get_field')) {
+    $descriptions = get_field('descriptions');
 
-foreach($descriptions as $description){
-    $top_desc = $description['top_desc'];
-    $program_banner = $description['program_banner'];
-
-
-            ?>
+    foreach($descriptions as $description){
+        $top_desc = $description['top_desc'];
+        $program_banner = $description['program_banner'];
 
 
-    <div class="large-offset-2 small-offset-1">
+                ?>
 
-        <!-- banner at top of page -->
-        <div class="cell large-12">
-            <img src="<?php echo$program_banner; ?>" alt="corefx banner" id="corefxBanner" />
-        </div>
 
-        <!-- program description -->
+<!-- BANNER AND TOP DESCRIPTION -->
+   <div class="grid-container">
         <div class="grid-x grid-margin-x">
 
-<!-- program description -->
-<div class="cell large-10 small-10 progDesc"><?php echo$top_desc; ?>
-</div>
+                <!-- banner at top of page -->
+                <div class="cell large-12">
+                    <img src="<?php echo$program_banner; ?>" alt="corefx banner" id="corefxBanner" />
+                </div>
+            
+                <!-- program description -->
+                <div class="cell large-10 small-10 progDesc"><?php echo$top_desc; ?></div>
 
-</div>
+        </div>
+   
 
+    
         <?php
         
 
@@ -58,6 +60,7 @@ foreach($descriptions as $description){
 }
 
 ?>
+<!-- END OF BANNER AND TOP DESCRIPTION -->
 
 
             <div class="grid-x grid-margin-x">
@@ -90,7 +93,7 @@ foreach($descriptions as $description){
                         </h2>
 
                         <!-- Accordion tab content -->
-                        <div class="accordion-content" data-tab-content>
+                        <div class="coreContent">
                             <p>
                                 <?php echo$description; ?>
                             </p>
@@ -145,21 +148,8 @@ $programs = get_field('programs');
 
 
 
-
-        <!-- insert video -->
-        <!-- <div class="large-offset-3 ">
-            <div class="cell large-8 rcVideo">
-                <iframe width="798" height="449" src="https://www.youtube.com/embed/WoD34_HXxCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div> -->
-
-        <!-- bottom page logo -->
-        <!-- <div class="cell large-8">
-            <img src="/wp-content/themes/cfea/assets/img/corefx.jpg" alt="corefx logo" id="corefxLogo2" />
-        </div> -->
-
-
-    <!-- </div> -->
+  </div>
+  </div>
 
     <?php
 // imports the footer

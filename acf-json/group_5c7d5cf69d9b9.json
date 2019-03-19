@@ -3,6 +3,83 @@
     "title": "TriggerPoint",
     "fields": [
         {
+            "key": "field_5c9125aed6c57",
+            "label": "Descriptions (copy)",
+            "name": "descriptions_copy",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5c9125aed6c58",
+                    "label": "top bar",
+                    "name": "top_bar",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c9125aed6c59",
+                            "label": "program banner",
+                            "name": "program_banner",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5c9125aed6c5a",
+                            "label": "top desc",
+                            "name": "top_desc",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "key": "field_5c7d5cf6a01c0",
             "label": "Programs",
             "name": "programs",
@@ -339,7 +416,7 @@
             ]
         },
         {
-            "key": "field_5c9125aed6c57",
+            "key": "field_5c91275281e6d",
             "label": "Descriptions (copy)",
             "name": "descriptions_copy",
             "type": "group",
@@ -354,7 +431,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5c9125aed6c58",
+                    "key": "field_5c91275281e6e",
                     "label": "top bar",
                     "name": "top_bar",
                     "type": "group",
@@ -369,7 +446,7 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c9125aed6c59",
+                            "key": "field_5c91275281e6f",
                             "label": "program banner",
                             "name": "program_banner",
                             "type": "image",
@@ -393,7 +470,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5c9125aed6c5a",
+                            "key": "field_5c91275281e70",
                             "label": "top desc",
                             "name": "top_desc",
                             "type": "wysiwyg",
@@ -433,5 +510,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553016243
+    "modified": 1553016664
 }
