@@ -22,6 +22,8 @@ get_header();
 
 	<h1 class="OurTeamtitle">Our Team</h1>
 
+	<div class="grid-x grid-padding-x">
+	<div class="cell large-12 ">
 	<div id="aboutUsP">
 	<h2 id="welcometitle">Welcome to the Canadian Fitness Education Alliance</h2>
 
@@ -30,55 +32,35 @@ Whether you are new to the fitness industry looking for your first job and want 
 The CFEA’s mandate is simple.  To bring together the most recognized education brands in fitness today while giving you an amazing live education experience.  Our award-winning team of highly trained experienced Master Trainers, Instructors and PRO TRAINERS are among the best fitness educators in the industry today!</p>
 
 <h3 id="letUsHelp">Let us help you take your fitness career to the next level!</h3>
-
-
+</div>
+</div>
 	</div>
 
-	<div class="grid-container centerAccordians">
-	<div class="grid-x grid-padding-x ">
-
+	<div class="grid-x grid-padding-x">
+	<div class="cell large-12 ourTeam">
   <?php 
 
 if (function_exists('get_field')) {
-	$people = get_field('people');
+	$team = get_field('team');
 
-	foreach($people as $people){
+	foreach($team as $team){
 
-		$member_image = $people['member_image'];
-		$member_about = $people['member_about'];
-		$member_programs = $people['member_programs'];
-		$member_contact = $people['member_contact'];
+		$member_name = $team['member_name'];
+		$member_image = $team['member_image'];
+		$member_programs = $team['member_programs'];
+		$memeber_location = $team['memeber_location'];
+		$member_phone = $team['member_phone'];
+		$member_email = $team['member_email'];
 ?>
+			<div class="teamMembers">
+       <p class="member_name"><?php echo$member_name;?></p>
+			 <img class="teamMemberImg" src="<?php echo$member_image;?>">
+			 <p  class="member_programs"> <img src="<?php echo get_template_directory_uri() . '/assets/img/listDot.svg'; ?>" class="teamIcons" />	<?php echo$member_programs;?></p>
+			 <p class="memeber_location"><img src="<?php echo get_template_directory_uri() . '/assets/img/location.svg'; ?>" class="teamIcons" />	 <?php echo$memeber_location;?></p>
+			 <p class="member_phone"> <img src="<?php echo get_template_directory_uri() . '/assets/img/phone.svg'; ?>" class="teamIcons" />	<?php echo$member_phone;?></p>
+			 <p class="member_email"> <img src="<?php echo get_template_directory_uri() . '/assets/img/email.svg'; ?>" class="teamIcons" />	<?php echo$member_email;?></p>
 
-
-<div class="cell large-12">
-			<ul class="accordion aboutAcordian" data-accordion data-allow-all-closed="true">
-        <li>
-        <img class="teamImg" src="<?php echo$member_image;?>">
-        </li>
-				<li class="accordion-item accordianStyle" data-accordion-item>
-          <!-- Accordion tab title -->
-					<a href="#" class="accordion-title plAccordianTitle"><p><?php echo$member_about;?></p></a>
-					<!-- Accordion tab content -->
-					<div class="accordion-content" data-tab-content>
-          <p><?php echo$member_about;?></p>
-        </li>
-        <li class="accordion-item accordianStyle" data-accordion-item>
-					<!-- Accordion tab title -->
-					<a href="#" class="accordion-title plAccordianTitle">Programs</a>
-					<!-- Accordion tab content -->
-					<div class="accordion-content" data-tab-content>
-          <p><?php echo$member_programs;?></p>
-        </li>
-        <li class="accordion-item accordianStyle" data-accordion-item>
-					<!-- Accordion tab title -->
-					<a href="#" class="accordion-title plAccordianTitle">Contact</a>
-					<!-- Accordion tab content -->
-					<div class="accordion-content" data-tab-content>
-          <p><?php echo$member_contact;?></p>
-        </li>
-		
-			</ul>
+	</div>
 
 		<?php
 
@@ -89,7 +71,7 @@ if (function_exists('get_field')) {
 </div>
 </div>
 
-</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

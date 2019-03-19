@@ -216,17 +216,6 @@ h1 {
 
 
 /* ABOUT US --------------------------------------------------------------------------------------------------------------------------------------- */
-
-.centerAccordians {
-margin-left: 10%;
-}
-
-.teamMemberImg {
-	-webkit-filter: grayscale(50%);
-	/* Safari 6.0 - 9.0 */
-	filter: grayscale(50%);
-}
-
 .top-row {
     margin-top: 30px;
 }
@@ -245,41 +234,75 @@ margin-left: 10%;
  .OurTeamtitle {
      text-align: center;
  }
-.memberAbout {
-	margin-right: 100px;
-	font-family: 'Lato', sans-serif;
+
+ .teamMemberImg {
+	-webkit-filter: grayscale(50%);
+    filter: grayscale(40%);
 }
 
-.memberContact {
-	list-style: none;
+ .teamMembers {
+     width: 275px;
+     margin-bottom: 20px;
+     border: 8px solid #E6E6E6;
+     border-radius: 5px 5px 0px 0px;
+     box-shadow: 0 2.5px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .ourTeam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
+
+ .member_name {
+	text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 18pt;
+    background-color: #E6E6E6;
+    margin-bottom: 0;
+    padding: 5px;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 0;
+ }
+
+ .member_programs {
+     background-color: #E6E6E6;
+     margin-bottom: 0;
+     padding: 10px;
+    }
+
+ .memeber_location {
+    background-color: rgb(216, 215, 215);
+    margin-bottom: 0;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14pt;
+ }
+
+ .member_phone {
+    background-color: #E6E6E6;
+    margin-bottom: 0;
+    padding: 10px;
+ }
+
+ .member_email {
+    background-color: rgb(216, 215, 215);
+    margin-bottom: 0;
+    padding: 10px;
+ }
+
+.teamIcons{
+ width: 15px;
+ opacity: .4;
+ margin-right: 10px;
+}
+
 
 .alignCenter {
 	text-align: center;
-	font-family: 'Staatliches', cursive;
-}
-
-.aboutUs {
-	font-family: 'Lato', sans-serif;
-}
-
-.accordion-title {
-	text-align: center;
-	background-color: #494747;
-	color: white;
-	font-size: 25px;
-}
-
-.accordion-title::before {
-	content: "\25bc";
-	margin-top: -18px;
-	font-size: 25px;
-}
-
-.contactUsTitle>h1 {
-	text-align: center;
-	width: 100%;
-	margin: 0 auto;
 	font-family: 'Staatliches', cursive;
 }
 
