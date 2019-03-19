@@ -649,6 +649,11 @@ footer{
     margin-top:.5em;
 }
 
+.contactUsTitle {
+    background-color: #fff;
+    text-align: center;
+}
+
 .contactInfo p{
     font-family: 'Lato', sans-serif;
     font-size:.9em;
