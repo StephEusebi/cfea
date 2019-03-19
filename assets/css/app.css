@@ -472,7 +472,6 @@ button.wsf-button {
 
 }
 
-
 .descList {
 	text-align: left;
 }
@@ -482,9 +481,10 @@ button.wsf-button {
 }
 
 #corefxBanner {
-	width: 82%;
-	padding-bottom: 25px;
-	padding-top: 25px;
+    width: 99%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin: 0 auto;
 }
 
 #corefxLogo2 {
