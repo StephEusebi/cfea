@@ -30,53 +30,41 @@ h1 {
 	background-color: #494747;
 }
 
-.menu .is-active>a {
+.menu .is-active > a {
 	background-color: #fff !important;
-	color: #bb0a1e;
+    color: #bb0a1e;
 }
 
 .menu li {
-	list-style: none;
+    list-style: none;
 }
 
 .is-dropdown-submenu-parent.opens-right>.is-dropdown-submenu {
 	margin-top: 40px;
-	left: -10px;
-	border-top: 1px solid#aa2527;
+    left: -10px;
+    border-top: 1px solid#aa2527;
 	border-left: none;
 	border-right: none;
     border-bottom: none;
+    font-size: 11pt;
 
-	font-size: 11pt;
-    width: 50px;
-    
+}
+.sub-menu {
+    display:none
 }
 
 .dropdown .is-dropdown-submenu a {
     padding: .4rem .2rem;
-    
 }
 
 .is-dropdown-submenu {
-	position: absolute;
-	top: 0;
-	left: 100%;
-	z-index: 1;
-	display: hide;
     min-width: 90px;
     max-width: 90px;
-	border: 1px solid #cacaca;
 }
-     
-.entry-title {
-		margin-top: 70px;
-		text-align: center;
-    }
 
 .title-bar {
         display: none;
-}
-
+    }
 
 
 /* COLOR CLASSES ---------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -705,6 +693,19 @@ input[type=checkbox].wsf-field + .wsf-label  {
         padding: 10px;
 
     }
+
+    #primary-menu {
+        margin-top: 5px;
+    }
+
+    #example-animated-menu{
+        display: none;
+    }
+
+    .sub-menu {
+        display:none
+    }
+    
 
     .title-bar {
         background: #868686 !important;
