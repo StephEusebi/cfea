@@ -19,9 +19,12 @@
 get_header();
 ?>
 
+ <div class="grid-container">
     <div class="grid-x grid-margin-x">
+        <div class="cell large-offset-2 small-offset-1">
 
-    <?php 
+            <!-- banner at top of page -->
+            <?php 
 
     if (function_exists('get_field')) {
     $descriptions = get_field('descriptions');
@@ -29,38 +32,42 @@ get_header();
     foreach($descriptions as $description){
         $top_desc = $description['top_desc'];
         $program_banner = $description['program_banner'];
+
+
+                ?>
+
+
+<!-- BANNER AND TOP DESCRIPTION -->
+   <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+
+                <!-- banner at top of page -->
+                <div class="cell large-12">
+                    <img src="<?php echo$program_banner; ?>" alt="corefx banner" id="corefxBanner" />
+                </div>
+            
+                <!-- program description -->
+                <div class="cell large-10 small-10 progDesc"><?php echo$top_desc; ?></div>
+
+                <div class="cell small-10 medium-10 large-10 dividerBar"></div>  
+        </div>
    
+        
+
+    
+        <?php
+        
+
+    }
+}
 
 ?>
+<!-- END OF BANNER AND TOP DESCRIPTION -->
 
 
-        <div class="large-offset-2 small-offset-1">
-
-            <!-- banner at top of page -->
-            <div class="cell large-12">
-                <img src="<?php echo$program_banner; ?>" alt="triggerPoint banner" id="trigBanner" />
-            </div>
-
-            <!-- program description -->
             <div class="grid-x grid-margin-x">
 
-<!-- program description -->
-<div class="cell large-10 small-10 progDesc"><?php echo$top_desc; ?>
-</div>
-
-</div>
-
-            <?php
-            
-
-        }
-    }
-    
-?>
-
-            <div class="grid-x grid-margin-x ">
-
-                <?php 
+    <?php 
 
 		if (function_exists('get_field')) {
 			$programs = get_field('programs');
@@ -75,34 +82,40 @@ get_header();
 
 	?>
 
-                    <!-- group of smaller boxes for workshop -->
-                    <div class="cell large-5 small-10">
+                
+               
+                <!-- create boxes to hold page content -->
+               
+                <!-- box cover image -->
+               
 
-                        <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" />
+            
+                        <!-- Accordion tab title -->
+                        <div class="cell large-10 small-10 coreContent">
+                            <h2>
+                                <?php echo$name; ?>
+                            </h2>
+                        </div>
+                       
+                        <div class="cell large-10 small-10 coreContent">
+                           
+                             <!-- program image -->
+                             <img src="<?php echo$program_image; ?>" alt="<?php echo$program_image['alt']; ?>" id="<?php echo$program_image['id']; ?>" />
+                             <p id="coreDesc">
+                                <?php echo$description; ?>
+                            </p>
+                        </div>
 
-                        <ul class="accordion plAccordian" data-accordion data-allow-all-closed="true">
-                            <li class="accordion-item accordianStyle" data-accordion-item>
-                                <!-- Accordion tab title -->
-                                <a href="#" class="accordion-title pRCAccordianTitle">
-                                    <?php echo$name; ?>
-                                </a>
+                         <div class="cell large-10 small-10 coreContent">
+                            <p>
+                                <?php echo$cost; ?>
+                            </p>
+                            <button class="button" href="<?php echo$button; ?>">REGISTER NOW</button>    
+                        </div>  
 
-                                <!-- Accordion tab content -->
-                                <div class="accordion-content" data-tab-content>
-                                    <p>
-                                        <?php echo$description; ?>
-                                    </p>
-                                    <p>
-                                        <?php echo$cost; ?>
-                                    </p>
-                                    <button class=" button" href="<?php echo$button; ?>">REGISTER NOW</button>
-                                </div>
-                            </li>
-                        </ul>
-                 
-                    </div>
+                        <div class="cell small-10 medium-10 large-10 dividerBar"></div>                
 
-                    <?php
+            <?php
 
 		}
 	}
@@ -110,6 +123,7 @@ get_header();
 	?>
 
             </div>
+
         </div>
 
         <?php 
@@ -123,10 +137,12 @@ $programs = get_field('programs');
 
 ?>
 
-<div class="cell large-8 large-offset-4 small-10 small-offset-1 progVideo">
+<div class="grid-x coreContent">
+    <div class="cell large-10 small-10 progVideo">
       
         <?php echo$ytvideo; ?>
       
+    </div>
     </div>
 
     <?php
@@ -139,19 +155,8 @@ $programs = get_field('programs');
 
 
 
-        <!-- insert video -->
-        <!-- <div class="large-offset-3 ">
-            <div class="cell large-8 rcVideo">
-                <iframe width="798" height="449" src="https://www.youtube.com/embed/GYpCABKHsFw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div> -->
-
-        <!-- bottom page logo -->
-        <!-- <div class="cell large-8">
-            <img src="/wp-content/themes/cfea/assets/img/trigPoint.jpg" alt="triggerPoint logo" class="cell large-12" id="trigLogo2" />
-        </div>
-    </div> -->
-
+  </div>
+  </div>
     <?php
 // imports the footer
 get_footer();
