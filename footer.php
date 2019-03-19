@@ -23,17 +23,13 @@
 			<div class="cell large-2 medium-2 small-12 logo">
 
 				<?php
-					if ( get_theme_mod( 'cfea_footer_logo' ) ) : ?>
- 
-						<img src="<?php echo get_theme_mod( 'cfea_footer_logo' ); ?>">
- 
-				<?php
-				else : ?>
- 
-				<p>CFEA Logo</p>
- 
-				<?php endif; ?>
-
+					if ( has_custom_logo() ) {
+						echo get_custom_logo();
+					}else{
+						echo 'no logo';
+					}
+				?>
+			
 			</div>
 
 			<!-- footer navagation grid -->

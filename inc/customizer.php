@@ -116,23 +116,6 @@ function cfea_customize_register( $wp_customize ) {
 		)
 	);
 
-	// setting to add the footer logo
-	$wp_customize->add_setting(
-		'cfea_footer_logo'
-	);
-	
-	$wp_customize->add_control(
-		new WP_Customize_Image_Control(
-			$wp_customize,
-			'cfea_footer_logo',
-			array(
-				'label'   => __( 'Upload Logo', 'cfea' ),
-				'section' => 'cfea_footer',
-				
-			)
-		)
-	);
-
 	// adds the setting for the footer contact number
 	$wp_customize->add_setting(
 		'cfea_footer_contact_number'
