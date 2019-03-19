@@ -36,7 +36,7 @@ get_header();
     <!-- BANNER AND TOP DESCRIPTION -->
            
                     <!-- banner at top of page -->
-                    <img src="<?php echo$program_banner; ?>" alt="corefx banner" id="corefxBanner" class="large-centered columns" />
+                    <img src="<?php echo$program_banner; ?>" alt="corefx banner" id="corefxBanner" class="large-centered columns coreContent" />
                   
                     <!-- program description -->
                     <div class="large-centered columns small-10 progDesc"><?php echo$top_desc; ?></div>
