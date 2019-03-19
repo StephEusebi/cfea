@@ -12,6 +12,13 @@ h1 {
     font-family: 'Staatliches', cursive;
 }
 
+/* CONTACT PAGE */
+
+.contactUsTitle {
+    text-align: center;
+    background-color: none;
+}
+
 /* TEMPORARILY HIDE MENU CONTENT */
 /* #primary-menu */
 .site-description, .menu-toggle, .site-title {
