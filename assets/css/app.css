@@ -258,11 +258,12 @@ h1 {
 	background-color: #494747;
 	color: white;
 	font-size: 25px;
+    padding: 30px;
 }
 
 .accordion-title::before {
 	content: "\25bc";
-	margin-top: -18px;
+/* 	margin-top: -18px; */
 	font-size: 25px;
 }
 
@@ -392,6 +393,26 @@ button.wsf-button {
 	margin-bottom: 50px;
 }
 
+/* PROGRAM VIDEOS --------------------------------------------------------------------------------------------------------------------------------------- */
+.videoContainer1 {
+    margin: 0 auto;
+    display: flex;
+   
+}
+
+.progVideo iframe {
+    margin-bottom: 50px;
+}
+
+
+/* .progVideo iframe  {
+   margin: 0 auto;
+   display: flex;
+   width: 950px; 
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 75px;
+} */
 
 
 /* TRIGGERPOINT ----------------------------------------------------------------------------------------------------------------------------------------- */
@@ -867,9 +888,9 @@ input[type=checkbox].wsf-field + .wsf-label  {
 
     .progVideo iframe  {
    
-		width: 95%;
-        height: 95%;
-        margin-top: 25px;
+		width: 300px;
+        height: 300px;
+        /* margin-top: 25px; */
         padding-top: 25px;
         padding-bottom: 75px;
     }
