@@ -158,9 +158,7 @@ h1 {
     display: none;
 }
 
-.site-content{
-    padding:5em;
-}
+
 
 
 /* HOME PAGE --------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -204,19 +202,19 @@ h1 {
 	background-repeat: no-repeat;
 }
 
-.vipr {
+.canfit {
 	width: 100%;
-	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
+	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/canfitpro-promo.jpg");
 	background-repeat: no-repeat;
 }
 
-.vipr:hover {
-	background: linear-gradient(0deg, #153e539f, #153e539f), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
+.canfit:hover {
+	background: linear-gradient(0deg, #153e539f, #153e539f), url("/wp-content/themes/cfea/assets/img/canfitpro-promo.jpg");
 	cursor: pointer;
 	background-repeat: no-repeat;
 }
 
-#viprBanner {
+#canfitBanner {
 	width: 82%;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -893,10 +891,6 @@ input[type=checkbox].wsf-field + .wsf-label  {
         /* margin-top: 25px; */
         padding-top: 25px;
         padding-bottom: 75px;
-    }
-
-    .site-content {
-        padding: 0em;
     }
 
 
