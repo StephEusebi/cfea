@@ -623,6 +623,11 @@ button.wsf-button {
     margin-top:.4em;
 }
 
+.contactUsTitle {
+    background-color: #fff;
+    text-align: center;
+}
+
 .contactInfo p{
     font-family: 'Lato', sans-serif;
     font-size:.9em;
