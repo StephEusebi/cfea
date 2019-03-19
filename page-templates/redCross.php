@@ -28,6 +28,7 @@ get_header();
     if (function_exists('get_field')) {
     $descriptions = get_field('descriptions');
 
+    // pull in the main page description and add the large program banner at the top of the page
     foreach($descriptions as $description){
         $top_desc = $description['top_desc'];
         $program_banner = $description['program_banner'];
@@ -48,6 +49,7 @@ get_header();
                 <!-- program description -->
                 <div class="cell large-10 small-10 progDesc"><?php echo$top_desc; ?></div>
 
+                <!-- bar added between the description and the courses -->
                 <div class="cell small-10 medium-10 large-10 dividerBar"></div>  
         </div>
    
@@ -71,6 +73,7 @@ get_header();
 		if (function_exists('get_field')) {
 			$programs = get_field('programs');
 
+            // pull in the program name, description, button, cost, program image and video for each of the courses
 			foreach($programs as $program){
 				$name = $program['name'];
 				$description = $program['description'];
@@ -92,6 +95,7 @@ get_header();
                         <!-- Accordion tab title -->
                         <div class="cell large-10 small-10 coreContent">
                             <h2>
+                                <!-- name of the program -->
                                 <?php echo$name; ?>
                             </h2>
                         </div>
@@ -101,17 +105,23 @@ get_header();
                              <!-- program image -->
                              <img src="<?php echo$program_image; ?>" alt="<?php echo$program_image['alt']; ?>" id="<?php echo$program_image['id']; ?>" />
                              <p id="coreDesc">
+
+                             <!-- program description -->
                                 <?php echo$description; ?>
                             </p>
                         </div>
 
                          <div class="cell large-10 small-10 coreContent">
                             <p>
+                                <!-- program cost -->
                                 <?php echo$cost; ?>
                             </p>
+
+                            <!-- button to sign up for the program -->
                             <button class="button" href="<?php echo$button; ?>">REGISTER NOW</button>    
                         </div>  
 
+                        <!-- bar added between the different courses -->
                         <div class="cell small-10 medium-10 large-10 dividerBar"></div>                
 
             <?php
@@ -127,6 +137,8 @@ get_header();
 
         <?php 
 
+
+// pull in the video 
 if (function_exists('get_field')) {
 $programs = get_field('programs');
 
@@ -137,12 +149,14 @@ $programs = get_field('programs');
 ?>
 
 <div class="grid-x coreContent">
+
+        <!-- add video -->
     <div class="cell large-10 small-10 progVideo">
       
         <?php echo$ytvideo; ?>
       
     </div>
-    </div>
+</div>
 
     <?php
                 
