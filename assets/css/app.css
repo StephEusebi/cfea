@@ -12,8 +12,12 @@ a:hover, a:focus {
 	color: #bb0a1e;
 }
 
-h1 {
-	font-family: 'Staatliches', cursive;
+/* CONTACT PAGE */
+
+.contactUsTitle {
+    text-align: center;
+    background-color: none;
+}
 }
 
 .logo1 {
