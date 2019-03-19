@@ -49,8 +49,10 @@ get_header();
                 <!-- program description -->
                 <div class="cell large-10 small-10 progDesc"><?php echo$top_desc; ?></div>
 
+                <div class="cell small-10 medium-10 large-10 dividerBar"></div>  
         </div>
    
+        
 
     
         <?php
@@ -80,33 +82,38 @@ get_header();
 
 	?>
 
-
-            <!-- create boxes to hold page content -->
-            <div class="cell large-4 small-10">
+                
+               
+                <!-- create boxes to hold page content -->
+               
                 <!-- box cover image -->
-                <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" />
+               
 
             
                         <!-- Accordion tab title -->
-                        <h2>
-                            <?php echo$name; ?>
-                        </h2>
-
-                        <!-- Accordion tab content -->
-                        <div class="coreContent">
-                            <p>
+                        <div class="cell large-10 small-10 coreContent">
+                            <h2>
+                                <?php echo$name; ?>
+                            </h2>
+                        </div>
+                       
+                        <div class="cell large-10 small-10 coreContent">
+                           
+                             <!-- program image -->
+                             <img src="<?php echo$program_image; ?>" alt="<?php echo$program_image['alt']; ?>" id="<?php echo$program_image['id']; ?>" />
+                             <p id="coreDesc">
                                 <?php echo$description; ?>
                             </p>
+                        </div>
+
+                         <div class="cell large-10 small-10 coreContent">
                             <p>
                                 <?php echo$cost; ?>
                             </p>
-                            <button class=" button" href="<?php echo$button; ?>">REGISTER NOW</button>
+                            <button class="button" href="<?php echo$button; ?>">REGISTER NOW</button>    
+                        </div>  
 
-                        </div>
-                
-            </div>
-
-                          
+                        <div class="cell small-10 medium-10 large-10 dividerBar"></div>                
 
             <?php
 
@@ -130,8 +137,8 @@ $programs = get_field('programs');
 
 ?>
 
-<div class="grid-x videoContainer1">
-    <div class="cell large-10 large-offset-4 small-10 small-offset-1 progVideo">
+<div class="grid-x coreContent">
+    <div class="cell large-10 small-10 progVideo">
       
         <?php echo$ytvideo; ?>
       
