@@ -1,11 +1,11 @@
 {
-    "key": "group_5c75fa87e130a",
-    "title": "CTA-Button",
+    "key": "group_5c7ee04832514",
+    "title": "About-Landing",
     "fields": [
         {
-            "key": "field_5c75fac16e689",
-            "label": "Buttons",
-            "name": "buttons",
+            "key": "field_5c7ee0ed5fd01",
+            "label": "About",
+            "name": "about",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -18,9 +18,9 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5c75faf96e68a",
-                    "label": "Button 1",
-                    "name": "button_1",
+                    "key": "field_5c7ee1695fd03",
+                    "label": "about 1",
+                    "name": "about_1",
                     "type": "group",
                     "instructions": "",
                     "required": 0,
@@ -33,11 +33,11 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c75fb1d6e68b",
-                            "label": "heading",
-                            "name": "heading",
+                            "key": "field_5c7ee1825fd04",
+                            "label": "Name",
+                            "name": "name",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "Add name",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -52,47 +52,11 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c75fb416e68c",
-                            "label": "buttontext",
-                            "name": "buttontext",
+                            "key": "field_5c7ee1a95fd05",
+                            "label": "Title",
+                            "name": "title",
                             "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        }
-                    ]
-                },
-                {
-                    "key": "field_5c75ff006d4c3",
-                    "label": "Button 2",
-                    "name": "button_2",
-                    "type": "group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "layout": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5c75ff006d4c4",
-                            "label": "heading",
-                            "name": "heading",
-                            "type": "text",
-                            "instructions": "",
+                            "instructions": "Job title (example: Certified personal Instructor)",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -107,11 +71,11 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c75ff006d4c5",
-                            "label": "buttontext",
-                            "name": "buttontext",
+                            "key": "field_5c7ee1bc5fd06",
+                            "label": "Bio",
+                            "name": "bio",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "Add mini bio",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -124,6 +88,40 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c7ee825a7c4a",
+                            "label": "Link text",
+                            "name": "link_text",
+                            "type": "text",
+                            "instructions": "Link Text - (example: \"Get Certified with (name)!\")",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c7ee1db5fd07",
+                            "label": "Link URL",
+                            "name": "link_url",
+                            "type": "link",
+                            "instructions": "URL Link for link text",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url"
                         }
                     ]
                 }
@@ -147,5 +145,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1552925773
+    "modified": 1552696408
 }

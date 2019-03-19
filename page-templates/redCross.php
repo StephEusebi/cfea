@@ -40,7 +40,7 @@ $descriptions = get_field('descriptions');
 
         <!-- main logo -->
         <div class="cell large-8 small-12">
-        <img src="<?php echo$program_logo; ?>" alt="program logo" class="rcImg" id="redCrossLogo"/>    
+        <img src="<?php echo$program_logo; ?>" alt="program logo" id="redCrossLogo"/>    
         </div>
 
         <div class="grid-x grid-margin-x">
@@ -86,7 +86,7 @@ $descriptions = get_field('descriptions');
             <!-- create boxes to hold page content -->
             <div class="cell large-5 small-10">
                 <!-- box cover image -->
-                <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg" />
+                <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" />
 
                 <ul class="accordion plAccordian" data-accordion data-allow-all-closed="true">
                     <li class="accordion-item accordianStyle" data-accordion-item>

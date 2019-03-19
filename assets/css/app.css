@@ -99,7 +99,7 @@ h1 {
 
 /* BUTTON STYLE -------------------------------------------------------------------------------------------------------------------------------------------- */
 
-.button {
+.button, .button.primary {
 	background-color: #bb0a1e;
 	color: #fff;
 	border-radius: 0.3rem;
@@ -111,7 +111,7 @@ h1 {
 	margin-bottom: 0;
 }
 
-.button:hover {
+.button:hover, .button.primary:hover {
 	background-color: #aa2527;
 }
 
@@ -150,9 +150,7 @@ h1 {
     display: none;
 }
 
-.site-content{
-    padding:5em;
-}
+
 
 
 /* HOME PAGE --------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -196,19 +194,19 @@ h1 {
 	background-repeat: no-repeat;
 }
 
-.vipr {
+.canfit {
 	width: 100%;
-	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
+	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/canfitpro-promo.jpg");
 	background-repeat: no-repeat;
 }
 
-.vipr:hover {
-	background: linear-gradient(0deg, #153e539f, #153e539f), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
+.canfit:hover {
+	background: linear-gradient(0deg, #153e539f, #153e539f), url("/wp-content/themes/cfea/assets/img/canfitpro-promo.jpg");
 	cursor: pointer;
 	background-repeat: no-repeat;
 }
 
-#viprBanner {
+#canfitBanner {
 	width: 82%;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -426,6 +424,26 @@ button.wsf-button {
 	margin-bottom: 50px;
 }
 
+/* PROGRAM VIDEOS --------------------------------------------------------------------------------------------------------------------------------------- */
+.videoContainer1 {
+    margin: 0 auto;
+    display: flex;
+   
+}
+
+.progVideo iframe {
+    margin-bottom: 50px;
+}
+
+
+/* .progVideo iframe  {
+   margin: 0 auto;
+   display: flex;
+   width: 950px; 
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 75px;
+} */
 
 
 /* TRIGGERPOINT ----------------------------------------------------------------------------------------------------------------------------------------- */
@@ -548,14 +566,6 @@ button.wsf-button {
     padding-left:3em !important;
 }
 
-/* controls the font size of the title */
-.calendar h3{
-    font-size:2.5em;
-    text-align: center;
-    margin-bottom:1em;
-    color:black;
-    background-color: #CFCFCF;
-}
 /* controls the color of the text when hovered */
 .mec-calendar.mec-event-calendar-classic .mec-calendar-row dt.mec-has-event a:hover{
     color:white;
@@ -564,23 +574,24 @@ button.wsf-button {
 
 /* FOOTER ----------------------------------------------------------------------------------------------------------------------------------------- */
 
- /* styles the footer background */
- footer{
+/* styles the footer background */
+footer{
     background-color: #E3E3E3 !important;
     margin:0;
     padding:0;
-} 
+}
 
 /* changed the padding on the footerNav section */
 .footerNav{
-    padding-left:6em;
+    padding-left:4em;
 }
 
 /* controls the logo section and where the logo ends up being placed */
 .logo{
     text-align: right;
     margin:0 auto;
-    margin-top:3.65em;
+    margin-top:3em;
+    margin-bottom:3em;
 }
 
 /* sizes the logo */
@@ -593,19 +604,25 @@ button.wsf-button {
 #footer-menu{
     padding:0;
     margin:0;
-    margin-top:3em;
+    margin-top:2.75em;
+    /* justify-content: space-between; */
 }
 
 #footer-menu ul{
     list-style: none;
     padding:0;
     display: inline;
+    
 }
 
 #footer-menu ul li{
     float:right;
 }
 
+#footer-menu a{
+    padding: 1em;
+    padding-left: 0;
+}
 /* controls the program menu */
 #program-menu{
     margin:0;
@@ -614,33 +631,39 @@ button.wsf-button {
 
 #program-menu a{
     margin:0;
+    padding:1em;
     padding-top:.2em;
+    padding-left: 0;
+
 }
+
+
 
 /* controls the contact section */
 .contactInfo{ 
     padding:0;
-    margin-top:.4em;
+    margin-top:.5em;
 }
 
 .contactInfo p{
     font-family: 'Lato', sans-serif;
     font-size:.9em;
-    text-align: left;
+    margin-bottom:0;
 }
 
 .newsLetterForm h2{
     margin:0;
     padding:0;
-    font-size:1.75em !important;
+    font-size:1em !important;
     font-family: 'Lato', sans-serif;
-    margin:2.75em 0 .2em 8%;
-    font-weight:normal;
+    margin: 3em 0rem 1rem 1rem;
+    font-weight: bold;
 }
 
-.wsf-grid {
-    margin-left: 0px;
-    margin-right: 0px !important;
+/* takes away the padding that the plugin adds  */
+#wsf-1-sections-6 {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .wsf-button.wsf-button-primary{
@@ -651,6 +674,18 @@ button.wsf-button {
 .wsf-tile{
     padding-left:0;
 }
+
+/* checkbox inline with text */
+#wsf-1-label-16-3 {
+    display: inline;
+}
+
+button.wsf-button.wsf-button-primary{
+    background-color: #aa2527;
+    border-color: #aa2527;
+    color:white;
+}
+
 button.wsf-button.wsf-button-primary:hover{
     background-color: #901f21;
 }
@@ -665,9 +700,7 @@ input[type=checkbox].wsf-field + .wsf-label  {
 }
 /* controls the social media icons */
 .socialMediaIcons{
-    text-align:left !important;
     margin-top:1em;
-    margin-left:1em;
 }
 
 .fbIcon{
@@ -750,7 +783,7 @@ input[type=checkbox].wsf-field + .wsf-label  {
     /* changed the padding on the footerNav section */
     .footerNav{
        font-size:1em;
-       padding-left:1em;
+       padding-left:0;
     }
     
     /* controls the logo section and where the logo ends up being placed */
@@ -771,7 +804,14 @@ input[type=checkbox].wsf-field + .wsf-label  {
         padding:0;
         margin:0;
         margin-top:1em;
+        justify-content: center;
     }
+
+    #footer-menu a{
+        padding:.2em;
+        margin:0;
+    }
+
 
     #footer-menu ul{
         list-style: none;
@@ -787,6 +827,7 @@ input[type=checkbox].wsf-field + .wsf-label  {
     #program-menu{
         margin:0;
         padding:0;
+        justify-content: center;
     }
 
     #program-menu a{
@@ -804,8 +845,8 @@ input[type=checkbox].wsf-field + .wsf-label  {
     .contactInfo p{
         font-family: 'Lato', sans-serif;
         font-size:.75em;
-        text-align: left;
-        margin-left:3.25em;
+        text-align: center;
+        margin-left:0;
         margin-bottom:0;
     }
 
@@ -826,7 +867,7 @@ input[type=checkbox].wsf-field + .wsf-label  {
         padding:0;
         font-size:1.5em !important;
         font-family: 'Lato', sans-serif;
-		margin:.5em 0 .5em 13%;
+		margin:.5em 0 .5em 2em;
 		font-weight:normal;
 	}
 
@@ -835,20 +876,7 @@ input[type=checkbox].wsf-field + .wsf-label  {
         margin-right: 0px !important;
     }
 
-    .wsf-button.wsf-button-primary{
-        width:10em !important;
-        margin-left:24%;
-        margin-bottom:1.75em;
-    }
-
-    button.wsf-button.wsf-button-primary:hover{
-        background-color: #901f21;
-    }
-
-    input[type=checkbox].wsf-field + .wsf-label  {
-        font-size: .8em;
-        margin-bottom:0 !important;
-    }
+    
     
     .wsf-field-wrapper{
         margin-bottom:.5em;
@@ -856,10 +884,10 @@ input[type=checkbox].wsf-field + .wsf-label  {
 
     /* controls the social media icons */
     .socialMediaIcons{
-        text-align:left !important;
+        text-align:center !important;
         margin-left:0;
 		margin-top:1em;
-        margin-left:2.45em;
+        margin-left:0;
         margin-bottom:.5em;
     }
 
@@ -869,36 +897,7 @@ input[type=checkbox].wsf-field + .wsf-label  {
         padding-left:0;
         margin-bottom:1em;
 	}
-    
-    
-    .fbIcon{
-        font-size:1.5em; 
-        color:black;
-        margin-right:.25em; 
-    }
 
-    .fbIcon:hover{
-        color:#901f21;
-    }
-
-    .twitterIcon{
-        font-size:1.5em; 
-        color:black;
-        margin-right:.25em;
-    }
-
-    .twitterIcon:hover{
-        color:#901f21;
-    }
-    
-    .instagramIcon{
-        font-size:1.5em; 
-        color:black;
-    }
-
-    .instagramIcon:hover{
-        color:#901f21;
-    }
    
     .logoDiv {
         text-align: center;
@@ -938,15 +937,11 @@ input[type=checkbox].wsf-field + .wsf-label  {
 
     .progVideo iframe  {
    
-		width: 95%;
-        height: 95%;
-        margin-top: 25px;
+		width: 300px;
+        height: 300px;
+        /* margin-top: 25px; */
         padding-top: 25px;
         padding-bottom: 75px;
-    }
-
-    .site-content {
-        padding: 0em;
     }
 
 
@@ -969,12 +964,6 @@ input[type=checkbox].wsf-field + .wsf-label  {
 		margin: 0 auto;
     }
     
-    /* footer */
-    footer{
-        background-color: #E3E3E3;
-        margin:0;
-        padding:0;
-    } 
 
     /* changed the padding on the footerNav section */
     .footerNav{
@@ -982,11 +971,7 @@ input[type=checkbox].wsf-field + .wsf-label  {
     }
 
     /* controls the logo section and where the logo ends up being placed */
-    .logo{
-        text-align: right;
-        margin:0 auto;
-        margin-top:3.4em;
-    }
+    
     
     /* sizes the logo */
     .logo img{
@@ -994,11 +979,14 @@ input[type=checkbox].wsf-field + .wsf-label  {
         height:auto;    
     }
     
+   
+
     /* controls the main footer menu */
     #footer-menu{
         padding:0;
         margin:0;
         margin-top:2.75em;
+        
     }
 
     #footer-menu ul{
@@ -1011,8 +999,15 @@ input[type=checkbox].wsf-field + .wsf-label  {
         float:right;
     }
 
-    #footer-menu a{
-        padding-right:0;
+    /* controls the program menu */
+    #program-menu{
+        margin:0;
+        padding:0;
+    }
+
+    #program-menu a{
+        margin:0;
+        padding-top:.2em;
     }
 
 
@@ -1025,7 +1020,7 @@ input[type=checkbox].wsf-field + .wsf-label  {
     #program-menu a{
         margin:0;
         padding-top:.2em;
-        padding-right:0;
+        /* padding-righ t:0; */
     }
     
     /* controls the contact section */
@@ -1039,7 +1034,7 @@ input[type=checkbox].wsf-field + .wsf-label  {
     .contactInfo p{
         font-family: 'Lato', sans-serif;
         font-size:.8em;
-        text-align: left;
+        text-align: center;
         margin:0;
         padding:0;
     }
@@ -1047,10 +1042,10 @@ input[type=checkbox].wsf-field + .wsf-label  {
     .newsLetterForm h2{
         margin:0;
         padding:0;
-        font-size:1.5em !important;
+        font-size:1em !important;
         font-family: 'Lato', sans-serif;
 		margin:2.9em 0 .5em 8%;
-		font-weight:normal;
+		font-weight:bold;
 	}
 
 
@@ -1059,79 +1054,41 @@ input[type=checkbox].wsf-field + .wsf-label  {
         margin-right: 0px !important;
     }
 
-    .wsf-button.wsf-button-primary{
-        width:10em !important;
-        margin-left:24%;
-        margin-bottom:1.75em;
-    }
+   
 
     .wsf-tile{
         padding-left:0;
     }
     
-    button.wsf-button.wsf-button-primary:hover{
-        background-color: #901f21;
-    }
-
-    input[type=checkbox].wsf-field + .wsf-label  {
-        font-size: .8em;
-        margin-bottom:0 !important;
-    }
-
+   
     .wsf-field-wrapper{
         margin-bottom:.5em;
     }
 
-
-    /* controls the social media icons */
-    .socialMediaIcons{
-		text-align:left !important;
-        margin-left:.95em;
-		margin-top:.7em;
-		margin-right:0;
-    }
-
-    .socialMedia{
-        font-size:0.7em; 
-        margin-top:0;
-        padding-left:0;
-        margin-bottom:1em;
-	}
-    
-    .fbIcon{
-        font-size:1.25em; 
-        color:black;
-        margin-right:.25em; 
-    }
-
-    .fbIcon:hover{
-        color:#901f21;
-    }
-
-    .twitterIcon{
-        font-size:1.25em; 
-        color:black;
-        margin-right:.25em;
-    }
-
-    .twitterIcon:hover{
-        color:#901f21;
-    }
-    
-    .instagramIcon{
-        font-size:1.25em; 
-        color:black;
-    }
-
-    .instagramIcon:hover{
-        color:#901f21;
-    }
 }
 
+/* CUSTOM POST FOR COACH ----------------------------------------------------------------------------------------------------------------------------------------- */
 
+/* container that holds the coach info */
+.coach-container {
+    display: flex; 
+    justify-content: space-evenly; 
+}
 
+/* image of coach */
+.coach-image {
+    margin-bottom: 2rem; 
+    max-width: 35rem;
+}
 
+/* coach button */
+.coach-button {
+    width: auto;
+}
 
+.coach-button h5 {
+    margin-bottom: 0;
+}
 
 
 

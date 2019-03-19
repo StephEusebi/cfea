@@ -1,6 +1,6 @@
 {
     "key": "group_5c7c9eb3cd5d0",
-    "title": "COREFX",
+    "title": "COREFX old",
     "fields": [
         {
             "key": "field_5c7c9eb3d0b51",
@@ -392,7 +392,7 @@
             ]
         },
         {
-            "key": "field_5c85d6d717b53",
+            "key": "field_5c91275281e6d",
             "label": "Descriptions",
             "name": "descriptions",
             "type": "group",
@@ -407,7 +407,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5c85d6d717b54",
+                    "key": "field_5c91275281e6e",
                     "label": "top bar",
                     "name": "top_bar",
                     "type": "group",
@@ -422,9 +422,9 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c85d6d717b55",
-                            "label": "program logo",
-                            "name": "program_logo",
+                            "key": "field_5c91275281e6f",
+                            "label": "program banner",
+                            "name": "program_banner",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -446,7 +446,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5c85d6d717b56",
+                            "key": "field_5c91275281e70",
                             "label": "top desc",
                             "name": "top_desc",
                             "type": "wysiwyg",
@@ -474,7 +474,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-templates\/corefx.php"
+                "value": "default"
             }
         ]
     ],
@@ -486,5 +486,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1552275501
+    "modified": 1553017093
 }

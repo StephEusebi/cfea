@@ -54,9 +54,28 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Registering custom post types
+ */
+require get_template_directory() . '/inc/post-types.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+/*
+ -the function adds the custom menus for the footer
+ -it adds a footer nav which is the same nav as the top nav and then it brings in a program nav which is just the programs
+*/
+function my_custom_menus() {
+    register_nav_menus(
+        array(
+			'footer_nav' => __( 'Footer Nav' ),
+			'program_nav' => __( 'Program Nav' ),
+        )
+    );
+}
+add_action( 'init', 'my_custom_menus' );

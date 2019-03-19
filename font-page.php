@@ -1,0 +1,185 @@
+<?php
+/**
+ * The template for displaying all pages
+ * 
+ * Template Name: Front Page
+ * Template Post Type: page
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package cfea
+ */
+
+// imports the header
+get_header();
+?>
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+			<!-- main -->
+			<div class="grid-x">				
+
+				<!-- TOP container holding h1 and buttpn -->
+				<div class="row large-6 large-offset-3">
+
+				<?php 
+    
+					if( have_rows('buttons') ):
+					
+						while( have_rows('buttons') ) : the_row();
+							
+							$button = get_sub_field('button_1');
+
+							$header = $button['heading'];
+							$buttontext = $button['buttontext'];
+							?>
+								<!-- title -->
+								<h1 class="text-center blue top-space"><?php echo$header; ?></h1>
+								<!-- button with button class because it links to internal pages -->
+								<a class="button float-center top-space"><h4><?php echo$buttontext; ?></h4></a>
+								
+							<?php
+							// var_dump($button);
+						endwhile;
+					
+					endif;
+					
+				?>
+
+				</div>
+			
+
+				<!-- group of images -->
+				<div class="grid-x medium-up-2 large-up-4 bottom-space top-space home-images-4">
+					<div class="cell corefx"><img src="/wp-content/themes/cfea/assets/img/corefx-logo.png" alt="corefx logo" /></div>
+					<div class="cell trigger"><img src="/wp-content/themes/cfea/assets/img/tp-logo.png" alt="trigger point logo" /></div>
+					<div class="cell firstaid"><img src="/wp-content/themes/cfea/assets/img/firstaid-logo.png" alt="canadian red cross logo" /></div>
+					<div class="cell canfit"><img src="/wp-content/themes/cfea/assets/img/canfit-logo.png" alt="canfitpro logo" /></div>
+				</div>
+
+				<!-- container for curtis and mini bio -->	
+				<div class="grid-container grid-container-padded">	
+
+					<div class="grid-x grid-padding-x align-center">
+
+						<div class="cell large-4 small-12 text-right" >
+							<!-- line  -->
+							<div style="width: 100%; height: 0.3rem; background-color: #0a415e; margin-bottom: 1rem;"></div>
+							
+							<?php if (function_exists('get_field')) {
+								$about = get_field('about');
+
+								foreach($about as $abouts){
+									$name = $abouts['name'];
+									$bio = $abouts['bio'];
+									$title = $abouts['title'];
+									$link_url = $abouts['link_url'];
+									$link_text = $abouts['link_text'];
+								
+							?>
+							<p><strong><?php echo$name; ?></strong> | <?php echo$title; ?></p>
+							
+							<p><?php echo$bio; ?></p>
+
+							<p><a  href="<?php echo $link_url; ?>"><em><?php echo$link_text; ?></em></a></p>
+							
+							<?php
+
+								}
+							}
+
+							?>
+						</div>
+
+						<div class="cell large-8 small-12">							
+							<!-- image of curtis -->
+							<img src="/wp-content/themes/cfea/assets/img/headshot.png" alt="head shot of curtis" style="width: 880px;" />
+
+						</div>
+					</div>
+
+				</div><!-- grid-container end-->
+
+
+				<!-- container for team and mini bio -->	
+				<div class="grid-container grid-container-padded top-space">	
+
+					<div class="grid-x grid-padding-x align-center">
+
+						<div class="cell large-8 small-12">							
+							<!-- image of team -->
+							<img src="/wp-content/themes/cfea/assets/img/group.jpg" alt="head shot of team" style="width: 880px;" />
+
+						</div>
+
+						<div class="cell large-4 small-12" >
+							<!-- line  -->
+							<div style="width: 100%; height: 0.3rem; background-color: #0a415e; margin-bottom: 1rem;"></div>
+							<?php if (function_exists('get_field')) {
+								$info_landing = get_field('info_landing');
+
+								foreach($info_landing as $info_landing){
+									$title = $info_landing['title'];
+									$team_information = $info_landing['team_information'];
+									$link_name = $info_landing['link_name'];
+									$link_url = $info_landing['link_url'];
+								
+							?>
+							<p><strong><?php echo$title; ?></strong></p>
+							
+							<p><?php echo$team_information; ?></p>
+
+							<p><a  href="<?php echo $link_url; ?>"><em><?php echo$link_text; ?></em></a></p>
+							<?php
+
+									}
+								}
+
+							?>
+						</div>
+
+					</div>
+
+				</div><!-- grid-container end-->
+
+				<!-- BOTTOM container holding h1 and button -->
+				<div class="row large-6 large-offset-3">
+
+					<?php 
+						
+						if( have_rows('buttons') ):
+						
+							while( have_rows('buttons') ) : the_row();
+								
+								$button = get_sub_field('button_2');
+
+								$header = $button['heading'];
+								$buttontext = $button['buttontext'];
+								?>
+									<!-- title -->
+									<h1 class="text-center blue top-space"><?php echo$header; ?></h1>
+									<!-- button with button class because it links to internal pages -->
+									<a class="button float-center top-space"><h4><?php echo$buttontext; ?></h4></a>
+									
+								<?php
+								// var_dump($button);
+							endwhile;
+						
+						endif;
+						
+					?>
+
+				</div>
+			
+		</main><!-- #main -->
+
+	</div><!-- #primary -->
+
+<?php
+// imports the footer
+get_footer();

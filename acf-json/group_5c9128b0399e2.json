@@ -1,9 +1,9 @@
 {
-    "key": "group_5c75e84b8807d",
-    "title": "Program landing",
+    "key": "group_5c9128b0399e2",
+    "title": "COREFX",
     "fields": [
         {
-            "key": "field_5c75e8647b02d",
+            "key": "field_5c9128b03fb54",
             "label": "Programs",
             "name": "programs",
             "type": "group",
@@ -18,7 +18,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5c75efd1cda23",
+                    "key": "field_5c9128b041dee",
                     "label": "Program 1",
                     "name": "program_1",
                     "type": "group",
@@ -33,7 +33,7 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c75effccda24",
+                            "key": "field_5c9128b0441b9",
                             "label": "Name",
                             "name": "name",
                             "type": "text",
@@ -52,7 +52,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c75f030cda25",
+                            "key": "field_5c9128b0441e9",
                             "label": "Description",
                             "name": "description",
                             "type": "textarea",
@@ -71,7 +71,26 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c75f041cda26",
+                            "key": "field_5c9128b044292",
+                            "label": "cost",
+                            "name": "cost",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5c9128b0442e7",
                             "label": "Button",
                             "name": "button",
                             "type": "link",
@@ -86,16 +105,16 @@
                             "return_format": "url"
                         },
                         {
-                            "key": "field_5c83d7008eb8b",
+                            "key": "field_5c9128b044334",
                             "label": "program image",
                             "name": "program_image",
                             "type": "image",
-                            "instructions": "banner image for inside accordion",
+                            "instructions": "program image",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
-                                "class": "",
+                                "class": "programImg",
                                 "id": ""
                             },
                             "return_format": "url",
@@ -108,11 +127,27 @@
                             "max_height": "",
                             "max_size": "",
                             "mime_types": ""
+                        },
+                        {
+                            "key": "field_5c9128b044398",
+                            "label": "ytvideo",
+                            "name": "ytvideo",
+                            "type": "oembed",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "width": "",
+                            "height": ""
                         }
                     ]
                 },
                 {
-                    "key": "field_5c75f064cda27",
+                    "key": "field_5c9128b04ff9e",
                     "label": "Program 2",
                     "name": "program_2",
                     "type": "group",
@@ -127,7 +162,7 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c75f064cda28",
+                            "key": "field_5c9128b05327c",
                             "label": "Name",
                             "name": "name",
                             "type": "text",
@@ -146,7 +181,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c75f064cda29",
+                            "key": "field_5c9128b0532de",
                             "label": "Description",
                             "name": "description",
                             "type": "textarea",
@@ -165,7 +200,26 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c75f064cda2a",
+                            "key": "field_5c9128b053326",
+                            "label": "cost",
+                            "name": "cost",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_5c9128b05336c",
                             "label": "Button",
                             "name": "button",
                             "type": "link",
@@ -177,19 +231,19 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url"
+                            "return_format": ""
                         },
                         {
-                            "key": "field_5c83d7497d5a7",
+                            "key": "field_5c9128b0533ae",
                             "label": "program image",
                             "name": "program_image",
                             "type": "image",
-                            "instructions": "",
+                            "instructions": "program image",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
-                                "class": "",
+                                "class": "programImg",
                                 "id": ""
                             },
                             "return_format": "url",
@@ -206,7 +260,7 @@
                     ]
                 },
                 {
-                    "key": "field_5c75f067cda2b",
+                    "key": "field_5c912ab4f51db",
                     "label": "Program 3",
                     "name": "program_3",
                     "type": "group",
@@ -221,7 +275,7 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c75f067cda2c",
+                            "key": "field_5c912ab4f51dc",
                             "label": "Name",
                             "name": "name",
                             "type": "text",
@@ -240,7 +294,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c75f067cda2d",
+                            "key": "field_5c912ab4f51dd",
                             "label": "Description",
                             "name": "description",
                             "type": "textarea",
@@ -259,84 +313,9 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c75f067cda2e",
-                            "label": "Button",
-                            "name": "button",
-                            "type": "link",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "url"
-                        },
-                        {
-                            "key": "field_5c83d7627d5a8",
-                            "label": "program image",
-                            "name": "program_image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "url",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        }
-                    ]
-                },
-                {
-                    "key": "field_5c75f06acda2f",
-                    "label": "Program 4",
-                    "name": "program_4",
-                    "type": "group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "layout": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5c75f06acda30",
-                            "label": "Name",
-                            "name": "name",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5c75f06acda31",
-                            "label": "Description",
-                            "name": "description",
+                            "key": "field_5c912ab4f51de",
+                            "label": "cost",
+                            "name": "cost",
                             "type": "textarea",
                             "instructions": "",
                             "required": 0,
@@ -353,7 +332,7 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_5c75f06acda32",
+                            "key": "field_5c912ab4f51df",
                             "label": "Button",
                             "name": "button",
                             "type": "link",
@@ -365,19 +344,19 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url"
+                            "return_format": "array"
                         },
                         {
-                            "key": "field_5c83d77f7d5a9",
+                            "key": "field_5c912ab4f51e0",
                             "label": "program image",
                             "name": "program_image",
                             "type": "image",
-                            "instructions": "",
+                            "instructions": "program image",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
-                                "class": "",
+                                "class": "programImg",
                                 "id": ""
                             },
                             "return_format": "url",
@@ -396,9 +375,9 @@
             ]
         },
         {
-            "key": "field_5c845addc2c1b",
-            "label": "paragraphs",
-            "name": "paragraphs",
+            "key": "field_5c9128b0704ce",
+            "label": "Descriptions",
+            "name": "descriptions",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -411,9 +390,9 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5c845ca2b5ea0",
-                    "label": "page top",
-                    "name": "page_top",
+                    "key": "field_5c9128b072abe",
+                    "label": "top bar",
+                    "name": "top_bar",
                     "type": "group",
                     "instructions": "",
                     "required": 0,
@@ -426,9 +405,33 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c8460036c1ff",
-                            "label": "main paragraph",
-                            "name": "main_paragraph",
+                            "key": "field_5c9128b075eba",
+                            "label": "program banner",
+                            "name": "program_banner",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5c9128b075f02",
+                            "label": "top desc",
+                            "name": "top_desc",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
@@ -443,25 +446,6 @@
                             "toolbar": "full",
                             "media_upload": 1,
                             "delay": 0
-                        },
-                        {
-                            "key": "field_5c8460206c200",
-                            "label": "tag line",
-                            "name": "tag_line",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
                         }
                     ]
                 }
@@ -473,7 +457,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-templates\/programs.php"
+                "value": "page-templates\/corefx.php"
             }
         ]
     ],
@@ -485,5 +469,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1552420573
+    "modified": 1553017725
 }
