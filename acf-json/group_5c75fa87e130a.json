@@ -133,9 +133,9 @@
     "location": [
         [
             {
-                "param": "page_template",
+                "param": "page_type",
                 "operator": "==",
-                "value": "page-templates\/font-page.php"
+                "value": "front_page"
             }
         ]
     ],
@@ -147,5 +147,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1552925773
+    "modified": 1553035352
 }
