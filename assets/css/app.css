@@ -158,10 +158,6 @@ h1 {
     display: none;
 }
 
-.site-content{
-    padding:5em;
-}
-
 
 /* HOME PAGE --------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -438,11 +434,44 @@ button.wsf-button {
 
 /* COREFX ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
+.coreContent {
+    margin: 0 auto;
+    
+}
+
+#coreProgram1 img {
+    /* display: inline;
+    padding: 4px;
+    margin: 0 0 2px 7px;
+    float: right; */
+    width: 200px;
+    margin: 10px;
+}
+
+#coreProgram2 img {
+    width: 200px;
+    margin: 10px;
+    float: left;
+}
+
 #corefxLogo {
 	width: 200px;
 	margin-left: 870px;
 	margin-bottom: 50px;
 }
+
+#coreDesc {
+    text-align: left;
+    /* float: left; */
+}
+
+.dividerBar {
+    border-bottom: 2px solid black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
 
 .descList {
 	text-align: left;
@@ -895,9 +924,6 @@ input[type=checkbox].wsf-field + .wsf-label  {
         padding-bottom: 75px;
     }
 
-    .site-content {
-        padding: 0em;
-    }
 
 
 } 
