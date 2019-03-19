@@ -17,7 +17,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area aboutContent">
 		<main id="main" class="site-main">
 
 	<h1 class="OurTeamtitle">Our Team</h1>
