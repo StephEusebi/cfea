@@ -523,18 +523,16 @@ button.wsf-button {
 
 /* CONTACT US */
 
-    .contactTitle h2 {
-		font-size: 2em;
-		margin: 0;
-		padding: 0;
-		margin-left: 8.25%;
-		margin-bottom: .5em;
-		margin-top: .5em;
-		font-family: 'Lato', sans-serif;
-	}
 	.contactForm {
 		margin-bottom: 1em;
-	}
+    }
+    
+    .wsf-button.wsf-button-primary {
+        margin-top: 1.75em;
+        width: 10em !important;
+        margin-left: 43% !important;
+        margin-bottom: 1.75em;
+    }
 
 /* CALENDER */
 
