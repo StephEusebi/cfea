@@ -21,7 +21,7 @@ get_header();
 
 <div class="grid-container">
     
-        
+<div class="grid-x grid-margin-x">
         <!-- banner at top of page -->
         <?php 
         if (function_exists('get_field')) {
@@ -36,12 +36,13 @@ get_header();
     <!-- BANNER AND TOP DESCRIPTION -->
            
                     <!-- banner at top of page -->
+                    <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10">
                     <img src="<?php echo$program_banner; ?>" alt="corefx banner" id="corefxBanner" class="large-centered columns coreContent" />
-                  
+                  </div>
                     <!-- program description -->
-                    <div class="large-centered columns small-10 progDesc"><?php echo$top_desc; ?></div>
-                    <div class="cell small-10 medium-10 large-centered dividerBar"></div>  
-           
+                    <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10 progDesc"><?php echo$top_desc; ?></div>
+                    <div class="cell small-10 small-offset-1 medium-10 large-centered dividerBar"></div>  
+             </div>
     
             
             <?php
@@ -51,6 +52,8 @@ get_header();
     }
 
     ?>
+
+    
     <!-- END OF BANNER AND TOP DESCRIPTION -->
 
 
@@ -60,7 +63,7 @@ get_header();
 
             if (function_exists('get_field')) {
                 $programs = get_field('programs');
-
+                $counter = 0;
                 foreach($programs as $program){
                     $name = $program['name'];
                     $description = $program['description'];
@@ -80,7 +83,7 @@ get_header();
                         
                             <div class="large-centered columns small-10 coreContent">
                                 <!-- program image -->
-                                <img src="<?php echo $program_image; ?>" alt="<?php echo $program_image['alt']; ?>" id="<?php echo $program_image['id']; ?>" />
+                                <img src="<?php echo $program_image; ?>" alt="" id="<?php echo $counter; ?>" />
                                 <p id="coreDesc">
                                     <?php echo$description; ?>
                                 </p>
@@ -93,10 +96,10 @@ get_header();
                                 <button class="button" href="<?php echo$button; ?>">REGISTER NOW</button>    
                             </div>  
 
-                            <div class="cell small-10 medium-10 large-centered dividerBar"></div>                
+                            <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>                
 
                 <?php
-
+            $counter++;
             }
         }
 
