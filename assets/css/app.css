@@ -107,7 +107,7 @@ h1 {
 	background-color: #bb0a1e;
 	color: #fff;
 	border-radius: 0.3rem;
-	width: 20rem;
+    width: 20rem;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -162,17 +162,19 @@ h1 {
 .container-banner {
     position: relative;
     justify-content: center;
+    align-content: center;
 }
 /* top cta and button */
 .front-heading {
     position: absolute;
     z-index: 2;
-    top: 25%;
 }
 
-.front-heading h1 {
+.front-heading h2 {
     color: #fff;
     text-shadow: 2px 2px 4px #000000;
+    font-family: 'Staatliches', cursive;
+
 }
 
 /* front banner image */
@@ -188,6 +190,10 @@ h1 {
 	padding-bottom: 25px;
 }
 
+/* logo containter */
+.logo-container {
+    display: flex;
+}
 
 /* HOME PAGE - ABOUT --------------------------------------------------------------------------------------------------------------------------------------- */
 .top-row {

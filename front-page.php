@@ -22,16 +22,14 @@ get_header();
 			<div class="grid-x">				
 
 				<!-- group of top banner -->
-				<div class="grid-x small-up-4 bottom-space container-banner">
+				<div class="grid-x container-banner">
 
 				<!-- front banner -->
 				<img id="front-banner" src="/wp-content/themes/cfea/assets/img/banner2.jpg" alt="front banner of a guy wokring out" />
 				
 				<!-- TOP container holding h1 and button -->
-				<!-- <div class="row large-6 large-offset-3 front-heading"> -->
-				<div class="row large-8 front-heading">
-
-
+				<div class="row large-8 small-12 medium-12 front-heading">
+				
 				<?php 
     
 					if( have_rows('buttons') ):
@@ -44,10 +42,10 @@ get_header();
 							$buttontext = $button['buttontext'];
 							?>
 								<!-- title -->
-								<h1 class="text-center blue top-space"><?php echo$header; ?></h1>
-								<!-- button with button class because it links to internal pages -->
-								<a class="button float-center top-space"><h4><?php echo$buttontext; ?></h4></a>
+								<h2 class="text-center blue"><?php echo$header; ?></h2>
 								
+								<!-- button -->
+								<a class="button float-center"><h4><?php echo$buttontext; ?></h4></a>
 							<?php
 							// var_dump($button);
 						endwhile;
@@ -57,14 +55,16 @@ get_header();
 				?>
 
 				</div>
-				
+
 
 				</div>
 
-				<div class="cell corefx"><img src="/wp-content/themes/cfea/assets/img/corefx-logo.png" alt="corefx logo" /></div>
-					<div class="cell trigger"><img src="/wp-content/themes/cfea/assets/img/tp-logo.png" alt="trigger point logo" /></div>
-					<div class="cell firstaid"><img src="/wp-content/themes/cfea/assets/img/firstaid-logo.png" alt="canadian red cross logo" /></div>
-					<div class="cell canfit"><img src="/wp-content/themes/cfea/assets/img/canfit-logo.png" alt="canfitpro logo" /></div>
+				<div class="cell logo-container">
+					<img src="/wp-content/themes/cfea/assets/img/corefx-logo.png" alt="corefx logo" />
+					<img src="/wp-content/themes/cfea/assets/img/tp-logo.png" alt="trigger point logo" />
+					<img src="/wp-content/themes/cfea/assets/img/firstaid-logo.png" alt="canadian red cross logo" />
+					<img src="/wp-content/themes/cfea/assets/img/canfit-logo.png" alt="canfitpro logo" />
+				</div>
 				<!-- container for curtis and mini bio -->	
 				<div class="grid-container grid-container-padded">	
 
