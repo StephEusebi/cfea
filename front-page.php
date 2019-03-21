@@ -28,7 +28,9 @@ get_header();
 				<img id="front-banner" src="/wp-content/themes/cfea/assets/img/banner2.jpg" alt="front banner of a guy wokring out" />
 				
 				<!-- TOP container holding h1 and button -->
-				<div class="row large-6 large-offset-3 front-heading">
+				<!-- <div class="row large-6 large-offset-3 front-heading"> -->
+				<div class="row large-8 front-heading">
+
 
 				<?php 
     

@@ -161,6 +161,7 @@ h1 {
 /* container holding image and cta */
 .container-banner {
     position: relative;
+    justify-content: center;
 }
 /* top cta and button */
 .front-heading {
@@ -171,6 +172,7 @@ h1 {
 
 .front-heading h1 {
     color: #fff;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 /* front banner image */
