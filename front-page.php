@@ -21,8 +21,14 @@ get_header();
 			<!-- main -->
 			<div class="grid-x">				
 
-				<!-- TOP container holding h1 and buttpn -->
-				<div class="row large-6 large-offset-3">
+				<!-- group of top banner -->
+				<div class="grid-x small-up-4 bottom-space container-banner">
+
+				<!-- front banner -->
+				<img id="front-banner" src="/wp-content/themes/cfea/assets/img/banner2.jpg" alt="front banner of a guy wokring out" />
+				
+				<!-- TOP container holding h1 and button -->
+				<div class="row large-6 large-offset-3 front-heading">
 
 				<?php 
     
@@ -49,17 +55,14 @@ get_header();
 				?>
 
 				</div>
-			
+				
 
-				<!-- group of images -->
-				<div class="grid-x small-up-4 bottom-space top-space home-images-4">
-				<img src="/wp-content/themes/cfea/assets/img/banner2.jpg" alt="corefx logo" />
-					<div class="cell corefx"><img src="/wp-content/themes/cfea/assets/img/corefx-logo.png" alt="corefx logo" /></div>
+				</div>
+
+				<div class="cell corefx"><img src="/wp-content/themes/cfea/assets/img/corefx-logo.png" alt="corefx logo" /></div>
 					<div class="cell trigger"><img src="/wp-content/themes/cfea/assets/img/tp-logo.png" alt="trigger point logo" /></div>
 					<div class="cell firstaid"><img src="/wp-content/themes/cfea/assets/img/firstaid-logo.png" alt="canadian red cross logo" /></div>
 					<div class="cell canfit"><img src="/wp-content/themes/cfea/assets/img/canfit-logo.png" alt="canfitpro logo" /></div>
-				</div>
-
 				<!-- container for curtis and mini bio -->	
 				<div class="grid-container grid-container-padded">	
 

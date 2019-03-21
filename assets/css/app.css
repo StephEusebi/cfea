@@ -158,6 +158,26 @@ h1 {
 
 
 /* HOME PAGE --------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* container holding image and cta */
+.container-banner {
+    position: relative;
+}
+/* top cta and button */
+.front-heading {
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+}
+
+.front-heading h1 {
+    color: #fff;
+}
+
+/* front banner image */
+#front-banner {
+    opacity: 0.8;
+    position: relative;
+}
 
 /* main banner */
 #canfitBanner {
