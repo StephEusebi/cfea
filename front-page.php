@@ -28,7 +28,7 @@ get_header();
 				<img id="front-banner" src="/wp-content/themes/cfea/assets/img/banner2.jpg" alt="front banner of a guy wokring out" />
 				
 				<!-- TOP container holding h1 and button -->
-				<div class="row large-8 small-12 medium-12 front-heading">
+				<div class="row large-7 small-11 medium-11 front-heading">
 				
 				<?php 
     
@@ -41,23 +41,28 @@ get_header();
 							$header = $button['heading'];
 							$buttontext = $button['buttontext'];
 							?>
-								<!-- title -->
-								<h2 class="text-center blue"><?php echo$header; ?></h2>
-								
-								<!-- button -->
-								<a class="button float-center"><h4><?php echo$buttontext; ?></h4></a>
-							<?php
-							// var_dump($button);
+
+							<!-- LARGE title -->
+							<h2 class="text-center"><?php echo$header; ?></h2>
+							
+							<!-- LARGE button -->
+							<a class="button float-center hide-for-small-only"><h4><?php echo$buttontext; ?></h4></a>
+
+
+				</div>
+
+				<!-- button that shows only on mibile view -->
+				<a class="button button-mobile float-center show-for-small-only"><h4><?php echo$buttontext; ?></h4></a>
+
+			</div>
+
+					<?php
+
 						endwhile;
-					
-					endif;
-					
-				?>
 
-				</div>
+						endif;
 
-
-				</div>
+					?>
 
 				<div class="cell logo-container">
 					<img src="/wp-content/themes/cfea/assets/img/corefx-logo.png" alt="corefx logo" />
@@ -72,7 +77,7 @@ get_header();
 
 						<div class="cell large-4 small-12 text-right" >
 							<!-- line  -->
-							<div style="width: 100%; height: 0.3rem; background-color: #0a415e; margin-bottom: 1rem;"></div>
+							<div class="line"></div>
 							
 							<?php if (function_exists('get_field')) {
 								$about = get_field('about');
@@ -122,7 +127,7 @@ get_header();
 
 						<div class="cell large-4 small-12" >
 							<!-- line  -->
-							<div style="width: 100%; height: 0.3rem; background-color: #0a415e; margin-bottom: 1rem;"></div>
+							<div class="line"></div>
 							<?php if (function_exists('get_field')) {
 								$info_landing = get_field('info_landing');
 
@@ -165,9 +170,12 @@ get_header();
 								$buttontext = $button['buttontext'];
 								?>
 									<!-- title -->
-									<h1 class="text-center blue top-space"><?php echo$header; ?></h1>
-									<!-- button with button class because it links to internal pages -->
-									<a class="button float-center top-space"><h4><?php echo$buttontext; ?></h4></a>
+									<h1 class="text-center grey top-space"><?php echo$header; ?></h1>
+									<!-- button hides on mobile -->
+									<a class="button float-center top-space hide-for-small-only"><h4><?php echo$buttontext; ?></h4></a>
+									<!-- button shows on mobile -->
+									<a class="button button-mobile float-center show-for-small-only"><h4><?php echo$buttontext; ?></h4></a>
+
 									
 								<?php
 								// var_dump($button);
