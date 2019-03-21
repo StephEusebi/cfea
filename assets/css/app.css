@@ -12,7 +12,6 @@ a:hover, a:focus {
 	color: #bb0a1e;
 }
 
-
 h1 {
 	font-family: 'Staatliches', cursive;
 }
@@ -90,10 +89,6 @@ h1 {
 	color: #901f21;
 }
 
-.pink {
-	background-color: #0E425D;
-}
-
 
 /* SPACING CLASSES ----------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -164,57 +159,7 @@ h1 {
 
 /* HOME PAGE --------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-        /* 4 images with backgrounds as images and logos on html, added overlay gradient */
-
- 
-.corefx {
-	width: 100%;
-	background: linear-gradient(0deg, #494747b2, #042a3f8a), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
-	background-repeat: no-repeat;
-}
-
-.corefx:hover {
-	background: linear-gradient(0deg, #153e539f, #153e539f), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
-	cursor: pointer;
-	background-repeat: no-repeat;
-}
-
-.trigger {
-	width: 100%;
-	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
-	background-repeat: no-repeat;
-}
-
-.trigger:hover {
-	background: linear-gradient(0deg, #153e539f, #153e539f), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
-	cursor: pointer;
-	background-repeat: no-repeat;
-}
-
-.firstaid {
-	width: 100%;
-	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
-	background-repeat: no-repeat;
-}
-
-.firstaid:hover {
-	background: linear-gradient(0deg, #153e539f, #153e539f), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
-	cursor: pointer;
-	background-repeat: no-repeat;
-}
-
-.canfit {
-	width: 100%;
-	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/canfitpro-promo.jpg");
-	background-repeat: no-repeat;
-}
-
-.canfit:hover {
-	background: linear-gradient(0deg, #153e539f, #153e539f), url("/wp-content/themes/cfea/assets/img/canfitpro-promo.jpg");
-	cursor: pointer;
-	background-repeat: no-repeat;
-}
-
+/* main banner */
 #canfitBanner {
 	width: 82%;
 	padding-top: 25px;
@@ -222,7 +167,7 @@ h1 {
 }
 
 
-/* ABOUT US --------------------------------------------------------------------------------------------------------------------------------------- */
+/* HOME PAGE - ABOUT --------------------------------------------------------------------------------------------------------------------------------------- */
 .top-row {
     margin-top: 30px;
 }

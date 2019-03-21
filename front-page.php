@@ -52,7 +52,8 @@ get_header();
 			
 
 				<!-- group of images -->
-				<div class="grid-x medium-up-2 large-up-4 bottom-space top-space home-images-4">
+				<div class="grid-x small-up-4 bottom-space top-space home-images-4">
+				<img src="/wp-content/themes/cfea/assets/img/banner2.jpg" alt="corefx logo" />
 					<div class="cell corefx"><img src="/wp-content/themes/cfea/assets/img/corefx-logo.png" alt="corefx logo" /></div>
 					<div class="cell trigger"><img src="/wp-content/themes/cfea/assets/img/tp-logo.png" alt="trigger point logo" /></div>
 					<div class="cell firstaid"><img src="/wp-content/themes/cfea/assets/img/firstaid-logo.png" alt="canadian red cross logo" /></div>
