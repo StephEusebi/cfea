@@ -168,6 +168,23 @@ function cfea_customize_register( $wp_customize ) {
 			)
 		)
 	);
+
+	// Adds copy right tag
+	$wp_customize->add_setting(
+		'cfea_footer_copyright'
+	);
+	
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'cfea_footer_copyright',
+			array(
+				'label'   => __( 'Copyright', 'cfea' ),
+				'section' => 'cfea_footer',
+				'type'	  => 'text'
+			)
+		)
+	);
 }
 add_action( 'customize_register', 'cfea_customize_register' );
 
