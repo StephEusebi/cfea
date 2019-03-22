@@ -528,160 +528,87 @@ footer{
     margin:0;
     padding:0;
 }
-
+/* div that wraps the footer */
+.footerDiv{
+    display: flex;
+    flex-wrap: nowrap;
+}
 /* changed the padding on the footerNav section */
 .footerNav{
-    padding-left:4em;
+   flex-grow: 1;
+   padding-top:40px;
+   padding-bottom: 40px;
 }
-
 /* controls the logo section and where the logo ends up being placed */
 .logo{
-    text-align: right;
-    margin:0 auto;
-    margin-top:3em;
-    margin-bottom:3em;
+   flex-grow: 1;
+    padding:20px;
+    display: flex;
 }
-
 /* sizes the logo */
-.logo img{
-    width:70%;
-    height:auto;    
+.logo, .custom-logo-link{
+    justify-content: center;
+    width:10em;
 }
-
 /* controls the main footer menu */
 #footer-menu{
     padding:0;
     margin:0;
-    margin-top:2.75em;
-    justify-content: center;
 }
-
 #footer-menu ul{
     list-style: none;
     padding:0;
     display: inline;
-    
 }
-
-#footer-menu ul li{
-    float:right;
-}
-
 #footer-menu a{
-    padding:.5em;
+    padding:.5em 1em .5em 0em;
 }
 /* controls the program menu */
-#program-menu{
-    margin:0;
-    padding:0;
-    justify-content: center;
-}
-
 #program-menu a{
     margin:0;
-    padding:.5em;
+    padding:.5em 1em .5em 0em;
     padding-top:.2em;
-
 }
-
-
-
 /* controls the contact section */
 .contactInfo{ 
     padding:0;
     margin-top:.5em;
 }
-
 .contactInfo p{
     font-family: 'Lato', sans-serif;
     font-size:.9em;
     margin-bottom:0;
-    text-align: center;
-}
-
-.newsLetterForm h2{
-    margin:0;
-    padding:0;
-    font-size:1em !important;
-    font-family: 'Lato', sans-serif;
-    margin:3em 0 .2em 8%;
-    font-weight: bold;
-}
-
-.wsf-grid {
-    margin-left: 0px;
-    margin-right: 0px !important;
-}
-
-.wsf-label{
-    display: none;
-}
-.wsf-button.wsf-button-primary{
-    width:10em !important;
-    margin-left:28%;
-    margin-bottom:1.75em;
-}
-.wsf-tile{
-    padding-left:0;
-}
-
-button.wsf-button.wsf-button-primary{
-    background-color: #aa2527;
-    border-color: #aa2527;
-    color:white;
-}
-
-button.wsf-button.wsf-button-primary:hover{
-    background-color: #901f21;
-}
-
-input[type=checkbox].wsf-field + .wsf-label  {
-    font-size: .8em;
-    margin-bottom:0 !important;
-}
-
-.wsf-field-wrapper{
-    margin-bottom:.5em;
 }
 /* controls the social media icons */
 .socialMediaIcons{
-    text-align:center !important;
-    margin-top:1em;
-    margin-left:1em;
-
+    flex-grow: 1;
+    padding:20px 20px 20px 120px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-around;
 }
-
 .fbIcon{
-    font-size:1.25em; 
+    font-size:1.5em; 
     color:black;
-    margin-right:.25em; 
 }
-
 .fbIcon:hover{
     color:#901f21;
 }
-
 .twitterIcon{
-    font-size:1.25em; 
+    font-size:1.5em; 
     color:black;
-    margin-right:.25em;
 }
-
 .twitterIcon:hover{
     color:#901f21;
 }
-
 .instagramIcon{
-    font-size:1.25em; 
+    font-size:1.5em; 
     color:black;
 }
-
 .instagramIcon:hover{
     color:#901f21;
 }
-
-
-
 
 /* SMALL ONLY ----------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -703,182 +630,46 @@ input[type=checkbox].wsf-field + .wsf-label  {
         background: #868686 !important;
     }
 
-    /* styles the footer background */
-    footer{
-        background-color: #E3E3E3;
-        margin:0;
-        padding:0;
-    } 
-
+    /* FOOTER */
+    /* div that wraps the footer */
+    .footerDiv{
+        display: flex;
+        flex-wrap: wrap;
+    }
     /* changed the padding on the footerNav section */
     .footerNav{
-       font-size:1em;
-       padding-left:0;
+        flex: 1 0 100%;
+        padding-top:0px;
+        padding-bottom: 20px;
     }
-    
     /* controls the logo section and where the logo ends up being placed */
     .logo{
-        text-align: center;
-        margin:0 auto;
-        margin-top:1em;
-    }
-    
-    /* sizes the logo */
-    .logo img{
-        width:40%;
-        height:auto;    
+        flex: 1 0 100%;
+        padding:20px;
+        display: flex;
     }
     
     /* controls the main footer menu */
     #footer-menu{
         padding:0;
         margin:0;
-        margin-top:1em;
-    }
-
-    #footer-menu a{
-        padding:.2em;
-        margin:0;
-        
-    }
-
-
-    #footer-menu ul{
-        list-style: none;
-        padding:0;
-        display: inline;
-    }
-
-    #footer-menu ul li{
-        float:right;
+        justify-content: center;
     }
 
     /* controls the program menu */
     #program-menu{
-        margin:0;
-        padding:0;
-    }
-
-    #program-menu a{
-        margin:0;
-        padding-top:.2em;
-    }
-
-
-    
-    /* controls the contact section */
-    .contactInfo{ 
-        padding:0;
-        margin-top:.5em;
+        justify-content: center;
     }
     
     .contactInfo p{
-        font-family: 'Lato', sans-serif;
-        font-size:.75em;
         text-align: center;
-        margin-left:0;
-        margin-bottom:0;
     }
-
-    /* controls the form section */ 
-    .newsLetterForm p{
-        font-family: 'Lato', sans-serif;
-        font-size:1em;
-        text-align: left;
-    }
-
-    .newsLetterForm p{
-        margin:0;
-        padding:0;
-    }
-
-    .newsLetterForm h2{
-        margin:0;
-        padding:0;
-        font-size:1.5em !important;
-        font-family: 'Lato', sans-serif;
-		margin:.5em 0 .5em 2em;
-		font-weight:normal;
-	}
-
-    .wsf-grid {
-        margin-left: 0px;
-        margin-right: 0px !important;
-    }
-
-    
-    
-    .wsf-field-wrapper{
-        margin-bottom:.5em;
-    }
-
     /* controls the social media icons */
     .socialMediaIcons{
-        text-align:center !important;
-        margin-left:0;
-		margin-top:1em;
-        margin-left:0;
-        margin-bottom:.5em;
+        flex: 1 0 100%;
+        padding:0px 60px 20px 60px;
+        justify-content: space-evenly;
     }
-
-    .socialMedia{
-		font-size:0.7em; 
-        margin-top:0;
-        padding-left:0;
-        margin-bottom:1em;
-	}
-
-   
-    .logoDiv {
-        text-align: center;
-    }
-   .menu-item {
-        font-size: 12pt;
-        word-spacing: 4px;
-    }
-
-    
-
-    /* contact us */
-	.contactTitle h2 {
-		font-size: 2em;
-		margin: 0;
-		padding: 0;
-		margin-left: 8.25%;
-		margin-bottom: .5em;
-		margin-top: .5em;
-		font-family: 'Lato', sans-serif;
-	}
-	.contactForm {
-		margin-bottom: 1em;
-    }
-    
-    /* red cross page */
-    #redCrossLogo {
-        width: 200px;
-        height: 100px;
-		margin-left: 50px;
-	}
-
-    .rcImg {
-        height: 60%;
-        
-    }
-
-    .progVideo iframe  {
-   
-		width: 95%;
-        height: 95%;
-        margin-top: 25px;
-        padding-top: 25px;
-        padding-bottom: 75px;
-    }
-
-    .site-content {
-        padding: 0em;
-    }
-
-
 } 
 
 
@@ -896,107 +687,6 @@ input[type=checkbox].wsf-field + .wsf-label  {
 	.center {
 		text-align: center !important;
 		margin: 0 auto;
-    }
-    
-
-    /* changed the padding on the footerNav section */
-    .footerNav{
-        padding-left:1.75em;
-    }
-
-    /* controls the logo section and where the logo ends up being placed */
-    
-    
-    /* sizes the logo */
-    .logo img{
-        width:80%;
-        height:auto;    
-    }
-    
-   
-
-    /* controls the main footer menu */
-    #footer-menu{
-        padding:0;
-        margin:0;
-        margin-top:2.75em;
-        
-    }
-
-    #footer-menu ul{
-        list-style: none;
-        padding:0;
-        display: inline;
-    }
-
-    #footer-menu ul li{
-        float:right;
-    }
-
-    /* controls the program menu */
-    #program-menu{
-        margin:0;
-        padding:0;
-    }
-
-    #program-menu a{
-        margin:0;
-        padding-top:.2em;
-    }
-
-
-    /* controls the program menu */
-    #program-menu{
-        margin:0;
-        padding:0;
-    }
-
-    #program-menu a{
-        margin:0;
-        padding-top:.2em;
-        padding-right:0;
-    }
-    
-    /* controls the contact section */
-
-    .contactInfo{ 
-        padding:0;
-        margin-top:.2em;
-        margin-left:3%;
-    }
-    
-    .contactInfo p{
-        font-family: 'Lato', sans-serif;
-        font-size:.8em;
-        text-align: center;
-        margin:0;
-        padding:0;
-    }
-    
-    .newsLetterForm h2{
-        margin:0;
-        padding:0;
-        font-size:1em !important;
-        font-family: 'Lato', sans-serif;
-		margin:2.9em 0 .5em 8%;
-		font-weight:bold;
-	}
-
-
-    .wsf-grid {
-        margin-left: 0px;
-        margin-right: 0px !important;
-    }
-
-   
-
-    .wsf-tile{
-        padding-left:0;
-    }
-    
-   
-    .wsf-field-wrapper{
-        margin-bottom:.5em;
     }
 
 }

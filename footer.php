@@ -20,7 +20,7 @@
 		<!-- footer container -->
 		<div class="grid-x">
 			<!-- container for all content in the footer -->
-			<div class="cell large-12 medium-12 small-12">
+			<div class="cell large-12 medium-12 small-12 footerDiv">
 				<!-- logo div -->
 				<div class="logo">
 					<?php
@@ -47,7 +47,6 @@
 							'menu_id'        => 'program-menu',
 						) );
 					?>
-				</div>
 				<!-- div the contact information -->
 				<div class="contactInfo">
 					<!-- customizer for the phone number -->
@@ -79,6 +78,7 @@
 						endif; 
 					?>
 				</div>
+					</div>
 				<!-- social media icons div -->
 				<div class="socialMediaIcons">
 					<!-- customizer for social media -->
@@ -103,6 +103,7 @@
 							<?php
 						}
 					?>
+					<p><i class="far fa-copyright"></i> 2019 CFEA</p>
 				</div><!-- closes the social media div -->
 			</div><!-- closes the main footer div -->
 		</div><!-- closes the grid-x div -->
