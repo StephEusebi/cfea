@@ -25,11 +25,6 @@ get_header();
 		<div class="grid-x">
 			<div class="cell large-12 medium-12 small-12 calendar">
 
-                <h3>Events Calendar</h3>
-				
-				<?php
-					echo do_shortcode('[MEC id="104"][MEC id="111"]');
-				?>
 			</div>
 		</div>
 
