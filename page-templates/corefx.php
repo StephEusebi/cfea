@@ -65,14 +65,32 @@ get_header();
                 $programs = get_field('programs');
                 $counter = 0;
                 foreach($programs as $program){
-                    $name = $program['name'];
-                    $description = $program['description'];
-                    $button = $program['button'];
-                    $cost = $program['cost'];
-                    $program_image = $program['program_image'];
-                    $ytvideo = $program['ytvideo'];
+                    if (!empty ($name)) {
+                        $name = $program['name'];
+                    } 
+                    if (!empty ($description)) {
+                        $description = $program['description'];
+                    }
+                    if (!empty ($button)) {
+                        $button = $program['button'];
+                    }
+                    if (!empty ($cost)) {
+                        $cost = $program['cost'];
+                    }
+                    if (!empty ($program_image)) {
+                        $program_image = $program['program_image'];
+                    }
+                    if (!empty ($ytvideo)) {
+                        $ytvideo = $program['ytvideo'];
+                    }
 
         ?>
+
+
+
+
+
+
 
                             <!-- Accordion tab title -->
                             <div class="large-centered columns small-10 coreContent">
