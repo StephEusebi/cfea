@@ -32,27 +32,29 @@ get_header();
 				
 				<?php 
     
-					if( have_rows('buttons') ):
+					if( have_rows('ctas') ):
 					
-						while( have_rows('buttons') ) : the_row();
+						while( have_rows('ctas') ) : the_row();
 							
-							$button = get_sub_field('button_1');
+							$cta = get_sub_field('cta_1');
 
-							$header = $button['heading'];
-							$buttontext = $button['buttontext'];
+							$header = $cta['heading'];
+							$button = $cta['button'];
+
 							?>
 
 							<!-- LARGE title -->
 							<h2 class="text-center"><?php echo$header; ?></h2>
 							
 							<!-- LARGE button -->
-							<a class="button float-center hide-for-small-only"><h4><?php echo$buttontext; ?></h4></a>
+							<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
 
 
 				</div>
 
 				<!-- button that shows only on mibile view -->
-				<a class="button button-mobile float-center show-for-small-only"><h4><?php echo$buttontext; ?></h4></a>
+				<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
+
 
 			</div>
 
@@ -169,21 +171,24 @@ get_header();
 
 					<?php 
 						
-						if( have_rows('buttons') ):
+						if( have_rows('ctas') ):
 						
-							while( have_rows('buttons') ) : the_row();
+							while( have_rows('ctas') ) : the_row();
 								
-								$button = get_sub_field('button_2');
+								$cta = get_sub_field('cta_2');
 
-								$header = $button['heading'];
-								$buttontext = $button['buttontext'];
+								$header = $cta['heading'];
+								$button = $cta['button'];
 								?>
 									<!-- title -->
 									<h1 class="text-center grey top-space"><?php echo$header; ?></h1>
 									<!-- button hides on mobile -->
-									<a class="button float-center top-space hide-for-small-only"><h4><?php echo$buttontext; ?></h4></a>
+									<a class="button float-center top-space hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
+
 									<!-- button shows on mobile -->
-									<a class="button button-mobile float-center show-for-small-only"><h4><?php echo$buttontext; ?></h4></a>
+									<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
+
+
 
 									
 								<?php

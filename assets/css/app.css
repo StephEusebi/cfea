@@ -115,7 +115,7 @@ h1 {
 	margin-bottom: 0;
 }
 
-.button:hover, .button.primary:hover {
+.button:hover, .button.primary:hover, .button:focus, .button.primary:focus {
 	background-color: #aa2527;
 }
 
