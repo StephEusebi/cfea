@@ -108,7 +108,7 @@ function cfea_customize_register( $wp_customize ) {
 		) );
 	}
 
-	// Add Footer Logo Section
+	// Adds Footer Section in the customizer
 	$wp_customize->add_section('cfea_footer',
 	array(
 		'title' => __('Footer','cfea'),
@@ -152,24 +152,7 @@ function cfea_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Adds setting for Footer Form Name
-	$wp_customize->add_setting(
-		'cfea_footer_form_name'
-	);
-	
-	$wp_customize->add_control(
-		new WP_Customize_Control(
-			$wp_customize,
-			'cfea_footer_form_name',
-			array(
-				'label'   => __( 'Form Name', 'cfea' ),
-				'section' => 'cfea_footer',
-				'type'	  => 'text'
-			)
-		)
-	);
-
-	// Adds copy right tag
+	// Adds copyright tag
 	$wp_customize->add_setting(
 		'cfea_footer_copyright'
 	);
