@@ -27,13 +27,12 @@ get_header();
 				<?php if (function_exists('get_field')) {
 
 				$image = get_field('banner_image');
-				$image = $image['image'];
-				var_dump($image);
-				
+				$image = $image['image'];				
 				?>
 
 				<!-- front banner -->
-				<img id="front-banner" src="/wp-content/themes/cfea/assets/img/banner2.jpg" alt="front banner of a guy wokring out" />
+				<img id="front-banner" src="<?php echo$image['url']; ?>" alt="<?php echo$image['alt']; ?>" />
+
 				<?php } ?>
 				<!-- TOP container holding h1 and button -->
 				<div class="row large-7 small-11 medium-11 front-heading">
@@ -75,10 +74,37 @@ get_header();
 					?>
 				<!-- logos and logo container -->
 				<div class="cell logo-container">
-					<img src="/wp-content/themes/cfea/assets/img/corefx-logo.png" alt="corefx logo" />
+				
+				<?php 
+
+				if(function_exists('get_field')) {
+					$logos = get_field('logos');
+	
+					foreach($logos as $logo){
+			
+						$image = $logo['image'];
+						var_dump($logo);
+
+						// if the field isnt empty
+						// if(!empty($image)) {
+						// 	?>
+				?>
+				<!-- logos -->
+
+				<img src="<?php echo$image['url']; ?>" alt="<?php echo$image['alt']; ?>" />
+				<?php
+
+						// }
+			
+			}
+
+		}
+	?>
+	
+					<!-- <img src="/wp-content/themes/cfea/assets/img/corefx-logo.png" alt="corefx logo" />
 					<img src="/wp-content/themes/cfea/assets/img/tp-logo.png" alt="trigger point logo" />
 					<img src="/wp-content/themes/cfea/assets/img/firstaid-logo.png" alt="canadian red cross logo" />
-					<img src="/wp-content/themes/cfea/assets/img/canfit-logo.png" alt="canfitpro logo" />
+					<img src="/wp-content/themes/cfea/assets/img/canfit-logo.png" alt="canfitpro logo" /> -->
 				</div>
 				
 
@@ -100,10 +126,9 @@ get_header();
 									$info = $home_page_block_1['info'];
 									$link_url = $home_page_block_1['link_url'];
 									$image = $home_page_block_1['image'];
-									$image_alt = $home_page_block_1['image_alt'];	
 							?>
 							<!-- image -->
-							<img src="<?php echo$image; ?>" alt="<?php echo$image_alt; ?>" />
+							<img src="<?php echo$image['url']; ?>" alt="<?php echo$image['alt']; ?>" />
 						</div>
 
 						<div class="cell large-4 small-11" >
@@ -146,8 +171,7 @@ get_header();
 									$title = $home_page_block_2['title'];
 									$info = $home_page_block_2['info'];
 									$link_url = $home_page_block_2['link_url'];
-									$image = $home_page_block_2['image'];
-									$image_alt = $home_page_block_2['image_alt'];	
+									$image = $home_page_block_2['image'];	
 							?>
 
 							<p><strong><?php echo$title; ?></strong></p>
@@ -167,8 +191,7 @@ get_header();
 
 						<div class="cell large-8 small-12 block_2">							
 							<!-- image-->
-							<img src="<?php echo$image; ?>" alt="<?php echo$image_alt; ?>" />
-
+							<img src="<?php echo$image['url']; ?>" alt="<?php echo$image['alt']; ?>" />
 						</div>
 					</div>
 
