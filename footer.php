@@ -47,7 +47,7 @@
 							'menu_id'        => 'program-menu',
 						) );
 					?>
-				<!-- div the contact information -->
+				<!-- contact information div -->
 				<div class="contactInfo">
 					<!-- customizer for the phone number -->
 					<?php
@@ -78,7 +78,7 @@
 						endif; 
 					?>
 				</div>
-					</div>
+			</div>
 				<!-- social media icons div -->
 				<div class="socialMediaIcons">
 					<!-- customizer for social media -->
@@ -112,7 +112,7 @@
 					<?php
 						else :
 					?>
-						<!-- shows up if no email is put in the footer customizer -->
+						<!-- shows up if no copyright information is put in the footer customizer -->
 						<p>CFEA Copyright</p>
 					<?php 
 						endif; 
