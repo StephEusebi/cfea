@@ -209,6 +209,64 @@ h1 {
     margin-bottom: 1rem;
 }
 
+/* BLOCK 1 */
+/* cenntering image for first block */
+.block_1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* move text above image when viewing medium and small*/
+
+/* Medium */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+   .block_1 {
+        order: 1;
+    }
+}
+/* Small */
+@media screen and (max-width: 39.9375em) {
+    .block_1 {
+        order: 1;
+    }
+}
+
+/* BLOCK 2 */
+/* cenntering image for second block */
+.block_2 {
+    display: flex;
+    justify-content: center;
+}
+
+.block_2_text {
+    text-align: right;
+}
+
+/* move text above image when viewing medium and small*/
+
+/* Medium */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+   .block_2 {
+        order: 1;
+    }
+
+    .block_2_text {
+        text-align: left;
+    }
+}
+/* Small */
+@media screen and (max-width: 39.9375em) {
+    .block_2 {
+        order: 1;
+    }
+
+    .block_2_text {
+        text-align: left;
+    }
+}
+
 /* HOME PAGE - ABOUT --------------------------------------------------------------------------------------------------------------------------------------- */
 .top-row {
     margin-top: 30px;

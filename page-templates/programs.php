@@ -48,11 +48,7 @@ get_header();
 
 			</div>
 		</div>
-			<!-- Whether you are new to the fitness industry and are looking to become certified to find you first job or are a seasoned veteran looking for advanced certification and continuing education we are here to help you. The CFEA’s mandate is simple.  To bring together the most recognized education brands in fitness today while giving you an amazing live education experience.  Our award-winning team of highly trained and experienced Master Trainers, Instructors and PRO TRAINERS are among the best fitness educators in the industry today! -->
-
-			<!-- Let us help you take your fitness career to the next level! -->
-
-
+	
         </main>
         <!-- #main -->
 	</div>
