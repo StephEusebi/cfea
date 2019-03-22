@@ -91,11 +91,6 @@ get_header();
         ?>
 
 
-
-
-
-
-
                             <!-- Accordion tab title -->
                             <div class="large-centered columns small-10 coreContent">
                                 <h2>
