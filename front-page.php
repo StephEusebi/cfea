@@ -24,9 +24,17 @@ get_header();
 				<!-- group of top banner -->
 				<div class="grid-x container-banner">
 
+				<?php if (function_exists('get_field')) {
+
+				$image = get_field('banner_image');
+				$image = $image['image'];
+				var_dump($image);
+				
+				?>
+
 				<!-- front banner -->
 				<img id="front-banner" src="/wp-content/themes/cfea/assets/img/banner2.jpg" alt="front banner of a guy wokring out" />
-				
+				<?php } ?>
 				<!-- TOP container holding h1 and button -->
 				<div class="row large-7 small-11 medium-11 front-heading">
 				
@@ -181,7 +189,7 @@ get_header();
 								$button = $cta['button'];
 								?>
 									<!-- title -->
-									<h1 class="text-center grey top-space"><?php echo$header; ?></h1>
+									<h1 class="text-center grey top-space "><?php echo$header; ?></h1>
 									<!-- button hides on mobile -->
 									<a class="button float-center top-space hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
 
