@@ -1,11 +1,11 @@
 {
     "key": "group_5c7ee9dda32b5",
-    "title": "Info-Landing",
+    "title": "Home Page Block 2",
     "fields": [
         {
             "key": "field_5c7ee9edb15cf",
-            "label": "Info Landing",
-            "name": "info_landing",
+            "label": "Home Page Block 2",
+            "name": "home_page_block_2",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -19,8 +19,8 @@
             "sub_fields": [
                 {
                     "key": "field_5c7eea02b15d0",
-                    "label": "info landing",
-                    "name": "info_landing",
+                    "label": "Block 2",
+                    "name": "block_2",
                     "type": "group",
                     "instructions": "",
                     "required": 0,
@@ -53,10 +53,10 @@
                         },
                         {
                             "key": "field_5c7eea14b15d1",
-                            "label": "team information",
-                            "name": "team_information",
+                            "label": "info",
+                            "name": "info",
                             "type": "textarea",
-                            "instructions": "Information about the team",
+                            "instructions": "Information area",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -69,25 +69,6 @@
                             "maxlength": "",
                             "rows": "",
                             "new_lines": ""
-                        },
-                        {
-                            "key": "field_5c7eea3fb15d3",
-                            "label": "link name",
-                            "name": "link_name",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
                         },
                         {
                             "key": "field_5c7eea52b15d4",
@@ -103,6 +84,49 @@
                                 "id": ""
                             },
                             "return_format": "array"
+                        },
+                        {
+                            "key": "field_5c942150ef8d1",
+                            "label": "image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "large",
+                            "library": "all",
+                            "min_width": 400,
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": 1000,
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5c9424b662f73",
+                            "label": "image alt",
+                            "name": "image_alt",
+                            "type": "text",
+                            "instructions": "Provide alternative text for the image",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         }
                     ]
                 }
@@ -114,7 +138,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-templates\/font-page.php"
+                "value": "default"
             }
         ]
     ],
@@ -126,5 +150,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1552696462
+    "modified": 1553213836
 }

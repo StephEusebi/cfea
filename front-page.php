@@ -87,7 +87,6 @@ get_header();
 									$bio = $abouts['bio'];
 									$title = $abouts['title'];
 									$link_url = $abouts['link_url'];
-									$link_text = $abouts['link_text'];
 								
 							?>
 							<p><strong><?php echo$name; ?></strong> | <?php echo$title; ?></p>
@@ -119,30 +118,34 @@ get_header();
 
 					<div class="grid-x grid-padding-x align-center">
 
-						<div class="cell large-8 small-12">							
-							<!-- image of team -->
-							<img src="/wp-content/themes/cfea/assets/img/group.jpg" alt="head shot of team" style="width: 880px;" />
+						<div class="cell large-8 small-12">	
+							
+						<?php if (function_exists('get_field')) {
 
+								$home_page_block_2 = get_field('home_page_block_2');
+
+								foreach($home_page_block_2 as $home_page_block_2){
+
+									$title = $home_page_block_2['title'];
+									$info = $home_page_block_2['info'];
+									$link_url = $home_page_block_2['link_url'];
+									$image = $home_page_block_2['image'];
+									$image_alt = $home_page_block_2['image_alt'];	
+							?>
+							<!-- image -->
+							<img src="<?php echo$image; ?>" alt="<?php echo$image_alt; ?>" />
 						</div>
 
 						<div class="cell large-4 small-12" >
 							<!-- line  -->
 							<div class="line"></div>
-							<?php if (function_exists('get_field')) {
-								$info_landing = get_field('info_landing');
-
-								foreach($info_landing as $info_landing){
-									$title = $info_landing['title'];
-									$team_information = $info_landing['team_information'];
-									$link_name = $info_landing['link_name'];
-									$link_url = $info_landing['link_url'];
-								
-							?>
+							
 							<p><strong><?php echo$title; ?></strong></p>
 							
-							<p><?php echo$team_information; ?></p>
+							<p><?php echo$info; ?></p>
+							<!-- get link and link title -->
+							<p><a  href="<?php echo $link_url['link']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
 
-							<p><a  href="<?php echo $link_url; ?>"><em><?php echo$link_text; ?></em></a></p>
 							<?php
 
 									}
