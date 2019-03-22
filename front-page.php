@@ -63,7 +63,7 @@ get_header();
 						endif;
 
 					?>
-
+				<!-- logos and logo container -->
 				<div class="cell logo-container">
 					<img src="/wp-content/themes/cfea/assets/img/corefx-logo.png" alt="corefx logo" />
 					<img src="/wp-content/themes/cfea/assets/img/tp-logo.png" alt="trigger point logo" />
@@ -73,7 +73,7 @@ get_header();
 				
 
 
-				<!-- container for team and mini bio -->	
+				<!-- container for block 1 -->	
 				<div class="grid-container grid-container-padded ">	
 
 					<div class="grid-x grid-padding-x align-center">
@@ -118,7 +118,7 @@ get_header();
 
 				</div><!-- grid-container end-->
 
-				<!-- container for curtis and mini bio -->	
+				<!-- container for block 2 -->	
 				<div class="grid-container grid-container-padded top-space">	
 
 					<div class="grid-x grid-padding-x align-center">
@@ -187,7 +187,7 @@ get_header();
 
 									
 								<?php
-								// var_dump($button);
+
 							endwhile;
 						
 						endif;
