@@ -103,7 +103,20 @@
 							<?php
 						}
 					?>
-					<p><i class="far fa-copyright"></i> 2019 CFEA</p>
+					<!-- customizer for the copyright -->
+					<?php
+						if ( get_theme_mod( 'cfea_footer_copyright' ) ) : ?>
+						<p><i class="far fa-copyright"></i><?php echo get_theme_mod( 'cfea_footer_copyright' ); 
+					?>
+						</p>
+					<?php
+						else :
+					?>
+						<!-- shows up if no email is put in the footer customizer -->
+						<p>CFEA Copyright</p>
+					<?php 
+						endif; 
+					?>
 				</div><!-- closes the social media div -->
 			</div><!-- closes the main footer div -->
 		</div><!-- closes the grid-x div -->
