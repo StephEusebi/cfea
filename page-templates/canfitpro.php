@@ -147,12 +147,7 @@ get_header();
 
         </div>
 
-           
-
-
-
- 
-</div>
+        
 
     <?php
 // imports the footer
