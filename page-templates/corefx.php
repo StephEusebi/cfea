@@ -27,23 +27,23 @@ get_header();
 <div class="grid-x grid-margin-x">
         <!-- section at top of page -->
         <?php 
-        if (function_exists('get_field')) {
-        $descriptions = get_field('descriptions');
+            if (function_exists('get_field')) {
+            $descriptions = get_field('descriptions');
 
-        // pull in the advanced custom field content 
-        foreach($descriptions as $description){
-            
-            $top_desc = $description['top_desc'];
-            //if a top description was provided show it, if not hide it. 
-            if (!empty ($top_desc)) {
+            // pull in the advanced custom field content 
+            foreach($descriptions as $description){
+                
+                $top_desc = $description['top_desc'];
+                //if a top description was provided show it, if not hide it. 
+                if (!empty ($top_desc)) {
               
-                ?>
+        ?>
           
                            <!-- program description -->
-                    <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10 progDesc"><?php echo $top_desc; ?></div>
-                    <div class="cell small-10 small-offset-1 medium-10 large-centered dividerBar"></div>  
-                <?php 
-            }
+            <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10 progDesc"><?php echo $top_desc; ?></div>
+            <div class="cell small-10 small-offset-1 medium-10 large-centered dividerBar"></div>  
+        <?php 
+                 }
             //if a program banner image was provided show it, if not hide it. 
             $program_banner = $description['program_banner'];
             if (!empty ($program_banner)) {
@@ -68,7 +68,6 @@ get_header();
 
     ?>
 
-    
     <!-- END OF BANNER AND TOP DESCRIPTION -->
 
 
@@ -126,9 +125,6 @@ get_header();
                             </div> 
                        <?php
                     }
-            
-              
-
         ?>
 
                             <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>                
@@ -142,8 +138,6 @@ get_header();
         ?>
 
         </div>
-
-           
 
             <?php 
                 //get the acf content for the video
@@ -171,8 +165,6 @@ get_header();
             }
         ?>
 
-
- 
 </div>
 
     <?php
