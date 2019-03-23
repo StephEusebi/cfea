@@ -18,7 +18,6 @@
 // imports the header
 get_header();
 ?>
-<<<<<<< HEAD
 <div class="grid-container">
     <div class="grid-x grid-margin-x">
         <div class="cell large-offset-2 small-offset-1">
@@ -55,8 +54,6 @@ get_header();
         </div>
    
         
-=======
->>>>>>> programs5
 
 <div class="grid-container">
     
@@ -90,7 +87,6 @@ get_header();
         }
     }
 
-<<<<<<< HEAD
             // pull in the program name, description, button, cost, program image and video for each of the courses
 			foreach($programs as $program){
 				$name = $program['name'];
@@ -99,15 +95,10 @@ get_header();
 				$cost = $program['cost'];
                 $program_image = $program['program_image'];
                 $ytvideo = $program['ytvideo'];
-=======
-    ?>
-    <!-- END OF BANNER AND TOP DESCRIPTION -->
->>>>>>> programs5
 
 
         <div class="grid-x grid-margin-x">
 
-<<<<<<< HEAD
             
                         <!-- Accordion tab title -->
                         <div class="cell large-10 small-10 coreContent">
@@ -140,9 +131,6 @@ get_header();
 
                         <!-- bar added between the different courses -->
                         <div class="cell small-10 medium-10 large-10 dividerBar"></div>                
-=======
-        <?php 
->>>>>>> programs5
 
             if (function_exists('get_field')) {
                 $programs = get_field('programs');
@@ -188,20 +176,15 @@ get_header();
 
         ?>
 
-<<<<<<< HEAD
 
 // pull in the video 
 if (function_exists('get_field')) {
 $programs = get_field('programs');
-=======
-        </div>
->>>>>>> programs5
 
            
 
             <?php 
 
-<<<<<<< HEAD
 <div class="grid-x coreContent">
 
         <!-- add video -->
@@ -211,10 +194,6 @@ $programs = get_field('programs');
       
     </div>
 </div>
-=======
-    if (function_exists('get_field')) {
-    $programs = get_field('programs');
->>>>>>> programs5
 
         foreach($programs as $program){
             $ytvideo = $program['ytvideo'];

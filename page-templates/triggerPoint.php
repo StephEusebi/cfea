@@ -28,8 +28,12 @@ get_header();
         $descriptions = get_field('descriptions');
 
         foreach($descriptions as $description){
-            $top_desc = $description['top_desc'];
-            $program_banner = $description['program_banner'];
+            if (!empty ($top_desc)) {
+                $top_desc = $description['top_desc'];
+            }
+            if (!empty ($program_banner)) {
+                $program_banner = $description['program_banner'];
+            }
         ?>
 
 
@@ -63,12 +67,24 @@ get_header();
                 $programs = get_field('programs');
 
                 foreach($programs as $program){
-                    $name = $program['name'];
-                    $description = $program['description'];
-                    $button = $program['button'];
-                    $cost = $program['cost'];
-                    $program_image = $program['program_image'];
-                    $ytvideo = $program['ytvideo'];
+                    if (!empty ($name)) {
+                        $name = $program['name'];
+                    } 
+                    if (!empty ($description)) {
+                        $description = $program['description'];
+                    }
+                    if (!empty ($button)) {
+                        $button = $program['button'];
+                    }
+                    if (!empty ($cost)) {
+                        $cost = $program['cost'];
+                    }
+                    if (!empty ($program_image)) {
+                        $program_image = $program['program_image'];
+                    }
+                    if (!empty ($ytvideo)) {
+                        $ytvideo = $program['ytvideo'];
+                    }
 
         ?>
 
