@@ -482,10 +482,42 @@ button.wsf-button {
 
 /* COREFX ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
+.coreContent {
+    margin: 0 auto;
+    
+}
+
+#coreProgram1 img {
+    /* display: inline;
+    padding: 4px;
+    margin: 0 0 2px 7px;
+    float: right; */
+    width: 200px;
+    margin: 10px;
+}
+
+#coreProgram2 img {
+    width: 200px;
+    margin: 10px;
+    float: left;
+}
+
 #corefxLogo {
 	width: 200px;
 	margin-left: 870px;
 	margin-bottom: 50px;
+}
+
+#coreDesc {
+    text-align: left;
+    /* float: left; */
+}
+
+.dividerBar {
+    border-bottom: 2px solid black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
 }
 
 .descList {
@@ -497,9 +529,10 @@ button.wsf-button {
 }
 
 #corefxBanner {
-	width: 82%;
-	padding-bottom: 25px;
-	padding-top: 25px;
+    width: 99%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin: 0 auto;
 }
 
 #corefxLogo2 {
@@ -744,6 +777,62 @@ footer{
         padding:0px 60px 20px 60px;
         justify-content: space-evenly;
     }
+
+    .socialMedia{
+		font-size:0.7em; 
+        margin-top:0;
+        padding-left:0;
+        margin-bottom:1em;
+	}
+
+   
+    .logoDiv {
+        text-align: center;
+    }
+   .menu-item {
+        font-size: 12pt;
+        word-spacing: 4px;
+    }
+
+    
+
+    /* contact us */
+	.contactTitle h2 {
+		font-size: 2em;
+		margin: 0;
+		padding: 0;
+		margin-left: 8.25%;
+		margin-bottom: .5em;
+		margin-top: .5em;
+		font-family: 'Lato', sans-serif;
+	}
+	.contactForm {
+		margin-bottom: 1em;
+    }
+    
+    /* red cross page */
+    #redCrossLogo {
+        width: 200px;
+        height: 100px;
+		margin-left: 50px;
+	}
+
+    .rcImg {
+        height: 60%;
+        
+    }
+
+    .progVideo iframe  {
+   
+		width: 300px;
+        height: 300px;
+        /* margin-top: 25px; */
+        padding-top: 25px;
+        padding-bottom: 75px;
+    }
+
+
+
 } 
 
 
