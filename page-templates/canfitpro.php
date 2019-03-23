@@ -19,40 +19,140 @@
 get_header();
 ?>
 
-    <div class="grid-x grid-margin-x">
-        <div class="large-offset-2 small-offset-1">
+<div class="grid-container">
 
-            <!-- banner at top of page -->
-            <div class="cell large-8">
-                <img src="/wp-content/themes/cfea/assets/img/canfitprologo.png" alt="canfitpro logo" class="cell large-12" id="canfitproLogo" />
-            </div>
 
-            <!-- <h2 class="cell large-12 progHead">COREFX</h2> -->
-            <div class="grid-x grid-margin-x">
-                <p class="cell large-10 small-10 progDesc">Whether you are new to the fitness industry looking to become certified or a seasoned veteran looking for advanced certification and continuing education we can help. </p>
-                <p class="cell large-10 small-10 progDesc">Canfitpro is the most recognized provider of fitness certification in Canada today. Through our partnership with Allied Education we are able to offer a wide variety canfitpro certification courses including:</p>
-                <ul class="cell large-10 small-10 progDesc">
-                    <li style="font-weight:bold;">Personal Trainer Specialist (PTS)</li>
-                        <p>Personal training is a rapidly growing profession, which can make it difficult to sort through the options and choose the best avenue to become qualified to train clients. canfitpro provides the answer with the Personal Training Specialist (PTS) certification. You will learn the foundational skills necessary to confidently and competently train apparently healthy individuals. A canfitpro certified PTS is qualified to assess, design, and deliver individual and small group training programs in a health club, home, and workplace setting.
-                        Canada’s leading personal training certification designation, the canfitpro Personal Training Specialist program provides comprehensive program content and a wide range of practical skills that will ensure success to those who hold the designation. canfitpro has collaborated with Human Kinetics Publishing Inc. to create a multimedia learning experience for personal trainers that is second to none!</p>
-                    <li style="font-weight:bold;">Fitness Instructor Specialist (FIS)</li>
-                        <p>The role of a Fitness Instructor Specialist has evolved far beyond being a basic “aerobic instructor”. As a group exercise expert, you will assist club members in a fun and motivating setting. A qualified Fitness Instructor Specialist can lead groups in various formats of cardiovascular conditioning, muscle strength and endurance training, stretching and relaxation, or a calming cool-down. A canfitpro certified FIS is knowledgeable about different types of music, understands how to use music in a group setting, keeps current on the latest fitness trends and is able to give generalized advice about healthy living.</p>
-                    <li style="font-weight:bold;">Healthy Eating & Weight Loss Coach (HWL)</li>
-                        <p>For the majority of people, exercise alone is not enough to create lasting weight loss and health.</p>
-                        <p>Knowing that rates of overweight and obesity are increasing across Canada, canfitpro has created the Healthy Eating & Weight Loss (HWL) Coach program. Choose to gain the certification and work with clients or learn simply to empower your own healthy choices.</p>
-                        <p>The Healthy Eating & Weight Loss Coach program delivers information in a straightforward manner so you can confidently help clients make better choices; more often, lose weight, and lead healthier lives!</p>
-                        <p>Nutrition information is constantly evolving and being able to decipher this information and apply it to fat loss strategies is essential for success. This program will allow you to understand healthy eating, the value of regular activity and ways to reduce body fat. This course will provide excellent strategies and tools for fitness professionals to help them educate others about how to build a healthier body.</p>
-                    <li style="font-weight:bold;">Pre & Post Natal Specialist (PFS)</li>
-                    <li style="font-weight:bold;">First Aid & Cardio Pulmonary Resuscitation (First Aid &CPR)</li>
-                        <p>The chances are good that in your lifetime you will be involved in a situation which will require familiarity with First Aid, CPR ad AEDs. Our training is designed to be user friendly so that all people, regardless of ability, will gain the confidence necessary to act effectively in an emergency.</p>
-                        <p>In an emergency situation, seconds count so congratulate yourself on your decision to become part of a growing number of people who are going to use these precious seconds to make a difference!</p>
-                        <p>Our First Aid with CPR & AED courses are accessible, affordable and attainable, designed to provide members of the public with the knowledge and technique that is needed to properly perform First Aid in any unforeseen emergency.</p>
-                        <p>First Aid with CPR & AED courses were developed in accordance with recommendations from International Liaison Committee on Resuscitation (ILCOR) Consensus on Science.</p>
-                </ul>
 
-            </div>
+    <!-- BANNER AND TOP DESCRIPTION -->    
+<div class="grid-x grid-margin-x">
+        <!-- section at top of page -->
+        <?php 
+        if (function_exists('get_field')) {
+        $descriptions = get_field('descriptions');
+
+        // pull in the advanced custom field content 
+        foreach($descriptions as $description){
+
+                        //if a program banner image was provided show it, if not hide it. 
+                        $program_banner = $description['program_banner'];
+                        if (!empty ($program_banner)) {
+                            ?>
+                            <!-- banner at top of page -->
+                                <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10">
+                                    <img src="<?php echo $program_banner; ?>" alt="corefx banner" id="corefxBanner" class="large-centered columns coreContent" />
+                                </div>
+                            <?php 
+                        }
+                    ?>
+
+                    <?php
+            
+            $top_desc = $description['top_desc'];
+            //if a top description was provided show it, if not hide it. 
+            if (!empty ($top_desc)) {
+              
+                ?>
+          
+                           <!-- program description -->
+                    <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10 progDesc"><?php echo $top_desc; ?></div>
+                    <div class="cell small-10 small-offset-1 medium-10 large-centered dividerBar"></div>  
+                <?php 
+            }
+
+?>
+       
+             </div>
+    
+            
+            <?php
+            
+
+        }
+    }
+
+    ?>
+
+    
+    <!-- END OF BANNER AND TOP DESCRIPTION -->
+
+
+        <div class="grid-x grid-margin-x">
+
+        <?php 
+            //get the programs acf
+            if (function_exists('get_field')) {
+                $programs = get_field('programs');
+                $counter = 0;
+                foreach($programs as $program){
+                   
+                    $name = $program['name'];
+                   //if a program name was provided show it, if not hide it. 
+                    if (!empty ($name)) {
+                        ?> 
+                        <!-- Accordion tab title -->
+                        <div class="large-centered columns small-10 coreContent">
+                            <h2>
+                                <?php echo $name; ?>
+                            </h2>
+                        </div>
+                    <?php
+                    } 
+                    $description = $program['description'];
+                    $program_image = $program['program_image'];
+                    //if a description or image were provided show what was given, hide the ones not provided. 
+                    if (!empty ($description) || !empty ($program_image)) {
+                        ?>
+                            <div class="large-centered columns small-10 coreContent">
+                                <!-- program image -->
+                                <img src="<?php echo $program_image; ?>" alt="" id="<?php echo $counter; ?>" />
+                                <!-- course description -->
+                                <p id="coreDesc">
+                                    <?php echo $description; ?>
+                                </p>
+                            </div>
+                        <?php
+                    }
+
+                    $button = $program['button'];
+                    $cost = $program['cost'];
+
+                    //if button or cost was provided show it, if not hide the ones not provided. 
+                    if (!empty ($button) || !empty ($cost)) {
+                       ?>
+
+                            <div class="large-centered columns small-10 coreContent">
+                                <p>
+                                    <!-- program cost -->
+                                    <?php echo $cost; ?>
+                                </p>
+                                <!-- button to go register -->
+                                <button class="button" href="<?php echo $button; ?>">REGISTER NOW</button>    
+                            </div> 
+                       <?php
+                    }
+            
+              
+
+        ?>
+
+                            <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>                
+
+                <?php
+            // increment for photos
+            $counter++;
+            }
+        }
+
+        ?>
+
         </div>
-    </div>
+
+           
+
+
+
+ 
+</div>
 
     <?php
 // imports the footer
