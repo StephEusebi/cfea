@@ -32,6 +32,20 @@ get_header();
 
         // pull in the advanced custom field content 
         foreach($descriptions as $description){
+
+                        //if a program banner image was provided show it, if not hide it. 
+                        $program_banner = $description['program_banner'];
+                        if (!empty ($program_banner)) {
+                            ?>
+                            <!-- banner at top of page -->
+                                <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10">
+                                    <img src="<?php echo $program_banner; ?>" alt="corefx banner" id="corefxBanner" class="large-centered columns coreContent" />
+                                </div>
+                            <?php 
+                        }
+                    ?>
+
+                    <?php
             
             $top_desc = $description['top_desc'];
             //if a top description was provided show it, if not hide it. 
@@ -44,18 +58,8 @@ get_header();
                     <div class="cell small-10 small-offset-1 medium-10 large-centered dividerBar"></div>  
                 <?php 
             }
-            //if a program banner image was provided show it, if not hide it. 
-            $program_banner = $description['program_banner'];
-            if (!empty ($program_banner)) {
-                ?>
-                <!-- banner at top of page -->
-                    <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10">
-                        <img src="<?php echo $program_banner; ?>" alt="corefx banner" id="corefxBanner" class="large-centered columns coreContent" />
-                    </div>
-                <?php 
-            }
-        ?>
 
+?>
        
              </div>
     
