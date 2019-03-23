@@ -207,8 +207,12 @@ h1 {
 }
 
 .logo-container img {
-    width: 25%;
     align-self: center;
+}
+
+/* logo with no a tag */
+.noA {
+    width: 25%;
 }
 
 /* button for mobile view */

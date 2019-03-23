@@ -26,8 +26,8 @@ get_header();
 				<div class="grid-x container-banner">
 
 				<!-- START ACF - BANNER_IMAGE -->
-				
-				<!-- if there is a acf field get the fiels -->
+
+				<!-- if there is a acf field get the field -->
 				<?php if (function_exists('get_field')) {
 
 				// get the ACF named banner_image and name it
@@ -47,7 +47,7 @@ get_header();
 				// if empty -show civ box
 				 if(empty ($image)) {
 					 ?><div class="banner-box"></div> <?php
-				 }
+				 } 
 				
 				} ?>
 
@@ -56,6 +56,7 @@ get_header();
 				<!-- TOP container holding h1 and button -->
 				<div class="row large-7 small-11 medium-11 front-heading">
 				
+				<!-- START ACF - CTA -->
 				<?php 
     
 					if( have_rows('ctas') ):
@@ -100,15 +101,35 @@ get_header();
 						$logos = get_field('logos');
 		
 						foreach($logos as $logo){
-				
-							$image = $logo['image'];
-					?>
+			
+							$logo_image = $logo['logo_image'];
+							$logo_url = $logo['logo_url'];
+							
+							// if image is not empty and a tage isnt epty - show image
+							if(!empty ($logo_image) && !empty($logo_url)) {
+							?>
 
-				<!-- logos -->
-				<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
+								<!-- logos with a tags-->
+								<a href="<?php echo $logo_url['url']; ?>" target="<?php echo $logo_url['target']; ?>" >
+									<img src="<?php echo $logo_image['url']; ?>" alt="<?php echo $logo_image['alt']; ?>" />
+								</a>
+
+							<!-- END if image isnt empty -->
+							<?php } ?>
+
+
+							<!-- if image isn't empty with an a tag wasn't provided -->
+							<?php if(empty ($logo_url)) { ?>
+
+								<!-- display only image -->
+								<img class="noA" src="<?php echo $logo_image['url']; ?>" alt="<?php echo $logo_image['alt']; ?>" />
+
+							<!-- END if a tag is empty empty -->	
+							<?php } ?>
+							
 
 							<?php
-						
+							
 						}
 
 					}
