@@ -18,7 +18,8 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<!-- main -->
+
+			<!-- top container-->
 			<div class="grid-x">				
 
 				<!-- group of top banner -->
@@ -27,13 +28,17 @@ get_header();
 				<?php if (function_exists('get_field')) {
 
 				$image = get_field('banner_image');
-				$image = $image['image'];				
+
+				$image = $image['image'];	
+
 				?>
 
 				<!-- front banner -->
 				<img id="front-banner" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
 				<?php } ?>
+
+
 				<!-- TOP container holding h1 and button -->
 				<div class="row large-7 small-11 medium-11 front-heading">
 				
@@ -50,11 +55,11 @@ get_header();
 
 							?>
 
-							<!-- LARGE title -->
-							<h2 class="text-center"><?php echo $header; ?></h2>
+					<!-- LARGE title -->
+					<h2 class="text-center"><?php echo $header; ?></h2>
 							
-							<!-- LARGE button -->
-							<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
+					<!-- LARGE button -->
+					<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
 
 
 				</div>
@@ -62,8 +67,7 @@ get_header();
 				<!-- button that shows only on mibile view -->
 				<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
 
-
-			</div>
+			</div> <!-- END top banner -->
 
 					<?php
 
@@ -72,19 +76,20 @@ get_header();
 						endif;
 
 					?>
+
 				<!-- logos and logo container -->
 				<div class="cell logo-container">
 				
-				<?php 
+					<?php 
 
-				if(function_exists('get_field')) {
-					$logos = get_field('logos');
-	
-					foreach($logos as $logo){
-			
-						$image = $logo['image'];
-				?>
+					if(function_exists('get_field')) {
+						$logos = get_field('logos');
+		
+						foreach($logos as $logo){
 				
+							$image = $logo['image'];
+					?>
+
 				<!-- logos -->
 				<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
 
@@ -124,11 +129,11 @@ get_header();
 						<div class="cell large-4 small-11" >
 							<!-- line  -->
 							<div class="line"></div>
-							
+							<!-- title -->
 							<p><strong><?php echo $title; ?></strong></p>
-							
+							<!-- info -->
 							<p><?php echo $info; ?></p>
-							<!-- get link and link title -->
+							<!-- link -->
 							<p><a  href="<?php echo $link_url['link']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
 
 							<?php
@@ -141,7 +146,7 @@ get_header();
 
 					</div>
 
-				</div><!-- grid-container end-->
+				</div><!-- END block 1-->
 
 				<!-- container for block 2 -->	
 				<div class="grid-container grid-container-padded top-space">	
@@ -163,11 +168,11 @@ get_header();
 									$link_url = $home_page_block_2['link_url'];
 									$image = $home_page_block_2['image'];	
 							?>
-
+							<!-- title -->
 							<p><strong><?php echo$title; ?></strong></p>
-							
+							<!-- information -->
 							<p><?php echo$info; ?></p>
-
+							<!-- link -->
 							<p><a  href="<?php echo $link_url['link']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
 							
 							<?php
@@ -178,14 +183,14 @@ get_header();
 							?>
 
 						</div>
-
+						
 						<div class="cell large-8 small-12 block_2">							
 							<!-- image-->
 							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 						</div>
 					</div>
 
-				</div><!-- grid-container end-->
+				</div><!-- END block 2-->
 
 				<!-- BOTTOM container holding h1 and button -->
 				<div class="row large-6 large-offset-3">
