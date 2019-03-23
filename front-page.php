@@ -31,7 +31,7 @@ get_header();
 				?>
 
 				<!-- front banner -->
-				<img id="front-banner" src="<?php echo$image['url']; ?>" alt="<?php echo$image['alt']; ?>" />
+				<img id="front-banner" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
 				<?php } ?>
 				<!-- TOP container holding h1 and button -->
@@ -51,7 +51,7 @@ get_header();
 							?>
 
 							<!-- LARGE title -->
-							<h2 class="text-center"><?php echo$header; ?></h2>
+							<h2 class="text-center"><?php echo $header; ?></h2>
 							
 							<!-- LARGE button -->
 							<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
@@ -83,29 +83,19 @@ get_header();
 					foreach($logos as $logo){
 			
 						$image = $logo['image'];
-						var_dump($logo);
-
-						// if the field isnt empty
-						// if(!empty($image)) {
-						// 	?>
 				?>
+				
 				<!-- logos -->
+				<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
 
-				<img src="<?php echo$image['url']; ?>" alt="<?php echo$image['alt']; ?>" />
-				<?php
+							<?php
+						
+						}
 
-						// }
-			
-			}
-
-		}
-	?>
-	
-					<!-- <img src="/wp-content/themes/cfea/assets/img/corefx-logo.png" alt="corefx logo" />
-					<img src="/wp-content/themes/cfea/assets/img/tp-logo.png" alt="trigger point logo" />
-					<img src="/wp-content/themes/cfea/assets/img/firstaid-logo.png" alt="canadian red cross logo" />
-					<img src="/wp-content/themes/cfea/assets/img/canfit-logo.png" alt="canfitpro logo" /> -->
-				</div>
+					}
+				?>
+							
+				</div>  <!-- END logo-container -->
 				
 
 
@@ -128,16 +118,16 @@ get_header();
 									$image = $home_page_block_1['image'];
 							?>
 							<!-- image -->
-							<img src="<?php echo$image['url']; ?>" alt="<?php echo$image['alt']; ?>" />
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 						</div>
 
 						<div class="cell large-4 small-11" >
 							<!-- line  -->
 							<div class="line"></div>
 							
-							<p><strong><?php echo$title; ?></strong></p>
+							<p><strong><?php echo $title; ?></strong></p>
 							
-							<p><?php echo$info; ?></p>
+							<p><?php echo $info; ?></p>
 							<!-- get link and link title -->
 							<p><a  href="<?php echo $link_url['link']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
 
@@ -191,7 +181,7 @@ get_header();
 
 						<div class="cell large-8 small-12 block_2">							
 							<!-- image-->
-							<img src="<?php echo$image['url']; ?>" alt="<?php echo$image['alt']; ?>" />
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 						</div>
 					</div>
 
@@ -212,7 +202,7 @@ get_header();
 								$button = $cta['button'];
 								?>
 									<!-- title -->
-									<h1 class="text-center grey top-space "><?php echo$header; ?></h1>
+									<h1 class="text-center grey top-space "><?php echo $header; ?></h1>
 									<!-- button hides on mobile -->
 									<a class="button float-center top-space hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
 
