@@ -12,7 +12,6 @@ a:hover, a:focus {
 	color: #bb0a1e;
 }
 
-
 h1 {
 	font-family: 'Staatliches', cursive;
 }
@@ -78,7 +77,7 @@ h1 {
 
 /* COLOR CLASSES ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
-.blue {
+.grey {
 	color: #494747;
 }
 
@@ -88,10 +87,6 @@ h1 {
 
 .red {
 	color: #901f21;
-}
-
-.pink {
-	background-color: #0E425D;
 }
 
 
@@ -112,7 +107,7 @@ h1 {
 	background-color: #bb0a1e;
 	color: #fff;
 	border-radius: 0.3rem;
-	width: 20rem;
+    width: 20rem;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -120,7 +115,7 @@ h1 {
 	margin-bottom: 0;
 }
 
-.button:hover, .button.primary:hover {
+.button:hover, .button.primary:hover, .button:focus, .button.primary:focus {
 	background-color: #aa2527;
 }
 
@@ -163,66 +158,134 @@ h1 {
 
 
 /* HOME PAGE --------------------------------------------------------------------------------------------------------------------------------------------------- */
-
-        /* 4 images with backgrounds as images and logos on html, added overlay gradient */
-
- 
-.corefx {
-	width: 100%;
-	background: linear-gradient(0deg, #494747b2, #042a3f8a), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
-	background-repeat: no-repeat;
+/* container holding image and cta */
+.container-banner {
+    position: relative;
+    justify-content: center;
+    align-content: center;
+}
+/* top cta and button */
+.front-heading {
+    position: absolute;
+    z-index: 2;
+    align-self: center;
 }
 
-.corefx:hover {
-	background: linear-gradient(0deg, #153e539f, #153e539f), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
-	cursor: pointer;
-	background-repeat: no-repeat;
+.front-heading h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Staatliches', cursive;
+
 }
 
-.trigger {
-	width: 100%;
-	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
-	background-repeat: no-repeat;
+/* front banner image */
+#front-banner {
+    opacity: 0.8;
+    position: relative;
+    align-self: center;
 }
 
-.trigger:hover {
-	background: linear-gradient(0deg, #153e539f, #153e539f), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
-	cursor: pointer;
-	background-repeat: no-repeat;
+/* banner if there is no image inside banner */
+.banner-box {
+    position: relative;
+    height: 14rem;
+    width: 100vw;
+    background: #3b3b3b;
+    align-self: center;
 }
 
-.firstaid {
-	width: 100%;
-	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
-	background-repeat: no-repeat;
-}
-
-.firstaid:hover {
-	background: linear-gradient(0deg, #153e539f, #153e539f), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
-	cursor: pointer;
-	background-repeat: no-repeat;
-}
-
-.canfit {
-	width: 100%;
-	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/canfitpro-promo.jpg");
-	background-repeat: no-repeat;
-}
-
-.canfit:hover {
-	background: linear-gradient(0deg, #153e539f, #153e539f), url("/wp-content/themes/cfea/assets/img/canfitpro-promo.jpg");
-	cursor: pointer;
-	background-repeat: no-repeat;
-}
-
+/* main banner */
 #canfitBanner {
 	width: 82%;
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
 
+/* logo containter */
+.logo-container {
+    display: flex;
+}
 
-/* ABOUT US --------------------------------------------------------------------------------------------------------------------------------------- */
+.logo-container img {
+    align-self: center;
+}
+
+/* logo with no a tag */
+.noA {
+    width: 25%;
+}
+
+/* button for mobile view */
+.button-mobile {
+    width: 100%;
+    border-radius: 0;
+}
+
+/* line for abouts on home page */
+.line {
+    width: 100%; 
+    height: 0.3rem; 
+    background-color: #494747; 
+    margin-bottom: 1rem;
+}
+
+/* BLOCK 1 */
+/* cenntering image for first block */
+.block_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* move text above image when viewing medium and small*/
+
+/* Medium */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+   .block_1 {
+        order: 1;
+    }
+}
+/* Small */
+@media screen and (max-width: 39.9375em) {
+    .block_1 {
+        order: 1;
+    }
+}
+
+/* BLOCK 2 */
+/* cenntering image for second block */
+.block_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* move text above image when viewing medium and small*/
+
+/* Medium */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+   .block_2 {
+        order: 1;
+    }
+
+    .block_2_text {
+        text-align: left;
+    }
+}
+/* Small */
+@media screen and (max-width: 39.9375em) {
+    .block_2 {
+        order: 1;
+    }
+
+    .block_2_text {
+        text-align: left;
+    }
+}
+
+/* HOME PAGE - ABOUT --------------------------------------------------------------------------------------------------------------------------------------- */
 .top-row {
     margin-top: 30px;
 }

@@ -1,11 +1,11 @@
 {
     "key": "group_5c75fa87e130a",
-    "title": "CTA-Button",
+    "title": "CTA-Text-And-Button",
     "fields": [
         {
             "key": "field_5c75fac16e689",
-            "label": "Buttons",
-            "name": "buttons",
+            "label": "CTAs",
+            "name": "ctas",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -19,8 +19,8 @@
             "sub_fields": [
                 {
                     "key": "field_5c75faf96e68a",
-                    "label": "Button 1",
-                    "name": "button_1",
+                    "label": "CTA 1",
+                    "name": "cta_1",
                     "type": "group",
                     "instructions": "",
                     "required": 0,
@@ -53,9 +53,9 @@
                         },
                         {
                             "key": "field_5c75fb416e68c",
-                            "label": "buttontext",
-                            "name": "buttontext",
-                            "type": "text",
+                            "label": "button",
+                            "name": "button",
+                            "type": "link",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -64,18 +64,14 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "return_format": "array"
                         }
                     ]
                 },
                 {
                     "key": "field_5c75ff006d4c3",
-                    "label": "Button 2",
-                    "name": "button_2",
+                    "label": "CTA 2",
+                    "name": "cta_2",
                     "type": "group",
                     "instructions": "",
                     "required": 0,
@@ -108,9 +104,9 @@
                         },
                         {
                             "key": "field_5c75ff006d4c5",
-                            "label": "buttontext",
-                            "name": "buttontext",
-                            "type": "text",
+                            "label": "button",
+                            "name": "button",
+                            "type": "link",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -119,11 +115,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "return_format": "array"
                         }
                     ]
                 }
@@ -147,5 +139,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553035352
+    "modified": 1553282835
 }
