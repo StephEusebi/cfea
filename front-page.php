@@ -84,15 +84,27 @@ get_header();
 									
 							<!-- LARGE button -->
 							<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
-							
+
+
+							</div> <!-- END front-heading -->
+
+							<!-- button that shows only on mibile view -->
+							<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
+						
 							<!--END if isn't epmpty  -->
 							<?php } ?>
 
 							<?php
+
 							// if header is empty but not button- do not show header show button
 							if(empty ($header) && !empty ($button)) { ?>
 
 							<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
+
+							</div> <!-- END front-heading -->
+
+							<!-- button that shows only on mibile view -->
+							<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
 
 							<!-- END if header empty but not button-->
 							<?php	} ?>
@@ -106,22 +118,18 @@ get_header();
 
 							<!-- END if button empty but not header-->
 							<?php } ?>
-			
-				<!-- END ACF - CTA -->
-				</div>
 
-				<!-- button that shows only on mibile view -->
-				<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
+							<?php
 
-			</div> <!-- END top banner -->
+							endwhile;
 
-					<?php
+							endif;
 
-						endwhile;
+							?>
+							
+						<!-- END ACF - CTA -->
 
-						endif;
-
-					?>
+					</div> <!-- END container-banner -->
 
 				<!-- logos and logo container -->
 				<div class="cell logo-container">
@@ -267,37 +275,75 @@ get_header();
 
 				<!-- BOTTOM container holding h1 and button -->
 				<div class="row large-6 large-offset-3">
+				<!-- START ACF - CTA -->
 
 					<?php 
-						
+						// checking to see if the field ctas has rows of data to loop over
 						if( have_rows('ctas') ):
 						
 							while( have_rows('ctas') ) : the_row();
 								
+								// getting the second cta
 								$cta = get_sub_field('cta_2');
-
+								
+								// assign the variables
 								$header = $cta['heading'];
 								$button = $cta['button'];
+								
+								// if header and button is not empty - show 
+								if(!empty ($header) && !empty ($button)) {
+	
 								?>
-									<!-- title -->
-									<h1 class="text-center grey top-space "><?php echo $header; ?></h1>
-									<!-- button hides on mobile -->
-									<a class="button float-center top-space hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
-
-									<!-- button shows on mobile -->
-									<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
-
-
-
-									
+	
+								<!-- LARGE title -->
+								<h1 class="text-center grey top-space"><?php echo $header; ?></h1>
+										
+								<!-- LARGE button -->
+								<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
+	
+	
+								</div> <!-- END front-heading -->
+	
+								<!-- button that shows only on mibile view -->
+								<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
+							
+								<!--END if isn't epmpty  -->
+								<?php } ?>
+	
 								<?php
-
-							endwhile;
-						
-						endif;
-						
-					?>
-
+	
+								// if header is empty but not button- do not show header show button
+								if(empty ($header) && !empty ($button)) { ?>
+	
+								<a class="button float-center top-space hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
+	
+								</div> <!-- END front-heading -->
+	
+								<!-- button that shows only on mibile view -->
+								<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
+	
+								<!-- END if header empty but not button-->
+								<?php	} ?>
+								
+	
+								<?php
+								// if button is empty but not header- show button and do not show header
+								if(empty ($button) && !empty ($header)) { ?>
+	
+								<h1 class="text-center grey top-space"><?php echo $header; ?></h1>
+	
+								<!-- END if button empty but not header-->
+								<?php } ?>
+	
+								<?php
+	
+								endwhile;
+	
+								endif;
+	
+								?>
+								
+							<!-- END ACF - CTA -->
 				</div>
 			
 		</main><!-- #main -->
