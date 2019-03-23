@@ -25,14 +25,16 @@ get_header();
 
     <!-- BANNER AND TOP DESCRIPTION -->    
 <div class="grid-x grid-margin-x">
-        <!-- banner at top of page -->
+        <!-- section at top of page -->
         <?php 
         if (function_exists('get_field')) {
         $descriptions = get_field('descriptions');
 
+        // pull in the advanced custom field content 
         foreach($descriptions as $description){
             
             $top_desc = $description['top_desc'];
+            //if a top description was provided show it, if not hide it. 
             if (!empty ($top_desc)) {
               
                 ?>
@@ -42,7 +44,7 @@ get_header();
                     <div class="cell small-10 small-offset-1 medium-10 large-centered dividerBar"></div>  
                 <?php 
             }
-
+            //if a program banner image was provided show it, if not hide it. 
             $program_banner = $description['program_banner'];
             if (!empty ($program_banner)) {
                 ?>
@@ -54,9 +56,7 @@ get_header();
             }
         ?>
 
-           
-                
-            
+       
              </div>
     
             
@@ -75,12 +75,14 @@ get_header();
         <div class="grid-x grid-margin-x">
 
         <?php 
-
+            //get the programs acf
             if (function_exists('get_field')) {
                 $programs = get_field('programs');
                 $counter = 0;
                 foreach($programs as $program){
+                   
                     $name = $program['name'];
+                   //if a program name was provided show it, if not hide it. 
                     if (!empty ($name)) {
                         ?> 
                         <!-- Accordion tab title -->
@@ -93,26 +95,33 @@ get_header();
                     } 
                     $description = $program['description'];
                     $program_image = $program['program_image'];
+                    //if a description or image were provided show what was given, hide the ones not provided. 
                     if (!empty ($description) || !empty ($program_image)) {
                         ?>
                             <div class="large-centered columns small-10 coreContent">
                                 <!-- program image -->
                                 <img src="<?php echo $program_image; ?>" alt="" id="<?php echo $counter; ?>" />
+                                <!-- course description -->
                                 <p id="coreDesc">
                                     <?php echo $description; ?>
                                 </p>
                             </div>
                         <?php
                     }
+
                     $button = $program['button'];
                     $cost = $program['cost'];
+
+                    //if button or cost was provided show it, if not hide the ones not provided. 
                     if (!empty ($button) || !empty ($cost)) {
                        ?>
 
                             <div class="large-centered columns small-10 coreContent">
                                 <p>
+                                    <!-- program cost -->
                                     <?php echo $cost; ?>
                                 </p>
+                                <!-- button to go register -->
                                 <button class="button" href="<?php echo $button; ?>">REGISTER NOW</button>    
                             </div> 
                        <?php
@@ -122,15 +131,10 @@ get_header();
 
         ?>
 
-
-                       
-                        
-                        
- 
-
                             <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>                
 
                 <?php
+            // increment for photos
             $counter++;
             }
         }
@@ -142,23 +146,25 @@ get_header();
            
 
             <?php 
+                //get the acf content for the video
+                if (function_exists('get_field')) {
+                $programs = get_field('programs');
 
-    if (function_exists('get_field')) {
-    $programs = get_field('programs');
+                    foreach($programs as $program){
+                        $ytvideo = $program['ytvideo'];
+                        //if a video link was provided show it, if not hide it. 
+                        if (!empty ($ytvideo)) {
+                        ?>
 
-        foreach($programs as $program){
-            $ytvideo = $program['ytvideo'];
-            if (!empty ($ytvideo)) {
-               ?>
-
-                    <div class="grid-x coreContent">
-                        <div class="large-centered columns small-10 progVideo">
-                            <?php echo $ytvideo; ?>
-                        </div>
-                    </div>
-        <?php
+                                <div class="grid-x coreContent">
+                                    <div class="large-centered columns small-10 progVideo">
+                                        <!-- program related video -->
+                                        <?php echo $ytvideo; ?>
+                                    </div>
+                                </div>
+                    <?php
             }
-        ?>
+            ?>
 
         <?php
                 }
