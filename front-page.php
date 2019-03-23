@@ -322,7 +322,7 @@ get_header();
 
 							<!-- if image empty show content  -->
 							<?php if(empty ($image)) { ?>
-								
+
 								<div class="cell large-12 small-11 block_2_text text-left" >
 									<!-- line  -->
 									<div class="line"></div>
@@ -411,7 +411,7 @@ get_header();
 								
 	
 								<?php
-								// if button is empty but not header- show button and do not show header
+								// if button is empty but not header- show button and show header
 								if(empty ($button) && !empty ($header)) { ?>
 	
 									<h1 class="text-center grey top-space"><?php echo $header; ?></h1>
