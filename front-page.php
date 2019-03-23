@@ -14,6 +14,7 @@
 
 // imports the header
 get_header();
+
 ?>
 
 	<div id="primary" class="content-area">
@@ -208,8 +209,10 @@ get_header();
 									$image = $home_page_block_1['image'];
 
 							// if info and image not empty - show 
-							if(!empty ($home_page_block_1) && !empty ($image)) { ?>
+							if(!empty ($home_page_block_1) && !empty ($image)) { 
 							
+							?>
+
 							<div class="grid-x grid-padding-x align-center">
 
 								<div class="cell large-8 medium-12 block_1">	
@@ -262,51 +265,86 @@ get_header();
 							<?php } } ?>
 
 					</div>
+				<!-- END ACF - BLOCK 1 -->
 
 				</div><!-- END block 1-->
 
 				<!-- container for block 2 -->	
 				<div class="grid-container grid-container-padded top-space">	
+					
+					<!-- START ACF - BLOCK 2 -->
 
 					<div class="grid-x grid-padding-x align-center">
 
-						<div class="cell large-4 small-11 block_2_text" >
-							<!-- line  -->
-							<div class="line"></div>
-							
-							<?php if (function_exists('get_field')) {
-
+						
+							<?php 
+							//if there is a acf field get the field 
+							if (function_exists('get_field')) {
+								
+								// get the ACF named home_page_block_1 and name it
 								$home_page_block_2 = get_field('home_page_block_2');
 
 								foreach($home_page_block_2 as $home_page_block_2){
-
+									
+									// assign the variables
 									$title = $home_page_block_2['title'];
 									$info = $home_page_block_2['info'];
 									$link_url = $home_page_block_2['link_url'];
 									$image = $home_page_block_2['image'];	
-							?>
-							<!-- title -->
-							<p><strong><?php echo$title; ?></strong></p>
 
-							<!-- information -->
-							<p><?php echo$info; ?></p>
-
-							<!-- link -->
-							<p><a  href="<?php echo $link_url['link']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
 							
-							<?php
-
-								}
-							}
-
 							?>
+							 <!-- if info and image not empty - show  -->
+							<?php if(!empty ($home_page_block_2) && !empty ($image)) {  ?>
 
-						</div>
-						
-						<div class="cell large-8 small-12 block_2">							
-							<!-- image-->
-							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-						</div>
+							<div class="cell large-4 small-11 block_2_text text-right" >
+								<!-- line  -->
+								<div class="line"></div>
+								
+								<!-- title -->
+								<p><strong><?php echo$title; ?></strong></p>
+
+								<!-- information -->
+								<p><?php echo$info; ?></p>
+
+								<!-- link -->
+								<p><a  href="<?php echo $link_url['link']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
+							
+							</div> <!-- END block_2_text -->
+							
+							<div class="cell large-8 small-12 block_2">							
+								<!-- image-->
+								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+							</div> <!-- END block_2 image-->
+
+							<!-- END if block_2 not empty -->
+							<?php } ?> 
+
+							<!-- if image empty show content  -->
+							<?php if(empty ($image)) { ?>
+								
+								<div class="cell large-12 small-11 block_2_text text-left" >
+									<!-- line  -->
+									<div class="line"></div>
+									
+									<!-- title -->
+									<h3 class="text-center"><?php echo$title; ?></strong></h3>
+
+									<!-- information -->
+									<p><?php echo$info; ?></p>
+
+									<!-- link -->
+									<p><a  href="<?php echo $link_url['link']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
+								
+								</div> <!-- END block_2_text -->
+
+							<!-- END if image empty -->
+							<?php } ?> 
+
+
+							<!-- END if function and foreach -->
+							<?php } } ?>
+
 					</div>
 
 				</div><!-- END block 2-->
