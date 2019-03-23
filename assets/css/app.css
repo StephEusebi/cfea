@@ -185,6 +185,15 @@ h1 {
     align-self: center;
 }
 
+/* banner if there is no image inside banner */
+.banner-box {
+    position: relative;
+    height: 14rem;
+    width: 100vw;
+    background: #3b3b3b;
+    align-self: center;
+}
+
 /* main banner */
 #canfitBanner {
 	width: 82%;

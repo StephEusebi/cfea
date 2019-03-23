@@ -19,25 +19,39 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<!-- top container-->
+			<!-- main container-->
 			<div class="grid-x">				
 
 				<!-- group of top banner -->
 				<div class="grid-x container-banner">
 
+				<!-- START ACF - BANNER_IMAGE -->
+				
+				<!-- if there is a acf field get the fiels -->
 				<?php if (function_exists('get_field')) {
 
+				// get the ACF named banner_image and name it
 				$image = get_field('banner_image');
 
-				$image = $image['image'];	
+				// asign the image variable with the image
+				$image = $image['image'];
+
+				// if image is not empty - show image
+				if(!empty ($image)) {
 
 				?>
-
 				<!-- front banner -->
 				<img id="front-banner" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
-				<?php } ?>
+				<?php }
+				// if empty -show civ box
+				 if(empty ($image)) {
+					 ?><div class="banner-box"></div> <?php
+				 }
+				
+				} ?>
 
+				<!-- END ACF - BANNER_IMAGE -->
 
 				<!-- TOP container holding h1 and button -->
 				<div class="row large-7 small-11 medium-11 front-heading">
