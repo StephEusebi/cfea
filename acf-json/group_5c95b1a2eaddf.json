@@ -34,8 +34,8 @@
                     "sub_fields": [
                         {
                             "key": "field_5c95b1a31e08c",
-                            "label": "program logo",
-                            "name": "program_logo",
+                            "label": "program banner",
+                            "name": "program_banner",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -679,5 +679,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553315458
+    "modified": 1553315788
 }
