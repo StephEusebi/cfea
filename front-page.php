@@ -26,30 +26,33 @@ get_header();
 				<div class="grid-x container-banner">
 
 				<!-- START ACF - BANNER_IMAGE -->
+				<?php 
 
-				<!-- if there is a acf field get the field -->
-				<?php if (function_exists('get_field')) {
+					//if there is a acf field get the field 
+					if (function_exists('get_field')) {
 
-				// get the ACF named banner_image and name it
-				$image = get_field('banner_image');
+					// get the ACF named banner_image and name it
+					$image = get_field('banner_image');
 
-				// asign the image variable with the image
-				$image = $image['image'];
+					// assign the image variable with the image
+					$image = $image['image'];
 
-				// if image is not empty - show image
-				if(!empty ($image)) {
+					// if image is not empty - show image
+					if(!empty ($image)) {
 
 				?>
 				<!-- front banner -->
 				<img id="front-banner" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
 				<?php }
-				// if empty -show civ box
-				 if(empty ($image)) {
-					 ?><div class="banner-box"></div> <?php
-				 } 
-				
-				} ?>
+					// if empty -show civ box
+					if(empty ($image)) {
+				?>
+					<!-- empty div with styles -->
+					 <div class="banner-box"></div> 
+
+					 <!-- END if fucntion and if empty -->
+					 <?php } } ?>
 
 				<!-- END ACF - BANNER_IMAGE -->
 
@@ -58,25 +61,53 @@ get_header();
 				
 				<!-- START ACF - CTA -->
 				<?php 
-    
+					
+					// checking to see if the field ctas has rows of data to loop over
 					if( have_rows('ctas') ):
 					
 						while( have_rows('ctas') ) : the_row();
-							
+
+							// getting the first cta
 							$cta = get_sub_field('cta_1');
 
+							// assign the variables
 							$header = $cta['heading'];
 							$button = $cta['button'];
 
+							// if header and button is not empty - show 
+							if(!empty ($header) && !empty ($button)) {
+
 							?>
 
-					<!-- LARGE title -->
-					<h2 class="text-center"><?php echo $header; ?></h2>
+							<!-- LARGE title -->
+							<h2 class="text-center"><?php echo $header; ?></h2>
+									
+							<!-- LARGE button -->
+							<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
 							
-					<!-- LARGE button -->
-					<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
+							<!--END if isn't epmpty  -->
+							<?php } ?>
 
+							<?php
+							// if header is empty but not button- do not show header show button
+							if(empty ($header) && !empty ($button)) { ?>
 
+							<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><h4><?php echo $button['title']; ?></h4></a>
+
+							<!-- END if header empty but not button-->
+							<?php	} ?>
+							
+
+							<?php
+							// if button is empty but not header- show button and do not show header
+							if(empty ($button) && !empty ($header)) { ?>
+
+							<h2 class="text-center"><?php echo $header; ?></h2>
+
+							<!-- END if button empty but not header-->
+							<?php } ?>
+			
+				<!-- END ACF - CTA -->
 				</div>
 
 				<!-- button that shows only on mibile view -->
@@ -94,14 +125,18 @@ get_header();
 
 				<!-- logos and logo container -->
 				<div class="cell logo-container">
-				
+
+				<!-- START ACF - LOGOS -->
 					<?php 
 
+					//if there is a acf field get the field 
 					if(function_exists('get_field')) {
+
 						$logos = get_field('logos');
-		
+
 						foreach($logos as $logo){
-			
+
+							// assign the variables
 							$logo_image = $logo['logo_image'];
 							$logo_url = $logo['logo_url'];
 							
@@ -127,14 +162,11 @@ get_header();
 							<!-- END if a tag is empty empty -->	
 							<?php } ?>
 							
+							<!-- END if function and foreacher -->
+							<?php } } ?>
 
-							<?php
-							
-						}
+					<!-- END ACF - LOGOS -->
 
-					}
-				?>
-							
 				</div>  <!-- END logo-container -->
 				
 
@@ -162,12 +194,16 @@ get_header();
 						</div>
 
 						<div class="cell large-4 small-11" >
+
 							<!-- line  -->
 							<div class="line"></div>
+
 							<!-- title -->
 							<p><strong><?php echo $title; ?></strong></p>
+
 							<!-- info -->
 							<p><?php echo $info; ?></p>
+
 							<!-- link -->
 							<p><a  href="<?php echo $link_url['link']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
 
@@ -205,8 +241,10 @@ get_header();
 							?>
 							<!-- title -->
 							<p><strong><?php echo$title; ?></strong></p>
+
 							<!-- information -->
 							<p><?php echo$info; ?></p>
+
 							<!-- link -->
 							<p><a  href="<?php echo $link_url['link']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
 							
