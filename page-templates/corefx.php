@@ -73,7 +73,7 @@ get_header();
     <!-- END OF BANNER AND TOP DESCRIPTION -->
 
 
-        <div class="grid-x grid-margin-x">
+        <div class="grid-x grid-margin-x boxStyles">
 
         <?php 
             //get the programs acf

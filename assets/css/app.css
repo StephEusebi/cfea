@@ -430,6 +430,25 @@ button.wsf-button {
 	padding-top: 25px;
 }
 
+.boxStyles p {
+    background-color: lightgrey;
+    padding: 15px;
+    margin-top: -8px;
+}
+
+.innerBoxStyle  {
+    background-color: lightgrey;
+  
+}
+
+.boxStyles h2 {
+    border-top-right-radius: 8px;
+    background-color: grey;
+    border-top-left-radius: 8px;
+    text-align: center;
+    padding-left: 15px;
+}
+
 
 /* COREFX ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -469,7 +488,7 @@ button.wsf-button {
 #coreDesc {
     text-align: left;
     /* float: left; */
-    width: 950px;
+    width: 970px;
 }
 
 @media screen and (max-width: 39.9375em) {
