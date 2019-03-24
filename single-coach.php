@@ -25,23 +25,36 @@ get_header();
 
 				// Coaches Query
 				$coaches = new WP_Query($args);
-				
+
 				// if has posts
 				if($coaches->have_posts() ){ ?>
 
-
-
 						<h2 class="text-center"><?php the_title(); ?></h2>
 						<div class="grid-x top-space coach-container">
-						<div class="large-5">
 
-						<!-- hold the featured image -->
-						<div class="coach-image"><?php the_post_thumbnail(); ?></div>
-				
-						</div>
-						<div class="large-6 small-11">
+						
+						
 
-						<!-- if the post has content have content -->
+						 <!-- if featured image is not empty - show -->
+						 <?php if(!empty (has_post_thumbnail() ) ) { ?>
+
+							<div class="large-5">
+								<!-- palce the featured image -->
+								<?php the_post_thumbnail(); ?>
+
+							</div>
+
+							<!-- set the class of the next div -->
+							<div class="large-6 small-11">
+
+						<!-- END if featured image is not empty -->
+						 <?php } else { ?> 
+
+							<!-- set the class of the next div  -->
+							<div class="large-10 small-11"> <?php  } ?>
+						
+
+						<!-- if the post has content -->
 						<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 							// getting the content
 							the_content();
@@ -59,6 +72,9 @@ get_header();
 									$phone_number = $coach_contacts['phone_number'];
 									$location = $coach_contacts['location'];
 									$email = $coach_contacts['email'];
+
+								// if conact info is not empty - show 
+								if(!empty ($coach_contact) ) {
 								
 							?>
 							<!-- location -->
@@ -67,18 +83,17 @@ get_header();
 							<p><strong>Email:</strong> <?php echo $email; ?></p>
 							<!-- phone number -->
 							<p><strong>Phone Number:</strong> <?php echo $phone_number; ?></p>
-							
-							<?php
+								
+							<!-- ends if contact info not empty -->
+							<?php }  ?>
 
-								}
-							}
-
-							?>
+							<!-- ends if fuction excists and foreach -->
+							<?php } } ?>
 						<!-- cta button -->
 						<div class="button coach-button" href="/calendar/"><h5>Train with me!</h5></div>
 						
 						<?php
-
+						
 					}
 
 					wp_reset_postdata();
