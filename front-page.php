@@ -432,42 +432,50 @@ get_header();
 								
 							<!-- END ACF - CTA -->
 				</div>
-
 				<!-- post cards -->
 				<div class="grid-container top-space">
-					<div class="grid-x post-container">
+				<div class="grid-x post-container">
+				
+				<?php
+
+				// Coaches Query
+				$the_query_choach = new WP_Query(  array( 'post_type' => 'coach' )  );
+
+				// The Loop
+				if ( $the_query_choach->have_posts() ) {
+					
+					while ( $the_query_choach->have_posts() ) {
+						$the_query_choach->the_post();
+					
+				?>
+				
 						<div class="cell post">
 							<div class="card">
 								<img src="http://placekitten.com/g/400/200">
 								<div class="card-section">
-									<p>This is a simple card with an image.</p>
+									<?php
+
+									echo '<p>' . get_the_title() . '</p>';
+										?>
+
 									<p>This is a simple card with an image.</p>
 									<p>This is a simple card with an image.</p>
 								</div>
 							</div>
 						</div>
-						<div class="cell post">
-							<div class="card">
-								<img src="http://placekitten.com/g/400/200">
-								<div class="card-section">
-									<p>This is a simple card with an image.</p>
-									<p>This is a simple card with an image.</p>
-									<p>This is a simple card with an image.</p>
-								</div>
-							</div>
-						</div>
-						<div class="cell post">
-							<div class="card">
-								<img src="http://placekitten.com/g/400/200">
-								<div class="card-section">
-									<p>This is a simple card with an image.</p>
-									<p>This is a simple card with an image.</p>
-									<p>This is a simple card with an image.</p>
-								</div>
-							</div>
-						</div>
+
+						<?php
+						}
+						
+						/* Restore original Post Data */
+						wp_reset_postdata();
+					} else {
+						// no posts found
+					} ?>
 					</div>
-				</div>			
+				</div>	
+							
+
 		</main><!-- #main -->
 
 	</div><!-- #primary -->
