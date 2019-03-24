@@ -104,7 +104,7 @@
 						}
 					?>
 					<!-- &copy does the copyright symbol, echo the date for the copyright, add cfea at the end -->
-					<p>&copy;<?php echo date('Y');?> CFEA</p>
+					<p class="copyRightText">&copy;<?php echo date('Y');?> CFEA</p>
 				</div><!-- closes the social media div -->
 			</div><!-- closes the main footer div -->
 		</div><!-- closes the grid-x div -->
