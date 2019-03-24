@@ -32,7 +32,7 @@ get_header();
 					//if there is a acf field get the field 
 					if (function_exists('get_field')) {
 
-					// get the ACF named banner_image and name it
+					// get the ACF named banner_image and declare it
 					$image = get_field('banner_image');
 
 					// assign the image variable with the image
@@ -197,7 +197,7 @@ get_header();
 						//if there is a acf field get the field 
 						if (function_exists('get_field')) {
 								
-								// get the ACF named home_page_block_1 and name it
+								// get the ACF named home_page_block_1 and declare it
 								$home_page_block_1 = get_field('home_page_block_1');
 
 								foreach($home_page_block_1 as $home_page_block_1){
@@ -265,6 +265,7 @@ get_header();
 							<?php } } ?>
 
 					</div>
+					
 				<!-- END ACF - BLOCK 1 -->
 
 				</div><!-- END block 1-->
@@ -281,7 +282,7 @@ get_header();
 							//if there is a acf field get the field 
 							if (function_exists('get_field')) {
 								
-								// get the ACF named home_page_block_1 and name it
+								// get the ACF named home_page_block_1 and declare it
 								$home_page_block_2 = get_field('home_page_block_2');
 
 								foreach($home_page_block_2 as $home_page_block_2){
@@ -344,7 +345,9 @@ get_header();
 
 							<!-- END if function and foreach -->
 							<?php } } ?>
-
+					
+					<!-- START ACF - BLOCK 2 -->
+					
 					</div>
 
 				</div><!-- END block 2-->
@@ -429,7 +432,80 @@ get_header();
 								
 							<!-- END ACF - CTA -->
 				</div>
-			
+
+				<?php
+				
+				// array of arguments for custom posts query
+				$args = array( 
+					'post_type' => 'coach', 
+					'posts_per_page' => 4,
+					'meta_query' => array(
+						array(
+						'key' => '_thumbnail_id',
+						'compare' => 'EXISTS'
+						)
+					) 
+				);
+				// sets featured image size
+				add_image_size( 'coach-size', 400, 400 ); 
+
+				// Coaches Query
+				$the_query_choach = new WP_Query( $args );
+				
+				// The Loop
+				// checking to see if posts were found - if not found, nothing will display
+				if ( $the_query_choach->have_posts() ) { ?>
+
+					<!-- post cards -->
+					<div class="grid-container top-space">
+					<div class="grid-x post-container">
+
+					<?php
+					// while loop for the posts
+					while ( $the_query_choach->have_posts() ) {
+						$the_query_choach->the_post();
+					
+					?>
+						<!-- cards -->
+						<div class="cell post">
+							<div class="card card-coach">
+								<div class="card-section card-section-coach">
+
+						<?php 
+						
+						// only print out the thumbnail if it actually has one
+						if ( has_post_thumbnail() ) { ?>
+							<!-- getting thumbnail with size and link and title -->
+							 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+									<img src="<?php the_post_thumbnail_url('coach-size'); ?>"/> 
+								</a>
+							<!-- if doesn't have an image -->
+							<?php
+						} else {
+							// do nothing
+						} ?>
+								<!-- if the post has the title -->
+								<a href="<?php the_permalink()?>"><h4><?php echo the_title(); ?></h4></a>
+
+									<!-- if the post has content have content- limit word count to 20 -->
+									<?php  echo wp_trim_words( get_the_content(), 20, '...' ); ?>
+									<a class="coach-learn-more" href="<?php the_permalink()?>"> Learn More</a>
+								</div>
+							</div>
+						</div>
+
+						<?php
+						}
+						
+						// restore original post data
+						wp_reset_postdata();
+					} else {
+						// no posts found
+					} ?>
+					</div>
+				</div>	
+							
+
 		</main><!-- #main -->
 
 	</div><!-- #primary -->

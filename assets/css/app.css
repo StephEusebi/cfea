@@ -285,7 +285,41 @@ h1 {
     }
 }
 
-/* HOME PAGE - ABOUT --------------------------------------------------------------------------------------------------------------------------------------- */
+/* Post - Coaches */
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post {
+    flex: 1 1 200px;
+    display: flex;
+    border: 5px solid white;
+}
+
+.card-coach {
+    align-items: center;
+}
+
+.card-section-coach {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-section-coach h4 {
+    padding-top: 1rem;
+}
+
+.coach-learn-more {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* ABOUT --------------------------------------------------------------------------------------------------------------------------------------- */
 .top-row {
     margin-top: 30px;
 }
