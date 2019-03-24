@@ -41,7 +41,9 @@ get_header();
 
 						<!-- if the post has content have content -->
 						<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+						
 							the_content();
+
 							endwhile; else: endif;  ?>
 
 						<?php if (function_exists('get_field')) {

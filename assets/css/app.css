@@ -294,6 +294,7 @@ h1 {
 
 .post {
     flex: 1 1 200px;
+    display: flex;
 }
 
 .card-coach {
@@ -303,7 +304,17 @@ h1 {
 .card-section-coach {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.card-section-coach h4 {
+    padding-top: 1rem;
+}
+
+.coach-learn-more {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
 }
 
 

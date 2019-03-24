@@ -470,45 +470,24 @@ get_header();
 								<div class="card-section card-section-coach">
 
 						<?php 
-
-						if ( has_post_thumbnail() ) { // only print out the thumbnail if it actually has one
-
-							the_post_thumbnail( 'coach-size' );
-
+						
+						// only print out the thumbnail if it actually has one
+						if ( has_post_thumbnail() ) { ?>
+							<!-- getting thumbnail with size and link and title -->
+							 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+									<img src="<?php the_post_thumbnail_url('coach-size'); ?>"/> 
+								</a>
+							<!-- if doesn't have an image -->
+							<?php
 						} else {
-							echo '<p>this post does not have a featured image</p>';
+							// do nothing
 						} ?>
-								
+								<!-- if the post has the title -->
+								<h4><?php echo the_title(); ?></h4>
 
-									<?php echo '<h4>' . get_the_title() . '</h4>';?>
-
-
-				<!-- START ACF - coach -->
-				<?php 
-
-					//if there is a acf field get the field 
-					if (function_exists('get_field')) {
-
-					// get the ACF named coach and name it
-					$coach_contact = get_field('coach_contact');
-
-					foreach($coach_contact as $coach_contacts){
-
-						// assign variables
-						$phone_number = $coach_contacts['phone_number'];
-						$location = $coach_contacts['location'];
-						$email = $coach_contacts['email'];
-
-					// if contact contant is not empty - show contact contant
-					if(!empty ($coach_contact)) {
-
-					?>
-					<!-- front banner -->
-					<p><?php echo $phone_number; ?></p>
-
-				<!-- END if fucntion and if empty  and foreach-->
-				<?php } } } ?>
-
+									<!-- if the post has content have content- limit word count to 30 -->
+									<?php  echo wp_trim_words( get_the_content(), 30, '...' ); ?>
+									<a class="coach-learn-more" href="<?php the_permalink()?>"> Learn More</a>
 								</div>
 							</div>
 						</div>
