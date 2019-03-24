@@ -472,6 +472,12 @@ button.wsf-button {
     width: 950px;
 }
 
+@media screen and (max-width: 39.9375em) {
+    #coreDesc {
+        width: 300px;
+    }
+}
+
 .dividerBar {
     border-bottom: 2px solid black;
     margin-top: 25px;

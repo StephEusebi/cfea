@@ -100,9 +100,9 @@ get_header();
                     if (!empty ($description) || !empty ($program_image)) {
                         ?>
                       
-                            <div class="large-centered columns large-offset-1 coreContent">
+                            <div class="large-centered columns large-offset-1 small-10 coreContent">
                                 <img align="right" src="<?php echo $program_image; ?>" alt="" class="large-3 progImages1" id="<?php echo $counter; ?>" />
-                                <p id="coreDesc" class="large-7">
+                                <p id="coreDesc" class="large-7 small-10">
                                     <?php echo $description; ?>
                                 </p>
                             </div>
@@ -154,7 +154,7 @@ get_header();
                         ?>
 
                                 <div class="grid-x coreContent">
-                                    <div class="large-centered columns large-offset-2 small-10 progVideo">
+                                    <div class="large-centered columns large-offset-2 small-10 small-offset-1 progVideo">
                                         <!-- program related video -->
                                         <?php echo $ytvideo; ?>
                                     </div>
