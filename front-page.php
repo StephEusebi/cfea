@@ -265,6 +265,7 @@ get_header();
 							<?php } } ?>
 
 					</div>
+					
 				<!-- END ACF - BLOCK 1 -->
 
 				</div><!-- END block 1-->
@@ -344,7 +345,9 @@ get_header();
 
 							<!-- END if function and foreach -->
 							<?php } } ?>
-
+					
+					<!-- START ACF - BLOCK 2 -->
+					
 					</div>
 
 				</div><!-- END block 2-->
