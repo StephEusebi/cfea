@@ -732,6 +732,11 @@ footer{
     font-size:.9em;
     margin-bottom:0;
 }
+
+.copyRightText{
+	font-family: 'Lato', sans-serif;
+    font-size:.9em;
+}
 /* controls the social media icons */
 .socialMediaIcons{
     flex-grow: 1;

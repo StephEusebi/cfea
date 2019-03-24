@@ -103,20 +103,8 @@
 							<?php
 						}
 					?>
-					<!-- customizer for the copyright -->
-					<?php
-						if ( get_theme_mod( 'cfea_footer_copyright' ) ) : ?>
-						<p><i class="far fa-copyright"></i><?php echo get_theme_mod( 'cfea_footer_copyright' ); 
-					?>
-						</p>
-					<?php
-						else :
-					?>
-						<!-- shows up if no copyright information is put in the footer customizer -->
-						<p>CFEA Copyright</p>
-					<?php 
-						endif; 
-					?>
+					<!-- &copy does the copyright symbol, echo the date for the copyright, add cfea at the end -->
+					<p class="copyRightText">&copy;<?php echo date('Y');?> CFEA</p>
 				</div><!-- closes the social media div -->
 			</div><!-- closes the main footer div -->
 		</div><!-- closes the grid-x div -->
