@@ -32,7 +32,7 @@ get_header();
 					//if there is a acf field get the field 
 					if (function_exists('get_field')) {
 
-					// get the ACF named banner_image and name it
+					// get the ACF named banner_image and declare it
 					$image = get_field('banner_image');
 
 					// assign the image variable with the image
@@ -197,7 +197,7 @@ get_header();
 						//if there is a acf field get the field 
 						if (function_exists('get_field')) {
 								
-								// get the ACF named home_page_block_1 and name it
+								// get the ACF named home_page_block_1 and declare it
 								$home_page_block_1 = get_field('home_page_block_1');
 
 								foreach($home_page_block_1 as $home_page_block_1){
@@ -282,7 +282,7 @@ get_header();
 							//if there is a acf field get the field 
 							if (function_exists('get_field')) {
 								
-								// get the ACF named home_page_block_1 and name it
+								// get the ACF named home_page_block_1 and declare it
 								$home_page_block_2 = get_field('home_page_block_2');
 
 								foreach($home_page_block_2 as $home_page_block_2){
@@ -435,7 +435,7 @@ get_header();
 
 				<?php
 				
-
+				// array of arguments for custom posts query
 				$args = array( 
 					'post_type' => 'coach', 
 					'posts_per_page' => 4,
@@ -487,7 +487,7 @@ get_header();
 								<!-- if the post has the title -->
 								<a href="<?php the_permalink()?>"><h4><?php echo the_title(); ?></h4></a>
 
-									<!-- if the post has content have content- limit word count to 30 -->
+									<!-- if the post has content have content- limit word count to 20 -->
 									<?php  echo wp_trim_words( get_the_content(), 20, '...' ); ?>
 									<a class="coach-learn-more" href="<?php the_permalink()?>"> Learn More</a>
 								</div>
@@ -497,7 +497,7 @@ get_header();
 						<?php
 						}
 						
-						/* Restore original Post Data */
+						// restore original post data
 						wp_reset_postdata();
 					} else {
 						// no posts found
