@@ -432,7 +432,42 @@ get_header();
 								
 							<!-- END ACF - CTA -->
 				</div>
-			
+
+				<!-- post cards -->
+				<div class="grid-container top-space">
+					<div class="grid-x post-container">
+						<div class="cell post">
+							<div class="card">
+								<img src="http://placekitten.com/g/400/200">
+								<div class="card-section">
+									<p>This is a simple card with an image.</p>
+									<p>This is a simple card with an image.</p>
+									<p>This is a simple card with an image.</p>
+								</div>
+							</div>
+						</div>
+						<div class="cell post">
+							<div class="card">
+								<img src="http://placekitten.com/g/400/200">
+								<div class="card-section">
+									<p>This is a simple card with an image.</p>
+									<p>This is a simple card with an image.</p>
+									<p>This is a simple card with an image.</p>
+								</div>
+							</div>
+						</div>
+						<div class="cell post">
+							<div class="card">
+								<img src="http://placekitten.com/g/400/200">
+								<div class="card-section">
+									<p>This is a simple card with an image.</p>
+									<p>This is a simple card with an image.</p>
+									<p>This is a simple card with an image.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			
 		</main><!-- #main -->
 
 	</div><!-- #primary -->
