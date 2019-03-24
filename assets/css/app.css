@@ -323,7 +323,6 @@ button.wsf-button {
     .title-bar {
         display: none;
     }
-
     
 }
 
@@ -434,9 +433,16 @@ button.wsf-button {
 
 /* COREFX ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
+.progImages1 {
+    width: 200px;
+}
+
+.progCost {
+    text-align: center;
+}
+
 .coreContent {
     margin: 0 auto;
-    
 }
 
 #coreProgram1 img {

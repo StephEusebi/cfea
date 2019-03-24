@@ -89,7 +89,7 @@ get_header();
                     if (!empty ($name)) {
                         ?> 
                         <!-- Accordion tab title -->
-                        <div class="large-centered columns small-10 coreContent">
+                        <div class="large-centered large-offset-1 columns small-10 coreContent">
                             <h2>
                                 <?php echo $name; ?>
                             </h2>
@@ -101,14 +101,15 @@ get_header();
                     //if a description or image were provided show what was given, hide the ones not provided. 
                     if (!empty ($description) || !empty ($program_image)) {
                         ?>
-                            <div class="large-centered columns small-10 coreContent">
-                                <!-- program image -->
-                                <img src="<?php echo $program_image; ?>" alt="" id="<?php echo $counter; ?>" />
-                                <!-- course description -->
-                                <p id="coreDesc">
+                      
+                            <div class="large-centered columns large-offset-1 coreContent">
+                                <img align="right" src="<?php echo $program_image; ?>" alt="" class="large-3 progImages1" id="<?php echo $counter; ?>" />
+                                <p id="coreDesc" class="large-7">
                                     <?php echo $description; ?>
                                 </p>
                             </div>
+                   
+
                         <?php
                     }
 
@@ -119,8 +120,8 @@ get_header();
                     if (!empty ($button) || !empty ($cost)) {
                        ?>
 
-                            <div class="large-centered columns small-10 coreContent">
-                                <p>
+                            <div class="large-centered columns large-offset-4 small-10 coreContent">
+                                <p class="cost">
                                     <!-- program cost -->
                                     <?php echo $cost; ?>
                                 </p>
