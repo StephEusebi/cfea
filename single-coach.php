@@ -31,10 +31,7 @@ get_header();
 
 						<h2 class="text-center"><?php the_title(); ?></h2>
 						<div class="grid-x top-space coach-container">
-
-						
-						
-
+							
 						 <!-- if featured image is not empty - show -->
 						 <?php if(!empty (has_post_thumbnail() ) ) { ?>
 
