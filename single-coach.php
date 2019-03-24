@@ -25,13 +25,10 @@ get_header();
 
 				$coaches = new WP_Query($args);
 
-				if($coaches->have_posts() ){
+				if($coaches->have_posts() ){ ?>
 
-					while($coaches->have_posts() ) {
-						$coaches-> the_post();
 
-						?>
-						
+
 						<h2 class="text-center"><?php the_title(); ?></h2>
 						<div class="grid-x top-space coach-container">
 						<div class="large-5">
@@ -41,7 +38,11 @@ get_header();
 				
 						</div>
 						<div class="large-6 small-11">
-						<?php the_content(); ?>
+
+						<!-- if the post has content have content -->
+						<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+							the_content();
+							endwhile; else: endif;  ?>
 
 						<?php if (function_exists('get_field')) {
 								$coach_contact = get_field('coach_contact');
@@ -71,7 +72,7 @@ get_header();
 					}
 
 					wp_reset_postdata();
-				}
+				
 
 				?>
 				</div>
