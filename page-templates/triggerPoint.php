@@ -126,11 +126,12 @@ get_header();
                                 <!-- button to go register -->
                                 <button class="button" href="<?php echo $button; ?>">REGISTER NOW</button>    
                             </div> 
+                            <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>    
                        <?php
                     }
         ?>
 
-                            <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>                
+                                       
 
                 <?php
             // increment for photos
