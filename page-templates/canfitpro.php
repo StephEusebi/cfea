@@ -19,14 +19,12 @@
 get_header();
 ?>
 
-<div class="grid-container">
+    <div class="grid-container">
 
-
-
-    <!-- BANNER AND TOP DESCRIPTION -->    
-<div class="grid-x grid-margin-x">
-        <!-- section at top of page -->
-        <?php 
+        <!-- BANNER AND TOP DESCRIPTION -->
+        <div class="grid-x grid-margin-x">
+            <!-- section at top of page -->
+            <?php 
         if (function_exists('get_field')) {
         $descriptions = get_field('descriptions');
 
@@ -37,64 +35,62 @@ get_header();
                         $program_banner = $description['program_banner'];
                         if (!empty ($program_banner)) {
                             ?>
-                            <!-- banner at top of page -->
-                                <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10">
-                                    <img src="<?php echo $program_banner; ?>" alt="corefx banner" id="corefxBanner" class="large-centered columns coreContent" />
-                                </div>
-                            <?php 
+                <!-- banner at top of page -->
+                <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10">
+                    <img src="<?php echo $program_banner; ?>" alt="corefx banner" id="corefxBanner" class="large-centered columns coreContent" />
+                </div>
+                <?php 
                         }
                     ?>
 
                     <?php
-            
+
             $top_desc = $description['top_desc'];
             //if a top description was provided show it, if not hide it. 
             if (!empty ($top_desc)) {
-              
+
                 ?>
-          
-                           <!-- program description -->
-                    <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10 progDesc"><?php echo $top_desc; ?></div>
-                    <div class="cell small-10 small-offset-1 medium-10 large-centered dividerBar"></div>  
-                <?php 
+
+                        <!-- program description -->
+                        <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10 progDesc">
+                            <?php echo $top_desc; ?>
+                        </div>
+                        <div class="cell small-10 small-offset-1 medium-10 large-centered dividerBar"></div>
+                        <?php 
             }
 
 ?>
-       
-             </div>
-    
-            
-            <?php
-            
+
+        </div>
+
+        <?php
 
         }
     }
 
     ?>
 
-    
-    <!-- END OF BANNER AND TOP DESCRIPTION -->
+            <!-- END OF BANNER AND TOP DESCRIPTION -->
 
+            <div class="grid-x grid-margin-x">
 
-        <div class="grid-x grid-margin-x">
-
-        <?php 
+                <?php 
             //get the programs acf
             if (function_exists('get_field')) {
                 $programs = get_field('programs');
                 $counter = 0;
                 foreach($programs as $program){
-                   
+
                     $name = $program['name'];
                    //if a program name was provided show it, if not hide it. 
                     if (!empty ($name)) {
-                        ?> 
-                        <!-- Accordion tab title -->
-                        <div class="large-centered columns small-10 coreContent">
-                            <h2>
+                        ?>
+                    <!-- Accordion tab title -->
+                    <div class="large-centered columns small-10 coreContent">
+                        <h2>
                                 <?php echo $name; ?>
                             </h2>
-                        </div>
+                    </div>
                     <?php
                     } 
                     $description = $program['description'];
@@ -102,14 +98,14 @@ get_header();
                     //if a description or image were provided show what was given, hide the ones not provided. 
                     if (!empty ($description) || !empty ($program_image)) {
                         ?>
-                            <div class="large-centered columns small-10 coreContent">
-                                <!-- program image -->
-                                <img src="<?php echo $program_image; ?>" alt="" id="<?php echo $counter; ?>" />
-                                <!-- course description -->
-                                <p id="coreDesc">
-                                    <?php echo $description; ?>
-                                </p>
-                            </div>
+                        <div class="large-centered columns small-10 coreContent">
+                            <!-- program image -->
+                            <img src="<?php echo $program_image; ?>" alt="" id="<?php echo $counter; ?>" />
+                            <!-- course description -->
+                            <p id="coreDesc">
+                                <?php echo $description; ?>
+                            </p>
+                        </div>
                         <?php
                     }
 
@@ -126,18 +122,16 @@ get_header();
                                     <?php echo $cost; ?>
                                 </p>
                                 <!-- button to go register -->
-                                <button class="button" href="<?php echo $button; ?>">REGISTER NOW</button>    
-                            </div> 
-                       <?php
+                                <button class="button" href="<?php echo $button; ?>">REGISTER NOW</button>
+                            </div>
+                            <?php
                     }
-            
-              
 
         ?>
 
-                            <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>                
+                                <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>
 
-                <?php
+                                <?php
             // increment for photos
             $counter++;
             }
@@ -145,10 +139,8 @@ get_header();
 
         ?>
 
-        </div>
+            </div>
 
-        
-
-    <?php
+            <?php
 // imports the footer
 get_footer();
