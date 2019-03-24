@@ -23,11 +23,14 @@ get_header();
 		<main id="main" class="site-main">
 
 		<div class="grid-x">
+        <?php while(have_posts()):the_post(); ?>
 			<div class="cell large-12 medium-12 small-12 calendar">
 
+            <?php echo the_content(); ?>
+        
 			</div>
+        <?php endwhile; wp_reset_query(); ?>
 		</div>
-
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
