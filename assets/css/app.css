@@ -684,26 +684,52 @@ button.wsf-button {
 		margin-bottom: 1em;
     }
 
-/* CALENDER */
-
-/* controls the color of the background of selected day */
-.mec-calendar.mec-event-calendar-classic .mec-selected-day { 
-    background-color:#CFCFCF;
-}
-
-.mec-calendar.mec-event-calendar-classic .mec-calendar-events-sec{
-    background-color:#CFCFCF;
-}
-
-/* controls the left padding of the events for that day */
-.mec-calendar .mec-event-article{
-    padding-left:3em !important;
-}
-
-/* controls the color of the text when hovered */
-.mec-calendar.mec-event-calendar-classic .mec-calendar-row dt.mec-has-event a:hover{
-    color:white;
-}
+	/* adds a padding around the content so its not flush to the screen */
+	.calendar{
+		padding:3em;
+	}
+	
+	/* calendar style */
+	
+	/* controls the color of the background of selected day */
+	.mec-calendar.mec-event-calendar-classic .mec-selected-day { 
+		background-color:#CFCFCF;
+	}
+	
+	.mec-calendar.mec-event-calendar-classic .mec-calendar-events-sec{
+		background-color:#CFCFCF;
+	}
+	
+	/* controls the left padding of the events for that day */
+	.mec-calendar .mec-event-article{
+		padding-left:3em !important;
+	}
+	
+	/* controls the color of the text when hovered */
+	.mec-calendar.mec-event-calendar-classic .mec-calendar-row dt.mec-has-event a:hover{
+		color:white !important;
+	}
+	
+	.mec-calendar.mec-event-calendar-classic dt.mec-selected-day:hover{
+		color: white !important;
+	}
+	
+	.mec-wrap .mec-event-countdown-style1 .mec-event-countdown-part3{
+		background-color: white;
+	}
+	
+	.mec-event-calendar-classic .mec-calendar-side .mec-calendar-table{
+		min-height: 0;
+	}
+	
+	.mec-wrap .mec-event-countdown-style1 .mec-event-countdown-part2:after{
+		content: none;
+	}
+	
+	.mec-wrap{
+		display:flex;
+		justify-content: center;
+	}
 
 
 /* FOOTER ----------------------------------------------------------------------------------------------------------------------------------------- */

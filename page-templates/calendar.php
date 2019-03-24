@@ -23,16 +23,13 @@ get_header();
         <main id="main" class="site-main">
 
 		<div class="grid-x">
+        <?php while(have_posts()):the_post(); ?>
 			<div class="cell large-12 medium-12 small-12 calendar">
-				<?php
-                // shortcode for erins vesion and server version
-                    // echo do_shortcode('[MEC id="270"][MEC id="277"]');
 
-                    // shortcode for steph's local copy 
-                    echo do_shortcode('[MEC id="356"][MEC id="363"]');
-
-				?>
+            <?php echo the_content(); ?>
+        
 			</div>
+        <?php endwhile; wp_reset_query(); ?>
 		</div>
 
         </main>
