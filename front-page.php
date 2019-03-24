@@ -442,7 +442,7 @@ get_header();
 
 				$args = array( 
 					'post_type' => 'coach', 
-					'posts_per_page' => 3,
+					'posts_per_page' => 4,
 					'meta_query' => array(
 						array(
 						'key' => '_thumbnail_id',
@@ -452,7 +452,7 @@ get_header();
 				);
 				// sets featured image size
 				add_image_size( 'coach-size', 400, 400 ); 
-				
+
 				// Coaches Query
 				$the_query_choach = new WP_Query( $args );
 				
@@ -466,8 +466,8 @@ get_header();
 				?>
 						<!-- cards -->
 						<div class="cell post">
-							<div class="card">
-								<div class="card-section">
+							<div class="card card-coach">
+								<div class="card-section card-section-coach">
 
 						<?php 
 
@@ -481,10 +481,34 @@ get_header();
 								
 
 									<?php echo '<h4>' . get_the_title() . '</h4>';?>
-										
 
-									<p>This is a simple card with an image.</p>
-									<p>This is a simple card with an image.</p>
+
+				<!-- START ACF - coach -->
+				<?php 
+
+					//if there is a acf field get the field 
+					if (function_exists('get_field')) {
+
+					// get the ACF named coach and name it
+					$coach_contact = get_field('coach_contact');
+
+					foreach($coach_contact as $coach_contacts){
+
+						// assign variables
+						$phone_number = $coach_contacts['phone_number'];
+						$location = $coach_contacts['location'];
+						$email = $coach_contacts['email'];
+
+					// if contact contant is not empty - show contact contant
+					if(!empty ($coach_contact)) {
+
+					?>
+					<!-- front banner -->
+					<p><?php echo $phone_number; ?></p>
+
+				<!-- END if fucntion and if empty  and foreach-->
+				<?php } } } ?>
+
 								</div>
 							</div>
 						</div>

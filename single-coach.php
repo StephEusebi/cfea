@@ -52,10 +52,10 @@ get_header();
 									$email = $coach_contacts['email'];
 								
 							?>
-							<p><strong>Location:</strong> <?php echo$location; ?></p>
+							<p><strong>Location:</strong> <?php echo $location; ?></p>
 							
-							<p><strong>Email:</strong> <?php echo$email; ?></p>
-							<p><strong>Phone Number:</strong> <?php echo$phone_number; ?></p>
+							<p><strong>Email:</strong> <?php echo $email; ?></p>
+							<p><strong>Phone Number:</strong> <?php echo $phone_number; ?></p>
 							
 							<?php
 
