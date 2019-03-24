@@ -47,9 +47,9 @@
     "location": [
         [
             {
-                "param": "page_template",
+                "param": "page_type",
                 "operator": "==",
-                "value": "default"
+                "value": "front_page"
             }
         ]
     ],
@@ -61,5 +61,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553351235
+    "modified": 1553469547
 }
