@@ -29,7 +29,7 @@
 
 	<header id="masthead" class="site-header">
 	<div class="grid-x">
-          <div class="cell small-12 medium-12 large-6 logoDiv">
+          <div class="cell small-12 medium-12 large-3 large-offset-2 logoDiv">
 		<!-- Logo Image -->
 		<?php
 // Display the Custom Logo
@@ -45,7 +45,7 @@ if (!has_custom_logo()) {
 
 		  </div>
 		  <!--Menu (thats opens to accordion)-->
-          <div class="cell small-12 medium-12 large-6 NavText">
+          <div class="cell small-12 medium-12 large-7 NavText">
 		
 			<div class="title-bar Nav" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
   			<button class="menu-icon" type="button" data-toggle></button>

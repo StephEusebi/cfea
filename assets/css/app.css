@@ -16,6 +16,14 @@ h1 {
 	font-family: 'Staatliches', cursive;
 }
 
+/* CONTACT PAGE */
+
+.contactUsTitle {
+    text-align: center;
+    background-color: none;
+}
+
+
 .logo1 {
 	width: 85px;
 	margin: 7px;
@@ -30,54 +38,46 @@ h1 {
 	background-color: #494747;
 }
 
-.menu .is-active>a {
+.menu .is-active > a {
 	background-color: #fff !important;
-	color: #bb0a1e;
+    color: #bb0a1e;
 }
 
 .menu li {
-	list-style: none;
+    list-style: none;
 }
 
 .is-dropdown-submenu-parent.opens-right>.is-dropdown-submenu {
 	margin-top: 40px;
-	right: auto;
-	left: -10px;
-	border-top: 1px solid#aa2527;
+    left: -10px;
+    border-top: 1px solid#aa2527;
 	border-left: none;
 	border-right: none;
-	border-bottom: none;
-	font-size: 10pt;
-	width: 50px;
+    border-bottom: none;
+    font-size: 11pt;
+
+}
+.sub-menu {
+    display:none
 }
 
 .dropdown .is-dropdown-submenu a {
-	padding: .4rem .2rem;
+    padding: .4rem .2rem;
 }
 
 .is-dropdown-submenu {
-	position: absolute;
-	top: 0;
-	left: 100%;
-	z-index: 1;
-	display: none;
-	min-width: 90px;
-	border: 1px solid #cacaca;
+    min-width: 90px;
+    max-width: 90px;
 }
-     
-.entry-title {
-		margin-top: 70px;
-		text-align: center;
-    }
 
-    .title-bar {
+.title-bar {
         display: none;
     }
-    
+
 
 /* COLOR CLASSES ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
-.blue {
+.grey {
 	color: #494747;
 }
 
@@ -87,10 +87,6 @@ h1 {
 
 .red {
 	color: #901f21;
-}
-
-.pink {
-	background-color: #0E425D;
 }
 
 
@@ -107,11 +103,11 @@ h1 {
 
 /* BUTTON STYLE -------------------------------------------------------------------------------------------------------------------------------------------- */
 
-.button {
+.button, .button.primary {
 	background-color: #bb0a1e;
 	color: #fff;
 	border-radius: 0.3rem;
-	width: 20rem;
+    width: 20rem;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -119,7 +115,7 @@ h1 {
 	margin-bottom: 0;
 }
 
-.button:hover {
+.button:hover, .button.primary:hover, .button:focus, .button.primary:focus {
 	background-color: #aa2527;
 }
 
@@ -158,123 +154,269 @@ h1 {
     display: none;
 }
 
-.site-content{
-    padding:5em;
-}
+
 
 
 /* HOME PAGE --------------------------------------------------------------------------------------------------------------------------------------------------- */
-
-        /* 4 images with backgrounds as images and logos on html, added overlay gradient */
-
- 
-.corefx {
-	width: 100%;
-	background: linear-gradient(0deg, #494747b2, #042a3f8a), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
-	background-repeat: no-repeat;
+/* container holding image and cta */
+.container-banner {
+    position: relative;
+    justify-content: center;
+    align-content: center;
+}
+/* top cta and button */
+.front-heading {
+    position: absolute;
+    z-index: 2;
+    align-self: center;
 }
 
-.corefx:hover {
-	background: linear-gradient(0deg, #153e539f, #153e539f), url('/wp-content/themes/cfea/assets/img/corefx-promo.jpg');
-	cursor: pointer;
-	background-repeat: no-repeat;
+.front-heading h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Staatliches', cursive;
+
 }
 
-.trigger {
-	width: 100%;
-	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
-	background-repeat: no-repeat;
+/* front banner image */
+#front-banner {
+    opacity: 0.8;
+    position: relative;
+    align-self: center;
 }
 
-.trigger:hover {
-	background: linear-gradient(0deg, #153e539f, #153e539f), url("/wp-content/themes/cfea/assets/img/trigger-promo.jpg");
-	cursor: pointer;
-	background-repeat: no-repeat;
+/* banner if there is no image inside banner */
+.banner-box {
+    position: relative;
+    height: 14rem;
+    width: 100vw;
+    background: #3b3b3b;
+    align-self: center;
 }
 
-.firstaid {
-	width: 100%;
-	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
-	background-repeat: no-repeat;
-}
-
-.firstaid:hover {
-	background: linear-gradient(0deg, #153e539f, #153e539f), url("/wp-content/themes/cfea/assets/img/firstaid-promo.jpg");
-	cursor: pointer;
-	background-repeat: no-repeat;
-}
-
-.vipr {
-	width: 100%;
-	background: linear-gradient(0deg, #494747b2, #042a3f8a), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
-	background-repeat: no-repeat;
-}
-
-.vipr:hover {
-	background: linear-gradient(0deg, #153e539f, #153e539f), url("/wp-content/themes/cfea/assets/img/vipr-promo.jpg");
-	cursor: pointer;
-	background-repeat: no-repeat;
-}
-
-#viprBanner {
+/* main banner */
+#canfitBanner {
 	width: 82%;
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
 
-
-/* ABOUT US --------------------------------------------------------------------------------------------------------------------------------------- */
-
-.teamMemberImg {
-	-webkit-filter: grayscale(50%);
-	/* Safari 6.0 - 9.0 */
-	filter: grayscale(50%);
+/* logo containter */
+.logo-container {
+    display: flex;
 }
 
+.logo-container img {
+    align-self: center;
+}
+
+/* logo with no a tag */
+.noA {
+    width: 25%;
+}
+
+/* button for mobile view */
+.button-mobile {
+    width: 100%;
+    border-radius: 0;
+}
+
+/* line for abouts on home page */
+.line {
+    width: 100%; 
+    height: 0.3rem; 
+    background-color: #494747; 
+    margin-bottom: 1rem;
+}
+
+/* BLOCK 1 */
+/* cenntering image for first block */
+.block_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* move text above image when viewing medium and small*/
+
+/* Medium */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+   .block_1 {
+        order: 1;
+    }
+}
+/* Small */
+@media screen and (max-width: 39.9375em) {
+    .block_1 {
+        order: 1;
+    }
+}
+
+/* BLOCK 2 */
+/* cenntering image for second block */
+.block_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* move text above image when viewing medium and small*/
+
+/* Medium */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+   .block_2 {
+        order: 1;
+    }
+
+    .block_2_text {
+        text-align: left;
+    }
+}
+/* Small */
+@media screen and (max-width: 39.9375em) {
+    .block_2 {
+        order: 1;
+    }
+
+    .block_2_text {
+        text-align: left;
+    }
+}
+
+/* Post - Coaches */
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post {
+    flex: 1 1 200px;
+    display: flex;
+    border: 5px solid white;
+}
+
+.card-coach {
+    align-items: center;
+}
+
+.card-section-coach {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-section-coach h4 {
+    padding-top: 1rem;
+}
+
+.coach-learn-more {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+/* ABOUT --------------------------------------------------------------------------------------------------------------------------------------- */
 .top-row {
     margin-top: 30px;
 }
 
-.memberAbout {
-	margin-right: 100px;
-	font-family: 'Lato', sans-serif;
+.aboutContent {
+    padding: 2rem;
 }
 
-.memberContact {
-	list-style: none;
+#aboutUsP {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Lato', sans-serif;
+
 }
+
+#welcometitle, #letUsHelp, .OurTeamtitle   {
+    font-family: 'Staatliches', cursive;
+}
+
+ .OurTeamtitle {
+     text-align: center;
+ }
+
+ .teamMemberImg {
+	-webkit-filter: grayscale(50%);
+    filter: grayscale(40%);
+}
+
+ .teamMembers {
+     width: 275px;
+     margin-bottom: 20px;
+     border: 8px solid #E6E6E6;
+     border-radius: 5px 5px 0px 0px;
+     background-color: #E6E6E6;
+     box-shadow: 0 2.5px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .ourTeam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+ .member_name {
+	text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 18pt;
+    background-color: #E6E6E6;
+    margin-bottom: 0;
+    padding: 5px;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 0;
+ }
+
+ .member_programs {
+     background-color: #E6E6E6;
+     margin-bottom: 0;
+     padding: 10px;
+    }
+
+ .memeber_location {
+    background-color: rgb(216, 215, 215);
+    margin-bottom: 0;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14pt;
+ }
+
+ .member_phone {
+    background-color: #E6E6E6;
+    margin-bottom: 0;
+    padding: 10px;
+ }
+
+ .member_email {
+    background-color: rgb(216, 215, 215);
+    margin-bottom: 0;
+    padding: 10px;
+ }
+
+.teamIcons{
+ width: 15px;
+ opacity: .4;
+ margin-right: 10px;
+}
+
 
 .alignCenter {
 	text-align: center;
 	font-family: 'Staatliches', cursive;
 }
 
-.aboutUs {
-	font-family: 'Lato', sans-serif;
-}
-
-.accordion-title {
-	text-align: center;
-	background-color: #494747;
-	color: white;
-	font-size: 25px;
-}
-
-.accordion-title::before {
-	content: "\25bc";
-	margin-top: -18px;
-	font-size: 25px;
-}
-
-.contactUsTitle>h1 {
-	text-align: center;
-	width: 100%;
-	margin: 0 auto;
-	font-family: 'Staatliches', cursive;
-}
-
     .logoDiv img {
-        width: 18%;
+        width: 25%;
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -392,6 +534,26 @@ button.wsf-button {
 	margin-bottom: 50px;
 }
 
+/* PROGRAM VIDEOS --------------------------------------------------------------------------------------------------------------------------------------- */
+.videoContainer1 {
+    margin: 0 auto;
+    display: flex;
+   
+}
+
+.progVideo iframe {
+    margin-bottom: 50px;
+}
+
+
+/* .progVideo iframe  {
+   margin: 0 auto;
+   display: flex;
+   width: 950px; 
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 75px;
+} */
 
 
 /* TRIGGERPOINT ----------------------------------------------------------------------------------------------------------------------------------------- */
@@ -417,10 +579,42 @@ button.wsf-button {
 
 /* COREFX ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
+.coreContent {
+    margin: 0 auto;
+    
+}
+
+#coreProgram1 img {
+    /* display: inline;
+    padding: 4px;
+    margin: 0 0 2px 7px;
+    float: right; */
+    width: 200px;
+    margin: 10px;
+}
+
+#coreProgram2 img {
+    width: 200px;
+    margin: 10px;
+    float: left;
+}
+
 #corefxLogo {
 	width: 200px;
 	margin-left: 870px;
 	margin-bottom: 50px;
+}
+
+#coreDesc {
+    text-align: left;
+    /* float: left; */
+}
+
+.dividerBar {
+    border-bottom: 2px solid black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
 }
 
 .descList {
@@ -432,9 +626,10 @@ button.wsf-button {
 }
 
 #corefxBanner {
-	width: 82%;
-	padding-bottom: 25px;
-	padding-top: 25px;
+    width: 99%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin: 0 auto;
 }
 
 #corefxLogo2 {
@@ -485,39 +680,56 @@ button.wsf-button {
 
 /* CONTACT US */
 
-    .contactTitle h2 {
-		font-size: 2em;
-		margin: 0;
-		padding: 0;
-		margin-left: 8.25%;
-		margin-bottom: .5em;
-		margin-top: .5em;
-		font-family: 'Lato', sans-serif;
-	}
 	.contactForm {
 		margin-bottom: 1em;
+    }
+
+	/* adds a padding around the content so its not flush to the screen */
+	.calendar{
+		padding:3em;
 	}
-
-/* CALENDER */
-
-/* controls the color of the background of selected day */
-.mec-calendar.mec-event-calendar-classic .mec-selected-day { 
-    background-color:#CFCFCF;
-}
-
-.mec-calendar.mec-event-calendar-classic .mec-calendar-events-sec{
-    background-color:#CFCFCF;
-}
-
-/* controls the left padding of the events for that day */
-.mec-calendar .mec-event-article{
-    padding-left:3em !important;
-}
-
-/* controls the color of the text when hovered */
-.mec-calendar.mec-event-calendar-classic .mec-calendar-row dt.mec-has-event a:hover{
-    color:white;
-}
+	
+	/* calendar style */
+	
+	/* controls the color of the background of selected day */
+	.mec-calendar.mec-event-calendar-classic .mec-selected-day { 
+		background-color:#CFCFCF;
+	}
+	
+	.mec-calendar.mec-event-calendar-classic .mec-calendar-events-sec{
+		background-color:#CFCFCF;
+	}
+	
+	/* controls the left padding of the events for that day */
+	.mec-calendar .mec-event-article{
+		padding-left:3em !important;
+	}
+	
+	/* controls the color of the text when hovered */
+	.mec-calendar.mec-event-calendar-classic .mec-calendar-row dt.mec-has-event a:hover{
+		color:white !important;
+	}
+	
+	.mec-calendar.mec-event-calendar-classic dt.mec-selected-day:hover{
+		color: white !important;
+	}
+	
+	.mec-wrap .mec-event-countdown-style1 .mec-event-countdown-part3{
+		background-color: white;
+	}
+	
+	.mec-event-calendar-classic .mec-calendar-side .mec-calendar-table{
+		min-height: 0;
+	}
+	
+	.mec-wrap .mec-event-countdown-style1 .mec-event-countdown-part2:after{
+		content: none;
+	}
+	
+	.mec-wrap{
+		display:flex;
+		justify-content: center;
+	}
 
 
 /* FOOTER ----------------------------------------------------------------------------------------------------------------------------------------- */
@@ -632,6 +844,19 @@ footer{
 
     }
 
+    #primary-menu {
+        margin-top: 5px;
+    }
+
+    #example-animated-menu{
+        display: none;
+    }
+
+    .sub-menu {
+        display:none
+    }
+    
+
     .title-bar {
         background: #868686 !important;
     }
@@ -642,6 +867,10 @@ footer{
         display: flex;
         flex-wrap: wrap;
     }
+    /* Team Accordians */
+    .centerAccordians {
+        margin-left: 0;
+        }
     /* changed the padding on the footerNav section */
     .footerNav{
         flex: 1 0 100%;
@@ -676,6 +905,62 @@ footer{
         padding:0px 60px 20px 60px;
         justify-content: space-evenly;
     }
+
+    .socialMedia{
+		font-size:0.7em; 
+        margin-top:0;
+        padding-left:0;
+        margin-bottom:1em;
+	}
+
+   
+    .logoDiv {
+        text-align: center;
+    }
+   .menu-item {
+        font-size: 12pt;
+        word-spacing: 4px;
+    }
+
+    
+
+    /* contact us */
+	.contactTitle h2 {
+		font-size: 2em;
+		margin: 0;
+		padding: 0;
+		margin-left: 8.25%;
+		margin-bottom: .5em;
+		margin-top: .5em;
+		font-family: 'Lato', sans-serif;
+	}
+	.contactForm {
+		margin-bottom: 1em;
+    }
+    
+    /* red cross page */
+    #redCrossLogo {
+        width: 200px;
+        height: 100px;
+		margin-left: 50px;
+	}
+
+    .rcImg {
+        height: 60%;
+        
+    }
+
+    .progVideo iframe  {
+   
+		width: 300px;
+        height: 300px;
+        /* margin-top: 25px; */
+        padding-top: 25px;
+        padding-bottom: 75px;
+    }
+
+
+
 } 
 
 
@@ -697,10 +982,28 @@ footer{
 
 }
 
+/* CUSTOM POST FOR COACH ----------------------------------------------------------------------------------------------------------------------------------------- */
 
+/* container that holds the coach info */
+.coach-container {
+    display: flex; 
+    justify-content: space-evenly; 
+}
 
+/* image of coach */
+.coach-image {
+    margin-bottom: 2rem; 
+    max-width: 35rem;
+}
 
+/* coach button */
+.coach-button {
+    width: auto;
+}
 
+.coach-button h5 {
+    margin-bottom: 0;
+}
 
 
 

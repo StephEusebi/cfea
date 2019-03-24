@@ -18,177 +18,155 @@
 // imports the header
 get_header();
 ?>
-    <div class="grid-x grid-margin-x">
 
-    
-        <div class="large-offset-2 small-offset-1">
+    <div class="grid-container">
 
-            <!-- banner at top of page -->
-            <div class="cell large-10">
-                <img src="/wp-content/themes/cfea/assets/img/corefxbanner.png" alt="corefx banner" id="corefxBanner" />
-            </div>
+        <!-- BANNER AND TOP DESCRIPTION -->
+        <div class="grid-x grid-margin-x">
+            <!-- section at top of page -->
+            <?php 
+            if (function_exists('get_field')) {
+            $descriptions = get_field('descriptions');
 
-            <!-- program description -->
-            <div class="grid-x grid-margin-x">
+        // pull in the advanced custom field content 
+        foreach($descriptions as $description){
 
-                <p class="cell large-10 progDesc small-10">COREFX asserts itself when it comes to fitness and training equipment. It is a guarantee to the best. For athletes looking to release their greatest capabilities and get motivated to prominence, it is the best answer. The trailblazing COREFX peak-performing lines of products that have undergone real life controlled tests are purposefully created to take peak performance to another level by delivering the most all-embracing area of strength and training tools.
-                </p>
+                        //if a program banner image was provided show it, if not hide it. 
+                        $program_banner = $description['program_banner'];
+                        if (!empty ($program_banner)) {
+                            ?>
+                <!-- banner at top of page -->
+                <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10">
+                    <img src="<?php echo $program_banner; ?>" alt="corefx banner" id="corefxBanner" class="large-centered columns coreContent" />
+                </div>
+                <?php 
+                        }
+                    ?>
 
-                <p class="cell large-10 progDesc small-10">COREFX has created new and technologically-advanced training methods so as to connect the disparity between persistent physical activity and authentic physical improvement. This permits athletes to exploit the full extensive possibilities of the company’s whole range of products. To complement athletes’ unrestrained commitment to exercise, COREFX has created a mutually beneficial connection between equipment and training. This is the genuine mystery behind attaining your Inner Strength.
-                </p>
+                    <?php
 
-            </div>
+            $top_desc = $description['top_desc'];
+            //if a top description was provided show it, if not hide it. 
+            if (!empty ($top_desc)) {
+
+        ?>
+
+                        <!-- program description -->
+                        <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10 progDesc">
+                            <?php echo $top_desc; ?>
+                        </div>
+                        <div class="cell small-10 small-offset-1 medium-10 large-centered dividerBar"></div>
+                        <?php 
+            }
+
+?>
+
+        </div>
+
+        <?php
+
+        }
+    }
+
+    ?>
+
+            <!-- END OF BANNER AND TOP DESCRIPTION -->
 
             <div class="grid-x grid-margin-x">
 
                 <?php 
+            //get the programs acf
+            if (function_exists('get_field')) {
+                $programs = get_field('programs');
+                $counter = 0;
+                foreach($programs as $program){
 
-	if (function_exists('get_field')) {
-		$certifications = get_field('certifications');
-
-		foreach($certifications as $certification){
-			$name = $certification['name'];
-			$description = $certification['description'];
-			$button = $certification['button'];
-			$cost = $certification['cost'];
-            $program_image = $certification['program_image'];
-            
-
-	?>
-
-                    <!-- larger box to hold main certification -->
-                    <div class="cell large-10 small-10">
-                        <!-- program box img -->
-                        <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg" />
-
-                        <!-- create accordions to hold content -->
-                        <ul class="accordion plAccordian" data-accordion data-allow-all-closed="true">
-                            <li class="accordion-item accordianStyle" data-accordion-item>
-                                <!-- Accordion tab title -->
-                                <a href="#" class="accordion-title pRCAccordianTitle">
-                                    <?php echo$name; ?>
-                                </a>
-
-                                <!-- Accordion tab content -->
-                                <div class="accordion-content" data-tab-content>
-                                    <p>
-                                        <?php echo$description; ?>
-                                    </p>
-                                    <p>
-                                        <?php echo$cost; ?>
-                                    </p>
-                                    <button class=" button" href="<?php echo$button; ?>">REGISTER NOW</button>
-
-                                </div>
-                            </li>
-                        </ul>
+                    $name = $program['name'];
+                   //if a program name was provided show it, if not hide it. 
+                    if (!empty ($name)) {
+                        ?>
+                    <!-- Accordion tab title -->
+                    <div class="large-centered columns small-10 coreContent">
+                        <h2>
+                                <?php echo $name; ?>
+                            </h2>
                     </div>
-
-
-
                     <?php
+                    } 
+                    $description = $program['description'];
+                    $program_image = $program['program_image'];
+                    //if a description or image were provided show what was given, hide the ones not provided. 
+                    if (!empty ($description) || !empty ($program_image)) {
+                        ?>
+                        <div class="large-centered columns small-10 coreContent">
+                            <!-- program image -->
+                            <img src="<?php echo $program_image; ?>" alt="" id="<?php echo $counter; ?>" />
+                            <!-- course description -->
+                            <p id="coreDesc">
+                                <?php echo $description; ?>
+                            </p>
+                        </div>
+                        <?php
+                    }
 
-		}
-	}
+                    $button = $program['button'];
+                    $cost = $program['cost'];
 
-	?>
+                    //if button or cost was provided show it, if not hide the ones not provided. 
+                    if (!empty ($button) || !empty ($cost)) {
+                       ?>
 
-    <?php 
-
-		if (function_exists('get_field')) {
-			$programs = get_field('programs');
-
-			foreach($programs as $program){
-				$name = $program['name'];
-				$description = $program['description'];
-				$button = $program['button'];
-				$cost = $program['cost'];
-                $program_image = $program['program_image'];
-                $ytvideo = $program['ytvideo'];
-
-	?>
-
-                            <!-- group of smaller boxes for workshop -->
-                            <div class="cell large-5 small-10">
-
-                                <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="rcImg" />
-
-                                <ul class="accordion plAccordian" data-accordion data-allow-all-closed="true">
-                                    <li class="accordion-item accordianStyle" data-accordion-item>
-                                        <!-- Accordion tab title -->
-                                        <a href="#" class="accordion-title pRCAccordianTitle">
-                                            <?php echo$name; ?>
-                                        </a>
-
-                                        <!-- Accordion tab content -->
-                                        <div class="accordion-content" data-tab-content>
-                                            <p>
-                                                <?php echo$description; ?>
-                                            </p>
-                                            <p>
-                                                <?php echo$cost; ?>
-                                            </p>
-                                            <button class=" button" href="<?php echo$button; ?>">REGISTER NOW</button>
-
-                                        </div>
-                                    </li>
-                                </ul>
+                            <div class="large-centered columns small-10 coreContent">
+                                <p>
+                                    <!-- program cost -->
+                                    <?php echo $cost; ?>
+                                </p>
+                                <!-- button to go register -->
+                                <button class="button" href="<?php echo $button; ?>">REGISTER NOW</button>
                             </div>
-
-            <?php
-
-		}
-	}
-
-	?>
-
-            </div>
-
-        </div>
-
-        <?php 
-
-if (function_exists('get_field')) {
-$programs = get_field('programs');
-
-    foreach($programs as $program){
-     
-        $ytvideo = $program['ytvideo'];
-
-?>
-
-
-<div class="cell large-8 large-offset-4 small-10 small-offset-1 progVideo">
-      
-        <?php echo$ytvideo; ?>
-      
-    </div>
-
-    <?php
-                
-
-            }
-        }
-        
+                            <?php
+                    }
         ?>
 
+                                <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>
 
+                                <?php
+            // increment for photos
+            $counter++;
+            }
+        }
 
+        ?>
 
-        <!-- insert video -->
-        <!-- <div class="large-offset-3 ">
-            <div class="cell large-8 rcVideo">
-                <iframe width="798" height="449" src="https://www.youtube.com/embed/WoD34_HXxCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </div> -->
 
-        <!-- bottom page logo -->
-        <!-- <div class="cell large-8">
-            <img src="/wp-content/themes/cfea/assets/img/corefx.jpg" alt="corefx logo" id="corefxLogo2" />
-        </div> -->
+            <?php 
+                //get the acf content for the video
+                if (function_exists('get_field')) {
+                $programs = get_field('programs');
 
+                    foreach($programs as $program){
+                        $ytvideo = $program['ytvideo'];
+                        //if a video link was provided show it, if not hide it. 
+                        if (!empty ($ytvideo)) {
+                        ?>
 
-    <!-- </div> -->
+                <div class="grid-x coreContent">
+                    <div class="large-centered columns small-10 progVideo">
+                        <!-- program related video -->
+                        <?php echo $ytvideo; ?>
+                    </div>
+                </div>
+                <?php
+            }
+            ?>
+
+                    <?php
+                }
+            }
+        ?>
+
+    </div>
 
     <?php
 // imports the footer

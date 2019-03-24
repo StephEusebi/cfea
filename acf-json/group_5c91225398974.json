@@ -1,13 +1,13 @@
 {
-    "key": "group_5c75e583493e3",
-    "title": "Team Members",
+    "key": "group_5c91225398974",
+    "title": "Our Team",
     "fields": [
         {
-            "key": "field_5c76ab6830f27",
-            "label": "People",
-            "name": "people",
+            "key": "field_5c91261239b31",
+            "label": "team",
+            "name": "team",
             "type": "group",
-            "instructions": "the people",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -18,8 +18,8 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5c76acc7fb52c",
-                    "label": "member 1",
+                    "key": "field_5c91265a39b32",
+                    "label": "Member 1",
                     "name": "member_1",
                     "type": "group",
                     "instructions": "",
@@ -33,8 +33,27 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c76acd6fb52d",
-                            "label": "member image",
+                            "key": "field_5c91266e39b33",
+                            "label": "Member Name",
+                            "name": "member_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91267f39b34",
+                            "label": "Member Image",
                             "name": "member_image",
                             "type": "image",
                             "instructions": "",
@@ -57,27 +76,8 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5c76ace8fb52e",
-                            "label": "member about",
-                            "name": "member_about",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5c76acf3fb52f",
-                            "label": "member programs",
+                            "key": "field_5c91268939b35",
+                            "label": "Member Programs",
                             "name": "member_programs",
                             "type": "text",
                             "instructions": "",
@@ -95,9 +95,47 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c76ad00fb530",
-                            "label": "member contact",
-                            "name": "member_contact",
+                            "key": "field_5c91269b39b36",
+                            "label": "Memeber Location",
+                            "name": "memeber_location",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c9126bd39b37",
+                            "label": "Member Phone",
+                            "name": "member_phone",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c9126cc39b38",
+                            "label": "Member Email",
+                            "name": "member_email",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -116,8 +154,8 @@
                     ]
                 },
                 {
-                    "key": "field_5c76ad15fb531",
-                    "label": "member 2",
+                    "key": "field_5c91270439b39",
+                    "label": "Member 2",
                     "name": "member_2",
                     "type": "group",
                     "instructions": "",
@@ -131,8 +169,27 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c76ad15fb532",
-                            "label": "member image",
+                            "key": "field_5c91270439b3a",
+                            "label": "Member Name",
+                            "name": "member_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91270439b3b",
+                            "label": "Member Image",
                             "name": "member_image",
                             "type": "image",
                             "instructions": "",
@@ -155,27 +212,8 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5c76ad15fb533",
-                            "label": "member about",
-                            "name": "member_about",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5c76ad15fb534",
-                            "label": "member programs",
+                            "key": "field_5c91270439b3c",
+                            "label": "Member Programs",
                             "name": "member_programs",
                             "type": "text",
                             "instructions": "",
@@ -193,9 +231,47 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c76ad15fb535",
-                            "label": "member contact",
-                            "name": "member_contact",
+                            "key": "field_5c91270439b3d",
+                            "label": "Memeber Location",
+                            "name": "memeber_location",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91270439b3e",
+                            "label": "Member Phone",
+                            "name": "member_phone",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91270439b3f",
+                            "label": "Member Email",
+                            "name": "member_email",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -214,8 +290,8 @@
                     ]
                 },
                 {
-                    "key": "field_5c76ad1cfb536",
-                    "label": "member 3",
+                    "key": "field_5c91270739b40",
+                    "label": "Member 3",
                     "name": "member_3",
                     "type": "group",
                     "instructions": "",
@@ -229,8 +305,27 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c76ad1cfb537",
-                            "label": "member image",
+                            "key": "field_5c91270739b41",
+                            "label": "Member Name",
+                            "name": "member_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91270739b42",
+                            "label": "Member Image",
                             "name": "member_image",
                             "type": "image",
                             "instructions": "",
@@ -253,27 +348,8 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5c76ad1cfb538",
-                            "label": "member about",
-                            "name": "member_about",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5c76ad1cfb539",
-                            "label": "member programs",
+                            "key": "field_5c91270739b43",
+                            "label": "Member Programs",
                             "name": "member_programs",
                             "type": "text",
                             "instructions": "",
@@ -291,9 +367,47 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c76ad1cfb53a",
-                            "label": "member contact",
-                            "name": "member_contact",
+                            "key": "field_5c91270739b44",
+                            "label": "Memeber Location",
+                            "name": "memeber_location",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91270739b45",
+                            "label": "Member Phone",
+                            "name": "member_phone",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91270739b46",
+                            "label": "Member Email",
+                            "name": "member_email",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -312,8 +426,8 @@
                     ]
                 },
                 {
-                    "key": "field_5c76ad20fb53b",
-                    "label": "member 4",
+                    "key": "field_5c91270c39b47",
+                    "label": "Member 4",
                     "name": "member_4",
                     "type": "group",
                     "instructions": "",
@@ -327,8 +441,27 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c76ad20fb53c",
-                            "label": "member image",
+                            "key": "field_5c91270c39b48",
+                            "label": "Member Name",
+                            "name": "member_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91270c39b49",
+                            "label": "Member Image",
                             "name": "member_image",
                             "type": "image",
                             "instructions": "",
@@ -351,27 +484,8 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5c76ad20fb53d",
-                            "label": "member about",
-                            "name": "member_about",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5c76ad20fb53e",
-                            "label": "member programs",
+                            "key": "field_5c91270c39b4a",
+                            "label": "Member Programs",
                             "name": "member_programs",
                             "type": "text",
                             "instructions": "",
@@ -389,9 +503,47 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c76ad20fb53f",
-                            "label": "member contact",
-                            "name": "member_contact",
+                            "key": "field_5c91270c39b4b",
+                            "label": "Memeber Location",
+                            "name": "memeber_location",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91270c39b4c",
+                            "label": "Member Phone",
+                            "name": "member_phone",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91270c39b4d",
+                            "label": "Member Email",
+                            "name": "member_email",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -410,8 +562,8 @@
                     ]
                 },
                 {
-                    "key": "field_5c76ad24fb540",
-                    "label": "member 5",
+                    "key": "field_5c91270f39b4e",
+                    "label": "Member 5",
                     "name": "member_5",
                     "type": "group",
                     "instructions": "",
@@ -425,8 +577,27 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c76ad24fb541",
-                            "label": "member image",
+                            "key": "field_5c91270f39b4f",
+                            "label": "Member Name",
+                            "name": "member_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91270f39b50",
+                            "label": "Member Image",
                             "name": "member_image",
                             "type": "image",
                             "instructions": "",
@@ -449,27 +620,8 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5c76ad24fb542",
-                            "label": "member about",
-                            "name": "member_about",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5c76ad24fb543",
-                            "label": "member programs",
+                            "key": "field_5c91270f39b51",
+                            "label": "Member Programs",
                             "name": "member_programs",
                             "type": "text",
                             "instructions": "",
@@ -487,9 +639,47 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c76ad24fb544",
-                            "label": "member contact",
-                            "name": "member_contact",
+                            "key": "field_5c91270f39b52",
+                            "label": "Memeber Location",
+                            "name": "memeber_location",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91270f39b53",
+                            "label": "Member Phone",
+                            "name": "member_phone",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91270f39b54",
+                            "label": "Member Email",
+                            "name": "member_email",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -508,8 +698,8 @@
                     ]
                 },
                 {
-                    "key": "field_5c76ad26fb545",
-                    "label": "member 6",
+                    "key": "field_5c91271339b55",
+                    "label": "Member 6",
                     "name": "member_6",
                     "type": "group",
                     "instructions": "",
@@ -523,8 +713,27 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c76ad26fb546",
-                            "label": "member image",
+                            "key": "field_5c91271339b56",
+                            "label": "Member Name",
+                            "name": "member_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91271339b57",
+                            "label": "Member Image",
                             "name": "member_image",
                             "type": "image",
                             "instructions": "",
@@ -547,27 +756,8 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5c76ad26fb547",
-                            "label": "member about",
-                            "name": "member_about",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5c76ad26fb548",
-                            "label": "member programs",
+                            "key": "field_5c91271339b58",
+                            "label": "Member Programs",
                             "name": "member_programs",
                             "type": "text",
                             "instructions": "",
@@ -585,9 +775,47 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c76ad26fb549",
-                            "label": "member contact",
-                            "name": "member_contact",
+                            "key": "field_5c91271339b59",
+                            "label": "Memeber Location",
+                            "name": "memeber_location",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91271339b5a",
+                            "label": "Member Phone",
+                            "name": "member_phone",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91271339b5b",
+                            "label": "Member Email",
+                            "name": "member_email",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -606,8 +834,8 @@
                     ]
                 },
                 {
-                    "key": "field_5c76ad29fb54a",
-                    "label": "member 7",
+                    "key": "field_5c91271539b5c",
+                    "label": "Member 7",
                     "name": "member_7",
                     "type": "group",
                     "instructions": "",
@@ -621,8 +849,27 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c76ad29fb54b",
-                            "label": "member image",
+                            "key": "field_5c91271539b5d",
+                            "label": "Member Name",
+                            "name": "member_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91271539b5e",
+                            "label": "Member Image",
                             "name": "member_image",
                             "type": "image",
                             "instructions": "",
@@ -645,27 +892,8 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5c76ad29fb54c",
-                            "label": "member about",
-                            "name": "member_about",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5c76ad29fb54d",
-                            "label": "member programs",
+                            "key": "field_5c91271539b5f",
+                            "label": "Member Programs",
                             "name": "member_programs",
                             "type": "text",
                             "instructions": "",
@@ -683,9 +911,47 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c76ad29fb54e",
-                            "label": "member contact",
-                            "name": "member_contact",
+                            "key": "field_5c91271539b60",
+                            "label": "Memeber Location",
+                            "name": "memeber_location",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91271539b61",
+                            "label": "Member Phone",
+                            "name": "member_phone",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91271539b62",
+                            "label": "Member Email",
+                            "name": "member_email",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -704,8 +970,8 @@
                     ]
                 },
                 {
-                    "key": "field_5c76ad2bfb54f",
-                    "label": "member 8",
+                    "key": "field_5c91271739b63",
+                    "label": "Member 8",
                     "name": "member_8",
                     "type": "group",
                     "instructions": "",
@@ -719,8 +985,27 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c76ad2bfb550",
-                            "label": "member image",
+                            "key": "field_5c91271739b64",
+                            "label": "Member Name",
+                            "name": "member_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91271739b65",
+                            "label": "Member Image",
                             "name": "member_image",
                             "type": "image",
                             "instructions": "",
@@ -743,27 +1028,8 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5c76ad2bfb551",
-                            "label": "member about",
-                            "name": "member_about",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5c76ad2bfb552",
-                            "label": "member programs",
+                            "key": "field_5c91271739b66",
+                            "label": "Member Programs",
                             "name": "member_programs",
                             "type": "text",
                             "instructions": "",
@@ -781,9 +1047,47 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c76ad2bfb553",
-                            "label": "member contact",
-                            "name": "member_contact",
+                            "key": "field_5c91271739b67",
+                            "label": "Memeber Location",
+                            "name": "memeber_location",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91271739b68",
+                            "label": "Member Phone",
+                            "name": "member_phone",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c91271739b69",
+                            "label": "Member Email",
+                            "name": "member_email",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -821,5 +1125,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1551812238
+    "modified": 1553016276
 }

@@ -1,11 +1,11 @@
 {
-    "key": "group_5c75fa87e130a",
-    "title": "CTA-Text-And-Button",
+    "key": "group_5c8d2ed92e976",
+    "title": "Coach Contact",
     "fields": [
         {
-            "key": "field_5c75fac16e689",
-            "label": "CTAs",
-            "name": "ctas",
+            "key": "field_5c8d2eeb50ed5",
+            "label": "Coach Contacts",
+            "name": "coach_contact",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -18,9 +18,9 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5c75faf96e68a",
-                    "label": "CTA 1",
-                    "name": "cta_1",
+                    "key": "field_5c8d315f38938",
+                    "label": "contact1",
+                    "name": "contact1",
                     "type": "group",
                     "instructions": "",
                     "required": 0,
@@ -33,11 +33,11 @@
                     "layout": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5c75fb1d6e68b",
-                            "label": "heading",
-                            "name": "heading",
+                            "key": "field_5c8d2efa50ed6",
+                            "label": "Phone number",
+                            "name": "phone_number",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "Add in phone number",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -52,43 +52,11 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c75fb416e68c",
-                            "label": "button",
-                            "name": "button",
-                            "type": "link",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array"
-                        }
-                    ]
-                },
-                {
-                    "key": "field_5c75ff006d4c3",
-                    "label": "CTA 2",
-                    "name": "cta_2",
-                    "type": "group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "layout": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5c75ff006d4c4",
-                            "label": "heading",
-                            "name": "heading",
+                            "key": "field_5c8d2f6750ed7",
+                            "label": "Location",
+                            "name": "location",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "Add in your location. Example: Whitby, ON",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -103,8 +71,27 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5c75ff006d4c5",
-                            "label": "button",
+                            "key": "field_5c8d2fc850ed8",
+                            "label": "Email",
+                            "name": "email",
+                            "type": "text",
+                            "instructions": "Add in your contact email. Example: yourname@cfea.ca",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c980846a07a2",
+                            "label": "Button",
                             "name": "button",
                             "type": "link",
                             "instructions": "",
@@ -125,9 +112,9 @@
     "location": [
         [
             {
-                "param": "page_type",
+                "param": "post_type",
                 "operator": "==",
-                "value": "front_page"
+                "value": "coach"
             }
         ]
     ],
@@ -139,5 +126,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553282835
+    "modified": 1553467480
 }
