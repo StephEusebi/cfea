@@ -33,8 +33,9 @@ get_header();
         // pull in the advanced custom field content 
         foreach($descriptions as $description){
 
-                        //if a program banner image was provided show it, if not hide it. 
+                       // program banner variable
                         $program_banner = $description['program_banner'];
+                         //if a program banner image was provided show it, if not hide it. 
                         if (!empty ($program_banner)) {
                             ?>
                             <!-- banner at top of page -->
@@ -46,32 +47,29 @@ get_header();
                     ?>
 
                     <?php
-            
+            // program description variable
             $top_desc = $description['top_desc'];
             //if a top description was provided show it, if not hide it. 
             if (!empty ($top_desc)) {
               
         ?>
           
-                           <!-- program description -->
+                    <!-- program description -->
                     <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10 progDesc"><?php echo $top_desc; ?></div>
+                    <!-- dividing bar between programs -->
                     <div class="cell small-10 small-offset-1 medium-10 large-centered dividerBar"></div>  
                 <?php 
             }
 
 ?>
-       
              </div>
     
-            
             <?php
-            
 
         }
     }
 
     ?>
-
     <!-- END OF BANNER AND TOP DESCRIPTION -->
 
 
