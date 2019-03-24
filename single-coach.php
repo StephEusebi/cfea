@@ -69,6 +69,7 @@ get_header();
 									$phone_number = $coach_contacts['phone_number'];
 									$location = $coach_contacts['location'];
 									$email = $coach_contacts['email'];
+									$button = $coach_contacts['button'];
 
 								// if conact info is not empty - show 
 								if(!empty ($coach_contact) ) {
@@ -80,6 +81,10 @@ get_header();
 							<p><strong>Email:</strong> <?php echo $email; ?></p>
 							<!-- phone number -->
 							<p><strong>Phone Number:</strong> <?php echo $phone_number; ?></p>
+
+							<a href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>">
+							<div class="button coach-button"><h5><?php echo $button['title']; ?></h5></div>
+							</a>
 								
 							<!-- ends if contact info not empty -->
 							<?php }  ?>
@@ -87,7 +92,7 @@ get_header();
 							<!-- ends if fuction excists and foreach -->
 							<?php } } ?>
 						<!-- cta button -->
-						<div class="button coach-button" href="/calendar/"><h5>Train with me!</h5></div>
+						<!-- <div class="button coach-button" href="/calendar/"><h5>Train with me!</h5></div> -->
 						
 						<?php
 						
