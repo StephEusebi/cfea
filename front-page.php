@@ -432,31 +432,56 @@ get_header();
 								
 							<!-- END ACF - CTA -->
 				</div>
+
 				<!-- post cards -->
 				<div class="grid-container top-space">
 				<div class="grid-x post-container">
 				
 				<?php
+				
 
+				$args = array( 
+					'post_type' => 'coach', 
+					'posts_per_page' => 3,
+					'meta_query' => array(
+						array(
+						'key' => '_thumbnail_id',
+						'compare' => 'EXISTS'
+						)
+					) 
+				);
+				// sets featured image size
+				add_image_size( 'coach-size', 400, 400 ); 
+				
 				// Coaches Query
-				$the_query_choach = new WP_Query(  array( 'post_type' => 'coach' )  );
-
+				$the_query_choach = new WP_Query( $args );
+				
 				// The Loop
+				// checking to see if no posts were found
 				if ( $the_query_choach->have_posts() ) {
 					
 					while ( $the_query_choach->have_posts() ) {
 						$the_query_choach->the_post();
 					
 				?>
-				
+						<!-- cards -->
 						<div class="cell post">
 							<div class="card">
-								<img src="http://placekitten.com/g/400/200">
 								<div class="card-section">
-									<?php
 
-									echo '<p>' . get_the_title() . '</p>';
-										?>
+						<?php 
+
+						if ( has_post_thumbnail() ) { // only print out the thumbnail if it actually has one
+
+							the_post_thumbnail( 'coach-size' );
+
+						} else {
+							echo '<p>this post does not have a featured image</p>';
+						} ?>
+								
+
+									<?php echo '<h4>' . get_the_title() . '</h4>';?>
+										
 
 									<p>This is a simple card with an image.</p>
 									<p>This is a simple card with an image.</p>
