@@ -469,6 +469,7 @@ button.wsf-button {
 #coreDesc {
     text-align: left;
     /* float: left; */
+    width: 950px;
 }
 
 .dividerBar {

@@ -154,7 +154,7 @@ get_header();
                         ?>
 
                                 <div class="grid-x coreContent">
-                                    <div class="large-centered columns small-10 progVideo">
+                                    <div class="large-centered columns large-offset-2 small-10 progVideo">
                                         <!-- program related video -->
                                         <?php echo $ytvideo; ?>
                                     </div>
