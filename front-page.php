@@ -433,10 +433,6 @@ get_header();
 							<!-- END ACF - CTA -->
 				</div>
 
-				<!-- post cards -->
-				<div class="grid-container top-space">
-				<div class="grid-x post-container">
-				
 				<?php
 				
 
@@ -457,13 +453,19 @@ get_header();
 				$the_query_choach = new WP_Query( $args );
 				
 				// The Loop
-				// checking to see if no posts were found
-				if ( $the_query_choach->have_posts() ) {
-					
+				// checking to see if posts were found - if not found, nothing will display
+				if ( $the_query_choach->have_posts() ) { ?>
+
+					<!-- post cards -->
+					<div class="grid-container top-space">
+					<div class="grid-x post-container">
+
+					<?php
+					// while loop for the posts
 					while ( $the_query_choach->have_posts() ) {
 						$the_query_choach->the_post();
 					
-				?>
+					?>
 						<!-- cards -->
 						<div class="cell post">
 							<div class="card card-coach">
@@ -483,10 +485,10 @@ get_header();
 							// do nothing
 						} ?>
 								<!-- if the post has the title -->
-								<h4><?php echo the_title(); ?></h4>
+								<a href="<?php the_permalink()?>"><h4><?php echo the_title(); ?></h4></a>
 
 									<!-- if the post has content have content- limit word count to 30 -->
-									<?php  echo wp_trim_words( get_the_content(), 30, '...' ); ?>
+									<?php  echo wp_trim_words( get_the_content(), 20, '...' ); ?>
 									<a class="coach-learn-more" href="<?php the_permalink()?>"> Learn More</a>
 								</div>
 							</div>
