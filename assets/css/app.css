@@ -246,7 +246,7 @@ h1 {
 
  .teamMembers {
      width: 275px;
-     margin-bottom: 20px;
+     margin: .5rem;
      border: 8px solid #E6E6E6;
      border-radius: 5px 5px 0px 0px;
      background-color: #E6E6E6;
@@ -256,10 +256,9 @@ h1 {
  .ourTeam {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 
 }
-
  .member_name {
 	text-align: center;
     font-family: 'Staatliches', cursive;
