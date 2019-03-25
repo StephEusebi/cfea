@@ -329,24 +329,19 @@ h1 {
     margin-top: 30px;
 }
 
-.aboutContent {
-    padding: 2rem;
-}
-
-#aboutUsP {
-    text-align: center;
+.aboutText {
     margin-bottom: 50px;
-    font-family: 'Lato', sans-serif;
-
 }
 
-#welcometitle, #letUsHelp, .OurTeamtitle   {
+.aboutText > h2 {
     font-family: 'Staatliches', cursive;
+    text-align: center;
 }
 
- .OurTeamtitle {
-     text-align: center;
- }
+.aboutText > .wpb_text_column {
+    text-align: center;
+}
+
 
  .teamMemberImg {
 	-webkit-filter: grayscale(50%);
