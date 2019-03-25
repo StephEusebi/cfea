@@ -42,7 +42,7 @@ get_header();
 							</div>
 
 							<!-- set the class of the next div -->
-							<div class="large-6 small-11">
+							<div class="large-6 small-11 bottom-space">
 
 						<!-- END if featured image is not empty -->
 						 <?php } else { ?> 
