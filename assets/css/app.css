@@ -740,6 +740,9 @@ footer{
     margin:0;
     padding:0;
     font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 /* div that wraps the footer */
 .footerDiv{
@@ -826,6 +829,12 @@ footer{
 }
 .instagramIcon:hover{
     color:#901f21;
+}
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 /* SMALL ONLY ----------------------------------------------------------------------------------------------------------------------------------------- */

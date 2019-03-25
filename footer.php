@@ -16,7 +16,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-	
+	<div class="grid-container">
 		<!-- footer container -->
 		<div class="grid-x">
 			<!-- container for all content in the footer -->
@@ -108,6 +108,7 @@
 				</div><!-- closes the social media div -->
 			</div><!-- closes the main footer div -->
 		</div><!-- closes the grid-x div -->
+					</div>
 	</footer><!-- #colophon -->
 	</div><!-- #page -->
 
