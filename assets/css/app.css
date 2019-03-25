@@ -468,7 +468,6 @@ button.wsf-button {
     .title-bar {
         display: none;
     }
-
     
 }
 
@@ -576,12 +575,43 @@ button.wsf-button {
 	padding-top: 25px;
 }
 
+/* .boxStyles p {
+    background-color: #0E425D;
+    padding: 15px;
+    margin-top: -8px;
+} */
+
+.cost {
+    background-color: #494747;
+    color: #fff;
+    padding: 15px;
+    margin-top: -8px;
+}
+
+.boxStyles h2 {
+    border-top-right-radius: 8px;
+    background-color: #494747;
+    border-top-left-radius: 8px;
+    text-align: center;
+    padding-left: 15px;
+    margin-top: 10px;
+    color: #fff;
+}
+
 
 /* COREFX ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
+.progImages1 {
+    width: 200px;
+    padding: 10px;
+}
+
+.progCost {
+    text-align: center;
+}
+
 .coreContent {
     margin: 0 auto;
-    
 }
 
 #coreProgram1 img {
@@ -608,6 +638,15 @@ button.wsf-button {
 #coreDesc {
     text-align: left;
     /* float: left; */
+    width: 970px;
+    /* background-color: rgb(230, 230, 230); */
+    padding: 10px;
+}
+
+@media screen and (max-width: 39.9375em) {
+    #coreDesc {
+        width: 300px;
+    }
 }
 
 .dividerBar {

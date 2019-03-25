@@ -25,8 +25,9 @@ get_header();
 
 	foreach($paragraphs as $paragraph){
 		$main_paragraph = $paragraph['main_paragraph'];
-		$tag_line = $paragraph['tag_line'];
-
+        $tag_line = $paragraph['tag_line'];
+        if(!empty ($main_paragraph) || !empty($tag_line)) {
+	
 ?>
 
         <div id="primary" class="content-area">
@@ -53,8 +54,12 @@ get_header();
             <!-- #main -->
         </div>
 
-        <?php
-
+        </main>
+        <!-- #main -->
+	</div>
+	
+	<?php
+        }
 }
 }
 
@@ -70,7 +75,8 @@ if (function_exists('get_field')) {
 		$name = $program['name'];
 		$description = $program['description'];
 		$button = $program['button'];
-		$program_image = $program['program_image'];
+        $program_image = $program['program_image'];
+        if(!empty ($name) || !empty ($description) || !empty ($button) || !empty ($program_image)) {
 ?>
                 <div class="grid-x grid-margin-x large-offset-2">
 
@@ -98,8 +104,8 @@ if (function_exists('get_field')) {
                     </div>
                 </div>
 
-                <?php
-
+        <?php
+        }
 	}
 }
 
