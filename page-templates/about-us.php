@@ -58,7 +58,7 @@ if (function_exists('get_field')) {
 			<!-- team members name-->
        		<p class="member_name"><?php echo$member_name;?></p>
 	  		 <!-- team members image -->
-			 <img class="teamMemberImg" src="<?php echo$member_image;?>">
+			 <img class="teamMemberImg" src="<?php echo $member_image['url']; ?>" alt="<?php echo $member_image['alt']; ?>" />
 			 <!-- team members programs -->
 			 <p  class="member_programs"> <img src="<?php echo get_template_directory_uri() . '/assets/img/listDot.svg'; ?>" class="teamIcons" />	<?php echo$member_programs;?></p>
 			<!-- team members location -->
@@ -68,6 +68,8 @@ if (function_exists('get_field')) {
 			 <!-- team members mail -->
 			 <p class="member_email"> <img src="<?php echo get_template_directory_uri() . '/assets/img/email.svg'; ?>" class="teamIcons" />	<?php echo$member_email;?></p>
 
+
+			 
 	</div>
 
 		<?php
