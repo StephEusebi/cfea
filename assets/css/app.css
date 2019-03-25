@@ -329,19 +329,16 @@ h1 {
     margin-top: 30px;
 }
 
+
 .aboutText {
     margin-bottom: 50px;
+    text-align: center;
 }
 
-.aboutText > h2 {
+.aboutText > h2,h1 {
     font-family: 'Staatliches', cursive;
-    text-align: center;
-}
 
-.aboutText > .wpb_text_column {
-    text-align: center;
 }
-
 
  .teamMemberImg {
 	-webkit-filter: grayscale(50%);
