@@ -123,9 +123,10 @@ get_header();
                                     <!-- program cost -->
                                     <?php echo $cost; ?>
                                 </p>
-                                <!-- button to go register -->
-                                <button class="button" href="<?php echo $button; ?>" style="margin-left: 33%;">REGISTER NOW</button>    
                             </div> 
+                                <!-- button to go register -->
+                                <button class="large-offset-4 small-offset-1 button" href="<?php echo $button; ?>">REGISTER NOW</button>    
+                           
 
                             <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>      
                        <?php
