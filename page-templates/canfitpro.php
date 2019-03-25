@@ -27,14 +27,15 @@ get_header();
 <div class="grid-x grid-margin-x">
         <!-- section at top of page -->
         <?php 
-        if (function_exists('get_field')) {
-        $descriptions = get_field('descriptions');
+            if (function_exists('get_field')) {
+            $descriptions = get_field('descriptions');
 
         // pull in the advanced custom field content 
         foreach($descriptions as $description){
 
-                        //if a program banner image was provided show it, if not hide it. 
+                       // program banner variable
                         $program_banner = $description['program_banner'];
+                         //if a program banner image was provided show it, if not hide it. 
                         if (!empty ($program_banner)) {
                             ?>
                             <!-- banner at top of page -->
@@ -46,37 +47,33 @@ get_header();
                     ?>
 
                     <?php
-            
+            // program description variable
             $top_desc = $description['top_desc'];
             //if a top description was provided show it, if not hide it. 
             if (!empty ($top_desc)) {
               
-                ?>
+        ?>
           
-                           <!-- program description -->
+                    <!-- program description -->
                     <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10 progDesc"><?php echo $top_desc; ?></div>
+                    <!-- dividing bar between programs -->
                     <div class="cell small-10 small-offset-1 medium-10 large-centered dividerBar"></div>  
                 <?php 
             }
 
 ?>
-       
              </div>
     
-            
             <?php
-            
 
         }
     }
 
     ?>
-
-    
     <!-- END OF BANNER AND TOP DESCRIPTION -->
 
 
-        <div class="grid-x grid-margin-x">
+        <div class="grid-x grid-margin-x boxStyles">
 
         <?php 
             //get the programs acf
@@ -90,7 +87,7 @@ get_header();
                     if (!empty ($name)) {
                         ?> 
                         <!-- Accordion tab title -->
-                        <div class="large-centered columns small-10 coreContent">
+                        <div class="large-centered large-offset-1 columns small-10 coreContent">
                             <h2>
                                 <?php echo $name; ?>
                             </h2>
@@ -102,14 +99,15 @@ get_header();
                     //if a description or image were provided show what was given, hide the ones not provided. 
                     if (!empty ($description) || !empty ($program_image)) {
                         ?>
-                            <div class="large-centered columns small-10 coreContent">
-                                <!-- program image -->
-                                <img src="<?php echo $program_image; ?>" alt="" id="<?php echo $counter; ?>" />
-                                <!-- course description -->
-                                <p id="coreDesc">
+                      
+                            <div class="large-centered columns large-offset-1 small-10 coreContent">
+                                <img align="right" src="<?php echo $program_image; ?>" alt="" class="large-3 progImages1" id="<?php echo $counter; ?>" />
+                                <p id="coreDesc" class="large-7 small-10">
                                     <?php echo $description; ?>
                                 </p>
                             </div>
+                   
+
                         <?php
                     }
 
@@ -121,34 +119,62 @@ get_header();
                        ?>
 
                             <div class="large-centered columns small-10 coreContent">
-                                <p>
+                                <p class="cost" style="text-align:center;">
                                     <!-- program cost -->
                                     <?php echo $cost; ?>
                                 </p>
-                                <!-- button to go register -->
-                                <button class="button" href="<?php echo $button; ?>">REGISTER NOW</button>    
                             </div> 
-                            <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>   
+                                <!-- button to go register -->
+                                <button class="large-offset-4 small-offset-1 button" href="<?php echo $button; ?>">REGISTER NOW</button>    
+                           
+
+                            <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>      
                        <?php
                     }
-            
-              
-
         ?>
 
-                                        
+                                    
 
                 <?php
             // increment for photos
             $counter++;
             }
+            ?>
+            </div>
+            <?php
         }
 
         ?>
 
-        </div>
+       
 
-        
+            <?php 
+                //get the acf content for the video
+                if (function_exists('get_field')) {
+                $programs = get_field('programs');
+
+                    foreach($programs as $program){
+                        $ytvideo = $program['ytvideo'];
+                        //if a video link was provided show it, if not hide it. 
+                        if (!empty ($ytvideo)) {
+                        ?>
+
+                                <div class="grid-x coreContent">
+                                    <div class="large-centered columns large-offset-2 small-10 small-offset-1 progVideo">
+                                        <!-- program related video -->
+                                        <?php echo $ytvideo; ?>
+                                    </div>
+                                </div>
+                    <?php
+            }
+            ?>
+
+        <?php
+                }
+            }
+        ?>
+
+</div>
 
     <?php
 // imports the footer
