@@ -25,7 +25,8 @@ get_header();
 
 	foreach($paragraphs as $paragraph){
 		$main_paragraph = $paragraph['main_paragraph'];
-		$tag_line = $paragraph['tag_line'];
+        $tag_line = $paragraph['tag_line'];
+        if(!empty ($main_paragraph) || !empty($paragraph)) {
 	
 ?>
 
@@ -58,7 +59,7 @@ get_header();
 	</div>
 	
 	<?php
-
+        }
 }
 }
 
