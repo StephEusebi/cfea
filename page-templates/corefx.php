@@ -138,11 +138,14 @@ get_header();
             // increment for photos
             $counter++;
             }
+            ?>
+            </div>
+            <?php
         }
 
         ?>
 
-        </div>
+       
 
             <?php 
                 //get the acf content for the video

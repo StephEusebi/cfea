@@ -430,23 +430,26 @@ button.wsf-button {
 	padding-top: 25px;
 }
 
-.boxStyles p {
-    background-color: lightgrey;
+/* .boxStyles p {
+    background-color: #0E425D;
+    padding: 15px;
+    margin-top: -8px;
+} */
+
+.cost {
+    background-color: #0E425D;
+    color: #fff;
     padding: 15px;
     margin-top: -8px;
 }
 
-.innerBoxStyle  {
-    background-color: lightgrey;
-  
-}
-
 .boxStyles h2 {
     border-top-right-radius: 8px;
-    background-color: grey;
+    background-color: #0E425D;
     border-top-left-radius: 8px;
     text-align: center;
     padding-left: 15px;
+    margin-top: 10px;
     color: #fff;
 }
 
@@ -455,6 +458,7 @@ button.wsf-button {
 
 .progImages1 {
     width: 200px;
+    padding: 10px;
 }
 
 .progCost {
@@ -490,6 +494,8 @@ button.wsf-button {
     text-align: left;
     /* float: left; */
     width: 970px;
+    /* background-color: rgb(230, 230, 230); */
+    padding: 10px;
 }
 
 @media screen and (max-width: 39.9375em) {

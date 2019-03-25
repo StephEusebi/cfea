@@ -73,7 +73,7 @@ get_header();
     <!-- END OF BANNER AND TOP DESCRIPTION -->
 
 
-        <div class="grid-x grid-margin-x">
+        <div class="grid-x grid-margin-x boxStyles">
 
         <?php 
             //get the programs acf
@@ -118,30 +118,34 @@ get_header();
                     if (!empty ($button) || !empty ($cost)) {
                        ?>
 
-                            <div class="large-centered columns large-offset-4 small-10 coreContent">
-                                <p class="cost">
+                            <div class="large-centered columns small-10 coreContent">
+                                <p class="cost" style="text-align:center;">
                                     <!-- program cost -->
                                     <?php echo $cost; ?>
                                 </p>
                                 <!-- button to go register -->
-                                <button class="button" href="<?php echo $button; ?>">REGISTER NOW</button>    
+                                <button class="button" href="<?php echo $button; ?>" style="margin-left: 33%;">REGISTER NOW</button>    
                             </div> 
-                            <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>    
+
+                            <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>      
                        <?php
                     }
         ?>
 
-                                       
+                                    
 
                 <?php
             // increment for photos
             $counter++;
             }
+            ?>
+            </div>
+            <?php
         }
 
         ?>
 
-        </div>
+       
 
             <?php 
                 //get the acf content for the video
