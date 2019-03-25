@@ -20,24 +20,20 @@ get_header();
 	<div id="primary" class="content-area aboutContent">
 		<main id="main" class="site-main">
 
-	<h1 class="OurTeamtitle">Our Team</h1>
+		<div class="grid-x grid-padding-x"><!-- Grid Container WYSIWYG TEXT -->
+		<div class="cell large-12 aboutText"><!-- Cell Container -->
+		
+		<?php /* Start the Loop */ ?>
+<?php while(have_posts()) : the_post(); ?>
+<?php the_content();?>
+<?php endwhile; ?>
 
-	<div class="grid-x grid-padding-x">
-	<div class="cell large-12 ">
-	<div id="aboutUsP">
-	<h2 id="welcometitle">Welcome to the Canadian Fitness Education Alliance</h2>
+		</div><!-- Grid Container WYSIWYG TEXT END -->
+		</div><!-- Cell Container END -->
 
-<p>Welcome to the Canadian Fitness Education Alliance (known as the CFEA).  We are a leading provider of fitness certification and education in Canada.  Through our professional partnerships, we have certified thousands of Canadian fitness professionals.
-Whether you are new to the fitness industry looking for your first job and want to become certified or you are a seasoned veteran looking for advanced certification and continuing education we are here to help you.
-The CFEA’s mandate is simple.  To bring together the most recognized education brands in fitness today while giving you an amazing live education experience.  Our award-winning team of highly trained experienced Master Trainers, Instructors and PRO TRAINERS are among the best fitness educators in the industry today!</p>
-
-<h3 id="letUsHelp">Let us help you take your fitness career to the next level!</h3>
-</div>
-</div>
-	</div>
-
-	<div class="grid-x grid-padding-x"><!-- Grid Container Team Cards  -->
+	<div class="grid-x grid-padding-x"><!-- Grid Container Team Cards -->
 	<div class="cell large-12 ourTeam"><!-- Cell Container -->
+
   <?php 
 
 /* ACF functions */
@@ -78,8 +74,8 @@ if (function_exists('get_field')) {
 }
 
 ?>
-</div>
-</div>
+</div> <!-- Cell Container END -->
+</div> <!--Grid Container Team Cards END -->
 
 
 		</main><!-- #main -->
