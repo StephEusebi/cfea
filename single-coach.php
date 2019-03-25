@@ -82,9 +82,15 @@ get_header();
 							<!-- phone number -->
 							<p><strong>Phone Number:</strong> <?php echo $phone_number; ?></p>
 
+							<!-- if button info is not empty - show  -->
+							<?php if(!empty ($button) ) { ?>
+
 							<a href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>">
 							<div class="button coach-button"><h5><?php echo $button['title']; ?></h5></div>
 							</a>
+
+							<!-- ends if button info not empty -->
+							<?php }  ?>
 								
 							<!-- ends if contact info not empty -->
 							<?php }  ?>
