@@ -293,9 +293,8 @@ h1 {
 }
 
 .post {
-    flex: 1 1 200px;
-    display: flex;
     border: 5px solid white;
+    width: 18rem;
 }
 
 .card-coach {
