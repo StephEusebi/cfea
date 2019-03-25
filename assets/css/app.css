@@ -297,6 +297,12 @@ h1 {
     width: 18rem;
 }
 
+@media screen and (max-width: 39.9375em) {
+    .post {
+        flex-grow: 1;
+    }
+}
+
 .card-coach {
     align-items: center;
 }
