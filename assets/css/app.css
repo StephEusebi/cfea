@@ -1021,14 +1021,22 @@ footer{
 	.logoDiv {
 		text-align: center !important;
 	}
-	.center, .dropdown, .primary-menu {
+	.center, .dropdown, .primary-menu, #example-animated-menu, .top-bar {
 		text-align: center !important;
-		margin: 0 auto;
+        margin: 0 auto;
+        display: -webkit-flex;
     }
 
     .is-submenu-item {
         text-align: left;
     }
+
+    #primary-menu, .center{
+        margin-top: 0;
+        text-align: center !important;
+    }
+ 
+
 
 }
 
