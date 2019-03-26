@@ -84,7 +84,7 @@ get_header();
 								<h2 class="text-center float-center"><?php echo $header; ?></h2>
 										
 								<!-- LARGE button -->
-								<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
+								<a class="button float-center hide-for-small-only"  href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>">
 									<h4><?php echo $button['title']; ?></h4>
 								</a>
 
@@ -92,7 +92,7 @@ get_header();
 								</div> <!-- END front-heading -->
 
 								<!-- button that shows only on mibile view -->
-								<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
+								<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>">
 									<h4><?php echo $button['title']; ?></h4>
 								</a>
 						
@@ -104,14 +104,14 @@ get_header();
 							// if header is empty but not button- do not show header show button
 							if(empty ($header) && !empty ($button)) { ?>
 
-								<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
+								<a class="button float-center hide-for-small-only"  href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>">
 									<h4><?php echo $button['title']; ?></h4>
 								</a>
 
 								</div> <!-- END front-heading -->
 
 								<!-- button that shows only on mibile view -->
-								<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
+								<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>">
 									<h4><?php echo $button['title']; ?></h4>
 								</a>
 
@@ -241,7 +241,7 @@ get_header();
 								<p><?php echo $info; ?></p>
 
 								<!-- link -->
-								<p><a  href="<?php echo $link_url['link']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
+								<p><a  href="<?php echo $link_url['url']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
 							
 							</div> <!-- END block_1_info -->
 							
@@ -261,7 +261,7 @@ get_header();
 									<p><?php echo $info; ?></p>
 
 									<!-- link -->
-									<p><a  href="<?php echo $link_url['link']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
+									<p><a  href="<?php echo $link_url['url']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
 
 								</div> <!-- END block_1_info -->
 
@@ -317,7 +317,7 @@ get_header();
 								<p><?php echo$info; ?></p>
 
 								<!-- link -->
-								<p><a  href="<?php echo $link_url['link']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
+								<p><a  href="<?php echo $link_url['url']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
 							
 							</div> <!-- END block_2_text -->
 							
@@ -343,7 +343,7 @@ get_header();
 									<p><?php echo$info; ?></p>
 
 									<!-- link -->
-									<p><a  href="<?php echo $link_url['link']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
+									<p><a  href="<?php echo $link_url['url']; ?>" target="<?php echo $link_url['target']; ?>"><?php echo $link_url['title']; ?></a></p>
 								
 								</div> <!-- END block_2_text -->
 
@@ -386,7 +386,7 @@ get_header();
 									<h1 class="text-center grey top-space"><?php echo $header; ?></h1>
 											
 									<!-- LARGE button -->
-									<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
+									<a class="button float-center hide-for-small-only"  href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>">
 										<h4><?php echo $button['title']; ?></h4>
 									</a>
 		
@@ -394,7 +394,7 @@ get_header();
 									</div> <!-- END front-heading -->
 		
 									<!-- button that shows only on mibile view -->
-									<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
+									<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>">
 										<h4><?php echo $button['title']; ?></h4>
 									</a>
 							
@@ -406,14 +406,14 @@ get_header();
 								// if header is empty but not button- do not show header show button
 								if(empty ($header) && !empty ($button)) { ?>
 	
-									<a class="button float-center top-space hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
+									<a class="button float-center top-space hide-for-small-only"  href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>">
 										<h4><?php echo $button['title']; ?></h4>
 									</a>
 		
 									</div> <!-- END front-heading -->
 		
 									<!-- button that shows only on mibile view -->
-									<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
+									<a class="button button-mobile float-center show-for-small-only"  href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>">
 										<h4><?php echo $button['title']; ?></h4>
 									</a>
 	
