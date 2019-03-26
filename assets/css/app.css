@@ -448,6 +448,9 @@ button.wsf-button {
     color: #fff;
     padding: 15px;
     margin-top: -8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
 }
 
 .boxStyles {
@@ -506,6 +509,12 @@ button.wsf-button {
     width: 970px;
     /* background-color: rgb(230, 230, 230); */
     padding: 10px;
+    padding-bottom: 20px;
+    border-left: 2pt solid rgba(0, 0, 0, 0.377);
+    border-right: 2pt solid rgba(0, 0, 0, 0.377);
+    margin-top: -10px;
+    margin-bottom: -1px;
+   
 }
 
 @media screen and (max-width: 39.9375em) {
