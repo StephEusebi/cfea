@@ -39,8 +39,8 @@ get_header();
                         if (!empty ($program_banner)) {
                             ?>
                             <!-- banner at top of page -->
-                                <div class="large-centered columns small-centered small-10">
-                                <img src="<?php echo $program_banner['url']; ?>" alt="<?php echo $program_banner['alt']; ?>"  class="large-centered columns coreContent" id="corefxBanner"/>
+                                <div class="large-centered columns small-centered small-10 coreContent">
+                                <img src="<?php echo $program_banner['url']; ?>" alt="<?php echo $program_banner['alt']; ?>" id="corefxBanner"/>
                                 </div>
                             <?php 
                         }
