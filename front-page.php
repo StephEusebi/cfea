@@ -81,7 +81,7 @@ get_header();
 							?>
 
 								<!-- LARGE title -->
-								<h2 class="text-center"><?php echo $header; ?></h2>
+								<h2 class="text-center float-center"><?php echo $header; ?></h2>
 										
 								<!-- LARGE button -->
 								<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">

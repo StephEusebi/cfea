@@ -169,6 +169,8 @@ h1 {
     position: absolute;
     z-index: 2;
     align-self: center;
+    top: 50%;
+    transform: translateY(-50%)
 }
 
 .front-heading h2 {
