@@ -504,7 +504,7 @@ button.wsf-button {
 #coreDesc {
     text-align: left;
     /* float: left; */
-    width: 970px;
+    /* width: 970px; */
     /* background-color: rgb(230, 230, 230); */
     padding: 10px;
 }

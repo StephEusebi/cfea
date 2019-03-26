@@ -102,7 +102,7 @@ get_header();
                       
                             <div class="large-centered columns small-10 coreContent">
                                 <img align="right" src="<?php echo $program_image; ?>" alt="" class="large-3 progImages1" id="<?php echo $counter; ?>" />
-                                <p id="coreDesc" class="large-7 small-10">
+                                <p id="coreDesc" class="large-7 medium-6 small-10">
                                     <?php echo $description; ?>
                                 </p>
                             </div>
