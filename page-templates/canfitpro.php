@@ -100,7 +100,7 @@ get_header();
                     if (!empty ($description) || !empty ($program_image)) {
                         ?>
                       
-                            <div class="large-centered columns small-10 coreContent">
+                            <div class="large-centered columns small-10 coreContent programBoxBorders">
                                 <img align="right" src="<?php echo $program_image; ?>" alt="" class="large-3 progImages1" id="<?php echo $counter; ?>" />
                                 <p id="coreDesc" class="large-7 medium-6 small-10">
                                     <?php echo $description; ?>
