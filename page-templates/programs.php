@@ -100,9 +100,9 @@ if (function_exists('get_field')) {
                                     <?php
                                     if(!empty ($button)) {
                                         ?>
-                                    <button class="button" href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
+                                    <a class="button" href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>">
                                         <?php echo $button['title']; ?>
-                                    </button> 
+                                    </a> 
                                
                                 </div>
                             </li>
