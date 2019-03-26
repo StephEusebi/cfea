@@ -48,7 +48,8 @@ h1 {
 }
 
 .is-dropdown-submenu-parent.opens-right>.is-dropdown-submenu {
-	margin-top: 40px;
+    padding-right: 1.5rem;
+    margin-top: 40px;
     left: -10px;
     border-top: 1px solid#aa2527;
 	border-left: none;
@@ -1020,7 +1021,7 @@ footer{
 	.logoDiv {
 		text-align: center !important;
 	}
-	.center, .dropdown {
+	.center, .dropdown, .primary-menu {
 		text-align: center !important;
 		margin: 0 auto;
     }
