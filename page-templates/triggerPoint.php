@@ -115,7 +115,7 @@ get_header();
                     $cost = $program['cost'];
 
                     //if button or cost was provided show it, if not hide the ones not provided. 
-                    if (!empty ($button) || !empty ($cost)) {
+                    if (!empty ($cost)) {
                        ?>
 
                             <div class="large-centered columns small-10 coreContent">
@@ -124,14 +124,16 @@ get_header();
                                     <?php echo $cost; ?>
                                 </p>
 
+                                <?php 
+                                    if (!empty ($button)) {
+                                ?>
+
                                 <!-- button to go register -->
                                 <div class="button-holder">
                                     <button class="button" href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
                                         <?php echo  $button['title']; ?>
                                     </button> 
                                 </div>
-
-
                                    
                             </div>
 
@@ -145,6 +147,7 @@ get_header();
                 <?php
             // increment for photos
             $counter++;
+                } 
             }
             ?>
             </div>
@@ -166,15 +169,12 @@ get_header();
                         if (!empty ($ytvideo)) {
                         ?>
 
-
                                 <div class="grid-x coreContent boxStyles">
                                     <div class="button-holder small-10 progVideo">
                                         <!-- program related video -->
                                         <?php echo $ytvideo; ?>
                                     </div>
                                 </div>
-
-                                
                     <?php
             }
             ?>

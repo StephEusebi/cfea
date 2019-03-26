@@ -115,7 +115,7 @@ get_header();
                     $cost = $program['cost'];
 
                     //if button or cost was provided show it, if not hide the ones not provided. 
-                    if (!empty ($button) || !empty ($cost)) {
+                    if (!empty ($cost)) {
                        ?>
 
                             <div class="large-centered columns small-10 coreContent">
@@ -123,6 +123,10 @@ get_header();
                                     <!-- program cost -->
                                     <?php echo $cost; ?>
                                 </p>
+
+                                <?php 
+                                    if (!empty ($button)) {
+                                ?>
 
                                 <!-- button to go register -->
                                 <div class="button-holder">
@@ -143,6 +147,7 @@ get_header();
                 <?php
             // increment for photos
             $counter++;
+                } 
             }
             ?>
             </div>
