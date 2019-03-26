@@ -29,16 +29,12 @@ get_header();
         if(!empty ($main_paragraph) || !empty($tag_line)) {
 	
 ?>
+<div class="grid-x grid-margin-x boxStyles">
+    <div class="large-centered columns small-10 coreContent">
+        <h1 class="programsTitle">CURRENT PROGRAMS</h1>
+     </div>
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main">
-
-            <h1 class="programsTitle">CURRENT PROGRAMS</h1>
-
-	<div class="grid-x grid-margin-x large-offset-2">
-
-		<div class="cell large-10">
-
+		<div class="large-centered columns small-10 coreContent">
 					<p class="programInfo">
 						<?php echo$main_paragraph; ?> 
 					</p>
@@ -47,16 +43,13 @@ get_header();
 						<?php echo$tag_line; ?>
 					</p>
 
-			</div>
-		</div>
+	    </div>
+</div>
 			<!-- Whether you are new to the fitness industry and are looking to become certified to find you first job or are a seasoned veteran looking for advanced certification and continuing education we are here to help you. The CFEA’s mandate is simple.  To bring together the most recognized education brands in fitness today while giving you an amazing live education experience.  Our award-winning team of highly trained and experienced Master Trainers, Instructors and PRO TRAINERS are among the best fitness educators in the industry today! -->
 
 			<!-- Let us help you take your fitness career to the next level! -->
 
 
-        </main>
-        <!-- #main -->
-	</div>
 	
 	<?php
         }
@@ -78,8 +71,7 @@ if (function_exists('get_field')) {
         $program_image = $program['program_image'];
         if(!empty ($name) || !empty ($description) || !empty ($button) || !empty ($program_image)) {
 ?>
-        <div class="grid-x grid-margin-x large-offset-2">
-
+        <div class="grid-x grid-margin-x boxStyles">
             <div class="cell large-10">
 
                 <ul class="accordion plAccordian" data-accordion data-allow-all-closed="true">
@@ -91,9 +83,9 @@ if (function_exists('get_field')) {
 
                         <!-- Accordion tab content -->
                         <div class="accordion-content" data-tab-content>
-						<div class="cell large-10">
+						
 						<img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="pLandingBanner" />
-            </div>
+                       
                             <p>
                                 <?php echo$description; ?>
                             </p>
