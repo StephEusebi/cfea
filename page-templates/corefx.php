@@ -125,7 +125,10 @@ get_header();
                                 </p>
 
                                 <!-- button to go register -->
-                                <button class="button" href="<?php echo $button; ?>">REGISTER NOW</button>    
+                                <div class="button-holder">
+                                    <button class="button" href="<?php echo $button; ?>">REGISTER NOW</button> 
+                                </div>
+                                   
                             </div>
 
                             <div class="cell small-10 medium-10 large-centered dividerBar"></div>      
@@ -160,7 +163,7 @@ get_header();
                         ?>
 
                                 <div class="grid-x coreContent boxStyles">
-                                    <div class="large-centered columns small-10 progVideo">
+                                    <div class="button-holder small-10 progVideo">
                                         <!-- program related video -->
                                         <?php echo $ytvideo; ?>
                                     </div>
