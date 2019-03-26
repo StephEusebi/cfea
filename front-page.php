@@ -181,7 +181,7 @@ get_header();
 
 
 							<!-- if all empty empty -->	
-							<?php if(empty ($logos))  { ?>
+							<?php if(empty($logo_image) && empty($logo_url) )   { ?>
 							<!-- END if all empty empty -->	
 							<?php } ?>
 							
