@@ -48,12 +48,12 @@ get_header();
 				<?php }
 					// if empty -show civ box
 					if(empty ($image)) {
-				?>
+					?>
 					<!-- empty div with styles -->
 					 <div class="banner-box"></div> 
 
-					 <!-- END if fucntion and if empty -->
-					 <?php } } ?>
+				<!-- END if fucntion and if empty -->
+				<?php } } ?>
 
 				<!-- END ACF - BANNER_IMAGE -->
 
