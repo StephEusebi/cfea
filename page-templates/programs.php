@@ -95,7 +95,11 @@ if (function_exists('get_field')) {
                                         <?php echo$description; ?>
                                     </p>
                                     <!-- BUTTON - LINK TO PROGRAM CONTENT -->
-                                    <a class="button" href="<?php echo$button; ?>">Learn More</a>
+                                   
+                                    <button class="button" href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
+                                        <?php echo  $button['title']; ?>
+                                    </button> 
+                               
                                 </div>
                             </li>
                         </ul>
