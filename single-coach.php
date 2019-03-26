@@ -98,7 +98,6 @@ get_header();
 							<!-- ends if fuction excists and foreach -->
 							<?php } } ?>
 						<!-- cta button -->
-						<!-- <div class="button coach-button" href="/calendar/"><h5>Train with me!</h5></div> -->
 						
 						<?php
 						

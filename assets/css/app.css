@@ -107,8 +107,9 @@ h1 {
 	background-color: #bb0a1e;
 	color: #fff;
 	border-radius: 0.3rem;
-    width: 20rem;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 20rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-self: center;
 }
 
 .button h4 {
@@ -117,6 +118,11 @@ h1 {
 
 .button:hover, .button.primary:hover, .button:focus, .button.primary:focus {
 	background-color: #aa2527;
+}
+
+.button-holder {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -329,24 +335,16 @@ h1 {
     margin-top: 30px;
 }
 
-.aboutContent {
-    padding: 2rem;
-}
 
-#aboutUsP {
-    text-align: center;
+.aboutText {
     margin-bottom: 50px;
-    font-family: 'Lato', sans-serif;
-
+    text-align: center;
 }
 
-#welcometitle, #letUsHelp, .OurTeamtitle   {
+.aboutText > h2,h1 {
     font-family: 'Staatliches', cursive;
-}
 
- .OurTeamtitle {
-     text-align: center;
- }
+}
 
  .teamMemberImg {
 	-webkit-filter: grayscale(50%);
@@ -355,7 +353,7 @@ h1 {
 
  .teamMembers {
      width: 275px;
-     margin-bottom: 20px;
+     margin: .5rem;
      border: 8px solid #E6E6E6;
      border-radius: 5px 5px 0px 0px;
      background-color: #E6E6E6;
@@ -365,10 +363,10 @@ h1 {
  .ourTeam {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    margin-bottom: 40px;
 
 }
-
  .member_name {
 	text-align: center;
     font-family: 'Staatliches', cursive;
@@ -450,6 +448,7 @@ button.wsf-button {
 
     .programsTitle, .programInfo {
         text-align: center;
+        align-self: center;
     }
 
     .programTables td {
@@ -547,6 +546,7 @@ button.wsf-button {
 
 .progVideo iframe {
     margin-bottom: 50px;
+    align-self: center;
 }
 
 
@@ -591,6 +591,13 @@ button.wsf-button {
     color: #fff;
     padding: 15px;
     margin-top: -8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+
+.boxStyles {
+    justify-content: center;
 }
 
 .boxStyles h2 {
@@ -602,7 +609,6 @@ button.wsf-button {
     margin-top: 10px;
     color: #fff;
 }
-
 
 /* COREFX ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -643,19 +649,30 @@ button.wsf-button {
 #coreDesc {
     text-align: left;
     /* float: left; */
-    width: 970px;
+    /* width: 970px; */
     /* background-color: rgb(230, 230, 230); */
-    padding: 10px;
+    padding-top: 25px;
+    margin-top: -10px;
+    margin-bottom: -1px;
+   
 }
 
 @media screen and (max-width: 39.9375em) {
     #coreDesc {
-        width: 300px;
+        
     }
 }
 
+.programBoxBorders {
+    border-left: 2pt solid rgba(0, 0, 0, 0.377);
+    border-right: 2pt solid rgba(0, 0, 0, 0.377);
+    margin-top: -8px;
+    padding-left: 25px;
+    padding-bottom: 30px;
+}
+
 .dividerBar {
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
     margin-top: 25px;
     margin-bottom: 25px;
 

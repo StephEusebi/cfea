@@ -19,12 +19,14 @@
 get_header();
 ?>
 
-    <div class="grid-container">
+<div class="grid-container">
 
-        <!-- BANNER AND TOP DESCRIPTION -->
-        <div class="grid-x grid-margin-x">
-            <!-- section at top of page -->
-            <?php 
+
+
+    <!-- BANNER AND TOP DESCRIPTION -->    
+<div class="grid-x grid-margin-x boxStyles">
+        <!-- section at top of page -->
+        <?php 
             if (function_exists('get_field')) {
             $descriptions = get_field('descriptions');
 
@@ -36,11 +38,11 @@ get_header();
                          //if a program banner image was provided show it, if not hide it. 
                         if (!empty ($program_banner)) {
                             ?>
-                <!-- banner at top of page -->
-                <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10">
-                    <img src="<?php echo $program_banner; ?>" alt="corefx banner" id="corefxBanner" class="large-centered columns coreContent" />
-                </div>
-                <?php 
+                            <!-- banner at top of page -->
+                                <div class="large-centered columns small-centered small-10">
+                                    <img src="<?php echo $program_banner; ?>" alt="corefx banner" id="corefxBanner" class="large-centered columns coreContent" />
+                                </div>
+                            <?php 
                         }
                     ?>
 
@@ -49,22 +51,20 @@ get_header();
             $top_desc = $description['top_desc'];
             //if a top description was provided show it, if not hide it. 
             if (!empty ($top_desc)) {
-
+              
         ?>
           
                     <!-- program description -->
-                    <div class="large-centered columns large-offset-1 small-centered small-offset-1 small-10 progDesc"><?php echo $top_desc; ?></div>
+                    <div class="large-centered columns small-centered small-10 progDesc"><?php echo $top_desc; ?></div>
                     <!-- dividing bar between programs -->
-                    <div class="cell small-10 small-offset-1 medium-10 large-centered dividerBar"></div>  
+                    <div class="cell small-10 medium-10 large-centered dividerBar"></div>  
                 <?php 
             }
 
 ?>
              </div>
-
-        </div>
-
-        <?php
+    
+            <?php
 
         }
     }
@@ -72,7 +72,6 @@ get_header();
     ?>
     <!-- END OF BANNER AND TOP DESCRIPTION -->
 
-            <div class="grid-x grid-margin-x">
 
         <div class="grid-x grid-margin-x boxStyles">
 
@@ -82,17 +81,17 @@ get_header();
                 $programs = get_field('programs');
                 $counter = 0;
                 foreach($programs as $program){
-
+                   
                     $name = $program['name'];
                    //if a program name was provided show it, if not hide it. 
                     if (!empty ($name)) {
                         ?> 
                         <!-- Accordion tab title -->
-                        <div class="large-centered large-offset-1 columns small-10 coreContent">
+                        <div class="large-centered columns small-10 coreContent">
                             <h2>
                                 <?php echo $name; ?>
                             </h2>
-                    </div>
+                        </div>
                     <?php
                     } 
                     $description = $program['description'];
@@ -101,9 +100,9 @@ get_header();
                     if (!empty ($description) || !empty ($program_image)) {
                         ?>
                       
-                            <div class="large-centered columns large-offset-1 small-10 coreContent">
+                            <div class="large-centered columns small-10 coreContent programBoxBorders">
                                 <img align="right" src="<?php echo $program_image; ?>" alt="" class="large-3 progImages1" id="<?php echo $counter; ?>" />
-                                <p id="coreDesc" class="large-7 small-10">
+                                <p id="coreDesc" class="large-7 medium-6 small-10">
                                     <?php echo $description; ?>
                                 </p>
                             </div>
@@ -124,19 +123,22 @@ get_header();
                                     <!-- program cost -->
                                     <?php echo $cost; ?>
                                 </p>
-                            </div> 
-                                <!-- button to go register -->
-                                <button class="large-offset-4 small-offset-1 button" href="<?php echo $button; ?>">REGISTER NOW</button>    
-                           
 
-                            <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>      
+                                <!-- button to go register -->
+                                <div class="button-holder">
+                                    <button class="button" href="<?php echo $button; ?>">REGISTER NOW</button> 
+                                </div>
+                                   
+                            </div>
+
+                            <div class="cell small-10 medium-10 large-centered dividerBar"></div>      
                        <?php
                     }
         ?>
 
                                     
 
-                                <?php
+                <?php
             // increment for photos
             $counter++;
             }
@@ -160,8 +162,8 @@ get_header();
                         if (!empty ($ytvideo)) {
                         ?>
 
-                                <div class="grid-x coreContent">
-                                    <div class="large-centered columns large-offset-2 small-10 small-offset-1 progVideo">
+                                <div class="grid-x coreContent boxStyles">
+                                    <div class="button-holder small-10 progVideo">
                                         <!-- program related video -->
                                         <?php echo $ytvideo; ?>
                                     </div>
@@ -170,12 +172,12 @@ get_header();
             }
             ?>
 
-                    <?php
+        <?php
                 }
             }
         ?>
 
-    </div>
+</div>
 
     <?php
 // imports the footer
