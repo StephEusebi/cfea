@@ -163,10 +163,9 @@ get_header();
                         ?>
 
                                 <div class="grid-x coreContent boxStyles">
-                                    <div class="button-holder small-10 progVideo">
-                                        <!-- program related video -->
-                                        <?php echo $ytvideo; ?>
-                                    </div>
+                                <div class="button-holder">
+                                    <button class="button" href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">><?php echo $button['title']; ?></button> 
+                                </div>
                                 </div>
                     <?php
             }
