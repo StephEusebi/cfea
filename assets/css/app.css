@@ -443,6 +443,10 @@ button.wsf-button {
     margin-top: -8px;
 }
 
+.boxStyles {
+    justify-content: center;
+}
+
 .boxStyles h2 {
     border-top-right-radius: 8px;
     background-color: #494747;

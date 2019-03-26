@@ -87,7 +87,7 @@ get_header();
                     if (!empty ($name)) {
                         ?> 
                         <!-- Accordion tab title -->
-                        <div class="large-centered large-offset-1 columns small-10 coreContent">
+                        <div class="large-centered columns small-10 coreContent">
                             <h2>
                                 <?php echo $name; ?>
                             </h2>
@@ -100,7 +100,7 @@ get_header();
                     if (!empty ($description) || !empty ($program_image)) {
                         ?>
                       
-                            <div class="large-centered columns large-offset-1 small-10 coreContent">
+                            <div class="large-centered columns small-10 coreContent">
                                 <img align="right" src="<?php echo $program_image; ?>" alt="" class="large-3 progImages1" id="<?php echo $counter; ?>" />
                                 <p id="coreDesc" class="large-7 small-10">
                                     <?php echo $description; ?>
@@ -123,12 +123,12 @@ get_header();
                                     <!-- program cost -->
                                     <?php echo $cost; ?>
                                 </p>
-                           
+
                                 <!-- button to go register -->
                                 <button class="button" href="<?php echo $button; ?>">REGISTER NOW</button>    
-                                </div> 
+                            </div>
 
-                            <div class="cell small-10 medium-10 large-centered small-offset-1 dividerBar"></div>      
+                            <div class="cell small-10 medium-10 large-centered dividerBar"></div>      
                        <?php
                     }
         ?>
@@ -159,8 +159,8 @@ get_header();
                         if (!empty ($ytvideo)) {
                         ?>
 
-                                <div class="grid-x coreContent">
-                                    <div class="large-centered columns large-offset-2 small-10 small-offset-1 progVideo">
+                                <div class="grid-x coreContent boxStyles">
+                                    <div class="large-centered columns small-10 progVideo">
                                         <!-- program related video -->
                                         <?php echo $ytvideo; ?>
                                     </div>
