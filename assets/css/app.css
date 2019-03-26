@@ -1065,6 +1065,7 @@ footer{
 	.center, .dropdown, .primary-menu {
         text-align: center !important;
         margin: 0 auto;
+        display: -webkit-flex;
         z-index: 99;
 
         }
