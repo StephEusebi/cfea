@@ -34,8 +34,8 @@
                     "sub_fields": [
                         {
                             "key": "field_5c95b1a31e08c",
-                            "label": "program banner",
-                            "name": "program_banner",
+                            "label": "program logo",
+                            "name": "program_logo",
                             "type": "image",
                             "instructions": "",
                             "required": 0,
@@ -179,7 +179,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url"
+                            "return_format": "array"
                         },
                         {
                             "key": "field_5c95b1a2f2822",
@@ -518,7 +518,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url"
+                            "return_format": "array"
                         },
                         {
                             "key": "field_5c95b1a31608d",
@@ -631,7 +631,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url"
+                            "return_format": "array"
                         },
                         {
                             "key": "field_5c95b1c46e3c9",
@@ -679,5 +679,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1553315788
+    "modified": 1553624505
 }

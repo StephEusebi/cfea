@@ -101,7 +101,7 @@ get_header();
                         ?>
                       
                             <div class="large-centered columns small-10 coreContent programBoxBorders">
-                                <img align="right" src="<?php echo $program_image; ?>" alt="" class="large-3 medium-12 small-12 progImages1" id="<?php echo $counter; ?>" />
+                                <img align="right" src="<?php echo $program_image; ?>" alt="" class="large-3 progImages1" id="<?php echo $counter; ?>" />
                                 <p id="coreDesc" class="large-7 medium-6 small-10">
                                     <?php echo $description; ?>
                                 </p>
@@ -115,7 +115,7 @@ get_header();
                     $cost = $program['cost'];
 
                     //if button or cost was provided show it, if not hide the ones not provided. 
-                    if (!empty ($button) || !empty ($cost)) {
+                    if (!empty ($cost)) {
                        ?>
 
                             <div class="large-centered columns small-10 coreContent">
@@ -124,9 +124,15 @@ get_header();
                                     <?php echo $cost; ?>
                                 </p>
 
+                                <?php 
+                                    if (!empty ($button)) {
+                                ?>
+
                                 <!-- button to go register -->
                                 <div class="button-holder">
-                                    <button class="button" href="<?php echo $button; ?>">REGISTER NOW</button> 
+                                    <button class="button" href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
+                                        <?php echo $button['title']; ?>
+                                    </button> 
                                 </div>
                                    
                             </div>
@@ -141,6 +147,7 @@ get_header();
                 <?php
             // increment for photos
             $counter++;
+                } 
             }
             ?>
             </div>
