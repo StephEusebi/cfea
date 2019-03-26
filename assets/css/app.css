@@ -525,9 +525,9 @@ button.wsf-button {
 }
 
 .dividerBar {
-    border-bottom: 2px solid black;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    /* border-bottom: 2px solid black; */
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 
