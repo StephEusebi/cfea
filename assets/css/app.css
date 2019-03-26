@@ -306,6 +306,7 @@ button.wsf-button {
 
     .programsTitle, .programInfo {
         text-align: center;
+        align-self: center;
     }
 
     .programTables td {
