@@ -181,12 +181,12 @@ get_header();
 
 
 							<!-- if all empty empty -->	
-							<?php if(empty ($logo))  { ?>
+							<?php if(empty ($logos))  { ?>
 							<!-- END if all empty empty -->	
 							<?php } ?>
 							
 
-							
+
 							<!-- END if function and foreach -->
 							<?php } } ?>
 
