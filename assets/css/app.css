@@ -651,8 +651,7 @@ button.wsf-button {
     /* float: left; */
     /* width: 970px; */
     /* background-color: rgb(230, 230, 230); */
-    padding: 25px;
-    padding-bottom: 30px;
+    padding-top: 25px;
     margin-top: -10px;
     margin-bottom: -1px;
    
@@ -668,6 +667,8 @@ button.wsf-button {
     border-left: 2pt solid rgba(0, 0, 0, 0.377);
     border-right: 2pt solid rgba(0, 0, 0, 0.377);
     margin-top: -8px;
+    padding-left: 25px;
+    padding-bottom: 30px;
 }
 
 .dividerBar {
