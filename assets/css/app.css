@@ -1071,6 +1071,7 @@ footer{
 
         #primary-menu {
             margin-top: 0px;
+            text-align: center !important;
         }
 
     .is-submenu-item {
