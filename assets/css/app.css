@@ -107,8 +107,9 @@ h1 {
 	background-color: #bb0a1e;
 	color: #fff;
 	border-radius: 0.3rem;
-    width: 20rem;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 20rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-self: center;
 }
 
 .button h4 {
@@ -117,6 +118,11 @@ h1 {
 
 .button:hover, .button.primary:hover, .button:focus, .button.primary:focus {
 	background-color: #aa2527;
+}
+
+.button-holder {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -442,6 +448,7 @@ button.wsf-button {
 
     .programsTitle, .programInfo {
         text-align: center;
+        align-self: center;
     }
 
     .programTables td {
@@ -539,6 +546,7 @@ button.wsf-button {
 
 .progVideo iframe {
     margin-bottom: 50px;
+    align-self: center;
 }
 
 
@@ -583,6 +591,13 @@ button.wsf-button {
     color: #fff;
     padding: 15px;
     margin-top: -8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+
+.boxStyles {
+    justify-content: center;
 }
 
 .boxStyles h2 {
@@ -594,7 +609,6 @@ button.wsf-button {
     margin-top: 10px;
     color: #fff;
 }
-
 
 /* COREFX ---------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -635,9 +649,15 @@ button.wsf-button {
 #coreDesc {
     text-align: left;
     /* float: left; */
-    width: 970px;
+    /* width: 970px; */
     /* background-color: rgb(230, 230, 230); */
     padding: 10px;
+    padding-bottom: 20px;
+    border-left: 2pt solid rgba(0, 0, 0, 0.377);
+    border-right: 2pt solid rgba(0, 0, 0, 0.377);
+    margin-top: -10px;
+    margin-bottom: -1px;
+   
 }
 
 @media screen and (max-width: 39.9375em) {
