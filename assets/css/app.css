@@ -209,6 +209,7 @@ h1 {
 
 .logo-container img {
     align-self: center;
+    width: 100%;
 }
 
 /* logo with no a tag */
