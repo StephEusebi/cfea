@@ -123,22 +123,19 @@ get_header();
                                     <!-- program cost -->
                                     <?php echo $cost; ?>
                                 </p>
-
-                                <?php 
-                                    if (!empty ($button)) {
-                                ?>
-
+                                <?php
+                                if(!empty ($button)) {
+                                    ?>
                                 <!-- button to go register -->
                                 <div class="button-holder">
-                                    <button class="button" href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
-                                        <?php echo $button['title']; ?>
-                                    </button> 
+                                    <button class="button" href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>"><?php echo $button['title']; ?></button> 
                                 </div>
                                    
                             </div>
 
                             <div class="cell small-10 medium-10 large-centered dividerBar"></div>      
                        <?php
+                    }
                     }
         ?>
 
@@ -147,7 +144,6 @@ get_header();
                 <?php
             // increment for photos
             $counter++;
-                } 
             }
             ?>
             </div>
