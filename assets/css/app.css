@@ -661,12 +661,6 @@ button.wsf-button {
    
 }
 
-@media screen and (max-width: 39.9375em) {
-    #coreDesc {
-        
-    }
-}
-
 .programBoxBorders {
     border-left: 2pt solid rgba(0, 0, 0, 0.377);
     border-right: 2pt solid rgba(0, 0, 0, 0.377);
@@ -1031,6 +1025,14 @@ footer{
         /* margin-top: 25px; */
         padding-top: 25px;
         padding-bottom: 75px;
+    }
+
+    .progImages1 {
+        width: 100%;
+       align-self: center;
+       display: flex;
+       flex-direction: column;
+       
     }
 
 
