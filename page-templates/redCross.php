@@ -131,9 +131,9 @@ get_header();
 
                                 <!-- button to go register -->
                                 <div class="button-holder">
-                                    <button class="button" href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
+                                    <a class="button" href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>">
                                         <?php echo $button['title']; ?>
-                                    </button> 
+                                    </a> 
                                 </div>
                                    
                             </div>
