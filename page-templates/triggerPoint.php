@@ -40,7 +40,7 @@ get_header();
                             ?>
                             <!-- banner at top of page -->
                                 <div class="large-centered columns small-centered small-10">
-                                    <img src="<?php echo $program_banner; ?>" alt="corefx banner" id="corefxBanner" class="large-centered columns coreContent" />
+                                   <img src="<?php echo $program_banner['url']; ?>" alt="<?php echo $program_banner['alt']; ?>"  class="large-centered columns coreContent" />
                                 </div>
                             <?php 
                         }
