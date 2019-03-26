@@ -48,12 +48,12 @@ get_header();
 				<?php }
 					// if empty -show civ box
 					if(empty ($image)) {
-				?>
+					?>
 					<!-- empty div with styles -->
 					 <div class="banner-box"></div> 
 
-					 <!-- END if fucntion and if empty -->
-					 <?php } } ?>
+				<!-- END if fucntion and if empty -->
+				<?php } } ?>
 
 				<!-- END ACF - BANNER_IMAGE -->
 
@@ -81,7 +81,7 @@ get_header();
 							?>
 
 								<!-- LARGE title -->
-								<h2 class="text-center"><?php echo $header; ?></h2>
+								<h2 class="text-center float-center"><?php echo $header; ?></h2>
 										
 								<!-- LARGE button -->
 								<a class="button float-center hide-for-small-only"  href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
@@ -178,7 +178,15 @@ get_header();
 
 							<!-- END if a tag is empty empty -->	
 							<?php } ?>
+
+
+							<!-- if all empty empty -->	
+							<?php if(empty($logo_image) && empty($logo_url) )   { ?>
+							<!-- END if all empty empty -->	
+							<?php } ?>
 							
+
+
 							<!-- END if function and foreach -->
 							<?php } } ?>
 
