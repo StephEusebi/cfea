@@ -71,7 +71,7 @@ if (function_exists('get_field')) {
 		$button = $program['button'];
         $program_image = $program['program_image'];
         // CONDITIONAL STATEMENT - DISPLAY NONE IF NO CONTENT ENTERED
-        if(!empty ($name) || !empty ($description) || !empty ($button) || !empty ($program_image)) {
+        if(!empty ($name)) {
 ?>
                 <div class="grid-x grid-margin-x boxStyles">
                     <div class="cell large-10">
@@ -86,7 +86,9 @@ if (function_exists('get_field')) {
 
                                 <!-- Accordion tab content -->
                                 <div class="accordion-content" data-tab-content>
-
+                                <?php
+                                if(!empty ($description) || !empty ($program_image)) {
+                                ?>
                                     <!-- PROGRAM IMAGE -->
                                     <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="pLandingBanner" />
 
@@ -95,9 +97,11 @@ if (function_exists('get_field')) {
                                         <?php echo$description; ?>
                                     </p>
                                     <!-- BUTTON - LINK TO PROGRAM CONTENT -->
-                                   
+                                    <?php
+                                    if(!empty ($button)) {
+                                        ?>
                                     <button class="button" href="<?php echo $button['link']; ?>" target="<?php echo $button['target']; ?>">
-                                        <?php echo  $button['title']; ?>
+                                        <?php echo $button['title']; ?>
                                     </button> 
                                
                                 </div>
@@ -107,6 +111,8 @@ if (function_exists('get_field')) {
                 </div>
 
                 <?php
+                                }
+                } 
         }
 	}
 }
