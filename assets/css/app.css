@@ -1063,9 +1063,15 @@ footer{
 		text-align: center !important;
 	}
 	.center, .dropdown, .primary-menu {
-		text-align: center !important;
-		margin: 0 auto;
-    }
+        text-align: center !important;
+        margin: 0 auto;
+        z-index: 99;
+
+        }
+
+        #primary-menu {
+            margin-top: 0px;
+        }
 
     .is-submenu-item {
         text-align: left;
