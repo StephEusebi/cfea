@@ -178,6 +178,14 @@ get_header();
 
 							<!-- END if a tag is empty empty -->	
 							<?php } ?>
+
+
+							<!-- if all empty empty -->	
+							<?php if(empty ($logo))  { ?>
+							<!-- END if all empty empty -->	
+							<?php } ?>
+							
+
 							
 							<!-- END if function and foreach -->
 							<?php } } ?>
