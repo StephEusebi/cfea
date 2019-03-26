@@ -49,14 +49,11 @@ get_header();
 
             </div>
         </div>
-        <!-- Whether you are new to the fitness industry and are looking to become certified to find you first job or are a seasoned veteran looking for advanced certification and continuing education we are here to help you. The CFEA’s mandate is simple.  To bring together the most recognized education brands in fitness today while giving you an amazing live education experience.  Our award-winning team of highly trained and experienced Master Trainers, Instructors and PRO TRAINERS are among the best fitness educators in the industry today! -->
-
-        <!-- Let us help you take your fitness career to the next level! -->
 
         <?php
-        }
-}
-}
+        } // end of conditional - main_paragraph and tag_line
+} // end of foreach - paragraphs
+} // end of conditional - get_field
 
 ?>
 
@@ -86,24 +83,24 @@ if (function_exists('get_field')) {
 
                                 <!-- Accordion tab content -->
                                 <div class="accordion-content" data-tab-content>
-                                <?php
+                                    <?php
                                 if(!empty ($description) || !empty ($program_image)) {
                                 ?>
-                                    <!-- PROGRAM IMAGE -->
-                                    <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="pLandingBanner" />
+                                        <!-- PROGRAM IMAGE -->
+                                        <img src="<?php echo$program_image; ?>" alt="<?php echo $image['alt']; ?>" class="pLandingBanner" />
 
-                                    <p>
-                                        <!-- PROGRAM DESCRIPTION -->
-                                        <?php echo$description; ?>
-                                    </p>
-                                    <!-- BUTTON - LINK TO PROGRAM CONTENT -->
-                                    <?php
+                                        <p>
+                                            <!-- PROGRAM DESCRIPTION -->
+                                            <?php echo$description; ?>
+                                        </p>
+                                        <!-- BUTTON - LINK TO PROGRAM CONTENT -->
+                                        <?php
                                     if(!empty ($button)) {
                                         ?>
-                                    <a class="button" href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>">
-                                        <?php echo $button['title']; ?>
-                                    </a> 
-                               
+                                            <a class="button" href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>">
+                                                <?php echo $button['title']; ?>
+                                            </a>
+
                                 </div>
                             </li>
                         </ul>
@@ -111,11 +108,11 @@ if (function_exists('get_field')) {
                 </div>
 
                 <?php
-                                }
-                } 
-        }
-	}
-}
+                                } // end of conditional !empty - button
+                } // end of conditional !empty - description and program_image
+        } // end of conditional !empty - name
+	} // end of foreach - programs
+} // end of conditional - get_field
 
 ?>
 
