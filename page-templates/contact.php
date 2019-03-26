@@ -25,7 +25,14 @@ get_header();
 
 		<div class="grid-container"> <!--Main Form Container-->
 				<div class="grid-x grid-margin-x grid-margin-y"> <!--grid x container for title-->
-				<div class="cell  small-12 medium-6 large-12"><h1 class="contactUsTitle">Contact Us</h1></div> <!-- cell container -->	
+				<div class="cell small-12 medium-12 large-12 contactUsTitle">
+				
+				<?php /* Start the Loop */ ?>
+				<?php while(have_posts()) : the_post(); ?>
+				<?php the_content();?>
+				<?php endwhile; ?>
+
+				</div> <!-- cell container -->	
 				</div>
 				</div>
 			<?php 
