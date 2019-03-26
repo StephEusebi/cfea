@@ -66,8 +66,8 @@ h1 {
 }
 
 .is-dropdown-submenu {
-    min-width: 90px;
-    max-width: 90px;
+    min-width: 150px;
+    max-width: 150px;
 }
 
 .title-bar {
@@ -135,7 +135,8 @@ h1 {
 #example-animated-menu,
 .menu-main-container,
 #primary-menu {
-	background-color: #fff !important;
+    background-color: #fff !important;
+    width: 100%;
 }
 
 .logoImg {
@@ -888,9 +889,21 @@ footer{
     }
 
     .sub-menu {
-        display:none
+        display: none;
     }
-    
+
+    .is-dropdown-submenu {
+        margin-top: 40px;
+        left: -100px !important;
+        text-align: right;
+        border-top: 1px solid#aa2527;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        max-width: 170px;
+        min-width: 170px;
+        font-size: 11pt;
+    }
 
     .title-bar {
         background: #868686 !important;
@@ -947,7 +960,6 @@ footer{
         padding-left:0;
         margin-bottom:1em;
 	}
-
    
     .logoDiv {
         text-align: center;
@@ -956,8 +968,6 @@ footer{
         font-size: 12pt;
         word-spacing: 4px;
     }
-
-    
 
     /* contact us */
 	.contactTitle h2 {
@@ -1010,9 +1020,13 @@ footer{
 	.logoDiv {
 		text-align: center !important;
 	}
-	.center {
+	.center, .dropdown {
 		text-align: center !important;
 		margin: 0 auto;
+    }
+
+    .is-submenu-item {
+        text-align: left;
     }
 
 }
