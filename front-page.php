@@ -451,7 +451,8 @@ get_header();
 
 						// get the ACF named coach_display and declare it
 						$coach_display = get_field('coach_display');
-														
+	
+													
 						// if yes is checked or if yes and no are checked - display posts
 						if( $coach_display[0] == "yes" || ($coach_display[0] == "yes" && $coach_display[1] != "no") ) { ?>
 	
