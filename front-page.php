@@ -442,7 +442,20 @@ get_header();
 				</div>
 
 				<?php
-				
+
+
+				// START ACT COACH DISPLAY
+		
+					//if there is a acf field get the field 
+					if (function_exists('get_field')) {
+
+						// get the ACF named coach_display and declare it
+						$coach_display = get_field('coach_display');
+														
+						// if yes is checked or if yes and no are checked - display posts
+						if( $coach_display[0] == "yes" || ($coach_display[0] == "yes" && $coach_display[1] != "no") ) { ?>
+	
+				<?php
 				// array of arguments for custom posts query
 				$args = array( 
 					'post_type' => 'coach', 
@@ -459,7 +472,8 @@ get_header();
 
 				// Coaches Query
 				$the_query_choach = new WP_Query( $args );
-				
+
+
 				// The Loop
 				// checking to see if posts were found - if not found, nothing will display
 				if ( $the_query_choach->have_posts() ) { ?>
@@ -507,6 +521,13 @@ get_header();
 						
 						// restore original post data
 						wp_reset_postdata();
+
+
+					// END if fucntion and if empty
+					} } 
+			
+					// END ACF - COACH DISPLAY 
+
 					} else {
 						// no posts found
 					} ?>

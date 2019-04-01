@@ -1,0 +1,48 @@
+{
+    "key": "group_5ca25421d7148",
+    "title": "Home Coach Display",
+    "fields": [
+        {
+            "key": "field_5ca2543031148",
+            "label": "Coach Display",
+            "name": "coach_display",
+            "type": "checkbox",
+            "instructions": "Will you like to display coaches on home page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1554144488
+}
