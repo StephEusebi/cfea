@@ -31,7 +31,7 @@ get_header();
         if(!empty ($main_paragraph) || !empty($tag_line)) {
 
 ?>
-        <div class="grid-x grid-margin-x boxStyles">
+        <div class="grid-x boxStyles">
             <div class="large-centered columns small-10 coreContent">
                 <!-- PROGRAMS LANDING HEADER -->
                 <h1 class="programsTitle">CURRENT PROGRAMS</h1>
@@ -70,7 +70,7 @@ if (function_exists('get_field')) {
         // CONDITIONAL STATEMENT - DISPLAY NONE IF NO CONTENT ENTERED
         if(!empty ($name)) {
 ?>
-                <div class="grid-x grid-margin-x boxStyles">
+                <div class="grid-x boxStyles">
                     <div class="cell large-10">
 
                         <ul class="accordion plAccordian" data-accordion data-allow-all-closed="true">
